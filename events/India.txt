@@ -4490,7 +4490,6 @@ country_event = {#start demanding oaths of loyalty small princes
 		1018 = {
 			prince_integration = yes
 		}
-		
 		var:current_state = {
 			random_list = {
 				0 = {
@@ -4980,7 +4979,7 @@ immediate = {
 				instant_build = yes
 			}
 		}
-			var:current_state = {
+		var:current_state = {
 			random_list = {
 				0 = {
 					#Sikkim Moves for Independence
