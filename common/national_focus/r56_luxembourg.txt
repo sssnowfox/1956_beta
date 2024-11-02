@@ -1358,7 +1358,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUX_dreams_of_federation
-		icon = GFX_focus_SWE_the_nordic_centralized_nordic_army_command			# request new gfx
+		icon = GFX_goal_LUX_dreams_of_federation			# request new gfx
 		cost = 10
 		x = -2
 		y = 1
@@ -1722,7 +1722,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUX_decentralised_alliance
-		icon = GFX_focus_SWE_the_nordic_decentralized_nordic_army_command		# request new gfx
+		icon = GFX_goal_LUX_decentralised_alliance		# request new gfx
 		cost = 5
 		x = 2
 		y = 1

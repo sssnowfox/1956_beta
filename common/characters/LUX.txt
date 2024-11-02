@@ -143,7 +143,7 @@ characters = {
 		name = LUX_gaston_diderich
 		portraits = {
 			civilian = {
-				large = GFX_Portrait_Europe_Generic_2	# request new gfx
+				large = GFX_portrait_LUX_gaston_diderich
 				small = GFX_idea_generic_political_advisor_europe_1
 			}
 		}
@@ -243,6 +243,12 @@ characters = {
 	# LSAP
 	LUX_pierre_krier = {
 		name = LUX_pierre_krier
+		portraits = {
+			army = {
+				small = "GFX_idea_LUX_pierre_krier"
+				large = GFX_portrait_LUX_pierre_krier
+			}
+		}
 		country_leader = {
 			ideology = socialism
 			traits = { trade_unionist }
@@ -276,12 +282,6 @@ characters = {
 			}
 			ai_will_do = {
 				factor = 3.000
-			}
-		}
-		portraits = {
-			army = {
-				small = "GFX_idea_LUX_pierre_krier"
-				#large = 									# request new gfx
 			}
 		}
 	}

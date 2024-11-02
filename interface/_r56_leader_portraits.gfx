@@ -218,7 +218,15 @@ spriteType = {
 	}
 	spriteType = {
 		name = "GFX_portrait_LUX_dominique_urbany"
-		textureFile = "gfx/leaders/LUX/RoN_portrait_LUX_dominique_urbany.dds"
+		textureFile = "gfx/leaders/LUX/r56_portrait_LUX_dominique_urbany.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_LUX_gaston_diderich"
+		textureFile = "gfx/leaders/LUX/r56_portrait_LUX_gaston_diderich.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_LUX_pierre_krier"
+		textureFile = "gfx/leaders/LUX/r56_portrait_LUX_pierre_krier.dds"
 	}
 	
 #->  INS <><>

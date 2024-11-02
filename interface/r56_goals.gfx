@@ -6265,6 +6265,14 @@ spriteTypes = {
 		name = "GFX_goal_LUX_expand_the_gau"
 		textureFile = "gfx/interface/goals/LUX/r56_goal_LUX_expand_the_gau.dds"
 	}
+	spriteType = {
+		name = "GFX_goal_LUX_dreams_of_federation"
+		textureFile = "gfx/interface/goals/LUX/r56_goal_LUX_dreams_of_federation.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_LUX_decentralised_alliance"
+		textureFile = "gfx/interface/goals/LUX/r56_goal_LUX_decentralised_alliance.dds"
+	}
 
 ###------> MAN <><> <><> <><> <><> <><>
 	SpriteType = {
