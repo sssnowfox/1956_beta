@@ -1566,7 +1566,7 @@ AUS_establish_the_austrian_airforce_academy_desc:0 "Our fledgling airforce is de
  austria.103.a:0 "Keep close tabs on this."
 
  austria.104.t:0 "Heimwehr Elements Launch Coup!"
- austria.104.b:0 "Following our failure to deal with the Heimwehr elements which had opposed our government, Ernst Rüdiger Starhemberg and the rest of the Heimwehr have launched a coup against the Kaiser, aiming to restore the Austrofascist Fatherland Front goverment."
+ austria.104.d:0 "Following our failure to deal with the Heimwehr elements which had opposed our government, Ernst Rüdiger Starhemberg and the rest of the Heimwehr have launched a coup against the Kaiser, aiming to restore the Austrofascist Fatherland Front goverment."
  austria.104.a:0 "They will be crushed!"
  austria.104.b:0 "The Kaiser has betrayed Austria for the last time!"
 
