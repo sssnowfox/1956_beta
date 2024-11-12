@@ -1,7 +1,7 @@
 ideas = {
 
 	country = {
-	
+
 		r56_legacy_of_luxembourg_crisis_1 = {
 
 			name = r56_legacy_of_luxembourg_crisis
@@ -20,7 +20,7 @@ ideas = {
 			removal_cost = -1
 
 			picture = neutrality_idea
-	
+
 			modifier = {
 				join_faction_tension = 0.50
 				send_volunteers_tension = 0.50
@@ -28,6 +28,9 @@ ideas = {
 				improve_relations_maintain_cost_factor = -0.50
 				trade_opinion_factor = 0.50
 				ai_get_ally_desire_factor = -50
+				production_speed_arms_factory_factor = -0.80
+				mobilization_laws_cost_factor = 0.67
+				economy_cost_factor = 0.67
 			}
 		}
 
@@ -49,7 +52,7 @@ ideas = {
 			removal_cost = -1
 
 			picture = neutrality_idea
-	
+
 			modifier = {
 				join_faction_tension = 0.80
 				send_volunteers_tension = 0.80
@@ -57,6 +60,9 @@ ideas = {
 				improve_relations_maintain_cost_factor = -0.50
 				trade_opinion_factor = 0.50
 				ai_get_ally_desire_factor = -50
+				production_speed_arms_factory_factor = -0.80
+				mobilization_laws_cost_factor = 0.67
+				economy_cost_factor = 0.67
 			}
 		}
 

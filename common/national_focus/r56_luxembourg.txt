@@ -944,7 +944,7 @@ focus_tree = {
 	# historical / conservative
 	focus = {
 		id = LUX_the_dupong_ministry
-		icon = GFX_goal_constitutional_monarchy
+		icon = GFX_goal_LUX_conservative_victory
 		cost = 0
 		x = 9
 		y = 1
@@ -2069,6 +2069,7 @@ focus_tree = {
 						original_tag = ENG
 						original_tag = HOL
 						original_tag = ITA
+						original_tag = GER
 					}
 				}
 				country_event = {
@@ -2120,7 +2121,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUX_commemorate_independence
-		icon = GFX_goal_support_democracy
+		icon = GFX_goal_LUX_commemorate_independence
 		cost = 7.2
 		x = 1
 		y = 1
@@ -2135,7 +2136,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUX_oust_socialists
-		icon = GFX_focus_generic_anti_fascist_diplomacy
+		icon = GFX_goal_generic_death_of_bolshevism
 		cost = 7.2
 		x = -1
 		y = 1
@@ -2161,7 +2162,7 @@ focus_tree = {
 	focus = {
 		id = LUX_ban_international_aid
 		icon = GFX_goal_generic_forceful_treaty
-		cost = 10
+		cost = 7.2
 		x = 3
 		y = 2
 		relative_position_id = LUX_policy_of_free_hands
@@ -2204,14 +2205,29 @@ focus_tree = {
 			has_tech = mobile_warfare
 		}
 		completion_reward = {
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = LUX_joseph_schuster
+
+			custom_effect_tooltip = r56_newline
+			8 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = {
+						all_provinces = yes
+					}
+				}
+			}
+			army_experience = 20
+
+			custom_effect_tooltip = r56_newline
 			if = {
 				limit = { has_dlc = "No Step Back" }
 				add_ideas = tenacious_defense_spirit
 				add_ideas = static_warfare_spirit
-				army_experience = 20
 			}
 			else = {
-				army_experience = 20
 				add_ideas = r56_LUX_defensive_focus
 			}
 		}
@@ -2471,7 +2487,7 @@ focus_tree = {
 	# liberals
 	focus = {
 		id = LUX_liberal_victory
-		icon = GFX_goal_support_democracy
+		icon = GFX_goal_LUX_liberal_victory
 		cost = 0
 		x = 3
 		y = 1
@@ -2658,7 +2674,7 @@ focus_tree = {
 	# social democrats
 	focus = {
 		id = LUX_first_social_democratic_government
-		icon = GFX_goal_generic_socdem
+		icon = GFX_goal_LUX_socdem_victory
 		cost = 0
 		x = -3
 		y = 1
@@ -2900,7 +2916,7 @@ focus_tree = {
 	# communist
 	focus = {
 		id = LUX_begin_workers_revolution
-		icon = GFX_goal_support_communism
+		icon = GFX_goal_LUX_communist_victory
 		cost = 0
 		x = -14
 		y = 1
@@ -3206,7 +3222,10 @@ focus_tree = {
 			has_government = communism
 		}
 		completion_reward = {
-			add_country_leader_trait = successor_of_marx
+			promote_character = {
+				character = LUX_charles_marx
+				ideology = marxism
+			}
 			if = {
 				limit = {
 					GER = {
@@ -3350,6 +3369,7 @@ focus_tree = {
 					random_hours = 2
 				}
 			}
+			add_country_leader_trait = successor_of_marx
 		}
 	}
 	focus = {
@@ -3423,10 +3443,6 @@ focus_tree = {
 						is_faction_leader = yes
 					}
 					country_event = generic.2
-				}
-				promote_character = {
-					character = LUX_dominique_urbany
-					ideology = stalinism
 				}
 			}
 			else_if = {
@@ -3993,6 +4009,8 @@ focus_tree = {
 				idea = r56_LUX_agitated_youth
 				days = 365
 			}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = LUX_albert_ludwig_kreins
 
 			custom_effect_tooltip = r56_newline
 			add_power_balance_value = {
@@ -4026,7 +4044,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUX_utilise_dennemeyer
-		icon = GFX_focus_SWI_recall_robert_tobler	# request new gfx
+		icon = GFX_goal_generic_propaganda	# request new gfx
 		cost = 5
 		x = 1
 		y = 1
@@ -4221,7 +4239,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUX_replace_the_government
-		icon = GFX_focus_generic_fascist_propaganda
+		icon = GFX_focus_ger_reichskommisariats
 		cost = 10
 		x = 0
 		y = 4
@@ -4240,11 +4258,13 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			set_cosmetic_tag = LUX_gau
 			set_politics = {
 				ruling_party = fascism
 				name = LUX_vdb_party
 				long_name = LUX_vdb_party
 			}
+
 			custom_effect_tooltip = r56_newline
 			remove_ideas = r56_legacy_of_luxembourg_crisis_1
 			if = {
@@ -4255,18 +4275,35 @@ focus_tree = {
 				limit = { has_idea = r56_LUX_uebl_2 }
 				remove_ideas = r56_LUX_uebl_2
 			}
-			custom_effect_tooltip = r56_newline
 			remove_ideas = LUX_charlotte
+
+			custom_effect_tooltip = r56_newline
 			GER = {
 				set_autonomy = {
 					target = ROOT
-					autonomy_state = autonomy_reichsprotectorate
+					autonomy_state = autonomy_reichskommissariat
 					end_wars = no
 				}
 			}
+			custom_effect_tooltip = LUX_kratzenbergs_luxemburg_tt
+
+			custom_effect_tooltip = r56_newline
 			add_popularity = {
 				ideology = fascism
 				popularity = 0.15
+			}
+			add_stability = -0.05
+
+			remove_power_balance = { id = LUX_fascist_balance }
+
+			hidden_effect = {
+				if = {
+					limit = { has_autonomy_state > autonomy_reichskommissariat }
+					set_autonomy = {
+						target = ROOT
+						autonomy_state = autonomy_reichskommissariat
+					}
+				}
 			}
 
 			hidden_effect = {
@@ -4278,54 +4315,13 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = LUX_kratzenbergs_luxemburg
-		icon = GFX_focus_ger_reichskommisariats
-		cost = 7.2
-		x = -4
-		y = 1
-		relative_position_id = LUX_replace_the_government
-		prerequisite = { focus = LUX_replace_the_government }
-		mutually_exclusive = { focus = LUX_dennemeyers_luxemburg }
-		available = {
-			is_subject_of = GER
-			has_government = fascism
-			power_balance_value = {
-				id = LUX_fascist_balance
-				value > 0.80
-			}
-		}
-		completion_reward = {
-			add_stability = -0.10
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.05
-			}
-			set_cosmetic_tag = LUX_gau
-			add_country_leader_trait = gauleiter
-
-			custom_effect_tooltip = LUX_kratzenbergs_luxemburg_tt
-
-			remove_power_balance = { id = LUX_fascist_balance }
-
-			hidden_effect = {
-				if = {
-					limit = { has_autonomy_state > autonomy_reichsprotectorate }
-					set_autonomy = {
-						target = ROOT
-						autonomy_state = autonomy_reichsprotectorate
-					}
-				}
-			}
-		}
-	}
-	focus = {
 		id = LUX_expand_the_gau
 		icon = GFX_goal_LUX_expand_the_gau		# request new gfx
 		cost = 10
 		x = 2
 		y = 1
-		relative_position_id = LUX_kratzenbergs_luxemburg
-		prerequisite = { focus = LUX_kratzenbergs_luxemburg }
+		relative_position_id = LUX_replace_the_government
+		prerequisite = { focus = LUX_replace_the_government }
 		available = {
 			is_subject_of = GER
 			all_state = {
@@ -4575,8 +4571,9 @@ focus_tree = {
 		cost = 5
 		x = 0
 		y = 1
-		relative_position_id = LUX_kratzenbergs_luxemburg
-		prerequisite = { focus = LUX_kratzenbergs_luxemburg }
+		relative_position_id = LUX_replace_the_government
+		prerequisite = { focus = LUX_replace_the_government }
+		available = { has_completed_focus = LUX_utilise_dennemeyer }
 		completion_reward = {
 			add_stability = 0.05
 			custom_effect_tooltip = remove_political_advisor
@@ -4596,8 +4593,8 @@ focus_tree = {
 		cost = 5
 		x = -3
 		y = 1
-		relative_position_id = LUX_kratzenbergs_luxemburg
-		prerequisite = { focus = LUX_kratzenbergs_luxemburg }
+		relative_position_id = LUX_replace_the_government
+		prerequisite = { focus = LUX_replace_the_government }
 		completion_reward = {
 			add_ideas = r56i_laws_security_order
 			add_ideas = r56_LUX_german_manpower
@@ -4692,10 +4689,9 @@ focus_tree = {
 		cost = 10
 		x = 4
 		y = 1
-		relative_position_id = LUX_kratzenbergs_luxemburg
+		relative_position_id = LUX_replace_the_government
 		prerequisite = {
-			focus = LUX_kratzenbergs_luxemburg
-			focus = LUX_dennemeyers_luxemburg
+			focus = LUX_replace_the_government
 		}
 		available = { is_subject_of = GER }
 		completion_reward = {
@@ -4714,319 +4710,8 @@ focus_tree = {
 				}
 			}
 		}
-	}
-	focus = {
-		id = LUX_dennemeyers_luxemburg
-		icon = GFX_focus_SWI_recall_robert_tobler	# request new gfx
-		cost = 7.2
-		x = 4
-		y = 1
-		relative_position_id = LUX_replace_the_government
-		prerequisite = { focus = LUX_replace_the_government }
-		mutually_exclusive = { focus = LUX_kratzenbergs_luxemburg }
-		available = {
-			#has_completed_focus = LUX_utilise_dennemeyer
-			has_idea = LUX_camille_dennemeyer
-			is_subject_of = GER
-			has_government = fascism
-		}
-		completion_reward = {
-			add_stability = -0.10
-			add_war_support = 0.15
-			reverse_add_opinion_modifier = {
-				target = GER
-				modifier = medium_decrease
-			}
-			promote_character = {
-				character = LUX_camille_dennemeyer
-				ideology = nazism
-			}
-			custom_effect_tooltip = LUX_dennemeyers_luxemburg_tt
-			remove_power_balance = { id = LUX_fascist_balance }
-		}
-	}
-	focus = {
-		id = LUX_germanise_the_people
-		icon = GFX_goal_generic_big_german_flag
-		cost = 5
-		x = -2
-		y = 1
-		relative_position_id = LUX_dennemeyers_luxemburg
-		prerequisite = { focus = LUX_dennemeyers_luxemburg }
-		completion_reward = {
-			add_ideas = r56_LUX_luxemburg_ist_deutsch
-		}
-	}
-	focus = {
-		id = LUX_radicalise_youth
-		icon = GFX_focus_ITA_generic_fascist_workers
-		cost = 5
-		x = -1
-		y = 1
-		relative_position_id = LUX_germanise_the_people
-		prerequisite = { focus = LUX_germanise_the_people }
-		completion_reward = {
-			swap_ruler_traits = {
-				remove = fascist_writer
-				add = nazi_youth_figure
-			}
-			add_ideas = r56_LUX_luxemburg_hj
-		}
-	}
-	focus = {
-		id = LUX_eliminate_dissidents
-		icon = GFX_goal_generic_destroy_government
-		cost = 5
-		x = 1
-		y = 1
-		relative_position_id = LUX_germanise_the_people
-		prerequisite = { focus = LUX_germanise_the_people }
-		completion_reward = {
-			add_ideas = r56_LUX_brutal_political_oppression
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.10
-			}
-		}
-	}
-	focus = {
-		id = LUX_import_german_programs
-		icon = GFX_goal_generic_propaganda
-		cost = 5
-		x = 0
-		y = 2
-		relative_position_id = LUX_germanise_the_people
-		prerequisite = {
-			focus = LUX_radicalise_youth
-			focus = LUX_eliminate_dissidents
-		}
-		completion_reward = {
-			add_ideas = r56_LUX_german_party_organisation
-		}
-	}
-	focus = {
-		id = LUX_reverse_luxembourg_crisis
-		icon = GFX_goal_generic_attack_belgium		# request new gfx
-		cost = 10
-		x = 3
-		y = 1
-		relative_position_id = 	LUX_dennemeyers_luxemburg
-		prerequisite = { focus = LUX_dennemeyers_luxemburg }
-		available = {
-			has_army_manpower = { size > 25000 }
-			has_government = fascism
-		}
-		completion_reward = {
-			add_state_claim = 965
-			#add_state_claim = x	# belgian luxembourg
-			add_state_claim = 34
-			add_state_claim = 6
-
-			every_other_country = {
-				limit = {
-					NOT = { is_in_faction_with = ROOT }
-					OR = {
-						controls_state = 965
-						#controls_state = x		# belgian luxembourg
-						controls_state = 34
-						controls_state = 6
-					}
-				}
-				create_wargoal = {
-					target = THIS
-					type = take_claimed_state
-				}
-			}
-			every_other_country = {
-				limit = {
-					is_in_faction_with = ROOT
-					OR = {
-						controls_state = 965
-						#controls_state = x		# belgian luxembourg
-						controls_state = 34
-						controls_state = 6
-					}
-				}
-				country_event = {
-					id = luxembourg.415
-					hours = 4
-					random_hours = 2
-				}
-			}
-		}
-	}
-	focus = {
-		id = LUX_integrate_conquered_land
-		icon = GFX_goal_generic_occupy_states_ongoing_war
-		cost = 7.2
-		x = 0
-		y = 1
-		relative_position_id = LUX_reverse_luxembourg_crisis
-		prerequisite = { focus = LUX_reverse_luxembourg_crisis }
-		completion_reward = {
-			unlock_decision_category_tooltip = LUX_integrate_states
-			set_variable = {
-				var = LUX_integrate_state_cost
-				value = 100
-			}
-		}
-	}
-	focus = {
-		id = LUX_claim_burgundian_netherlands
-		icon = GFX_goal_generic_attack_netherlands		# request new gfx
-		cost = 10
-		x = -2
-		y = 1
-		relative_position_id = LUX_reverse_luxembourg_crisis
-		prerequisite = { focus = LUX_reverse_luxembourg_crisis }
-		available = {
-			controls_state = 965
-			#controls_state = x		# belgian luxembourg
-			controls_state = 34
-			controls_state = 6
-			has_army_manpower = { size > 35000 }
-			has_government = fascism
-		}
-		completion_reward = {
-			add_state_claim = 35
-			add_state_claim = 7
-
-			every_other_country = {
-				limit = {
-					NOT = { is_in_faction_with = ROOT }
-					OR = {
-						controls_state = 35
-						controls_state = 7
-					}
-				}
-				create_wargoal = {
-					target = THIS
-					type = take_claimed_state
-				}
-			}
-			every_other_country = {
-				limit = {
-					is_in_faction_with = ROOT
-					OR = {
-						controls_state = 35
-						controls_state = 7
-					}
-				}
-				country_event = {
-					id = luxembourg.420
-					hours = 4
-					random_hours = 2
-				}
-			}
-		}
-	}
-	focus = {
-		id = LUX_claim_our_heritage
-		icon = GFX_focus_attack_france		# request new gfx
-		cost = 10
-		x = 2
-		y = 1
-		relative_position_id = LUX_reverse_luxembourg_crisis
-		prerequisite = { focus = LUX_reverse_luxembourg_crisis }
-		available = {
-			controls_state = 965
-			#controls_state = x		# belgian luxembourg
-			controls_state = 34
-			controls_state = 6
-			has_army_manpower = { size > 35000 }
-			has_government = fascism
-		}
-		completion_reward = {
-			add_state_claim = 29
-			add_state_claim = 28
-			add_state_claim = 17
-			add_state_claim = 27
-
-			every_other_country = {
-				limit = {
-					NOT = { is_in_faction_with = ROOT }
-					OR = {
-						controls_state = 29
-						controls_state = 28
-						controls_state = 17
-						controls_state = 27
-					}
-				}
-				create_wargoal = {
-					target = THIS
-					type = take_claimed_state
-				}
-			}
-			every_other_country = {
-				limit = {
-					is_in_faction_with = ROOT
-					OR = {
-						controls_state = 29
-						controls_state = 28
-						controls_state = 17
-						controls_state = 27
-					}
-				}
-				country_event = {
-					id = luxembourg.426
-					hours = 4
-					random_hours = 2
-				}
-			}
-		}
-	}
-	focus = {
-		id = LUX_raise_cross_burgundy
-		icon = GFX_focus_spa_supremacy_of_the_communion
-		cost = 10
-		x = 0
-		y = 2
-		relative_position_id = LUX_reverse_luxembourg_crisis
-		prerequisite = { focus = LUX_claim_burgundian_netherlands }
-		prerequisite = { focus = LUX_claim_our_heritage }
-		available = {
-			controls_state = 965
-			#controls_state = x		# belgian luxembourg
-			controls_state = 34
-			controls_state = 6
-			controls_state = 35
-			controls_state = 7
-			controls_state = 29
-			controls_state = 28
-			controls_state = 17
-			controls_state = 27
-			has_government = fascism
-		}
-		completion_reward = {
-			add_ideas = r56_LUX_burgundian_heritage
-			add_research_slot = 1
-			custom_effect_tooltip = r56_newline
-			set_cosmetic_tag = LUX_burgundy
-			unlock_decision_tooltip = LUX_move_capital_dijon
-			custom_effect_tooltip = r56_newline
-			custom_effect_tooltip = LUX_raise_cross_burgundy_tt
-			divide_variable = {
-				var = LUX_integrate_state_cost
-				value = 2
-			}
-		}
-	}
-	focus = {
-		id = LUX_carve_our_own_future
-		icon = GFX_focus_generic_support_the_left_right
-		cost = 5
-		x = 0
-		y = 1
-		relative_position_id = LUX_raise_cross_burgundy
-		prerequisite = { focus = LUX_raise_cross_burgundy }
-		available = {
-			has_war = no
-			is_subject = yes
-		}
-		completion_reward = {
-			add_ideas = r56_LUX_our_own_future
-			remove_ideas = r56_LUX_economic_dependence_1
-			custom_effect_tooltip = LUX_carve_our_own_future_tt
+		ai_will_do = {
+			base = 500
 		}
 	}
 

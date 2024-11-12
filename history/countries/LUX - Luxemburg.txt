@@ -35,17 +35,30 @@ add_ideas = {
 	r56_LUX_economic_dependence_1
 	LUX_charlotte
 }
+# democratic
 recruit_character = LUX_joseph_bech
+recruit_character = LUX_pierre_dupong
+recruit_character = LUX_emile_reuter
+recruit_character = LUX_gaston_diderich
+recruit_character = LUX_eugene_schaus
+recruit_character = LUX_nicolas_braunshausen
+recruit_character = LUX_pierre_krier
+recruit_character = LUX_rene_blum
+recruit_character = LUX_victor_bodson
+# monarchist
 recruit_character = LUX_duchess_charlotte
-recruit_character = LUX_zenon_bernard
+recruit_character = LUX_prince_jean
+# fascist
 recruit_character = LUX_damian_kratzenberg
 recruit_character = LUX_camille_dennemeyer
-recruit_character = LUX_prince_jean
-recruit_character = LUX_charles_marx
+recruit_character = LUX_albert_ludwig_kreins
+# communist
 recruit_character = LUX_dominique_urbany
+recruit_character = LUX_charles_marx
+recruit_character = LUX_zenon_bernard
+# misc advisors
 recruit_character = LUX_joseph_schuster
-recruit_character = LUX_victor_bodson
-recruit_character = LUX_pierre_dupong
+# military
 recruit_character = LUX_damien_roeser
 recruit_character = LUX_guillaume_konsbruck
 recruit_character = LUX_emile_speller
@@ -55,13 +68,6 @@ recruit_character = LUX_felix_de_bourbon_parme
 recruit_character = LUX_edouard_kremmer
 recruit_character = LUX_mathias_krier
 recruit_character = LUX_aloyse_jacoby
-recruit_character = LUX_pierre_krier
-recruit_character = LUX_martin_karp
-recruit_character = LUX_emile_reuter
-recruit_character = LUX_rene_blum
-recruit_character = LUX_eugene_schaus
-recruit_character = LUX_nicolas_braunshausen
-recruit_character = LUX_gaston_diderich
 recruit_character = LUX_navy_chief
 
 set_war_support = 0.1
@@ -74,8 +80,8 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 74.5
-	fascism = 9
+	democratic = 82.5
+	fascism = 1
 	communism = 6.5
 	neutrality = 10
 }

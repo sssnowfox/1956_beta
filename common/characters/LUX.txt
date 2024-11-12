@@ -144,7 +144,7 @@ characters = {
 		portraits = {
 			civilian = {
 				large = GFX_portrait_LUX_gaston_diderich
-				small = GFX_idea_generic_political_advisor_europe_1
+				small = GFX_idea_LUX_gaston_diderich
 			}
 		}
 		country_leader = {
@@ -336,46 +336,6 @@ characters = {
 		}
 	}
 	# KPL
-	LUX_charles_marx = {
-		name = LUX_charles_marx
-		advisor = {
-			slot = political_advisor
-			idea_token = LUX_charles_marx
-			available = {
-				NOT = {
-					has_country_leader = {
-						character = LUX_charles_marx
-						ruling_only = yes
-					}
-				}
-				OR = {
-					has_country_flag = LUX_elections_KPL_winner
-					has_country_flag = LUX_allied_socialists
-				}
-			}
-			visible = {
-				NOT = {
-					has_completed_focus = LUX_contest_election_results
-					has_completed_focus = LUX_invalidate_election
-				}
-			}
-			traits = {
-				resistance_figure 
-			}
-		}	
-		portraits = {
-			civilian = {
-				large = "GFX_portrait_LUX_charles_marx"
-				small = "GFX_idea_LUX_Charles_Marx"
-			}
-		}
-		country_leader = {
-			ideology = marxism
-			desc = LUX_charles_marx_desc
-			expire = "1965.1.1"
-			traits = { feverous_marxist }
-		}
-	}
 	LUX_dominique_urbany = {
 		name = LUX_dominique_urbany
 		advisor = {
@@ -390,6 +350,7 @@ characters = {
 					}
 				}
 				OR = {
+					has_government = communism
 					has_country_flag = LUX_elections_KPL_winner
 					has_country_flag = LUX_allied_socialists
 				}
@@ -414,6 +375,45 @@ characters = {
 			}
 		}
 	}
+	LUX_charles_marx = {
+		name = LUX_charles_marx
+		advisor = {
+			slot = political_advisor
+			idea_token = LUX_charles_marx
+			available = {
+				NOT = {
+					has_country_leader = {
+						character = LUX_charles_marx
+						ruling_only = yes
+					}
+				}
+				OR = {
+					has_government = communism
+					has_country_flag = LUX_elections_KPL_winner
+					has_country_flag = LUX_allied_socialists
+				}
+			}
+			visible = {
+				NOT = {
+					has_completed_focus = LUX_contest_election_results
+					has_completed_focus = LUX_invalidate_election
+				}
+			}
+			traits = { socialist_healthcare_expert }
+		}	
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_LUX_charles_marx"
+				small = "GFX_idea_LUX_Charles_Marx"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			desc = LUX_charles_marx_desc
+			expire = "1965.1.1"
+			traits = { socialist_healthcare_expert }
+		}
+	}
 	LUX_zenon_bernard = {
 		name = LUX_zenon_bernard
 		portraits = {
@@ -427,6 +427,7 @@ characters = {
 			traits = { communist_revolutionary }
 			available = {
 				OR = {
+					has_government = communism
 					has_country_flag = LUX_elections_KPL_winner
 					has_country_flag = LUX_allied_socialists
 				}
@@ -512,7 +513,7 @@ characters = {
 			desc = LUX_damian_kratzenberg_desc
 			expire = "1965.1.1"
 			ideology = nazism
-			traits = { eager_collaborator fascism_follower }
+			traits = { gauleiter fascism_follower }
 		}
 	}
 	LUX_camille_dennemeyer = {
@@ -520,7 +521,6 @@ characters = {
 		portraits = {
 			army = {
 				small = "GFX_idea_generic_political_advisor_europe_3"
-				#large = 												# request new gfx
 			}
 		}
 		advisor = {
@@ -562,31 +562,25 @@ characters = {
 				}
 			}
 		}
-		country_leader = {
-			ideology = nazism
-			traits = { fascist_writer }
+	}
+	LUX_albert_ludwig_kreins = {
+		name = LUX_albert_ludwig_kreins
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = LUX_albert_ludwig_kreins
+			available = {
+				has_completed_focus = LUX_utilise_lvj
+			}
+			traits = { lvj_leader }
 		}
 	}
 
-	LUX_martin_karp = {
-		name = LUX_martin_karp
-		advisor = {
-			slot = political_advisor
-			idea_token = LUX_martin_karp
-			allowed = {
-				original_tag = LUX
-			}
-			traits = {
-				war_industrialist 
-			}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits = {
-			army = {
-				small = "GFX_idea_generic_political_advisor_europe_2"
-			}
-		}
-	}
+
 	LUX_joseph_schuster = {
 		name = LUX_joseph_schuster
 		advisor = {
@@ -594,6 +588,9 @@ characters = {
 			idea_token = LUX_joseph_schuster
 			allowed = {
 				original_tag = LUX
+			}
+			available = {
+				has_completed_focus = LUX_increase_border_security
 			}
 			traits = {
 				fortification_engineer 

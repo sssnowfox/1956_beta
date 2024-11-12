@@ -6273,6 +6273,26 @@ spriteTypes = {
 		name = "GFX_goal_LUX_decentralised_alliance"
 		textureFile = "gfx/interface/goals/LUX/r56_goal_LUX_decentralised_alliance.dds"
 	}
+	spriteType = {
+		name = "GFX_goal_LUX_conservative_victory"
+		textureFile = "gfx/interface/goals/LUX/r56_goal_LUX_conservative_victory.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_LUX_liberal_victory"
+		textureFile = "gfx/interface/goals/LUX/r56_goal_LUX_liberal_victory.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_LUX_socdem_victory"
+		textureFile = "gfx/interface/goals/LUX/r56_goal_LUX_socdem_victory.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_LUX_communist_victory"
+		textureFile = "gfx/interface/goals/LUX/r56_goal_LUX_communist_victory.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_LUX_commemorate_independence"
+		textureFile = "gfx/interface/goals/LUX/r56_goal_LUX_commemorate_independence.dds"
+	}
 
 ###------> MAN <><> <><> <><> <><> <><>
 	SpriteType = {

@@ -2817,6 +2817,10 @@ SpriteType = {
 		texturefile = "gfx/interface/ideas/lux/advisors/r56_idea_LUX_advisor_pierre_krier.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_LUX_gaston_diderich"
+		textureFile = "gfx/interface/ideas/lux/advisors/r56_idea_LUX_advisor_gaston_diderich.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_LUX_felix_de_bourbon_parma"
 		texturefile = "gfx/interface/ideas/lux/advisors/r56_idea_LUX_advisor_felix_de_bourbon_parma.dds"
 	}
