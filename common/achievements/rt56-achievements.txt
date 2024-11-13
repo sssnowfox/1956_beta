@@ -1499,10 +1499,11 @@ god_damn_plan = {
         #has_start_date < 1936.01.02
         has_any_custom_difficulty_setting = no
         game_rules_allow_achievements = yes
-		original_tag = TAH
+		original_tag = FRA
     }
  
     happened = {
+		original_tag = TAH
 		has_global_flag = TAH_god_damn_plan
     }
 }
