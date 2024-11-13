@@ -4613,6 +4613,10 @@ SpriteType = {
 		name = "GFX_idea_SOV_Fyodor_Tolbukhin"
 		texturefile = "gfx/interface/ideas/sov/advisors/r56_idea_SOV_Fyodor_Tolbukhin.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_SOV_boris_smyslovsky"
+		texturefile = "gfx/interface/ideas/sov/advisors/r56_idea_SOV_boris_smyslovsky.dds"
+	}
 
 
 
