@@ -47,6 +47,16 @@ autonomy_state = {
 
 	can_take_level = {
 		#trigger here
+		IF = {
+			limit = {
+				original_tag = COG
+				has_dlc = "Gotterdammerung"			
+			}
+			has_completed_focus = CONGO_republic_of_congo
+			NOT = {
+				has_completed_focus = CONGO_dominion_of_congo
+			}
+		}
 		if = {
 			limit = {
 				original_tag = LUX
@@ -58,7 +68,16 @@ autonomy_state = {
 	}
 
 	can_lose_level = {
-		#trigger here
+		IF = {
+			limit = {
+				OVERLORD = { original_tag = BEL } 
+				original_tag = COG
+				has_dlc = "Gotterdammerung"			
+			}
+			NOT = {
+				has_completed_focus = CONGO_dominion_of_congo
+			}
+		}
 	}
 }
 
@@ -111,16 +130,20 @@ autonomy_state = {
 
 	can_take_level = {
 		#trigger here
-		if = {
-			limit = {
-				original_tag = LUX
-				has_completed_focus = LUX_dennemeyers_luxemburg
-			}
-			hidden_trigger = { always = no }
-		}
 	}
 
 	can_lose_level = {
 		#trigger here
+		#trigger here
+		IF = {
+			limit = {
+				OVERLORD = { original_tag = BEL } 
+				original_tag = COG
+				has_dlc = "Gotterdammerung"			
+			}
+			NOT = {
+				has_completed_focus = CONGO_dominion_of_congo
+			}
+		}
 	}
 }
