@@ -728,11 +728,28 @@ focus_tree = {
 
 		completion_reward = {
 			#custom_effect_tooltip = new_research
-			add_tech_bonus = {
-				name = nuclear_bonus
-				bonus = 1
-				uses = 2
-				category = nuclear
+			IF = {	
+				limit = {
+					NOT = {
+						has_tech = atomic_research
+					}
+				}
+				add_tech_bonus = {
+					name = CZKE_nuclear_physics_institute
+					bonus = 1.0
+					uses = 1
+					category = nuclear
+				}
+				add_breakthrough_progress = {
+					specialization = specialization_nuclear
+					value = 0.5
+				}
+			}
+			ELSE = {
+				add_breakthrough_progress = {
+					specialization = specialization_nuclear
+					value = 0.8
+				}
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -2592,20 +2609,7 @@ focus_tree = {
  			GER = {
 				exists = yes
 				has_government = fascism
-				OR = {
-					if = {
-						limit = {
-							NOT = { has_global_flag = ger_vanilla_focus_tree }
-						}
-						has_completed_focus = GER_anschluss
-					}
-					if = {
-						limit = {
-							has_global_flag = ger_vanilla_focus_tree
-						}
-						has_completed_focus = GER_anschluss_vanilla
-					}
-				}
+				has_completed_focus = GER_anschluss
 			}
  			NOT = {
 				GER = { 
@@ -3753,18 +3757,7 @@ focus_tree = {
 
 		available = {
 			GER = {
-				if = {
-					limit = {
-						NOT = { has_global_flag = ger_vanilla_focus_tree }
-					}
-					has_completed_focus = GER_anschluss
-				}
-				if = {
-					limit = {
-						has_global_flag = ger_vanilla_focus_tree
-					}
-					has_completed_focus = GER_anschluss_vanilla
-				}
+				has_completed_focus = GER_anschluss
 			}
 		}
 
@@ -3846,20 +3839,7 @@ focus_tree = {
 			}
 			OR = {
 				GER = {
-					OR = {
-						if = {
-							limit = {
-								NOT = { has_global_flag = ger_vanilla_focus_tree }
-							}
-							has_completed_focus = GER_anschluss
-						}
-						if = {
-							limit = {
-								has_global_flag = ger_vanilla_focus_tree
-							}
-							has_completed_focus = GER_anschluss_vanilla
-						}
-					}
+					has_completed_focus = GER_anschluss
 				}
 				has_government = neutrality
 			}
@@ -4486,27 +4466,6 @@ focus_tree = {
 				popularity = -0.1
 			}
 			remove_ideas = CZE_inflation
-		}
-	}
-	focus = {
-		id = CZE_collectivize_farms
-		icon = GFX_focus_POL_agrarian_reform
-		x = -2
-		y = 1
-		relative_position_id = CZE_communist_constitution
-		cost = 10
-
-		prerequisite = {
-			focus = CZE_communist_constitution
-		}
-
-		available = {
-			has_government = communism
-		}
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			
 		}
 	}
 

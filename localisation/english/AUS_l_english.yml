@@ -1,6 +1,8 @@
 ﻿l_english:
   AUS_GATHERING_STORM_DESC:0 "The First Republic is over. On the 20th of May 1933, in an enabling act eerily similar to the one Adolf Hitler had used to take power in Germany just a couple months beforehand, Chancellor Engelbert Dolfuss proclaimed the Federal State of Austria, turning the once free and democratic republic into a fascist dictatorship.\nThe following year would bring two civil wars, one with the socialists, and one with the Nazis, which would end with the assassination of Dolfuss.\nNow, Chancellor Kurt Schuschnigg finds himself steering an unstable nation into a brewing storm, and faced with a choice - choose a path, or face sure destruction."
 
+ AUS_FOCUS_TREE_SELECTION:0 "@AUS Austria"
+
  # characters
  AUS_otto_bauer:0 "Otto Bauer"
  AUS_josef_leopold:0 "Josef Leopold"
@@ -31,6 +33,7 @@
  AUS_julius_raab:0 "Julius Raab"
  AUS_leopold_figl:0 "Leopold Figl"
  AUS_wilhelm_miklas:0 "Wilhelm Miklas"
+ AUS_gunther_adolf_burstyn:0 "Gunther Adolf Burstyn"
  
  AUS_ernst_rudiger_starhemberg:0 "Ernst Rüdiger Starhemberg"
  AUS_ernst_rudiger_starhemberg_desc:0 "§LA commander of the Heimwehr and Schuschnigg's contender to be Dolfuss' successor, Ernst Rüdiger Starhemberg has been a bitter enemy of Schuschnigg ever since the formation of the Fatherland Front, doing his best to block any efforts Schuschnigg makes.§!"
@@ -208,6 +211,7 @@ r56_bundeslaender_occupied_tooltip:0 "occupied by a foreign power, and as such h
  AUS_prepare_for_civilwar:0 "§RIt would be wise to delay taking this focus until we control a sufficient amount of divisions!§!"
  AUS_crackdown_time_down_tt:0 "The time it takes to crack down on Nazi activity will be §Glowered§!."
 
+ AUS_recall_gunther_adolf_burstyn:0 "Recall Gunther Adolf Burstyn"
  #POLITICS
  AUS_fascism_ideology_desc:0 "A unique amalgamation of Mussolini's fascism and Clerical fascism, §YAustrofascism§! is a far-right movement that was formed during Engelbert Dolfuss's gradual transformation of the Republic into the Federal State.\n\nAs the formal ideology of the VF, Austrofascism espouses radical §YCatholic Nationalism§! and §8State Corporatism§!, and a harsh opposition to National Socialism and any unification between Austria and Germany, seeing the latter's Protestant majority as a threat to the Austrian Catholic identity."
  AUS_clerical_fascism_desc:0 "A unique amalgamation of Mussolini's fascism and Clerical fascism, §YAustrofascism§! is a far-right movement that was formed during Engelbert Dolfuss's gradual transformation of the Republic into the Federal State.\n\nAs the formal ideology of the VF, Austrofascism espouses radical §YCatholic Nationalism§! and §8State Corporatism§!, and a harsh opposition to National Socialism and any unification between Austria and Germany, seeing the latter's Protestant majority as a threat to the Austrian Catholic identity."
@@ -373,6 +377,9 @@ AUS_establish_the_austrian_airforce_academy_desc:0 "Our fledgling airforce is de
 
  AUS_liechtenstein_treaty:0 "Liechtenstein Treaty"
  AUS_liechtenstein_treaty_desc:0 "[GER.GetNameDefCap] has ceased to be a responsible world power ruled by a steadying and mighty kaiser. Instead, the madman [GER.GetLeader] threatens all of Europe with his expansionist policies. [AUS.GetNameDefCap] must look to all possible allies to survive - [SWI.GetNameDef] included."
+ AUS_intervention:0 "Continental Intervention"
+ AUS_intervention_desc:0 "The continent stands at a knife's edge, and we must join to fight against the tides of Nazism and Bolshevism, lest we be consumed by them."
+
  #ECONOMY
  AUS_end_the_depression:0 "End the Depression"
  AUS_end_the_depression_desc:0 "The worst of the depression is behind us. We should take the final step to undo it's effects."
@@ -760,7 +767,7 @@ AUS_establish_the_austrian_airforce_academy_desc:0 "Our fledgling airforce is de
  AUS_continue_austrohungarian_dominance_desc:0 "The peoples of our empire are not ready to become equal just yet. Power must stay in the hands of Vienna and Budapest for now."
 
  AUS_form_donaubund:0 "Form the Donaubund"
- AUS_form_donaubund_desc:0 "If Austria is to once more become a great power, we must not become puppets of a major power. Instead, we should focus on building our own sphere, free from influence from major powers."
+ AUS_form_donaubund_desc:0 "If Austria is to once more become a great nation, we must not become puppets of a major power. Instead, we should focus on building our own sphere, free from influence by the major nations of Europe."
  AUS_old_ties:0 "Old Ties"
  AUS_old_ties_desc:0 "With the return of the Kaiser to the throne of Germany, we must stand together with him. Only together can we reclaim our glory!"
  AUS_ally_albania:0 "Ally [ALB.GetNameDef]"
