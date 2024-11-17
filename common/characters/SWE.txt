@@ -2892,14 +2892,14 @@ characters={
 		name = "Bertil Boström"
 		portraits = {
 			army = {
-				large = GFX_portrait_generic_europe_male_16
+				large = GFX_portrait_generic_europe_male_01
 			}
 		}
 
 		scientist = {
 			traits = {  }
 			skills = {
-				specialization_navy = 1
+				specialization_naval = 1
 			}
 		}
 	}

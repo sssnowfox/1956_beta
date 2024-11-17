@@ -1363,6 +1363,7 @@ ideas = {
 				ai_focus_defense_factor = 0.25
 				pocket_penalty = -0.25
 				mic_to_overlord_factor = -0.10
+				ai_desired_divisions_factor = 0.25
 			}
 		}
 

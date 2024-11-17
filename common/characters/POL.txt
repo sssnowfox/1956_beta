@@ -4840,7 +4840,7 @@ characters = {
 		scientist = {
 			traits = { scientist_trait_surface_ship_specialist scientist_trait_brilliant_theorist }
 			skills = {
-				specialization_navy = 2
+				specialization_naval = 2
 			}
 		}
 	}
@@ -4855,7 +4855,7 @@ characters = {
 		scientist = {
 			traits = { scientist_trait_submarine_specialist }
 			skills = {
-				specialization_navy = 1
+				specialization_naval = 1
 			}
 		}
 	}
@@ -4870,7 +4870,7 @@ characters = {
 		scientist = {
 			traits = { scientist_trait_surface_ship_specialist }
 			skills = {
-				specialization_navy = 1
+				specialization_naval = 1
 			}
 		}
 	}
