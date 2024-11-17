@@ -2190,7 +2190,7 @@ characters={
 		scientist = {
 			traits = { scientist_trait_surface_ship_specialist }
 			skills = {
-				specialization_navy = 1
+				specialization_naval = 1
 			}
 		}
 	}
