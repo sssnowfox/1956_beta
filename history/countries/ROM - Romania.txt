@@ -83,7 +83,11 @@ recruit_character = ROM_alexandru_gheorghiu
 recruit_character = ROM_grigore_georgescu
 recruit_character = ROM_alexandru_sahini
 
-
+### SCIENTISTS ###
+recruit_character = ROM_elie_carafoli
+recruit_character = ROM_ion_grosu
+recruit_character = ROM_constantin_chiulai
+recruit_character = ROM_theodor_ionescu
 
 ROM = {
 	country_event = {

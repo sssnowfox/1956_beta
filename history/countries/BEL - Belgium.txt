@@ -112,6 +112,8 @@ recruit_character = BEL_fernand_verstraete
 #BEL_jules_pire Wallonia only?
 #BEL_yvan_gerard wallonia only?
 
+recruit_character = BEL_victor_van_daele
+
 if = {
 	limit = {
 		has_dlc = "Gotterdammerung"

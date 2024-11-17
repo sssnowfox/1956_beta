@@ -1181,4 +1181,113 @@ CZE_jaroslav_maticka = {
 	}
 
 	# Illusive Gentleman auto-generated
+	CZE_alexej_michaljovic_surin = {
+		name = "Alexej Michaljovič Surin"
+		portraits = {
+			army = {
+				large = GFX_portrait_generic_europe_male_11
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_armored_specialist scientist_trait_resourceful scientist_trait_r56_research_focused }
+			skills = {
+				specialization_land = 3
+			}
+		}
+	}
+
+
+	CZE_josef_zubaty = {
+		name = "Josef Zubatý"
+		portraits = {
+			army = {
+				large = GFX_portrait_generic_europe_male_03
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_armored_specialist scientist_trait_fast_learner scientist_trait_r56_research_focused }
+			skills = {
+				specialization_land = 1
+			}
+			visible = {
+				owner = {
+					NOT = {
+						has_government = communism
+					}	
+				}
+			}
+		}
+	}
+
+
+	CZE_antonin_husnik  = {
+		name = "Antonín Husník"
+		portraits = {
+			army = {
+				large = GFX_portrait_generic_europe_male_01
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_aircraft_specialist scientist_trait_gifted_engineer }
+			skills = {
+				specialization_air = 2
+			}
+		}
+	}
+	CZE_pavel_benes  = {
+		name = "Pavel Beneš"
+		portraits = {
+			army = {
+				large = GFX_portrait_generic_europe_male_09
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_aircraft_specialist scientist_trait_fast_learner }
+			skills = {
+				specialization_air = 1
+			}
+		}
+	}
+	CZE_miroslav_hajn = {
+		name = "Miroslav Hajn"
+		portraits = {
+			army = {
+				large = GFX_portrait_generic_europe_male_16
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_aircraft_specialist scientist_trait_brilliant_theorist }
+			skills = {
+				specialization_air = 1
+			}
+		}
+	}
+	CZE_george_placzek = {
+		name = "George Placzek"
+		portraits = {
+			army = {
+				large = GFX_portrait_generic_europe_male_06
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_nuclear_specialist }
+			skills = {
+				specialization_nuclear = 1
+			}
+			visible = {
+				owner = {
+					OR = {
+						has_government = democratic
+						has_government = neutrality
+					}
+				}
+			}
+		}
+	}
 }
