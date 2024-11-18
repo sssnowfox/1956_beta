@@ -70,6 +70,8 @@ recruit_character = LUX_mathias_krier
 recruit_character = LUX_aloyse_jacoby
 recruit_character = LUX_navy_chief
 
+recruit_character = LUX_william_kroll
+
 set_war_support = 0.1
 set_stability = 0.65
 
