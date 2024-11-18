@@ -21594,6 +21594,12 @@ on_actions = {
 			FROM = {
 				decrease_population_on_nuke = yes
 			}
+			if = {
+				limit = {
+					FROM = { state = 361 }
+				}
+				set_country_flag = achievement_has_nuked_washington_dc
+			}
 		}
 	}
 	#FROM is country getting invited.
