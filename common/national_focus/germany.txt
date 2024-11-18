@@ -11219,6 +11219,51 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
+			if = { #AI HANDICAP IS BACK!
+					limit = {
+						difficulty > 1
+						GER = {
+							is_ai = yes
+						}
+					}
+					army_experience = 100
+					add_offsite_building = {
+						type = arms_factory level = 5
+					}
+					add_offsite_building = {
+						type = industrial_complex level = 5
+					}
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 25000
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = artillery_equipment
+						amount = 500
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = support_equipment
+						amount = 1750
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = motorized_equipment
+						amount = 500
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = medium_tank_chassis
+						amount = 500
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = anti_air_equipment
+						amount = 500
+						producer = GER
+					}			
+				}
 			### CLAIMS
 			if = {
 				limit = {
@@ -15902,7 +15947,51 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
-
+			if = { #AI HANDICAP IS BACK!
+					limit = {
+						difficulty > 1
+						GER = {
+							is_ai = yes
+						}
+					}
+					army_experience = 100
+					add_offsite_building = {
+						type = arms_factory level = 5
+					}
+					add_offsite_building = {
+						type = industrial_complex level = 5
+					}
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 25000
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = artillery_equipment
+						amount = 500
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = support_equipment
+						amount = 1750
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = motorized_equipment
+						amount = 500
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = medium_tank_chassis
+						amount = 500
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = anti_air_equipment
+						amount = 500
+						producer = GER
+					}			
+				}
 			IF = {
 				limit = { SOV = { has_civil_war = no } }
 				create_wargoal = {

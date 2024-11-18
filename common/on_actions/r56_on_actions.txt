@@ -1140,6 +1140,19 @@ on_actions = {
 					}
 				}
 			}
+			if = { #Remove claims of a coreless state AOI
+				limit = {
+					ROOT = {
+						original_tag = AOI
+					}
+				}
+				every_state = {
+					limit = {
+						is_claimed_by = AOI
+					}
+					remove_claim_by = AOI
+				}
+			}
 		}
 	}
 

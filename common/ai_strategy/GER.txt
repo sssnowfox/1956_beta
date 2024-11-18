@@ -24,7 +24,7 @@ GER_unit_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = shocktroop
-		value = 8
+		value = 9
 	}
 
 	ai_strategy = {
@@ -42,7 +42,7 @@ GER_unit_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = cavalry
-		value = -100
+		value = -25
 	}
 
 	ai_strategy = {
@@ -66,13 +66,13 @@ GER_unit_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = armor
-		value = -6 #because doctrine this = 4
+		value = -5 #because doctrine this = 5
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = infantry
-		value = 125 #88 to 70
+		value = 75 #88 to 70
 	}
 
 	# Naval unit factors
