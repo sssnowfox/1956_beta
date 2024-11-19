@@ -781,9 +781,19 @@ technologies = {
 
 		military_police = {
 			suppression_factor = 0.1
-
 			urban = {
 				movement = 0.05
+			}
+		}
+
+		motorized_military_police = {
+			suppression_factor = 0.1
+			urban = {
+				movement = 0.05
+			}
+			battalion_mult = {
+				category = category_vehicle_infantry
+				default_morale = 0.05
 			}
 		}
 		
@@ -827,6 +837,20 @@ technologies = {
 
 		military_police = {
 			suppression_factor = 0.1
+			urban = {
+				movement = 0.05
+			}
+		}
+
+		motorized_military_police = {
+			suppression_factor = 0.1
+			urban = {
+				movement = 0.05
+			}
+			battalion_mult = {
+				category = category_vehicle_infantry
+				default_morale = 0.05
+			}
 		}
 		
 		path = {
@@ -871,6 +895,14 @@ technologies = {
 
 		military_police = {
 			suppression_factor = 0.1
+		}
+
+		motorized_military_police = {
+			suppression_factor = 0.1
+			battalion_mult = {
+				category = category_vehicle_infantry
+				default_morale = 0.05
+			}
 		}
 		
 		path = {
@@ -984,15 +1016,24 @@ technologies = {
 		maintenance_company = {
 			reliability_factor = 0.05
 			equipment_capture_factor = 0.05
-			
 			desert = {
 				movement = 0.05
 			}
 		}
+
+		armored_maintenance = {
+			reliability_factor = 0.02
+			recovery = 0.03
+			equipment_capture_factor = 0.1
+			desert = {
+				movement = 0.05
+			}
+		}
+
+
 		enable_equipment_modules = {
 			easy_maintenance
 		}
-		
 		
 		path = {
 			leads_to_tech = tech_maintenance_company3
@@ -1039,12 +1080,34 @@ technologies = {
 
 		maintenance_company = {
 			reliability_factor = 0.05
-			equipment_capture_factor = 0.05
-
 			forest = {
 				movement = 0.05
 			}
+			battalion_mult = {
+				category = category_all_armor
+				equipment_capture_factor = 0.01
+				add = yes
+				display_as_percentage = yes
+			}
 		}
+
+		armored_maintenance = {
+			reliability_factor = 0.02
+			recovery = 0.3
+			forest = {
+				movement = 0.05
+			}
+			battalion_mult = {
+				category = category_all_armor
+				equipment_capture_factor = 0.02
+				add = yes
+				display_as_percentage = yes
+			}
+			
+		}
+
+
+
 		path = {
 			leads_to_tech = tech_maintenance_company4
 			research_cost_coeff = 1
@@ -1095,6 +1158,17 @@ technologies = {
 				movement = 0.05 
 			}
 		}
+
+		armored_maintenance = {
+			reliability_factor = 0.02
+			recovery = 0.03
+			equipment_capture_factor = 0.1
+
+			jungle = {
+				movement = 0.05 
+			}
+		}
+
 		
 		path = {
 			leads_to_tech = tech_maintenance_company_a
@@ -1207,8 +1281,14 @@ technologies = {
 			experience_loss_factor = -0.10
 		}
 
-		category_support_battalions = {
-			acclimatization_hot_climate_gain_factor = 0.01
+		helicopter_field_hospital = {
+			casualty_trickleback = 0.12
+			experience_loss_factor = -0.08
+
+			battalion_mult = {
+				category = category_all_infantry
+				default_morale = 0.05
+			}
 		}
 		
 		path = {
@@ -1265,8 +1345,14 @@ technologies = {
 			experience_loss_factor = -0.10
 		}
 
-		category_support_battalions = {
-			acclimatization_hot_climate_gain_factor = 0.01
+		elicopter_field_hospital = {
+			casualty_trickleback = 0.12
+			experience_loss_factor = -0.08
+
+			battalion_mult = {
+				category = category_all_infantry
+				default_morale = 0.05
+			}
 		}
 
 		path = {
@@ -1315,8 +1401,14 @@ technologies = {
 			experience_loss_factor = -0.10
 		}
 
-		category_support_battalions = {
-			acclimatization_hot_climate_gain_factor = 0.01
+		helicopter_field_hospital = {
+			casualty_trickleback = 0.12
+			experience_loss_factor = -0.08
+
+			battalion_mult = {
+				category = category_all_infantry
+				default_morale = 0.05
+			}
 		}
 		
 		path = {
@@ -1335,6 +1427,7 @@ technologies = {
 			support_tech
 			hospital_tech
 			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
 		}
 		
 		ai_will_do = {
@@ -1408,6 +1501,7 @@ technologies = {
 			support_tech
 			logistics_tech
 			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
 		}
 		
 		ai_will_do = {
