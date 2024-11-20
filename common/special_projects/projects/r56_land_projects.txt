@@ -303,9 +303,9 @@ sp_r56_heavy_tank_studies = {
 				TECH = r56_heavy_tank_studies_choice_1_tech
 			}
 			custom_override_tooltip = {	
-				tooltip = tech_effect|r56_heavy_tank_studies_choice_1_tech
+				tooltip = tech_effect|r56_heavy_tank_studies
 				set_technology = {
-					r56_heavy_tank_studies_choice_1_tech = 1
+					r56_heavy_tank_studies_tech = 1
 					popup = no
 				}
 			}
@@ -320,7 +320,7 @@ sp_r56_heavy_tank_studies = {
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 				sp:sp_land_land_cruiser = {
-					add_project_progress_ratio = 0.1
+					add_project_progress_ratio = 0.05
 				}
 			}
 		}
@@ -399,52 +399,6 @@ sp_r56_heavy_tank_studies = {
 						}
 					}
 				}
-			}
-		}
-
-		sp_r56_heavy_tank_studies_focus_area = {
-			fire_only_once = yes
-
-			threshold = { 
-				min = 40
-				max = 100
-			}
-
-			weight = {
-				base = 50
-			}
-
-			option = {
-				token = sp_r56_heavy_tank_studies_focus_area_armor
-				
-				
-				country_effects = {
-					FROM = {
-
-					}
-				}
-			}
-
-			option = {
-				token = sp_r56_heavy_tank_studies_focus_balance
-				
-				country_effects = {
-					FROM = {
-
-					}
-				}
-				
-			}
-
-			option = {
-				token = sp_r56_heavy_tank_studies_focus_engine
-				
-				country_effects = {
-					FROM = {
-						
-					}
-				}
-				
 			}
 		}
 	}

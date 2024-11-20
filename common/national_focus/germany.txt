@@ -9430,14 +9430,14 @@ focus_tree = {
 				   }
 					army_experience = 100
 					add_offsite_building = {
-						type = arms_factory level = 5
+						type = arms_factory level = 6
 					}
 					add_offsite_building = {
-						type = industrial_complex level = 5
+						type = industrial_complex level = 6
 					}
 					add_equipment_to_stockpile = {
 						type = infantry_equipment
-						amount = 10000
+						amount = 25000
 						producer = GER
 					}
 					add_equipment_to_stockpile = {
@@ -9457,6 +9457,11 @@ focus_tree = {
 					}
 					add_equipment_to_stockpile = {
 						type = medium_tank_chassis
+						amount = 350
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = light_tank_chassis
 						amount = 250
 						producer = GER
 					}

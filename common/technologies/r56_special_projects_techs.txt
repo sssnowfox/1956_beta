@@ -65,7 +65,7 @@ technologies = {
 	}
 
 	#Heavy Tank Studies - choices are choosen as reward during 
-	r56_heavy_tank_studies_choice_1_tech = {
+	r56_heavy_tank_studies_tech = {
 		allow = {
 			always = no
 		}
@@ -78,38 +78,6 @@ technologies = {
 		heavy_armor = {
 			armor_value = 0.05
 			reliability_factor = 0.05
-		}
-	
-	}
-
-	r56_heavy_tank_studies_choice_2_tech = {
-		allow = {
-			always = no
-		}
-		start_year = 1937
-
-		categories = {
-			cat_heavy_armor
-		}
-
-		cat_heavy_armor = {
-			hard_attack = 0.10
-		}
-
-	}
-
-	r56_heavy_tank_studies_choice_3_tech = {
-		allow = {
-			always = no
-		}
-		start_year = 1937
-
-		categories = {
-			cat_heavy_armor
-		}
-
-		cat_heavy_armor = {
-			hard_attack = 0.10
 		}
 	}
 
