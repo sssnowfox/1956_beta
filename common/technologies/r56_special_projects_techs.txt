@@ -44,7 +44,7 @@ technologies = {
 			ap_attack = 0.05
 		}
 	}
-
+	#Adaptable Grenade
 	r56_gammon_bomb_tech = {
 		allow = {
 			always = no
@@ -61,6 +61,55 @@ technologies = {
 
 		paratrooper = {
 			ap_attack = 0.25
+		}
+	}
+
+	#Heavy Tank Studies - choices are choosen as reward during 
+	r56_heavy_tank_studies_choice_1_tech = {
+		allow = {
+			always = no
+		}
+		start_year = 1937
+
+		categories = {
+			cat_heavy_armor
+		}
+
+		heavy_armor = {
+			armor_value = 0.05
+			reliability_factor = 0.05
+		}
+	
+	}
+
+	r56_heavy_tank_studies_choice_2_tech = {
+		allow = {
+			always = no
+		}
+		start_year = 1937
+
+		categories = {
+			cat_heavy_armor
+		}
+
+		cat_heavy_armor = {
+			hard_attack = 0.10
+		}
+
+	}
+
+	r56_heavy_tank_studies_choice_3_tech = {
+		allow = {
+			always = no
+		}
+		start_year = 1937
+
+		categories = {
+			cat_heavy_armor
+		}
+
+		cat_heavy_armor = {
+			hard_attack = 0.10
 		}
 	}
 
