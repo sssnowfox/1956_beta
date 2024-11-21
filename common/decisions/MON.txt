@@ -7164,6 +7164,7 @@ MON_greater_mongolia = {
 			#North Sinkiang, north Ma Clique
 			controls_state = 618
 			controls_state = 760
+			controls_state = 756
 			controls_state = 616
 			#Inner Mongolia
 			controls_state = 746
@@ -7171,6 +7172,7 @@ MON_greater_mongolia = {
 			controls_state = 611
 			controls_state = 612
 			controls_state = 761
+			controls_state = 714
 			controls_state = 715
 			controls_state = 946
 		}
@@ -7200,6 +7202,7 @@ MON_greater_mongolia = {
 				#North Sinkiang, north Ma Clique
 				add_state_core = 618
 				add_state_core = 760
+				add_state_core = 756
 				add_state_core = 616
 				#Inner Mongolia
 				add_state_core = 746
@@ -7207,6 +7210,7 @@ MON_greater_mongolia = {
 				add_state_core = 611
 				add_state_core = 612
 				add_state_core = 761
+				add_state_core = 714
 				add_state_core = 715
 				add_state_core = 946
 			}
