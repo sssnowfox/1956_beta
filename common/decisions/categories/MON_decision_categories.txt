@@ -334,7 +334,6 @@ MON_greater_mongolia = {
 					#North Sinkiang, north Ma Clique
 					state = 618
 					state = 760
-					state = 756
 					state = 616
 					#Inner Mongolia
 					state = 746
@@ -342,7 +341,6 @@ MON_greater_mongolia = {
 					state = 611
 					state = 612
 					state = 761
-					state = 714
 					state = 715
 					state = 946
 				}
