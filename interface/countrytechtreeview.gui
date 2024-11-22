@@ -3532,7 +3532,7 @@ guiTypes = {
 			}
 
 			gridboxtype = {
-				name = "bba_early_transport_plane_tree"
+				name = "bba_improved_transport_plane_tree"
 				position = { x = 850 y = 32 }
 				size = { width = 400 height = 1000 }
 				slotsize = { width = 70 height = 70 }

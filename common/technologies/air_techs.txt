@@ -3013,7 +3013,7 @@ categories = {
 	# 	}
 		
 	# 	special_project_specialization = { specialization_air }
-categories = {
+	#	categories = {
 	# 		medium_air
 	# 		air_equipment
 	# 		heavy_air
