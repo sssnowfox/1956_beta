@@ -138,9 +138,16 @@ focus_tree = {
 		completion_reward = {
 
 			add_stability = -0.1
-			add_popularity = {
-			    ideology = ROOT
-			    popularity = -0.1
+			if = {
+				limit = {
+					NOT = {
+						has_government = democratic
+					}
+				}
+				add_popularity = {
+					ideology = ROOT
+					popularity = -0.1
+				}
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -18553,7 +18560,7 @@ focus_tree = {
 					CHI = {
 						has_country_leader = {
 							ruling_only = yes
-							character = CHI_chiang_kaishek
+							character = CHI_chiang_kai_shek
 						}
 					}
 				}
