@@ -18,7 +18,7 @@ focus_tree = {
 			add = 10
 			tag = AUS
 			has_dlc = "Gotterdammerung"
-			has_global_flag = aus_got_focus_tree
+			has_global_flag = aus_dlc_focus_tree
 		}
 	}
 	
@@ -5466,7 +5466,7 @@ focus_tree = {
 			OR = {
 				has_country_leader = {
 					ruling_only = yes # default = yes
-					character = HUN_otto_von_habsburg 
+					character = AUS_otto_von_habsburg 
 				}
 				has_country_leader = {
 					ruling_only = yes 
@@ -6294,7 +6294,7 @@ focus_tree = {
 			has_government = neutrality
 			has_country_leader = {
 				ruling_only = yes
-				character = HUN_otto_von_habsburg #Ernst is more an annex guy
+				character = AUS_otto_von_habsburg #Ernst is more an annex guy
 			}
 			is_subject = no
 			NOT = {
@@ -8919,12 +8919,12 @@ focus_tree = {
 				154 = {
 					is_core_of = ROOT
 				}
-				973 = {
+				913 = {
 					is_core_of = ROOT
 				}
-				974 = {
-					is_core_of = ROOT
-				}
+				#974 = {
+				#	is_core_of = ROOT
+				#}
 			}
 		
 		}
@@ -8939,12 +8939,12 @@ focus_tree = {
 			154 = {
 				is_core_of = ROOT
 			}
-			973 = {
+			913 = {
 				is_core_of = ROOT
 			}
-			974 = {
-				is_core_of = ROOT
-			}
+			#974 = {
+			#	is_core_of = ROOT
+			#}
 			69 = {
 				is_core_of = ROOT
 			}
@@ -9016,25 +9016,25 @@ focus_tree = {
 
 			IF = {
 				limit = {
-					973 = {
+					913 = {
 						NOT = {
 							is_core_of = ROOT
 						}
 					}
 				}
-				add_state_core = 973 #Bacs-Bodrog
+				add_state_core = 913 #Bacs-Bodrog
 			}
 
-			IF = {
-				limit = {
-					974 = {
-						NOT = {
-							is_core_of = ROOT
-						}
-					}
-				}
-				add_state_core = 974 #South Transdanubia
-			}
+			#IF = {
+			#	limit = {
+			#		974 = {
+			#			NOT = {
+			#				is_core_of = ROOT
+			#			}
+			#		}
+			#	}
+			#	add_state_core = 974 #South Transdanubia
+			#}
 		}
 	}
 
@@ -11643,7 +11643,6 @@ focus_tree = {
 
 			IF = {
 				limit = {
-					# TODO: Should be Burgenland
 					1086 = {
 						free_building_slots = {
 						    building = infrastructure
@@ -11660,7 +11659,6 @@ focus_tree = {
 				}
 				ELSE_IF = {
 					limit = {
-						# TODO: Should be Burgenland
 						1086 = {
 							NOT = {
 								free_building_slots = {
@@ -13079,7 +13077,7 @@ focus_tree = {
 		}
 
 		available = {
-
+		
 		}
 		
 		bypass = {
@@ -13123,10 +13121,17 @@ focus_tree = {
 				ELSE = {
 					add_tech_bonus = {
 						name = AUS_radar_effort
-						bonus = 0.5
+						bonus = 1
 						uses = 1
 						category = radar_tech
 					}
+					custom_effect_tooltip = generic_skip_one_line_tt
+					add_breakthrough_progress = {
+						specialization = specialization_air
+						value = 0.25
+					}
+					custom_effect_tooltip = generic_skip_one_line_tt
+					add_ideas = r56_generic_radar_idea
 				}
 			}
 
@@ -15605,3 +15610,4 @@ focus_tree = {
 			add_ideas = AUS_naval_efficiency_idea
 		}
 	}
+}
