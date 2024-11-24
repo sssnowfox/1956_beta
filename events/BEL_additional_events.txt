@@ -3272,6 +3272,7 @@ country_event = { # we are flanders!
 	trigger = {
 		tag = BEL
 		owns_state = 6
+		controls_state = 6
 		NOT = {owns_state = 34}
 		has_capitulated = no
 		has_civil_war = no 
@@ -3885,6 +3886,7 @@ country_event = { # we are wallonia!
 	trigger = {
 		tag = BEL
 		owns_state = 34
+		controls_state = 34
 		NOT = {owns_state = 6}
 		BEL = { 
 			has_civil_war = no 

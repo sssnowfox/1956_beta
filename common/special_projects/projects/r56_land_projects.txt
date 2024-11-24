@@ -398,7 +398,7 @@ sp_r56_heavy_tank_studies = {
 			if = {
 				limit = {
 					has_dlc = "Gotterdammerung"
-					FROM = {
+					ROOT = {
 						NOT = {
 							is_special_project_completed = sp:sp_land_land_cruiser
 						}
