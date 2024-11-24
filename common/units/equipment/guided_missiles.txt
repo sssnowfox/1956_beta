@@ -6,26 +6,35 @@ equipments = {
 		year = 1936
 
 		can_be_produced = {
-			NOT = {
-				has_idea = BUL_army_restrictions
-				has_idea = MPL_mandate
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				NOT = {
+					has_idea = BUL_army_restrictions_aat
+				}
+			}
+			else = {
+				NOT = {
+					has_idea = BUL_army_restrictions
+				}
 			}
 		}
 
 		allow_mission_type = {
 			strategic_bomber
 		}
-		
+
 		is_archetype = yes
-		is_buildable = no
+		is_buildable = yes
 		can_license = no
 		type = missile
 		group_by = type
 		sprite = missile_default
-		air_map_icon_frame = 9
-
+		air_map_icon_frame = 21
+		
 		interface_category = interface_category_air
-
+				
 		reliability = 0.8
 
 		# Air vs Navy - high damage / low hit chance / hard to hurt
@@ -34,12 +43,13 @@ equipments = {
 
 		#Space taken in convoy
 		lend_lease_cost = 1.5
-
-		build_cost_ic = 54
+		
+		build_cost_ic = 36
 		resources = {
-			aluminium = 3
-			tungsten = 3
+			aluminium = 2
+			tungsten = 2
 		}
+
 		fuel_consumption = 0
 	}
 
