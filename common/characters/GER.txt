@@ -2460,7 +2460,7 @@ characters = {
 							has_dlc = "Gotterdammerung"
 						}
 					}
-					has_completed_focus = GER_reestablish_free_elections 
+					has_completed_focus = GER_restore_weimar
 				}
 				ELSE = {
 					has_completed_focus = GER_re_establish_free_elections_ww
