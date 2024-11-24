@@ -277,6 +277,21 @@ r56_AOI_provincial_capital = {
 	local_non_core_supply_impact_factor = -0.25
 }
 
+r56_channel_island_defendablity = {
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_military_plans
+	remove_trigger = {
+		ROOT = { 
+			CONTROLLER = {
+				tag = JER
+			}
+		}
+	}	
+	
+	army_defence_factor = -0.10
+	local_supplies = -0.25
+}
+
 r56_MPL_mandate_area = {
 	remove_trigger = {
 		OR = {

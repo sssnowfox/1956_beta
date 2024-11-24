@@ -48,7 +48,10 @@ l_english:
 
  r56_volksdeutscher_selbstschutz_recruitment:0 "Volksdeutscher Selbstschutz Recruitment"
 
- r56_AOI_provincial_capital:0 "Provincial Capital"
+ r56_AOI_provincial_capital:0 "Provincial Capital" 
+
+ r56_channel_island_defendablity:0 "Channel Island's Vulnerabilities"
+ r56_channel_island_defendablity_desc:0 "Lacking strategic importance and it's closeness to the mainland makes the Channel islands tough to hang onto."
 
  #Vanilla local: Just because they local doesn't mean they work :/
 

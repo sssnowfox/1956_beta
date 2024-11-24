@@ -51,13 +51,13 @@ r56_ENG_you_should_help_france_bro = { #look PDX the British AI really wants peo
 	ai_strategy = {
 		type = front_unit_request
 		area = northern_france_bel_front
-		value = 75
+		value = 10
 	}
 
 	ai_strategy = {
         type = area_priority
         id = northern_france_bel_front
-        value = 75
+        value = 10
     }
 
 	#lets not invade mainland germany during phoney war
@@ -190,7 +190,6 @@ ENG_please_avoid_balkan_death_trap = {
 }
 
 R56_ENG_no_BUL_naval_invasion_yet = { #This is funny and I support it, but let's chill on this.
-
 	allowed = {
 		original_tag = ENG
 	}
@@ -1649,5 +1648,50 @@ r56_ENG_commonwealth_doesnt_turn_belguim_into_a_house_party = {
 		type = dont_defend_ally_borders
 		id = BEL
 		value = 250
+	}
+}
+
+r56_ENG_no_channel_island_death_stacks = {
+	allowed = {
+		OR = {
+			original_tag = ENG
+			original_tag = EGY
+			original_tag = MPL
+			original_tag = RAJ
+			original_tag = MAL
+			original_tag = AST
+			original_tag = NZL
+			original_tag = CAN
+			original_tag = SAF
+			original_tag = BHU
+			original_tag = OMA
+		}
+	}
+
+	enable = {
+		ROOT = { #OMG IT'S ROOT OF ROOT WHY DO WE NEED THIS? First off stop yelling, second off your don't know the quirks of AI strats like I do :)
+			is_subject_of = ENG
+			has_war_together_with = ENG
+			original_tag = ENG
+		}
+		ENG = {
+			has_capitulated = no
+			controls_state = 1076
+		}
+	}
+
+	abort_when_not_enabled = yes
+
+	# Channel Islands
+	ai_strategy = {
+		type = theatre_distribution_demand_increase
+		id = 1076
+		value = -1
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = channel_island
+		value = -1
 	}
 }
