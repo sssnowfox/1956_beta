@@ -11231,7 +11231,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-			if = { #AI HANDICAP IS BACK!
+			hidden_effect = {
+				if = { #AI HANDICAP IS BACK!
 					limit = {
 						difficulty > 1
 						GER = {
@@ -11276,6 +11277,7 @@ focus_tree = {
 						producer = GER
 					}			
 				}
+			}
 			### CLAIMS
 			if = {
 				limit = {
@@ -13349,6 +13351,47 @@ focus_tree = {
 			}
 			hidden_effect = {
 				news_event = { hours = 6 id = news.234 }
+			}
+			hidden_effect = {
+				if = { #AI HANDICAP IS BACK!
+					limit = {
+						difficulty > 1
+						GER = {
+							is_ai = yes
+						}
+					}
+					add_manpower = 25000
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 25000
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = artillery_equipment
+						amount = 250
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = support_equipment
+						amount = 250
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = motorized_equipment
+						amount = 250
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = medium_tank_chassis
+						amount = 250
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = light_tank_chassis
+						amount = 25
+						producer = GER
+					}		
+				}
 			}
 		}
 	}
