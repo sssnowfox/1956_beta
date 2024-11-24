@@ -135,7 +135,22 @@ technologies = {
 		
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
+
+			modifier = {
+				factor = 4
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 6
+				date > "1939.1.1"
+			}
 		}
 
 		engineer = {

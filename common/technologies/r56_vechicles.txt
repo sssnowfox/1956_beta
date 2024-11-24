@@ -1289,7 +1289,6 @@ technologies = {
 		categories = {
 			train_tech
 		}
-
 		
 		ai_will_do = {
 			factor = 0
@@ -1315,6 +1314,7 @@ technologies = {
 			}
 		}
 	}
+	
 	###------> New railway stat techs <><> <><> <><> <><> <><>
 	r56_flexible_railnetwork = {
 		research_cost = 1.50

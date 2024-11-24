@@ -129,7 +129,6 @@ technologies = {
 			position = { x = 0 y = 2 }
 		}
 		
-		special_project_specialization = { specialization_air }
 		categories = {
 			light_air
 			light_fighter
@@ -188,8 +187,6 @@ technologies = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 4 }
 		}
-		
-		special_project_specialization = { specialization_air }
 
 		categories = {
 			light_air

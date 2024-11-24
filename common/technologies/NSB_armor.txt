@@ -1115,7 +1115,7 @@ technologies = {
 			armor
 			mio_cat_tech_all_armor_and_modules
 			cat_heavy_armor
-			mio_cat_tech_heavy_armor_and_moduless
+			mio_cat_tech_heavy_armor_and_modules
 		}
 		special_project_specialization = { specialization_land }
 	}

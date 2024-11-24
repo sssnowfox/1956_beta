@@ -27,4 +27,9 @@ spriteTypes = {
         name = "GFX_sp_gammon_bomb"
         texturefile = "gfx/interface/r56_special_projects/project_icons/sp_land_gammon_bomb.dds"
     }
+    #Heavy Tank Studies
+    spriteType = {
+        name = "GFX_sp_land_heavy_tank_study"
+        texturefile = "gfx/interface/r56_special_projects/project_icons/sp_land_heavy_tank_study.dds"
+    }
 }
