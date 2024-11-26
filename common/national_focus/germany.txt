@@ -10268,7 +10268,7 @@ focus_tree = {
 		select_effect = {
 			if = {
 				limit = {
-					has_global_flag = aus_got_focus_tree
+					has_global_flag = aus_dlc_focus_tree
 				}
 				AUS = {
 					country_event = {
