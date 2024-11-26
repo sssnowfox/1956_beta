@@ -1,4 +1,5 @@
 ﻿capital = 4
+oob = "empty"	#fixes a bug
 
 #No OOB, set in r56_focus_tree_selection_on_actions.txt - DO NOT CHANGE
 
