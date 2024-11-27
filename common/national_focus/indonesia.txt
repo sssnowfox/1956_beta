@@ -2982,7 +2982,7 @@ focus_tree = {
 			}
 			promote_character = INS_munawar_musso
 			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = INS_amir_sjarifuddin_harahap
+			show_ideas_tooltip = INS_amir_syarifuddin_harahap
 			show_ideas_tooltip = INS_munawar_musso
 		}
 	}
