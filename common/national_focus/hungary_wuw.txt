@@ -3643,7 +3643,6 @@ focus_tree = {
 		id = wuw_HUN_restore_the_lombardo_venetian_kingdom
 		icon = GFX_focus_attack_italy
 		prerequisite = { focus = wuw_HUN_the_triple_kingdom }
-		#mutually_exclusive = { focus = wuw_HUN_seek_an_alliance_with_the_kaiser }
 		x = 0
 		y = 1
 		relative_position_id = wuw_HUN_the_triple_kingdom
@@ -3655,14 +3654,8 @@ focus_tree = {
 		}
 
 		available = {
-
 			is_subject = no
 			has_government = neutrality
-
-		}
-
-		bypass = {
-
 		}
 
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_POLITICAL }
@@ -3672,7 +3665,6 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-
 				IF = {
 					limit = {
 						LBV = {
@@ -3758,35 +3750,39 @@ focus_tree = {
 					limit = {
 						LBV = {
 							exists = no
-							AND = {
+							160 = {
+								NOT = {	#added Rt56 to avoid no land being given in the next block
+									is_core_of = ROOT
+								}
 								OR = {
-									160 = {
-										is_owned_and_controlled_by = ROOT
-									}
+									is_owned_and_controlled_by = ROOT
 									any_country = {
 										is_subject_of = ROOT
 										controls_state = 160
 									}
 								}
+							}
+							850 = {
+								NOT = {	#added Rt56 to avoid no land being given in the next block
+									is_core_of = ROOT
+								}
 								OR = {
-									850 = {
-										is_owned_and_controlled_by = ROOT
-									}
+									is_owned_and_controlled_by = ROOT
 									any_country = {
 										is_subject_of = ROOT
 										controls_state = 850
 									}
 								}
-								OR = {
-									159 = {
-										is_owned_and_controlled_by = ROOT
-									}
-									any_country = {
-										is_subject_of = ROOT
-										controls_state = 159
-									}
-								}
 							}
+							# OR = {	#doesnt have Venice core in Rt56
+							# 	159 = {
+							# 		is_owned_and_controlled_by = ROOT
+							# 	}
+							# 	any_country = {
+							# 		is_subject_of = ROOT
+							# 		controls_state = 159
+							# 	}
+							# }
 						}
 					}
 					add_political_power = 50
@@ -3819,6 +3815,7 @@ focus_tree = {
 					IF = {
 						limit = {
 							LBV = {
+								exists = yes	#added Rt56, apparently puppeting them if no territory was given causes issues
 								NOT = {
 									is_subject_of = ROOT
 								}
@@ -3845,7 +3842,7 @@ focus_tree = {
 								OR = {
 									owns_state = 160
 									owns_state = 850
-									owns_state = 159
+									#owns_state = 159	#no venice core in Rt56
 								}
 							}
 						}
@@ -3881,7 +3878,7 @@ focus_tree = {
 							OR = {
 								owns_state = 160
 								owns_state = 850
-								owns_state = 159
+								#owns_state = 159	#no venice core in Rt56
 							}
 						}
 						ROOT = {
