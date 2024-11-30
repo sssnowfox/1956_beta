@@ -1510,7 +1510,7 @@ characters={
 		}
 		advisor={
 			slot = high_command
-			idea_token = HOL_floris_albert_van_heyst
+			idea_token = HOL_jan_sar
 			allowed = {
 				original_tag = HOL
 			}	
