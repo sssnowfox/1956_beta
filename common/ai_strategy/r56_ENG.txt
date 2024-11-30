@@ -1686,12 +1686,12 @@ r56_ENG_no_channel_island_death_stacks = {
 	ai_strategy = {
 		type = theatre_distribution_demand_increase
 		id = 1076
-		value = -1
+		value = -10
 	}
 
 	ai_strategy = {
 		type = area_priority
 		id = channel_island
-		value = -1
+		value = -10
 	}
 }
