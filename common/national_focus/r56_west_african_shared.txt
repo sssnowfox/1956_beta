@@ -57,7 +57,7 @@ focus_tree = {
         y = 1
 		relative_position_id = WAF_institutional_establishment
         cost = 10
-        search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
         ai_will_do = {
             factor = 10
         }
@@ -121,7 +121,7 @@ focus_tree = {
         y = 2
 		relative_position_id = WAF_institutional_establishment
         cost = 10
-        search_filters = { FOCUS_FILTER_POLITICAL }
+        search_filters = { FOCUS_FILTER_MILITARY_IMPROVEMENT }
         ai_will_do = {
             factor = 10
         }
@@ -392,6 +392,7 @@ focus_tree = {
 			}
 			add_timed_idea = { idea = collectivist_ethos_focus days = 1395 }
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = WAF_everything_for_the_nation
@@ -443,6 +444,7 @@ focus_tree = {
 			}
 			add_timed_idea = { idea = nationalism days = 1395 }
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = WAF_military_coup
@@ -571,7 +573,7 @@ focus_tree = {
 				}
 			}					
 		}
-		search_filters = {  FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 	}		
 	focus = {
 		id = WAF_mobilization_of_the_masses
@@ -733,7 +735,7 @@ focus_tree = {
 				}
 			}
 		}
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
+		search_filters = { FOCUS_FILTER_ALLIANCE }
 	}
 	focus = {
 		id = WAF_propagate_marxist_ideas
@@ -807,6 +809,7 @@ focus_tree = {
 			}
 			add_timed_idea = { idea = internationalism days = 1395 }
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
         id = WAF_seize_the_means_of_production
@@ -1285,10 +1288,12 @@ focus_tree = {
 							has_war_with = ROOT
 						}
 					}
-					create_wargoal = {
-						target = THIS
-						type = take_claimed_state
-						expire = 0
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							type = take_claimed_state
+							expire = 0
+						}
 					}
 				}
 			}
@@ -1314,10 +1319,12 @@ focus_tree = {
 							has_war_with = ROOT
 						}
 					}
-					create_wargoal = {
-						target = THIS
-						type = take_claimed_state
-						expire = 0
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							type = take_claimed_state
+							expire = 0
+						}
 					}
 				}
 			}
@@ -1340,10 +1347,12 @@ focus_tree = {
 							has_war_with = ROOT
 						}
 					}
-					create_wargoal = {
-						target = THIS
-						type = take_claimed_state
-						expire = 0
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							type = take_claimed_state
+							expire = 0
+						}
 					}
 				}
 				unlock_decision_tooltip = reform_the_empire_of_mali
@@ -1370,10 +1379,12 @@ focus_tree = {
 							has_war_with = ROOT
 						}
 					}
-					create_wargoal = {
-						target = THIS
-						type = take_claimed_state
-						expire = 0
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							type = take_claimed_state
+							expire = 0
+						}
 					}
 				}
 			}
@@ -1396,10 +1407,12 @@ focus_tree = {
 							has_war_with = ROOT
 						}
 					}
-					create_wargoal = {
-						target = THIS
-						type = take_claimed_state
-						expire = 0
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							type = take_claimed_state
+							expire = 0
+						}
 					}
 				}
 			}
@@ -1420,10 +1433,12 @@ focus_tree = {
 							has_war_with = ROOT
 						}
 					}
-					create_wargoal = {
-						target = THIS
-						type = take_claimed_state
-						expire = 0
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							type = take_claimed_state
+							expire = 0
+						}
 					}
 				}
 			}
@@ -1444,10 +1459,12 @@ focus_tree = {
 							has_war_with = ROOT
 						}
 					}
-					create_wargoal = {
-						target = THIS
-						type = take_claimed_state
-						expire = 0
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							type = take_claimed_state
+							expire = 0
+						}
 					}
 				}
 			}
@@ -1471,10 +1488,12 @@ focus_tree = {
 							has_war_with = ROOT
 						}
 					}
-					create_wargoal = {
-						target = THIS
-						type = take_claimed_state
-						expire = 0
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							type = take_claimed_state
+							expire = 0
+						}
 					}
 				}
 			}
@@ -1495,10 +1514,12 @@ focus_tree = {
 							has_war_with = ROOT
 						}
 					}
-					create_wargoal = {
-						target = THIS
-						type = take_claimed_state
-						expire = 0
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							type = take_claimed_state
+							expire = 0
+						}
 					}
 				}
 			}
@@ -1521,10 +1542,12 @@ focus_tree = {
 							has_war_with = ROOT
 						}
 					}
-					create_wargoal = {
-						target = THIS
-						type = take_claimed_state
-						expire = 0
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							type = take_claimed_state
+							expire = 0
+						}
 					}
 				}
 			}
@@ -1549,10 +1572,12 @@ focus_tree = {
 							has_war_with = ROOT
 						}
 					}
-					create_wargoal = {
-						target = THIS
-						type = take_claimed_state
-						expire = 0
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							type = take_claimed_state
+							expire = 0
+						}
 					}
 				}
 			}
@@ -2201,6 +2226,7 @@ focus_tree = {
 				category = military_police_tech
 			}	
 		}
+		search_filters = { FOCUS_FILTER_ESPIONAGE }
 	}
 	focus = {
 		id = WAF_police_the_north
@@ -2310,7 +2336,7 @@ focus_tree = {
 				}
 			}
 		}
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}     
 	focus = {
 		id = WAF_emphasize_religious_tolerance
@@ -2529,7 +2555,7 @@ focus_tree = {
 				country_event = { id = generic.5 hours = 24 }
 			}			
 		}
-		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_ALLIANCE }
 	}
 	focus = {
 		id = WAF_reinforce_the_treaty_members
