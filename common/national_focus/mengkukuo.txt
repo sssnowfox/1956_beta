@@ -7317,10 +7317,23 @@ focus_tree = {
 				}
 				add_core_of = ROOT
 			}
-			create_wargoal = {
-				target = TAN
-				type = annex_everything
-				expire = 0
+			every_other_country = {
+				limit = {
+					any_owned_state = {
+						state = 329
+					}
+					NOT = {
+						is_ally_with = ROOT
+						has_war_with = ROOT
+					}
+				}
+				ROOT = {
+					create_wargoal = {
+						target = ROOT
+						type = take_claimed_state
+						expire = 0
+					}
+				}
 			}
 		}
 	}
