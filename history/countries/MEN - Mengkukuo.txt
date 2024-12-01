@@ -43,6 +43,12 @@ add_ideas = {
 	MEN_kwantungs_invisible_hand
 }
 
+#Variables#
+set_variable = { r56_MEN_industry_ns_local_resources_factor = -0.05 }
+set_variable = { r56_MEN_industry_ns_consumer_goods_factor = 0.05 }
+set_variable = { r56_MEN_industry_ns_production_factory_efficiency_gain_factor = -0.05 }
+add_dynamic_modifier = { modifier = r56_MEN_industry_ns }
+
 add_timed_idea = {
 	idea = MEN_the_long_winter
 	days = 91
@@ -54,12 +60,14 @@ add_opinion_modifier = {
 	target = MON
 	modifier = political_rivalry
 }
+
 MON = {
 	add_opinion_modifier = {
 		target = MEN
 		modifier = political_rivalry
 	}
 }
+
 
 set_technology = {
 

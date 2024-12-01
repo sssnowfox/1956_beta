@@ -500,6 +500,10 @@
  men.32.d:0 "It has been reported through various sources available to our government that Japan has begun mobilizing the Kwantung, as well as other paramilitary formations within Inner Mongolia, such as Li Shouxin's 1st and 2nd Cavalry Army and Wang Ying's Grand Han Righteous Army, who have seized all communications with our high command in [MON.Capital.GetCapitalVictoryPointName]. A Japanaese invasion seems to be on the horizon, we must prepare..."
  men.32.a:0 "David vs. Goiliath..."
 
+ men.33.t:0 "Industrialization Plans"
+ men.33.d:0 "The recent plans for industrialization to transform our nation from an Agrarian Economy to one that is industrialized are promising. It follows similar Five Year plan program schemes that have been used elsewhere in the world.\n\nHowever, as we are a country with limited resources. Diverting our attention away from our industrialization plans for too long could reduce it's effectiveness and delay progress. So if we are going to dive into making our country an Industrial Nation we must do so with both feet."
+ men.33.a:0 "We have to be committed!"
+
  ################### DECISIONS ###################
 
  MEN_inner_mongolian_gambit:0 "Inner Mongolian Gambit"
@@ -584,6 +588,15 @@
 
  MEN_anti_chinese_propaganda:0 "Anti-Chinese Propaganda"
 
+ ################### Dynamic Modifiers ###################
+
+ r56_MEN_industry_ns:0 "[ROOT.GETNAME] Industry"
+ r56_MEN_industry_ns_desc:0 "What Industry we do have is slow to grow and has been setback by the harsh recent winter"
+ r56_MEN_industry_ns_1:0 "[ROOT.GETNAME] Industry"
+ r56_MEN_industry_ns_1_desc:0 "We are improving our domestic industries. Slowly but surely."
+
+ r56_MEN_industry_modify_tt:0 "Modify §Y$r56_MEN_industry_ns_1$§! by"
+
  ################### DECISIONS ###################
 
  MEN_the_zhangbei_meeting:0 "The Zhangbei Meeting"
@@ -603,7 +616,7 @@
  MEN_hidden_hand:0 "The Hidden Hand"
 
  MEN_rapid_industrialization_timer_tt:0 "[?MEN_rapid_industrialization_timer:days_left|Y0]"
- MEN_remove_industrialization:0 "Will be §Rpermanently removed§! in §Y[GetMenIndustrializationTimer]§! days if no §Yindustrial focus§! is §Ystarted§!"
+ MEN_remove_industrialization:0 "\nWill be §RPermanently Removed§! in §Y[GetMenIndustrializationTimer]§! days if no §YIndustrial Focus§! is §YStarted§!"
  MEN_unforseen_consequences:0 "This might §Ylead§! to §Runfroseen consequences§!."
  MEN_prevent_destabilization:0 "Will §Yprevent§! the §YJapanese§! from further §Rdestabillizing§! our §Ygovernment§!."
  MEN_nima_odsor_assassinated:0 "§YNima-odsor§! has been §Yassassinated§!."
@@ -627,3 +640,6 @@
  MEN_upon_civil_war_start:0 "\nUpon §YCivil War§! Start:"
  MEN_shared_struggle:0 "Shared Struggle"
  MEN_cannot_call_to_war:0 "§RCannot join wars of [MEN.GetNonIdeologyName] due to them having a civil war§!"
+ r56_MEN_prioritize_industrialization_event_tt:0 "§YCompleting§! Industrial §YNational Focuses§! while we have the §Y$MEN_rapid_industrialization$ National Spirit§! will grant additional §YEffects.§!"
+ MEN_rapid_industrialization_refresh_190_days_tt:0 "§Y$MEN_rapid_industrialization$§! will be §GRenewed§! for another §Y190§! Day(s)"
+ MEN_prioritize_industrialization_bonus_effect_tt:0 "§YAdditional '$MEN_rapid_industrialization$' Effect:§!"
