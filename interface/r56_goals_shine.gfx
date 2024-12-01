@@ -70171,6 +70171,7 @@ spriteTypes = {
 			animationblendmode = "add"
 			animationtype = "scrolling"
 		}
+		legacy_lazy_load = no
 	}
 
 	SpriteType = {
@@ -70200,6 +70201,7 @@ spriteTypes = {
 			animationblendmode = "add"
 			animationtype = "scrolling"
 		}
+		legacy_lazy_load = no
 	}
 
 	SpriteType = {
@@ -70229,6 +70231,7 @@ spriteTypes = {
 			animationblendmode = "add"
 			animationtype = "scrolling"
 		}
+		legacy_lazy_load = no
 	}
 	
 	SpriteType = {
@@ -70258,6 +70261,7 @@ spriteTypes = {
 			animationblendmode = "add"
 			animationtype = "scrolling"
 		}
+		legacy_lazy_load = no
 	}
 
 	SpriteType = {
@@ -70287,6 +70291,7 @@ spriteTypes = {
 			animationblendmode = "add"
 			animationtype = "scrolling"
 		}
+		legacy_lazy_load = no
 	}
 
 	SpriteType = {
@@ -70316,6 +70321,7 @@ spriteTypes = {
 			animationblendmode = "add"
 			animationtype = "scrolling"
 		}
+		legacy_lazy_load = no
 	}
 
 	SpriteType = {
@@ -70345,6 +70351,7 @@ spriteTypes = {
 			animationblendmode = "add"
 			animationtype = "scrolling"
 		}
+		legacy_lazy_load = no
 	}
 
 	SpriteType = {
@@ -70374,6 +70381,7 @@ spriteTypes = {
 			animationblendmode = "add"
 			animationtype = "scrolling"
 		}
+		legacy_lazy_load = no
 	}
 
 	###---> MPL
