@@ -40,7 +40,7 @@ focus_tree = {
 		icon = GFX_goal_MON_inner_mongolian_army2
 
 		available = {
-			
+			exists = yes
 		}
 		
 		x = 6
@@ -1029,7 +1029,7 @@ focus_tree = {
 		}
 		
 		available = {
-			
+			exists = yes
 		}
 	
 		cost = 8
@@ -1039,6 +1039,14 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_political_power = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = r56_MEN_industry_modify_tt
+			add_to_variable = { r56_MEN_industry_ns_consumer_goods_factor = -0.05 tooltip = consumer_goods_factor_tt }
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = available_industrial_concern
+			show_ideas_tooltip = MEN_the_bank_of_mengjiang
+			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_controlled_state = {
 				prioritize = { 611 }
 				limit = {
@@ -1055,7 +1063,10 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			add_ideas = MEN_the_bank_of_mengjiang
+			hidden_effect = { #Swaps out modifiers GFX, same thing
+				remove_dynamic_modifier = { modifier = r56_MEN_industry_ns }
+				add_dynamic_modifier = { modifier = r56_MEN_industry_ns_1 }
+			}
 		}
 	}
 
@@ -1457,12 +1468,12 @@ focus_tree = {
 			}
 		}
 
+		select_effect = {
+			country_event = { id = men.33 hours = 4 }
+		}
+
+
 		completion_reward = {
-			add_resource = {
-				type = steel
-				amount = 2
-				state = 611
-			}
 			random_owned_controlled_state = {
 				prioritize = { 611 }
 				limit = {
@@ -1471,6 +1482,7 @@ focus_tree = {
 						size > 1
 						include_locked = yes
 					}
+					is_core_of = ROOT
 				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -1478,11 +1490,20 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
+				add_resource = {
+					type = steel
+					amount = 2
+				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = r56_MEN_industry_modify_tt
+			add_to_variable = { r56_MEN_industry_ns_production_factory_efficiency_gain_factor = 0.05 tooltip = production_factory_efficiency_gain_factor_tt }
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_timed_idea = {
 				idea = MEN_rapid_industrialization
 				days = 120
 			}
+
 			set_country_flag = { flag = MEN_rapid_industrialization_timer days = 120 value = 1 }
 		}
 	}
@@ -1530,40 +1551,16 @@ focus_tree = {
 		select_effect = {
 			if = {
 				limit = {
-					has_idea = MEN_rapid_industrialization
-				}
-				hidden_effect = {
-					remove_ideas = MEN_rapid_industrialization
-				}
-				add_timed_idea = {
-					idea = MEN_rapid_industrialization
-					days = 190
-				}
-				clr_country_flag = MEN_rapid_industrialization_timer
-				set_country_flag = { flag = MEN_rapid_industrialization_timer days = 190 value = 1 }
-			}
-		}
-
-		completion_reward = {
-			if = {
-				limit = {
 					OR = {
-						has_idea = MEN_rapid_industrialization
 						NOT = {
 							has_completed_focus = MEN_prioritize_industrialization
 						}
+						has_idea = MEN_rapid_industrialization
 					}
 				}
-				custom_effect_tooltip = AFG_constitution_question_start_tt
-				effect_tooltip = {
-					if = {
-						limit = {
-							has_idea = MEN_rapid_industrialization
-						}
-					}
-					hidden_effect = {
-						remove_ideas = MEN_rapid_industrialization
-					}
+				custom_effect_tooltip = MEN_rapid_industrialization_refresh_190_days_tt
+				hidden_effect = {
+					remove_ideas = MEN_rapid_industrialization
 					add_timed_idea = {
 						idea = MEN_rapid_industrialization
 						days = 190
@@ -1571,11 +1568,32 @@ focus_tree = {
 					clr_country_flag = MEN_rapid_industrialization_timer
 					set_country_flag = { flag = MEN_rapid_industrialization_timer days = 190 value = 1 }
 				}
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = MEN_rapid_industrialization
+				}
+				custom_effect_tooltip = AFG_constitution_question_start_tt
+				effect_tooltip = {
+					if = {
+						limit = {
+							has_idea = MEN_rapid_industrialization
+						}
+						custom_effect_tooltip = MEN_rapid_industrialization_refresh_190_days_tt
+					}
+				}
 				custom_effect_tooltip = AFG_constitution_question_end_tt
 			}
-
-			add_autonomy_score = {
-				value = 50
+			if = {
+				limit = {
+					is_subject = yes
+				}
+				add_autonomy_score = {
+					value = 50
+				}
 			}
 			random_owned_controlled_state = {
 				prioritize = { 611 }
@@ -1593,6 +1611,13 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = { 
+				limit = {
+					has_idea = export_focus
+				}
+				add_ideas = free_trade
+			}
 			if = {
 				limit = {
 					has_idea = limited_exports
@@ -1601,9 +1626,13 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					has_idea = export_focus
+					has_idea = MEN_rapid_industrialization
 				}
-				add_ideas = free_trade
+				custom_effect_tooltip = generic_skip_one_line_tt
+				custom_effect_tooltip = MEN_prioritize_industrialization_bonus_effect_tt
+				custom_effect_tooltip = r56_MEN_industry_modify_tt
+				add_to_variable = { r56_MEN_industry_ns_production_speed_buildings_factor = 0.025 tooltip = production_speed_buildings_factor_tt }
+				custom_effect_tooltip = generic_skip_one_line_tt
 			}
 		}
 	}
