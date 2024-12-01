@@ -121,7 +121,7 @@
  MEN_the_spirit_of_genghis:0 "The Spirit of Genghis"
  MEN_the_spirit_of_genghis_desc:0 ""
 
- MEN_realize_the_zenrin_kyokai:0 "Utilize the Zenrin Kyōkai"
+ MEN_realize_the_zenrin_kyokai:0 "Utilize the Zenrin Kyokai"
  MEN_realize_the_zenrin_kyokai_desc:0 ""
 
  MEN_put_an_end_to_the_raids:0 "The Suiyuan Campaign"
@@ -364,7 +364,7 @@
  MEN_open_suiyuan_mining_facilitys:0 "Bolster the Steel Industry"
  MEN_open_suiyuan_mining_facilitys_desc:0 ""
 
- MEN_establish_the_daimo_koshi:0 "Establish the Dai-Mō Kōshi"
+ MEN_establish_the_daimo_koshi:0 "Establish the Dai-Mo Koshi"
  MEN_establish_the_daimo_koshi_desc:0 ""
 
  MEN_improve_regional_infastructure:0 "Improve Regional Infrastructure"
@@ -537,6 +537,9 @@
  MEN_rebuilding_the_disaster_of_suiyan_desc:0 ""
 
  MEN_the_bank_of_mengjiang:0 "Bank of Chahar"
+
+ MEN_the_joint_committee:0 "[ROOT.GetAdjective] Committee on Industry"
+ MEN_the_joint_committee_desc:0 "An extension of the [ROOT.GETNAME] Government that directs policy on the industry within the Country. The policy is to appeases the [JAP.GETNAME]'s Military and it's Companies that operate within our borders."
 
  MEN_an_independent_army:0 "The Inner Mongolian Army"
 

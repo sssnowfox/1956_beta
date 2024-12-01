@@ -54,4 +54,5 @@ r56_MEN_industry_ns_1 = {
 	production_speed_buildings_factor = r56_MEN_industry_ns_production_speed_buildings_factor
 	production_speed_arms_factory_factor = r56_MEN_industry_ns_speed_arms_factory_factor
 	production_lack_of_resource_penalty_factor = r56_MEN_industry_ns_production_lack_of_resource_penalty_factor
+	
 }
