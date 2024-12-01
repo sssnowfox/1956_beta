@@ -193,6 +193,10 @@ focus_tree = {
 			
 			GER_stop_rearmament = yes
 
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			remove_ideas = r56_GER_economic_uncertainty
+
 		}
 	}
 
@@ -1745,11 +1749,15 @@ focus_tree = {
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
+			remove_ideas = r56_GER_economic_uncertainty
+
+			custom_effect_tooltip = generic_skip_one_line_tt
 
 			add_timed_idea = {
 				idea = r56_GER_four_year_plan
 				days = 1460
 			}
+
 			#Set Variables for the Descision cost of GER_coerce_the_technocrats here for tooltips reasons
 			hidden_effect = {
 				set_variable = {
@@ -2726,6 +2734,22 @@ focus_tree = {
 					type = arms_factory
 					level = 2
 					instant_build = yes
+				}
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			if = {
+				limit = {
+					51 = {
+						is_fully_controlled_by = ROOT
+					}
+				}
+				51 = {
+					add_dynamic_modifier = { 
+						modifier = r56_concentrated_armament_program
+						scope = GER
+					}
 				}
 			}
 		}
@@ -10231,7 +10255,7 @@ focus_tree = {
 				
 				custom_trigger_tooltip = {
 				 	tooltip = GER_anschluss_eq_trigger_tt
-				 	check_variable = { num_equipment_in_armies_k@infantry_equipment > 50 }
+				 	check_variable = { num_equipment_in_armies_k@infantry_equipment > 40 }
 				}
 			}
 			
@@ -10268,7 +10292,7 @@ focus_tree = {
 		select_effect = {
 			if = {
 				limit = {
-					has_global_flag = aus_got_focus_tree
+					has_global_flag = aus_dlc_focus_tree
 				}
 				AUS = {
 					country_event = {
@@ -14392,6 +14416,7 @@ focus_tree = {
 				}
 				NOT = {
 					has_completed_focus = GER_kill_hitler
+					has_completed_focus = GER_oppose_hitler_ww
 				}
 			}
 		}
@@ -20176,6 +20201,17 @@ focus_tree = {
 			show_ideas_tooltip = GER_goring_overseer_four_year_plan
 
 			custom_effect_tooltip = generic_skip_one_line_tt
+
+			if = {
+				limit = {
+					has_idea = r56_GER_four_year_plan
+				}
+				modify_timed_idea = {
+					idea = r56_GER_four_year_plan
+					days = 30
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
 
 			custom_effect_tooltip = {
 				localization_key = GER_ascension_of_character_focus_tt

@@ -1642,6 +1642,8 @@ focus_tree = {
 				specialization = specialization_air
 				value = 0.50
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = r56_generic_jet_idea
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -8077,6 +8079,10 @@ focus_tree = {
 				}
 				has_country_leader =  {
 					character = ENG_lord_edward_halifax
+					ruling_only = yes
+				}
+				has_country_leader =  {
+					character = ENG_clement_attlee
 					ruling_only = yes
 				}
 			}

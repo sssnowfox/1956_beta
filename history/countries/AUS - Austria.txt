@@ -198,10 +198,11 @@ recruit_character = AUS_gunther_adolf_burstyn
 if = {
 	limit = {
 		has_dlc = "Gotterdammerung"
-		}
-	} #Only visible if you have the DLC tree selected don't worry
+	}
 	recruit_character = AUS_arthur_seyss-inquart
-}
+} #Only visible if you have the DLC tree selected don't worry
+	
+
 
 add_ideas = {
 	AUS_july_followed_june
