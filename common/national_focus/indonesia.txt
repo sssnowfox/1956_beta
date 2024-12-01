@@ -2913,10 +2913,10 @@ focus_tree = {
 			}
 			add_popularity = {
 				ideology = neutrality
-				popularity = 0.05
+				popularity = 0.10
 			}
 			set_party_name = {
-				ideology = fascism
+				ideology = neutrality
 				long_name = "House of Mataram"
 				name = "House of Mataram"
 			}
@@ -3161,9 +3161,20 @@ focus_tree = {
 				ideology = fascism
 				popularity = 0.15
 			}
-			set_politics = {
-				ruling_party = fascism
-				elections_allowed = no
+			if = {
+				limit = {
+					has_completed_focus = INS_reinvigorate_the_pfi
+				}
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+			}
+			else = {
+				set_politics = {
+					ruling_party = fascism
+					elections_allowed = no
+				}
 			}
 			if = {
 				limit = {
