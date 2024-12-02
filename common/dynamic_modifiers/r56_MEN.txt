@@ -27,7 +27,7 @@
 #Any change to one must be done to the other
 r56_MEN_industry_ns = {
 	
-	icon = GFX_idea_POL_disjointed_industry
+	icon = GFX_idea_SPA_recovering_from_the_civil_war
 
 	#INITIAL
 	local_resources_factor = r56_MEN_industry_ns_local_resources_factor
@@ -43,7 +43,7 @@ r56_MEN_industry_ns = {
 #Switches out GFX after first industy focus - same as above 
 r56_MEN_industry_ns_1 = {
 
-	icon = GFX_idea_generic_improved_industries
+	icon = GFX_idea_ARG_economic_reactivation
 
 	#INITIAL
 	local_resources_factor = r56_MEN_industry_ns_local_resources_factor

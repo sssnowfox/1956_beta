@@ -593,10 +593,10 @@
 
  ################### Dynamic Modifiers ###################
 
- r56_MEN_industry_ns:0 "[ROOT.GETNAME] Industry"
- r56_MEN_industry_ns_desc:0 "What Industry we do have is slow to grow and has been setback by the harsh recent winter"
- r56_MEN_industry_ns_1:0 "[ROOT.GETNAME] Industry"
- r56_MEN_industry_ns_1_desc:0 "We are improving our domestic industries. Slowly but surely."
+ r56_MEN_industry_ns:0 "Insubstantial National Industry"
+ r56_MEN_industry_ns_desc:0 "Whatever little industry that our country holds is slow to grow, as neither the [JAP.GetAdjective] nor the [CHI.GetAdjective] are willing to invest capital into building up the manufacturing industries in our country. This is due to the fact that they hope to keep our people and economy primarily focused on the production of crude and/or agricultural products, which [JAP.GetAdjective] or [CHI.GetAdjective] consumers can then buy at cheap prices, leaving the poor [ROOT.GetAdjective] farmer with nothing! The question is, how long can the [ROOT.GetAdjective] people handle this twisted economic enslavement?"
+ r56_MEN_industry_ns_1:0 "[ROOT.GetAdjective] Industrial Sector"
+ r56_MEN_industry_ns_1_desc:0 "It has become clear to the [ROOT.GetAdjective] government that economic development, especially in the industrial sector, is much-needed, in order to uplift the many [ROOT.GetAdjective] peasants and workers from the edge of poverty. Thus, substantial investment, both political and economic, shall make its way into the industrial sector in the foreseeable future, for the good of our people, and our nation!"
 
  r56_MEN_industry_modify_tt:0 "Modify §Y$r56_MEN_industry_ns_1$§! by"
 

@@ -1081,14 +1081,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 25
-			custom_effect_tooltip = generic_skip_one_line_tt
-			custom_effect_tooltip = r56_MEN_industry_modify_tt
-			add_to_variable = { r56_MEN_industry_ns_consumer_goods_factor = -0.05 tooltip = consumer_goods_factor_tt }
-			custom_effect_tooltip = generic_skip_one_line_tt
-			custom_effect_tooltip = available_industrial_concern
-			show_ideas_tooltip = MEN_the_bank_of_mengjiang
-			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_controlled_state = {
 				prioritize = { 611 }
 				limit = {
@@ -1105,6 +1097,14 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			add_political_power = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = r56_MEN_industry_modify_tt
+			add_to_variable = { r56_MEN_industry_ns_consumer_goods_factor = -0.05 tooltip = consumer_goods_factor_tt }
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = available_industrial_concern
+			show_ideas_tooltip = MEN_the_bank_of_mengjiang
+			custom_effect_tooltip = generic_skip_one_line_tt
 			hidden_effect = { #Swaps out modifiers GFX, same thing
 				remove_dynamic_modifier = { modifier = r56_MEN_industry_ns }
 				add_dynamic_modifier = { modifier = r56_MEN_industry_ns_1 }
@@ -1571,9 +1571,6 @@ focus_tree = {
 
 
 		completion_reward = {
-			custom_effect_tooltip = r56_MEN_industry_modify_tt
-			add_to_variable = { r56_MEN_industry_ns_production_factory_efficiency_gain_factor = 0.05 tooltip = production_factory_efficiency_gain_factor_tt }
-			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_controlled_state = {
 				prioritize = { 611 }
 				limit = {
@@ -1595,6 +1592,9 @@ focus_tree = {
 					amount = 2
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = r56_MEN_industry_modify_tt
+			add_to_variable = { r56_MEN_industry_ns_production_factory_efficiency_gain_factor = 0.05 tooltip = production_factory_efficiency_gain_factor_tt }
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_timed_idea = {
 				idea = MEN_rapid_industrialization
