@@ -588,4 +588,19 @@ characters = {
 			}
 		}
 	}
+	SCO_samuel_crowe_curran = {
+		name = "Samuel Crowe Curran"
+		portraits = {
+			army = {
+				large = GFX_portrait_generic_europe_male_05
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_electronics_specialist }
+			skills = {
+				specialization_air = 1
+			}
+		}
+	}
 }
