@@ -491,7 +491,7 @@ BEL_renard_organization = { # made light aircraft prototype, advanced but unreli
 		
 		position = { x=7 y=1 }  
 
-		any_parent = { generic_mio_trait_minimum_weapon_requirements }		
+		#any_parent = { generic_mio_trait_minimum_weapon_requirements }		# not present if the tree is not agility fighter at the moment
 
 		equipment_bonus = {
 			air_attack = 0.05
