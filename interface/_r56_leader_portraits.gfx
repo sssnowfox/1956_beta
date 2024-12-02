@@ -489,15 +489,6 @@ spriteType = {
 
 	
 #	->  SIA <><>
-	spriteType = {
-		name = "GFX_Portrait_Siam_Phin_Choonhavan"
-		texturefile = "gfx/leaders/SIA/r56_portrait_SIA_Phin_Choonhavan.dds"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_SIA_Rama_Vii"
-		texturefile = "gfx/leaders/SIA/r56_portrait_SIA_Rama_Vii.dds"
-	}
 
 	spriteType = {
 		name = "GFX_Portrait_SIA_Aditya_Dibabha"
@@ -507,6 +498,11 @@ spriteType = {
 	spriteType = {
 		name = "GFX_Portrait_SIA_Direk_Jayanama"
 		texturefile = "gfx/leaders/SIA/r56_portrait_SIA_Direk_Jayanama.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_SIA_Phayom_Chulanont"
+		texturefile = "gfx/leaders/SIA/r56_portrait_SIA_Phayom_Chulanont.dds"
 	}
 
 	spriteType = {
@@ -520,13 +516,18 @@ spriteType = {
 	}
 
 	spriteType = {
-		name = "GFX_Portrait_SIA_Seni_Pramoj"
-		texturefile = "gfx/leaders/SIA/r56_portrait_SIA_Seni_Pramoj.dds"
+		name = "GFX_Portrait_SIA_Pridi_Banomyong"
+		texturefile = "gfx/leaders/SIA/r56_portrait_SIA_Pridi_Banomyong.dds"
 	}
 
 	spriteType = {
-		name = "GFX_Portrait_SIA_Phayom_Chulanont"
-		texturefile = "gfx/leaders/SIA/r56_portrait_SIA_Phayom_Chulanont.dds"
+		name = "GFX_Portrait_SIA_Rama_Vii"
+		texturefile = "gfx/leaders/SIA/r56_portrait_SIA_Rama_Vii.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_SIA_Seni_Pramoj"
+		texturefile = "gfx/leaders/SIA/r56_portrait_SIA_Seni_Pramoj.dds"
 	}
 
 	spriteType = {
@@ -535,8 +536,13 @@ spriteType = {
 	}
 
 	spriteType = {
-		name = "GFX_Portrait_SIA_Pridi_Banomyong"
-		texturefile = "gfx/leaders/SIA/r56_portrait_SIA_Pridi_Banomyong.dds"
+		name = "GFX_Portrait_Siam_Mangkorn_Phromyothi"
+		texturefile = "gfx/leaders/SIA/r56_portrait_SIA_Mangkorn_Phromyothi.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Siam_Phin_Choonhavan"
+		texturefile = "gfx/leaders/SIA/r56_portrait_SIA_Phin_Choonhavan.dds"
 	}
 
 	spriteType = {
@@ -550,18 +556,28 @@ spriteType = {
 	}
 
 	spriteType = {
-		name = "GFX_Portrait_Siam_Sinthin_Kamolnawin"
-		texturefile = "gfx/leaders/SIA/r56_portrait_SIA_Sinthin_Kamolnawin.dds"
-	}
-
-	spriteType = {
 		name = "GFX_Portrait_Siam_Phraya_Songsuradej"
 		texturefile = "gfx/leaders/SIA/r56_portrait_SIA_Phraya_Songsuradej.dds"
 	}
 
 	spriteType = {
+		name = "GFX_Portrait_Siam_Pichit_Kriangsak"
+		texturefile = "gfx/leaders/SIA/r56_portrait_SIA_Pichit_Kriangsak.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Siam_Sinthin_Kamolnawin"
+		texturefile = "gfx/leaders/SIA/r56_portrait_SIA_Sinthin_Kamolnawin.dds"
+	}
+
+	spriteType = {
 		name = "GFX_Portrait_Siam_Thawan_Thamrongnawasawat"
 		texturefile = "gfx/leaders/SIA/r56_portrait_SIA_Thawan_Thamrongnawasawat.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Siam_Yuthasastrkosol"
+		texturefile = "gfx/leaders/SIA/r56_portrait_SIA_Yuthasastrkosol.dds"
 	}
 
 
