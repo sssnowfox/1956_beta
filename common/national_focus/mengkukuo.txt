@@ -3111,6 +3111,7 @@ focus_tree = {
 						cost_reduction = 0.5
 						uses = 2
 						category = land_doctrine
+						name = MEN_put_an_end_to_the_raids
 					}
 					swap_ideas = {
 						remove_idea = MEN_disorganized_military
@@ -4292,6 +4293,7 @@ focus_tree = {
 				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
+				name = MEN_reinvite_the_chinese_military
 			}
 			division_template = {
 				name = "Bùbīng Shī"
@@ -5579,6 +5581,7 @@ focus_tree = {
 				cost_reduction = 0.75
 				uses = 1
 				category = land_doctrine
+				name = MEN_establish_peasant_militias
 			}
 			add_timed_idea = {
 				idea = MEN_communist_peasant_millitas
@@ -5721,16 +5724,16 @@ focus_tree = {
 								}
 							}
 						}
-					}
-					MON = {
+						MON = {
+							add_opinion_modifier = {
+								target = MEN
+								modifier = MEN_shared_struggle
+							}
+						}
 						add_opinion_modifier = {
-							target = MEN
+							target = MON
 							modifier = MEN_shared_struggle
 						}
-					}
-					add_opinion_modifier = {
-						target = MON
-						modifier = MEN_shared_struggle
 					}
 				}
 			}
@@ -6564,6 +6567,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
+			unlock_decision_tooltip = MON_unify_greater_mongolia
 			MON = {
 				country_event = { id = men.20 hours = 12 }
 			}

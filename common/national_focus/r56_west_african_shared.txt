@@ -21,6 +21,8 @@ focus_tree = {
 				tag = DAH
 				tag = NGR
 				tag = NGA
+				tag = SOK
+				tag = BIA
 			}
         }
     }
@@ -151,6 +153,8 @@ focus_tree = {
 						tag = GHA
 						tag = SIE
 						tag = GAM
+						tag = SOK
+						tag = BIA
 					}
 				}
 				add_equipment_to_stockpile = {
@@ -1205,6 +1209,8 @@ focus_tree = {
 			if = { # Nigeria
 				limit = {
 					original_tag = NGA
+					original_tag = SOK
+					original_tag = BIA
 				}
 				every_state = {
 					limit = {
@@ -1216,6 +1222,26 @@ focus_tree = {
 						}
 					}
 					add_claim_by = ROOT
+				}
+				if = {
+					limit = {
+						original_tag = SOK
+						original_tag = BIA
+					}
+					every_state = {
+						limit = {
+							NOT = {
+								is_owned_by = ROOT
+							}
+							OR = {
+								state = 900
+								state = 558
+								state = 902
+								state = 901
+							}
+						}
+						add_claim_by = ROOT
+					}
 				}
 			}
 			if = { # Niger
@@ -1526,6 +1552,8 @@ focus_tree = {
 			if = { # Nigeria
 				limit = {
 					original_tag = NGA
+					original_tag = SOK
+					original_tag = BIA
 				}
 				every_other_country = {
 					limit = {
@@ -1547,6 +1575,35 @@ focus_tree = {
 							target = PREV
 							type = take_claimed_state
 							expire = 0
+						}
+					}
+				}
+				if = {
+					limit = {
+						original_tag = SOK
+						original_tag = BIA
+					}
+					every_other_country = {
+						limit = {
+							any_owned_state = {
+								OR = {
+									state = 900
+									state = 558
+									state = 902
+									state = 901
+								}
+							}
+							NOT = {
+								is_ally_with = ROOT
+								has_war_with = ROOT
+							}
+						}
+						ROOT = {
+							create_wargoal = {
+								target = PREV
+								type = take_claimed_state
+								expire = 0
+							}
 						}
 					}
 				}
@@ -1690,6 +1747,8 @@ focus_tree = {
 						original_tag = DAH
 						original_tag = NGR
 						original_tag = NGA
+						original_tag = SOK
+						original_tag = BIA
 					}
 					is_in_faction = no
 					has_government = communism
@@ -1742,19 +1801,23 @@ focus_tree = {
 			every_country = {
 				limit = {
 					OR = {
-						original_tag = NGR
-						original_tag = NGA
-						original_tag = VOL
-						original_tag = DAH
+						original_tag = MRT
 						original_tag = SEN
 						original_tag = GAM
+						original_tag = MLI
 						original_tag = GNB
 						original_tag = GNA
 						original_tag = SIE
 						original_tag = LIB
 						original_tag = IVO
+						original_tag = VOL
 						original_tag = GHA
 						original_tag = TOG
+						original_tag = DAH
+						original_tag = NGR
+						original_tag = NGA
+						original_tag = SOK
+						original_tag = BIA
 					}
 					is_in_faction_with = ROOT
 					has_government = communism
@@ -2450,6 +2513,8 @@ focus_tree = {
 						original_tag = DAH
 						original_tag = NGR
 						original_tag = NGA
+						original_tag = SOK
+						original_tag = BIA
 					}
 					OR = {
 						has_government = neutrality
@@ -2542,6 +2607,8 @@ focus_tree = {
 						original_tag = DAH
 						original_tag = NGR
 						original_tag = NGA
+						original_tag = SOK
+						original_tag = BIA
 					}
 					is_in_faction = no
 					OR = {
@@ -2616,6 +2683,8 @@ focus_tree = {
 						original_tag = DAH
 						original_tag = NGR
 						original_tag = NGA
+						original_tag = SOK
+						original_tag = BIA
 					}
 					is_in_faction_with = ROOT
 					OR = {
@@ -2692,6 +2761,8 @@ focus_tree = {
 					original_tag = DAH
 					original_tag = NGR
 					original_tag = NGA
+					original_tag = SOK
+					original_tag = BIA
 				}
 				is_subject = no
 				NOT = {
@@ -2723,6 +2794,8 @@ focus_tree = {
 						original_tag = DAH
 						original_tag = NGR
 						original_tag = NGA
+						original_tag = SOK
+						original_tag = BIA
 					}
 					is_subject = no
 					NOT = {

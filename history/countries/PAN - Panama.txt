@@ -18,6 +18,10 @@ set_country_flag = hispanic
 set_war_support = 0.1
 set_convoys = 10
 
+country_event = {
+	id = panama.1 days = 158 hours = 12
+}
+
 recruit_character = PAN_harmodio_arias_madrid
 recruit_character = PAN_juan_demostenes_arosemena
 recruit_character = PAN_cristobal_ladislao

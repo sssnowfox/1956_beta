@@ -55,6 +55,9 @@
 				original_tag = SID
 				original_tag = GBA	
 				original_tag = NGA	
+				original_tag = MRT
+				original_tag = SOK
+				original_tag = BIA
             }
 			
 		}
@@ -429,6 +432,8 @@
 				original_tag = GBA		
 
 				original_tag = NGA
+				original_tag = SOK
+				original_tag = BIA
             }			
 			NOT = {
 				has_focus_tree = horn_of_africa_tree
