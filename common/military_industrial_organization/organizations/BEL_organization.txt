@@ -456,6 +456,49 @@ BEL_renard_organization = { # made light aircraft prototype, advanced but unreli
 			air_defence = 0.02
 		}
 	}	
+
+	add_trait = { 
+		token = BEL_mio_trait_all_metal_expertise
+		name = BEL_mio_trait_all_metal_expertise
+		icon = GFX_generic_mio_trait_icon_armor_value
+		special_trait_background = yes
+		
+		position = { x=2 y=1 }  
+
+		any_parent = { generic_mio_trait_metal_skin }		
+
+		equipment_bonus = {
+			air_defence = 0.10
+		}
+
+	}
+
+	add_trait = { 
+		token = BEL_mio_trait_browning_collaboration
+		name = BEL_mio_trait_browning_collaboration
+		icon = GFX_generic_mio_trait_icon_anti_air_attack
+		special_trait_background = yes
+
+        available = {
+            owner = {
+            	OR = {
+            		has_completed_focus = COG_standardize_military_production
+            		has_completed_focus = BEL_fn_herstal
+			has_completed_focus = BEL_invest_in_FN_Herstal
+            	}
+            }
+        }			
+		
+		position = { x=7 y=1 }  
+
+		any_parent = { generic_mio_trait_minimum_weapon_requirements }		
+
+		equipment_bonus = {
+			air_attack = 0.05
+		}
+
+	}
+
 }
 
 
