@@ -666,4 +666,84 @@ BEL_fonderie_royale_de_canons_liege_organization = {
 
 }		
 
+BEL_minerva_imperia_armored_car_organization = {
+	name = BEL_minerva_imperia_armored_car_organization
+	include = generic_armored_car_organization
+	icon = GFX_idea_BEL_minerva_imperia_armored_car_organization
+	allowed = {
+		OR = {
+			original_tag = BEL
+			original_tag = COG
+		}
+		has_dlc = "Gotterdammerung"
+		has_dlc = "La Resistance"
+	}
+
+	initial_trait = {
+		name = BEL_minerva_imperia_armored_car_organization
+		equipment_bonus = {
+			armor_value = 0.05
+			defense =0.05
+			build_cost_ic = -0.05
+			reliability = 0.05
+		}
+	}
+
+	add_trait = { 
+		token = BEL_mio_trait_knight_engines
+		name = BEL_mio_trait_knight_engines
+		icon = GFX_generic_mio_department_icon_armored_car_production
+		special_trait_background = yes
+
+        available = {
+            owner = {
+            	OR = {
+            		has_completed_focus = BEL_minerva_imperia
+            		has_completed_focus = COG_standardize_military_production
+            	}
+            }
+        }	
+
+		position = { x=8 y=0 }  
+
+		equipment_bonus = {
+			reliability = 0.05
+			maximum_speed = 0.1
+		}
+
+	}
+
+	add_trait = { 
+		token = BEL_mio_trait_heavy_machine_guns
+		name = BEL_mio_trait_heavy_machine_guns
+		icon = GFX_generic_mio_department_icon_armored_car_offense
+		special_trait_background = yes
+
+		any_parent = { BEL_mio_trait_knight_engines }
+
+		position = { x=8 y=1 }  
+
+		equipment_bonus = {
+			soft_attack = 0.03
+		}
+
+	}
+
+	add_trait = { 
+		token = BEL_mio_trait_high_grade_armor
+		name = BEL_mio_trait_high_grade_armor
+		icon = GFX_generic_mio_trait_icon_armor_value
+		special_trait_background = yes
+
+		any_parent = { BEL_mio_trait_knight_engines }
+
+		position = { x=9 y=1 }  
+
+		equipment_bonus = {
+			armor_value = 0.05
+		}
+
+	}
+
+}
 			
