@@ -370,7 +370,7 @@ r56_ISR_palestinian_resistance_low = {
 
 r56_concentrated_armament_program = {
 	enable = { always = yes }
-	ROOT = { 
+	remove_trigger = {
 		NOT = { # FROM is the tag that got this modifier from content
 			CONTROLLER = {
 				tag = FROM 
