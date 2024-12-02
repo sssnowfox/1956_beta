@@ -1435,7 +1435,9 @@ characters={
 				specialization_land = 2
 			}
 			visible = {
-				is_subject_of = ENG
+				owner = { 
+					is_subject_of = ENG
+				}
 			}
 		}
 	}
