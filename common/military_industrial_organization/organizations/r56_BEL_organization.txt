@@ -350,6 +350,7 @@ frc_BEL_organization = { # had problems making AA guns but made good AT. name is
 			original_tag = BEL
 			original_tag = WLL	
 		}
+		NOT = { has_dlc = "Gotterdammerung" } 
 	}
 
 	initial_trait = {
