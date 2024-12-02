@@ -1454,52 +1454,6 @@ characters={
 			}
 		}
 	}
-	ENG_charles_lillicrap = {
-		name = "Charles Lillicrap"
-		portraits = {
-			army = {
-				large = GFX_portrait_generic_europe_male_02
-			}
-		}
-
-		scientist = {
-			traits = { scientist_trait_surface_ship_specialist }
-			skills = {
-				specialization_naval = 2
-			}
-		}
-	}
-	ENG_victor_shepheard = {
-		name = "Victor Shepheard"
-		portraits = {
-			army = {
-				large = GFX_portrait_generic_europe_male_07
-			}
-		}
-
-		scientist = {
-			traits = { scientist_trait_submarine_specialist scientist_trait_r56_reckless_prototyper }
-			skills = {
-				specialization_naval = 2
-			}
-		}
-	}
-	ENG_susan_mary_auld = {
-		name = "Susan Mary Auld"
-		female = yes
-		portraits = {
-			army = {
-				large = GFX_portrait_generic_europe_female_02
-			}
-		}
-
-		scientist = {
-			traits = { scientist_trait_surface_ship_specialist }
-			skills = {
-				specialization_naval = 1
-			}
-		}
-	}
 	ENG_nevil_shute = {
 		name = ENG_nevil_shute
 		portraits = {
@@ -1566,22 +1520,6 @@ characters={
 		}
 	}
 
-	ENG_stanley_vernon_goodall  = {
-		name = "Stanley Vernon Goodall"
-		portraits = {
-			army = {
-				large = GFX_portrait_generic_europe_male_16
-			}
-		}
-
-		scientist = {
-			traits = { scientist_trait_surface_ship_specialist scientist_trait_gifted_engineer }
-			skills = {
-				specialization_naval = 3
-			}
-		}
-	}
-
 
 	ENG_charles_lillicrap = {
 		name = "Charles Lillicrap"
@@ -1615,7 +1553,7 @@ characters={
 			}
 		}
 	}
-	ENG_susan_mary_auld  = {
+	ENG_susan_mary_auld = {
 		name = "Susan Mary Auld"
 		gender = female
 		portraits = {
