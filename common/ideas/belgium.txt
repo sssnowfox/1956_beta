@@ -1134,7 +1134,10 @@ ideas = {
 			picture = BEL_cockerill_industrial
 			
 			allowed = {
-				original_tag = BEL
+				OR = {
+					original_tag = BEL
+					original_tag = WLL
+				}
 				has_dlc = "Gotterdammerung"
 			}
 
