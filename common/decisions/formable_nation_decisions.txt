@@ -1209,14 +1209,24 @@ form_united_central_america_category = {
 				set_cosmetic_tag = USC_UNIFIED
 				set_country_flag = USC_UNIFIED_FLAG
 			}
-			313 = { add_core_of = ROOT }
-			314 = { add_core_of = ROOT }
-			312 = { add_core_of = ROOT }
-			317 = { add_core_of = ROOT }
-			316 = { add_core_of = ROOT }
-			311 = { add_core_of = ROOT }
+			every_state = {
+				limit = {
+					NOT = {
+						is_core_of = ROOT
+					}
+					OR = {
+						state = 313
+						state = 314
+						state = 312
+						state = 317
+						state = 316
+						state = 311
+					}
+				}
+				add_core_of = ROOT
+			}
+			custom_effect_tooltip = r56_newline
 			hidden_effect = {
-
                 if = {
                     limit = {
                         has_dlc = "La Resistance"
@@ -1239,7 +1249,6 @@ form_united_central_america_category = {
                         }
                     }
                 }
-
 				news_event = { id = wtt_news.59 hours = 6 }
 				set_global_flag = form_united_central_america_flag
 			}
@@ -2900,6 +2909,8 @@ form_european_union_category = {
 				6 = { add_core_of = ROOT }
 				34 = { add_core_of = ROOT }
 				965 = { add_core_of = ROOT }
+				1094 = { add_core_of = ROOT }
+				1095 = { add_core_of = ROOT }	
 			}
 			# France
 			custom_effect_tooltip = form_eu_france_coring_states_tt
@@ -2949,7 +2960,7 @@ form_european_union_category = {
 				115 = { add_core_of = ROOT }
 				114 = { add_core_of = ROOT }
 				736 = { add_core_of = ROOT }
-				911 = { add_core_of = ROOT } #litorale
+				736 = { add_core_of = ROOT } #litorale
 				912 = { add_core_of = ROOT } #friuli
 				#163 = { add_core_of = ROOT } #zara
 				850 = { add_core_of = ROOT } #trentino
@@ -4498,8 +4509,6 @@ form_roman_empire_category = {
 
 			# West Banat
 			764 = { add_core_of = ROOT }
-
-			
 			
 			add_stability = -0.05
 			 
@@ -4646,7 +4655,6 @@ form_roman_empire_category = {
 			# R56, West Sandzak
 			963 = { add_core_of = ROOT }
 
-			
 			add_stability = -0.05
 			 
 			hidden_effect = { 
@@ -7426,7 +7434,6 @@ form_byzantine_empire_category = {
 	}
 }
 
-
 form_arabia_category = {
 
 	form_arabia = {
@@ -9254,7 +9261,7 @@ form_andalusia_category = {
 	}
 }
 
-form_polynesia_category = { # Now named 'Unite Oceania'
+form_polynesia_category = { #localization in TON_l_english
 	
 	form_polynesia = {
 
@@ -9262,72 +9269,50 @@ form_polynesia_category = { # Now named 'Unite Oceania'
 
 		allowed = {
 			OR = {
-				original_tag = NZL
+				original_tag = HAW
+				original_tag = TAH
+				original_tag = GUM
+				original_tag = FSM
 				original_tag = TON
 				original_tag = SAM
-				original_tag = TUV
-				original_tag = TAH
-				original_tag = KIR
-				original_tag = HAW
-				original_tag = FIJ
 				original_tag = SOL
-				original_tag = VAN
-				original_tag = FSM
-				original_tag = PLU
-				original_tag = GUM
-				original_tag = NRU
+				original_tag = FIJ
+				original_tag = NZL
 			}
 		}
 
 		available = {
 			OR = {
 				is_subject = no
-				has_autonomy_state = autonomy_dominion #New Zealand should be able to do it
+				compare_autonomy_state > autonomy_colony #New Zealand should be able to do it - better check
 			}
-			# Micronesia
-			controls_state = 631 #Midway
-			controls_state = 630 #Johnston Atoll
-			controls_state = 632 #Wake Island
-			controls_state = 638 #Guam
-			controls_state = 646 #Saipan
-			controls_state = 647 #Palau
-			controls_state = 684 #Caroline Islands
-			controls_state = 633 #Marshall Islands
-			controls_state = 639 #Gilbert Islands
-			controls_state = 725 #Nauru
 			# Polynesia
+			controls_state = 630 #Johnston Atoll
+			controls_state = 629 #Hawaii
+			controls_state = 642 #Canton Island
+			controls_state = 643 #Ellice Islands
+			controls_state = 641 #Tahiti
+			controls_state = 727 #Line Islands
 			controls_state = 284 #North Island
 			controls_state = 723 #South Island
-			controls_state = 1087 #Chatham Island
-			controls_state = 734 #Tonga
+			controls_state = 1087 #Chatham Islands
 			controls_state = 726 #Samoa
-			controls_state = 643 #Ellice Islands
-			controls_state = 642 #Canton Island
-			controls_state = 727 #Line Islands
-			controls_state = 641 #Tahiti
-			controls_state = 629 #Hawaii
-			# Melanesia
-			controls_state = 634 #Solomon Islands
-			controls_state = 635 #New Hebrides
-			controls_state = 636 #Fiji
+			controls_state = 1088 #American Samoa
+			controls_state = 734 #Tonga
+			controls_state = 1089 #Niue
 		}
 
 		visible = {
 			OR = {
-				original_tag = NZL
+				original_tag = HAW
+				original_tag = TAH
+				original_tag = GUM
+				original_tag = FSM
 				original_tag = TON
 				original_tag = SAM
-				original_tag = TUV
-				original_tag = TAH
-				original_tag = KIR
-				original_tag = HAW
-				original_tag = FIJ
 				original_tag = SOL
-				original_tag = VAN
-				original_tag = FSM
-				original_tag = PLU
-				original_tag = GUM
-				original_tag = NRU
+				original_tag = FIJ
+				original_tag = NZL
 			}
 			NOT = { has_global_flag = form_polynesia_flag }
 		}
@@ -9342,20 +9327,11 @@ form_polynesia_category = { # Now named 'Unite Oceania'
                         every_operative = {
                             limit = {
                                 OR = {
-									has_nationality = NZL
+									has_nationality = HAW
+									has_nationality = TAH
 									has_nationality = TON
 									has_nationality = SAM
-									has_nationality = TUV
-									has_nationality = TAH
-									has_nationality = KIR
-									has_nationality = HAW
-									has_nationality = FIJ
-									has_nationality = SOL
-									has_nationality = VAN
-									has_nationality = FSM
-									has_nationality = PLU
-									has_nationality = GUM
-									has_nationality = NRU
+									has_nationality = NZL
 								}
                                 NOT = {
                                     has_nationality = ROOT
@@ -9366,9 +9342,10 @@ form_polynesia_category = { # Now named 'Unite Oceania'
                     }
                 }				
 			}
-			# Oceania
+			# Polynesia
 			set_cosmetic_tag = PLY
 			custom_effect_tooltip = form_country_polynesia_coring_states_tt
+			custom_effect_tooltip = unlock_polynesia_decisions
 			every_state = {
 				limit = {
 					OR = {
@@ -9378,107 +9355,262 @@ form_polynesia_category = { # Now named 'Unite Oceania'
 				}
 				add_claim_by = ROOT
 			}
-                        every_state = {
-				limit = {
-					OR = {
-						state = 630
-					}
-				}
-				add_core_of = ROOT
-			}
 			hidden_effect = {
-                        every_state = {
-				limit = {
-					is_core_of = NZL
-				}
-			        add_core_of = ROOT
-			}
-                        every_state = {
-				limit = {
-					is_core_of = TON
-				}
-			        add_core_of = ROOT
-			}
-                        every_state = {
-				limit = {
-					is_core_of = SAM
-				}
-			        add_core_of = ROOT
-			}
-                        every_state = {
-				limit = {
-					is_core_of = TUV
-				}
-			        add_core_of = ROOT
-			}
-                        every_state = {
-				limit = {
-					is_core_of = TAH
-				}
-			        add_core_of = ROOT
-			}
-                        every_state = {
-				limit = {
-					is_core_of = KIR
-				}
-			        add_core_of = ROOT
-			}
-                        every_state = {
-				limit = {
-					is_core_of = HAW
-				}
-			        add_core_of = ROOT
-			}
-                        every_state = {
-				limit = {
-					is_core_of = FIJ
-				}
-			        add_core_of = ROOT
-			}
-                        every_state = {
-				limit = {
-					is_core_of = SOL
-				}
-			        add_core_of = ROOT
-			}
-                        every_state = {
-				limit = {
-					is_core_of = VAN
-				}
-			        add_core_of = ROOT
-			}
-                        every_state = {
-				limit = {
-					is_core_of = FSM
-				}
-			        add_core_of = ROOT
-			}
-                        every_state = {
-				limit = {
-					is_core_of = PLU
-				}
-			        add_core_of = ROOT
-			}
-                        every_state = {
-				limit = {
-					is_core_of = GUM
-				}
-			        add_core_of = ROOT
-			}
-                        every_state = {
-				limit = {
-					is_core_of = NRU
-				}
-			        add_core_of = ROOT
-			}
+				add_state_core = 630 #Johnston Atoll
+				add_state_core = 629 #Hawaii
+				add_state_core = 642 #Canton Island
+				add_state_core = 643 #Ellice Islands
+				add_state_core = 641 #Tahiti
+				add_state_core = 727 #Line Islands
+				add_state_core = 284 #North Island
+				add_state_core = 723 #South Island
+				add_state_core = 1087 #Chatham Islands
+				add_state_core = 726 #Samoa
+				add_state_core = 1088 #American Samoa
+				add_state_core = 734 #Tonga
+				add_state_core = 1089 #Niue
 			}
 			hidden_effect = {
 				news_event = { id = lar_news.291 hours = 6 }
 				set_global_flag = form_polynesia_flag
 			}
+			add_ideas = generic_recent_political_unification
+			add_ideas = generic_recent_army_unification
+			add_ideas = generic_recent_economic_unification
 		}
 
 		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	integrate_micronesia = {
+
+		icon = CHL_mapuche_liberate_samoa
+
+		allowed = {
+			OR = {
+				original_tag = HAW
+				original_tag = TAH
+				original_tag = GUM
+				original_tag = FSM
+				original_tag = TON
+				original_tag = SAM
+				original_tag = SOL
+				original_tag = FIJ
+				original_tag = NZL
+			}
+		}
+
+		available = {
+			OR = {
+				is_subject = no
+				has_autonomy_state = autonomy_dominion #New Zealand should be able to do it
+			}
+			hidden_trigger = {
+				has_global_flag = form_polynesia_flag
+				has_cosmetic_tag = PLY
+			}
+			# Micronesia
+			controls_state = 725 #Nauru
+			controls_state = 639 #Gilbert Islands
+			controls_state = 633 #Marshall Islands
+			controls_state = 684 #Caroline Islands
+			controls_state = 647 #Palau
+			controls_state = 638 #Guam
+			controls_state = 646 #Saipan
+			controls_state = 648 #Marcus Island
+			controls_state = 632 #Wake Island
+		}
+
+		visible = {
+			OR = {
+				original_tag = HAW
+				original_tag = TAH
+				original_tag = GUM
+				original_tag = FSM
+				original_tag = TON
+				original_tag = SAM
+				original_tag = SOL
+				original_tag = FIJ
+				original_tag = NZL
+			}
+			has_global_flag = form_polynesia_flag
+			has_cosmetic_tag = PLY
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    every_country = {
+                        every_operative = {
+                            limit = {
+                                OR = {
+									has_nationality = GUM
+									has_nationality = FSM
+									has_nationality = FIJ
+								}
+                                NOT = {
+                                    has_nationality = ROOT
+                                }
+                            }
+                            add_nationality = ROOT
+                        }
+                    }
+                }				
+			}
+			# Micronesia
+			custom_effect_tooltip = form_country_micronesia_coring_states_tt
+			hidden_effect = {
+				725 = { add_core_of = ROOT }
+				639 = { add_core_of = ROOT }
+				633 = { add_core_of = ROOT }
+				684 = { add_core_of = ROOT }
+				647 = { add_core_of = ROOT }
+				638 = { add_core_of = ROOT }
+				646 = { add_core_of = ROOT }
+				648 = { add_core_of = ROOT }
+				632 = { add_core_of = ROOT }
+			}
+		}
+
+		fire_only_once = yes
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 725 #Nauru
+				state = 639 #Gilbert Islands
+				state = 633 #Marshall Islands
+				state = 684 #Caroline Islands
+				state = 647 #Palau
+				state = 638 #Guam
+				state = 646 #Saipan
+				state = 648 #Marcus Island
+				state = 632 #Wake Island
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	integrate_melanesia = {
+
+		icon = CHL_mapuche_liberate_hawaii
+
+		allowed = {
+			OR = {
+				original_tag = HAW
+				original_tag = TAH
+				original_tag = GUM
+				original_tag = FSM
+				original_tag = TON
+				original_tag = SAM
+				original_tag = SOL
+				original_tag = FIJ
+				original_tag = NZL
+			}
+		}
+
+		available = {
+			OR = {
+				is_subject = no
+				has_autonomy_state = autonomy_dominion #New Zealand should be able to do it
+			}
+			hidden_trigger = {
+				has_global_flag = form_polynesia_flag
+				has_cosmetic_tag = PLY
+			}
+			# Melanesia
+			controls_state = 635 #New Caledonia
+			controls_state = 636 #Fiji
+			controls_state = 634 #Solomon Islands
+			controls_state = 737 #Bismarck
+			controls_state = 523 #Papua
+			controls_state = 669 #West Papua
+			controls_state = 738 #Aru Islands
+		}
+
+		visible = {
+			OR = {
+				original_tag = HAW
+				original_tag = TAH
+				original_tag = GUM
+				original_tag = FSM
+				original_tag = TON
+				original_tag = SAM
+				original_tag = SOL
+				original_tag = FIJ
+				original_tag = NZL
+			}
+			has_global_flag = form_polynesia_flag
+			has_cosmetic_tag = PLY
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				if = {
+                    limit = {
+                        has_dlc = "La Resistance"
+                    }
+                    every_country = {
+                        every_operative = {
+                            limit = {
+                                OR = {
+									has_nationality = PNG
+									has_nationality = SOL
+									has_nationality = TAH
+									has_nationality = FIJ
+								}
+                                NOT = {
+                                    has_nationality = ROOT
+                                }
+                            }
+                            add_nationality = ROOT
+                        }
+                    }
+                }				
+			}
+			# Melanesia
+			custom_effect_tooltip = form_country_melanesia_coring_states_tt
+			hidden_effect = {
+				635 = { add_core_of = ROOT }
+				636 = { add_core_of = ROOT }
+				634 = { add_core_of = ROOT }
+				737 = { add_core_of = ROOT }
+				523 = { add_core_of = ROOT }
+				669 = { add_core_of = ROOT }
+				738 = { add_core_of = ROOT }
+			}
+		}
+
+		fire_only_once = yes
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 635 #New Caledonia
+				state = 636 #Fiji
+				state = 634 #Solomon Islands
+				state = 737 #Bismarck
+				state = 523 #Papua
+				state = 669 #West Papua
+				state = 738 #Aru Islands
+			}
+		}
 
 		ai_will_do = {
 			factor = 200

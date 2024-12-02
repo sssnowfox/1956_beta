@@ -313,6 +313,9 @@ characters={
 		name="Charles de Gaulle"
 		portraits={
 			civilian={
+				large=gfx/leaders/FRA/r56_portrait_FRA_Charles_De_Gaulle_Civilian.dds
+			}
+			army={
 				large=gfx/leaders/FRA/r56_portrait_FRA_Charles_De_Gaulle.dds
 				small=GFX_portrait_FRA_charles_de_gaulle_small
 			}
@@ -721,7 +724,7 @@ characters={
 		}
 	}
 
-	FRA_frederic_irene_joliot_curie={
+	FRA_frederic_irene_joliot_curie={	#unrecruited since GD
 		name=FRA_frederic_irene_joliot_curie
 		portraits={
 			army={
@@ -2521,11 +2524,11 @@ characters={
 		}
 
 		navy_leader={
-			traits={ bold naval_lineage superior_tactician }
-			skill=4
+			traits={ bold naval_lineage superior_tactician politically_connected }
+			skill=3
 			attack_skill=3
 			defense_skill=4
-			maneuvering_skill=3
+			maneuvering_skill=1
 			coordination_skill=2
 			legacy_id=102
 		}

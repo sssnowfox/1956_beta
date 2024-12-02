@@ -1103,6 +1103,54 @@ add_to_faction = SOV
 add_to_faction = MON
 add_to_faction = TAN
 
+diplomatic_relation = {
+	country = FRA
+	relation = non_aggression_pact
+	active = yes
+}
+
+diplomatic_relation = {
+	country = CZE
+	relation = non_aggression_pact
+	active = yes
+}
+
+diplomatic_relation = { # Stalin was cooking
+	country = ITA
+	relation = non_aggression_pact
+	active = yes
+}
+
+diplomatic_relation = {
+	country = PER
+	relation = non_aggression_pact
+	active = yes
+}
+
+diplomatic_relation = {
+	country = LIT
+	relation = non_aggression_pact
+	active = yes
+}
+
+diplomatic_relation = {
+	country = LAT
+	relation = non_aggression_pact
+	active = yes
+}
+
+diplomatic_relation = {
+	country = EST
+	relation = non_aggression_pact
+	active = yes
+}
+
+diplomatic_relation = {
+	country = FIN
+	relation = non_aggression_pact
+	active = yes
+}
+
 199 = { #sets 1936 proto-UPA activity in Khmelnytskyi. Sources don't say how strong  it really was so we will roll with a low value - SpicyAlfredo
 	start_resistance = yes
 	set_compliance = 50

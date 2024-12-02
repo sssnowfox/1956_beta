@@ -56,7 +56,7 @@ ideas = {
 
 		AFG_international_mujahideen_idea = {
 			
-			picture = generic_lead_by_example
+			picture = AFG_international_mujahideen
 		
 			allowed = {
 				always = yes
@@ -74,7 +74,7 @@ ideas = {
 
 		AFG_pashtunism = {
 			
-			picture = generic_lead_by_example
+			picture = generic_fascism_rising
 		
 			allowed = {
 				always = yes
@@ -176,7 +176,7 @@ ideas = {
 
 		AFG_unyielding_resolve = {
 			
-			picture = AFG_unyielding_resolve
+			picture = SWE_varnplikt
 		
 			allowed = {
 				always = yes
@@ -194,7 +194,7 @@ ideas = {
 
 		AFG_hazara_population_integrated = {
 			
-			picture = AFG_hazaras_excluded
+			picture = generic_manpower_bonus
 		
 			allowed = {
 				always = yes
@@ -246,7 +246,7 @@ ideas = {
 				production_speed_buildings_factor = -0.2
 				consumer_goods_factor = 0.4
 				production_factory_max_efficiency_factor = -0.2
-				production_factory_start_efficiency_factor = -0.05
+				industrial_capacity_factory = -0.05
 				local_resources_factor = -0.2
 			}
 		}
@@ -266,7 +266,7 @@ ideas = {
 				production_speed_buildings_factor = -0.15
 				consumer_goods_factor = 0.2
 				production_factory_max_efficiency_factor = -0.15
-				production_factory_start_efficiency_factor = -0.05
+				industrial_capacity_factory = -0.05
 				local_resources_factor = -0.1
 			}
 		}
@@ -308,6 +308,63 @@ ideas = {
 				local_resources_factor = 0.05
 			}
 		}
+		AFG_hydroelectric_power = {
+			
+			picture = por_hydroelectric_power
+		
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+				
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_infrastructure_factor = 0.1
+				local_building_slots = 2
+				local_resources_factor = 0.05
+			}
+		}
+		AFG_gold_mining = {
+			
+			picture = generic_exploit_mines
+		
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+				
+			modifier = {
+				consumer_goods_factor = -0.15
+			}
+		}
+		AFG_army_fake = { # USED JUST FOR BOOKMARK
+			
+			picture = tur_disorganised_armed_forces
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+				
+			modifier ={
+				army_defence_against_major_factor = 0.1
+				planning_speed = -0.25
+				army_org_factor = -0.1
+				consumer_goods_factor = 0.1
+				conscription_factor = 0.05
+				army_armor_attack_factor = -0.1
+				army_armor_defence_factor = -0.1
+			}
+		}
 		AFG_illiteracy = {
 			
 			picture = indochina_illiteracy
@@ -322,6 +379,7 @@ ideas = {
 				
 			modifier ={
 				research_speed_factor = -0.3
+				custom_modifier_tooltip = AFG_illiteracy_remove_visibility_tt
 			}
 		}
 		AFG_illiteracy_1 = {
@@ -404,145 +462,6 @@ ideas = {
 				research_speed_factor = -0.05
 			}
 		}
-		AFG_afghan_army = {
-			
-			picture = tur_disorganised_armed_forces
-		
-			allowed = {
-				always = yes
-			}
-			
-			allowed_civil_war = {
-				always = yes
-			}
-				
-			modifier ={
-				army_defence_against_major_factor = 0.1
-				army_attack_factor = -0.05
-				cas_damage_reduction = 0.1
-				max_planning_factor = -0.25
-				supply_combat_penalties_on_core_factor = -0.2
-				army_org_factor = -0.1
-			}
-		}
-		AFG_afghan_army_modern = {
-			
-			picture = tur_disorganised_armed_forces
-		
-			allowed = {
-				always = yes
-			}
-			
-			allowed_civil_war = {
-				always = yes
-			}
-				
-			modifier = {
-				army_defence_against_major_factor = 0.05
-				cas_damage_reduction = 0.05
-				max_planning_factor = -0.1
-				supply_combat_penalties_on_core_factor = -0.2
-			}
-		}
-		AFG_afghan_army_tribe = {
-			
-			picture = tur_disorganised_armed_forces
-		
-			allowed = {
-				always = yes
-			}
-			
-			allowed_civil_war = {
-				always = yes
-			}
-				
-			modifier = {
-				army_defence_against_major_factor = 0.15
-				army_attack_factor = -0.05
-				cas_damage_reduction = 0.20
-				max_planning_factor = -0.2
-				supply_combat_penalties_on_core_factor = -0.2
-				army_org_factor = -0.05
-				modifier_army_sub_unit_irregular_infantry_attack_factor = 0.05
-			}
-		}
-		AFG_prussians_of_the_orient_modern = {
-			
-			picture = SPA_la_division_azul
-		
-			allowed = {
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-				
-			modifier = {
-				army_defence_against_major_factor = 0.05
-				army_attack_factor = 0.05
-				supply_combat_penalties_on_core_factor = -0.1
-				army_org_factor = 0.05
-			}
-		}
-		AFG_prussians_of_the_orient_tribe = {
-			
-			picture = ENG_the_war_to_end_all_wars
-		
-			allowed = {
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-				
-			modifier = {
-				army_defence_against_major_factor = 0.15
-				cas_damage_reduction = 0.3
-				max_planning_factor = -0.1
-				supply_combat_penalties_on_core_factor = -0.25
-				modifier_army_sub_unit_irregular_infantry_attack_factor = 0.1
-			}
-		}
-		AFG_live_off_the_land_idea = {
-			
-			picture = generic_supply_line
-		
-			allowed = {
-				always = yes
-			}
-			
-			allowed_civil_war = {
-				always = yes
-			}
-				
-			modifier = {
-				army_morale_factor = 0.05
-				terrain_penalty_reduction = 0.05
-				supply_consumption_factor = -0.1
-				pocket_penalty = -0.1
-			}
-		}
-		AFG_mountaineers_idea = {
-			
-			picture = generic_mountain_warfare
-		
-			allowed = {
-				always = yes
-			}
-			
-			allowed_civil_war = {
-				always = yes
-			}
-				
-			modifier = {
-				special_forces_cap = 0.05
-				modifier_army_sub_unit_mountaineers_attack_factor = 0.1
-				modifier_army_sub_unit_mountaineers_defence_factor = 0.1
-				modifier_army_sub_unit_mountaineers_max_org_factor = 0.05
-			}
-		}
 		AFG_mass_production = {
 			
 			picture = generic_infantry_bonus
@@ -557,14 +476,17 @@ ideas = {
 
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.1 instant = yes
+					instant = yes
+					build_cost_ic = -0.1
+					soft_attack = -0.05
+					breakthrough = -0.15
 				}
 			}	
 		}
-		AFG_specialization_of_units = {
+		AFG_foreign_tank_designs = {
+
+			picture = generic_acquire_tanks
 			
-			picture = eng_special_air_service
-		
 			allowed = {
 				always = yes
 			}
@@ -572,12 +494,90 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-				
-			modifier ={
-				acclimatization_hot_climate_gain_factor = 0.2
-				acclimatization_cold_climate_gain_factor = 0.15
-				army_org_factor = 0.05
-				special_forces_cap = 0.05
+
+			equipment_bonus = {
+				light_tank_chassis = {
+					instant = yes
+					build_cost_ic = 0.1
+					reliability = 0.05
+					soft_attack = 0.1
+				}				
+				medium_tank_chassis = {
+					instant = yes
+					build_cost_ic = 0.1
+					reliability = 0.05
+					hard_attack = 0.05
+					soft_attack = 0.05
+				}
+				heavy_tank_chassis = {
+					instant = yes
+					build_cost_ic = 0.1
+					reliability = 0.05
+					hard_attack = 0.1
+				}				
+			}
+		}
+		AFG_national_tank_industry = {
+
+			picture = man_five_year_plan_tank
+			
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			equipment_bonus = {
+				light_tank_chassis = {
+					instant = yes
+					build_cost_ic = -0.15
+					reliability = -0.05
+				}
+				medium_tank_chassis = {
+					instant = yes
+					build_cost_ic = -0.1
+					reliability = -0.1
+				}
+				heavy_tank_chassis = {
+					instant = yes
+					build_cost_ic = -0.05
+					reliability = -0.15
+				}		
+			}
+		}
+		AFG_domestic_designs = {
+
+			picture = generic_artillery_regiments
+			
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			equipment_bonus = {
+				artillery_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+					reliability = -0.05
+					hard_attack = -0.25
+				}
+				anti_tank_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+					reliability = -0.05
+					soft_attack = -0.25
+				}
+				anti_air_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+					reliability = -0.05
+					ap_attack = -0.25
+				}
 			}
 		}
 		AFG_opening_schools = {
@@ -594,130 +594,6 @@ ideas = {
 				
 			modifier = {
 				consumer_goods_factor = 0.1
-			}
-		}
-		AFG_bolstered_opium = {
-			
-			picture = prc_permit_opium_trade
-		
-			allowed = {
-				always = yes
-			}
-			
-			allowed_civil_war = {
-				always = yes
-			}
-				
-			modifier ={
-				consumer_goods_factor = -0.15
-				stability_factor = -0.1
-			}
-		}
-		AFG_banned_opium = {
-			
-			picture = prc_permit_opium_trade
-		
-			allowed = {
-				always = yes
-			}
-			
-			allowed_civil_war = {
-				always = yes
-			}
-				
-			modifier ={
-				consumer_goods_factor = 0.2
-				stability_factor = 0.1
-				political_power_factor = 0.05
-			}
-		}
-		AFG_banned_opium_1 = {
-			
-			picture = prc_permit_opium_trade
-		
-			allowed = {
-				always = yes
-			}
-			
-			allowed_civil_war = {
-				always = yes
-			}
-				
-			modifier ={
-				consumer_goods_factor = 0.15
-				stability_factor = 0.1
-				political_power_factor = 0.05
-			}
-		}
-		AFG_banned_opium_2 = {
-			
-			picture = prc_permit_opium_trade
-		
-			allowed = {
-				always = yes
-			}
-			
-			allowed_civil_war = {
-				always = yes
-			}
-				
-			modifier ={
-				consumer_goods_factor = 0.10
-				stability_factor = 0.1
-				political_power_factor = 0.05
-			}
-		}
-		AFG_banned_opium_3 = {
-			
-			picture = prc_permit_opium_trade
-		
-			allowed = {
-				always = yes
-			}
-			
-			allowed_civil_war = {
-				always = yes
-			}
-				
-			modifier ={
-				consumer_goods_factor = 0.05
-				stability_factor = 0.1
-				political_power_factor = 0.05
-			}
-		}
-		AFG_banned_opium_4 = {
-			
-			picture = prc_permit_opium_trade
-		
-			allowed = {
-				always = yes
-			}
-			
-			allowed_civil_war = {
-				always = yes
-			}
-				
-			modifier ={
-				stability_factor = 0.1
-				political_power_factor = 0.05
-			}
-		}
-		AFG_banned_opium_5 = {
-			
-			picture = prc_permit_opium_trade
-		
-			allowed = {
-				always = yes
-			}
-			
-			allowed_civil_war = {
-				always = yes
-			}
-				
-			modifier ={
-				consumer_goods_factor = -0.05
-				stability_factor = 0.15
-				political_power_factor = 0.15
 			}
 		}
 		AFG_sharia = {
@@ -775,7 +651,7 @@ ideas = {
 		}
 		AFG_bank = {
 			
-			picture = r56_idea_AFG_bank
+			picture = tur_balkan_central_bank_wealthy_greece
 		
 			allowed = {
 				always = yes
@@ -785,16 +661,20 @@ ideas = {
 				always = yes
 			}
 				
-			modifier ={
+			modifier = {
 				consumer_goods_factor = -0.15
 				political_power_factor = 0.05
 			}
 		}
 		AFG_loya_jirga_idea = {
 			
-			picture = generic_disjointed_gov
+			picture = AFG_loya_jirga
 		
 			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
 				always = yes
 			}
 				
@@ -824,7 +704,7 @@ ideas = {
 		}
 		AFG_afghan_new_deal = {
 			
-			picture = BUL_shared_manufacturing_experience
+			picture = new_deal
 		
 			allowed = {
 				always = yes
@@ -842,7 +722,7 @@ ideas = {
 		}
 		AFG_air_officers_academy = {
 
-			picture = generic_air_bonus
+			picture = generic_army_war_college
 
 			allowed = {
 				always = yes
@@ -888,13 +768,14 @@ ideas = {
 			}
 
 			modifier = {
+				communism_drift = 0.05
 				consumer_goods_factor = -0.1
-				industrial_capacity_factory = 0.03
+				industrial_capacity_factory = 0.05
 			}
 		}
-		AFG_socialist_militias = {
+		AFG_soviet_support = {
 
-			picture = SPR_international_brigades
+			picture = saf_soviet_advisers
 
 			allowed = {
 				always = yes
@@ -905,8 +786,122 @@ ideas = {
 			}
 
 			modifier = {
-				conscription = 0.01
+				communism_drift = 0.03
+				army_core_attack_factor = 0.05
 				war_support_factor = 0.05
+			}
+		}
+		AFG_death_before_surrender = {
+
+			name = SPR_death_before_surrender
+
+			picture = SPR_crush_the_revolution
+
+			allowed = {
+				original_tag = AFG
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cancel = {
+				has_civil_war = no
+			}
+
+			modifier = {
+				surrender_limit = 1
+				max_surrender_limit_offset = 0.15
+			}
+		}
+		# AFG_tribal_resistance_1 = { # For another time
+
+		# 	picture = chi_war_of_resistance
+
+		# 	allowed = {
+		# 		original_tag = AFG
+		# 	}
+
+		# 	allowed_civil_war = {
+		# 		always = yes
+		# 	}
+
+		# 	cancel = {
+		# 		has_civil_war = no
+		# 	}
+
+		# 	modifier = {
+		# 		resistance_damage_to_garrison = 0.10
+		# 		resistance_growth = 0.15
+		# 		resistance_target = 0.05
+		# 		stability_factor = -0.15
+		# 		war_support_weekly = -0.001
+		# 	}
+		# }
+		# AFG_tribal_resistance_2 = {
+
+		# 	picture = chi_war_of_resistance2
+
+		# 	allowed = {
+		# 		original_tag = AFG
+		# 	}
+
+		# 	allowed_civil_war = {
+		# 		always = yes
+		# 	}
+
+		# 	cancel = {
+		# 		has_civil_war = no
+		# 	}
+
+		# 	modifier = {
+		# 		resistance_damage_to_garrison = 0.15
+		# 		resistance_growth = 0.20
+		# 		resistance_target = 0.10
+		# 		stability_factor = -0.25
+		# 		war_support_weekly = -0.002
+		# 	}
+		# }
+		# AFG_tribal_resistance_3 = {
+
+		# 	picture = chi_war_of_resistance3
+
+		# 	allowed = {
+		# 		original_tag = AFG
+		# 	}
+
+		# 	allowed_civil_war = {
+		# 		always = yes
+		# 	}
+
+		# 	cancel = {
+		# 		has_civil_war = no
+		# 	}
+
+		# 	modifier = {
+		# 		resistance_damage_to_garrison = 0.20
+		# 		resistance_growth = 0.25
+		# 		resistance_target = 0.15
+		# 		stability_factor = -0.35
+		# 		war_support_weekly = -0.003
+		# 	}
+		# }
+		AFG_parcham_purged = {
+
+			picture = officers_purged
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				democratic_drift = -0.01
+				political_power_factor = 0.10
+				stability_factor = -0.05
 			}
 		}
 		AFG_khad_idea = {
@@ -947,6 +942,7 @@ ideas = {
 			}
 		}
 		AFG_bourgeoisie_purged = {
+
 			picture = SPR_class_war
 
 			allowed = {
@@ -966,6 +962,7 @@ ideas = {
 			} 
 		}
 		AFG_socialist_education_idea = {
+			
 			picture = SOV_atomic_bomb_project
 
 			allowed = {
@@ -983,7 +980,9 @@ ideas = {
 			} 
 		}
 		AFG_islamic_socialism_idea = {
+			
 			picture = raj_marginalized_muslim_community_happy
+
 			allowed = {
 				original_tag = AFG
 			}
@@ -1002,7 +1001,8 @@ ideas = {
 			} 
 		}
 		AFG_socialist_constitution_idea = {
-			picture = NOR_sivog
+			
+			picture = gre_schachtplan3
 
 			allowed = {
 				original_tag = AFG
@@ -1019,7 +1019,8 @@ ideas = {
 			} 
 		}
 		AFG_persecuted_believers = {
-			picture = fourth_international
+			
+			picture = raj_marginalized_muslim_community_angry
 
 			allowed = {
 				original_tag = AFG
@@ -1038,6 +1039,7 @@ ideas = {
 			} 
 		}
 		AFG_flames_of_the_revolution = {
+			
 			picture = SPR_torchbearers_of_tomorrow
 
 			allowed = {
@@ -1056,7 +1058,8 @@ ideas = {
 			} 
 		}
 		AFG_combined_training = {
-			picture = workers_brigades
+			
+			picture = SOV_war_heroes
 
 			allowed = {
 				original_tag = AFG
@@ -1074,7 +1077,8 @@ ideas = {
 			} 
 		}
 		AFG_operation_countenance = {
-			picture = SOV_war_heroes
+			
+			picture = generic_oppression
 
 			allowed = {
 				original_tag = AFG
@@ -1092,7 +1096,8 @@ ideas = {
 			}
 		}
 		AFG_five_year_plan_idea = {
-			picture = generic_improved_industries
+			
+			picture = SOV_third_five_year_plan_civilian
 
 			allowed = {
 				original_tag = AFG
@@ -1110,7 +1115,8 @@ ideas = {
 			} 
 		}
 		AFG_afghan_workers_program_idea = {
-			picture = SOV_third_five_year_plan
+			
+			picture = ARG_construction_guilds
 
 			allowed = {
 				original_tag = AFG
@@ -1129,7 +1135,8 @@ ideas = {
 			} 
 		}
 		AFG_SOV_afghan_workers_program_idea = {
-			picture = SOV_third_five_year_plan
+			
+			picture = ARG_construction_guilds
 
 			allowed = {
 				original_tag = AFG
@@ -1147,7 +1154,8 @@ ideas = {
 			} 
 		}
 		AFG_peaceful_revolution = {
-			picture = fourth_international
+			
+			picture = GER_limited_democratic_principles
 
 			allowed = {
 				original_tag = AFG
@@ -1169,7 +1177,8 @@ ideas = {
 			} 
 		}
 		AFG_bloody_revolution = {
-			picture = the_people
+			
+			picture = MEX_revolutionary_army
 
 			allowed = {
 				original_tag = AFG
@@ -1189,6 +1198,7 @@ ideas = {
 			} 
 		}
 		AFG_economic_union = {
+			
 			picture = jap_the_unthinkable_option
 		
 			allowed_civil_war = {
@@ -1204,7 +1214,8 @@ ideas = {
 			} 
 		}
 		AFG_socialist_welfare_idea = {
-			picture = FIN_socialist_wellfare
+			
+			picture = MON_sheltering_refugees
 
 			allowed = {
 				original_tag = AFG
@@ -1224,7 +1235,8 @@ ideas = {
 			} 
 		}
 		AFG_attack_soviets = {
-			picture = generic_attack_soviet_union
+			
+			picture = NOR_anti_communist_sentiment
 
 			allowed = {
 				original_tag = AFG
@@ -1242,6 +1254,7 @@ ideas = {
 			}
 		}
 		AFG_hazara_rights = {
+			
 			picture = raj_marginalized_muslim_community_happy
 
 			allowed = {
@@ -1261,6 +1274,7 @@ ideas = {
 			} 
 		}
 		AFG_recent_political_turmoil = {
+			
 			picture = POL_the_peasants_strike
 
 			allowed = {
@@ -1281,7 +1295,8 @@ ideas = {
 			} 
 		}
 		AFG_hazara_nationalism_crushed = {
-			picture = generic_purge
+			
+			picture = SPR_the_popular_front
 
 			allowed = {
 				original_tag = AFG
@@ -1301,6 +1316,7 @@ ideas = {
 			} 
 		}
 		AFG_shura_council_idea = {
+			
 			picture = PAL_true_islamic_democracy
 
 			allowed = {
@@ -1321,6 +1337,7 @@ ideas = {
 			} 
 		}
 		AFG_hazara_cooperation = {
+			
 			picture = raj_marginalized_muslim_community_happy
 
 			allowed = {
@@ -1341,7 +1358,8 @@ ideas = {
 			} 
 		}
 		AFG_muslim_youth = {
-			picture = chi_army_corruption3
+			
+			picture = generic_fascist_workers
 
 			allowed = {
 				original_tag = AFG
@@ -1359,26 +1377,8 @@ ideas = {
 				mobilization_laws_cost_factor = -0.1
 			} 
 		}
-		AFG_equality_with_shias = {
-			picture = raj_marginalized_muslim_community_happy
-
-			allowed = {
-				original_tag = AFG
-			}
-		
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				stability_factor = 0.05
-				conscription = 0.005
-				research_speed_factor = 0.03
-			} 
-		}
 		AFG_communism_banned = {
+			
 			picture = generic_communism_banned
 
 			allowed = {
@@ -1397,6 +1397,7 @@ ideas = {
 			} 
 		}
 		AFG_turkestan_legion_idea = {
+			
 			picture = AFG_turkestan_legion
 
 			allowed = {
@@ -1416,7 +1417,8 @@ ideas = {
 			} 
 		}
 		AFG_pashtunwali = {
-			picture = PAL_true_islamic_democracy
+
+			picture = AFG_pashtunwali
 
 			allowed = {
 				original_tag = AFG
@@ -1478,7 +1480,7 @@ ideas = {
 		}
 		AFG_royal_assets_seized = {
 			
-			picture = SPR_seize_the_gold_reserves
+			picture = tur_varlik_vergisi
 			
 			allowed = {
 				original_tag = AFG
@@ -1545,7 +1547,8 @@ ideas = {
 			}
 		}
 		AFG_legacy_of_khost = {
-			picture = chi_war_of_resistance3
+			
+			picture = AFG_international_mujahideen
 
 			allowed = {
 				original_tag = AFG
@@ -1563,6 +1566,32 @@ ideas = {
 			} 
 		}
 		AFG_zahir_shah_idea = {
+			
+			picture = r56_AFG_zahir_shah
+
+			allowed = {
+				original_tag = AFG
+			}
+		
+			allowed_civil_war = {
+				always = no
+			}
+
+			cancel = {
+				OR = {
+					has_government = communism
+					has_government = fascism
+				}
+			}
+
+			removal_cost = -1
+
+			traits = {
+				AFG_politically_disengaged
+			}
+		}
+		AFG_zahir_shah_improved_idea = {
+			
 			picture = r56_AFG_zahir_shah
 
 			allowed = {
@@ -1582,30 +1611,12 @@ ideas = {
 
 			removal_cost = -1
 			
-			modifier = {
-				stability_factor = 0.05
-				political_power_factor = 0.05
-			} 
-		}
-		AFG_zahir_shah_improved_idea = {
-			picture = r56_AFG_zahir_shah
-
-			allowed = {
-				original_tag = AFG
-			}
-		
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				stability_factor = 0.05
-				political_power_factor = 0.15
+			traits = {
+				AFG_politically_disengaged_2
 			} 
 		}
 		AFG_jihad_for_state = {
+			
 			picture = PAL_islamic_militarism
 
 			allowed = {
@@ -1624,6 +1635,7 @@ ideas = {
 			} 
 		}
 		AFG_peace_through_islam_idea = {
+			
 			picture = tur_kemalist_army_officers_powerful_neutral
 
 			allowed = {
@@ -1645,6 +1657,7 @@ ideas = {
 			} 
 		}
 		AFG_global_islamic_revolution_idea = {
+
 			picture = PAL_mujahideen
 
 			allowed = {
@@ -1706,7 +1719,7 @@ ideas = {
 		}
 		AFG_four_point_program_idea = {
 			
-			picture = generic_liberty_money
+			picture = ARG_civilian_economy_boost
 			
 			allowed = {
 				original_tag = AFG
@@ -1723,7 +1736,7 @@ ideas = {
 		}
 		AFG_privatizied_infrastructure = {
 			
-			picture = generic_railroads
+			picture = ARG_invest_in_railways
 			
 			allowed = {
 				original_tag = AFG
@@ -1761,7 +1774,7 @@ ideas = {
 		}
 		AFG_democratic_constitution = {
 			
-			picture = HUN_treaty_of_triannon
+			picture = generic_constitutional_guarantees
 			
 			allowed = {
 				original_tag = AFG
@@ -1779,7 +1792,7 @@ ideas = {
 		}
 		AFG_stable_currency = {
 			
-			picture = NOR_printing_money
+			picture = AFG_the_afghani
 			
 			allowed = {
 				original_tag = AFG
@@ -1796,7 +1809,7 @@ ideas = {
 		}
 		AFG_leopard_corps = {
 			
-			picture = german_advisors
+			picture = hol_expand_the_colonial_army
 			
 			allowed = {
 				original_tag = AFG
@@ -1833,7 +1846,7 @@ ideas = {
 		}
 		AFG_combat_foreign_influence = {
 			
-			picture = generic_neutrality_drift_bonus
+			picture = generic_anti_extremism
 			
 			allowed = {
 				original_tag = AFG
@@ -1853,7 +1866,7 @@ ideas = {
 		}
 		AFG_beacon_of_the_orient_idea = {
 			
-			picture = democratic_bastion
+			picture = generic_democratic_drift_bonus
 			
 			allowed = {
 				original_tag = AFG
@@ -1931,7 +1944,7 @@ ideas = {
 		}
 		AFG_bank_improved = {
 			
-			picture = r56_idea_AFG_bank
+			picture = tur_balkan_central_bank_wealthy_greece
 		
 			allowed = {
 				always = yes
@@ -1968,7 +1981,7 @@ ideas = {
 		}
 		AFG_backtrack_on_reforms_idea = {
 			
-			picture = bad_investment
+			picture = ARG_roca_runciman_new_partner
 			
 			allowed = {
 				original_tag = AFG
@@ -1988,7 +2001,7 @@ ideas = {
 		}
 		AFG_constitutional_monarchy_idea = {
 			
-			picture = por_monarchist_uprising
+			picture = ROM_king_carol_ii_hedonist
 			
 			allowed = {
 				original_tag = AFG
@@ -2007,7 +2020,7 @@ ideas = {
 		}
 		AFG_banned_political_parties = {
 			
-			picture = HOL_reliance_on_the_gold_standard
+			picture = generic_democracy_banned
 		
 			allowed = {
 				always = yes
@@ -2027,7 +2040,7 @@ ideas = {
 		}
 		AFG_disbanded_the_jirga = {
 			
-			picture = HOL_reliance_on_the_gold_standard
+			picture = SWE_neither_death_nor_dishonor
 		
 			allowed = {
 				always = yes
@@ -2045,7 +2058,7 @@ ideas = {
 		}
 		AFG_1921_constitution = {
 			
-			picture = HUN_treaty_of_triannon
+			picture = BRA_dasp
 		
 			allowed = {
 				always = yes
@@ -2064,7 +2077,7 @@ ideas = {
 		}
 		AFG_banks_nationalized = {
 			
-			picture = r56_idea_AFG_bank
+			picture = EST_exploit_the_banks
 		
 			allowed = {
 				always = yes
@@ -2102,7 +2115,7 @@ ideas = {
 		}
 		AFG_secular_education_idea = {
 			
-			picture = HOL_reliance_on_the_gold_standard
+			picture = jap_supremacy_of_technology
 		
 			allowed = {
 				always = yes
@@ -2138,7 +2151,7 @@ ideas = {
 		}
 		AFG_radio_kabul = {
 			
-			picture = SWE_radiotjanst
+			picture = generic_radar
 		
 			allowed = {
 				always = yes
@@ -2192,7 +2205,7 @@ ideas = {
 		}
 		AFG_subvert_soviet_influence = {
 			
-			picture = SPR_subvert_soviet_control
+			picture = NOR_anti_communist_sentiment
 		
 			allowed = {
 				always = yes
@@ -2208,7 +2221,7 @@ ideas = {
 		}
 		AFG_under_the_radar_idea = {
 			
-			picture = generic_sea_focused_navy
+			picture = generic_navy_submarines
 		
 			allowed = {
 				always = yes
@@ -2231,7 +2244,7 @@ ideas = {
 		}
 		AFG_protecting_our_convoys_idea = {
 			
-			picture = generic_sea_focused_navy
+			picture = generic_naval_invasion
 		
 			allowed = {
 				always = yes
@@ -2255,7 +2268,7 @@ ideas = {
 		}
 		AFG_naval_defense_fund_idea = {
 			
-			picture = generic_coastal_defense_ships2
+			picture = jap_interservice_rivalry_navy_dominant
 		
 			allowed = {
 				always = yes
@@ -2264,8 +2277,13 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
+
+			research_bonus = {
+				naval_equipment = 0.15
+			}
 				
 			modifier = {
+				experience_gain_navy_factor = 0.15
 				industrial_capacity_dockyard = 0.1
 				refit_speed = 0.1
 				consumer_goods_factor = 0.2
@@ -2297,9 +2315,31 @@ ideas = {
 				}
 			}	
 		}
+		AFG_foreign_trained_personnel = {
+			
+			picture = generic_air_fighter
+		
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+				
+			modifier = {
+				experience_gain_air_factor = 0.1
+				air_ace_generation_chance_factor = 0.15
+			}
+
+			research_bonus = {
+				air_equipment = 0.05
+			}
+
+		}
 		AFG_soviet_intervention_idea = {
 			
-			picture = generic_attack_soviet_union
+			picture = SWE_neither_death_nor_dishonor
 		
 			allowed = {
 				always = yes
@@ -2319,25 +2359,6 @@ ideas = {
 				tag = AFG
 				attack_bonus_against = -0.25
 				defense_bonus_against = -0.25
-			}
-		}
-		AFG_cavalry_heritage = {
-			
-			picture = ETH_national_studs
-		
-			allowed = {
-				always = yes
-			}
-			
-			allowed_civil_war = {
-				always = yes
-			}
-				
-			modifier = {
-				cavalry_attack_factor = 0.05
-				cavalry_defence_factor = 0.05
-				trait_cavalry_leader_xp_gain_factor = 0.15
-				unit_cavalry_design_cost_factor = -1
 			}
 		}
 		AFG_legacy_of_attaturk_idea = {
@@ -2551,22 +2572,62 @@ ideas = {
 				industry = 0.1
 			}			
 
-			traits = { construction_concern }
+			traits = { industrial_concern }
 
 			available = {
 				owns_state = 1011
 				NOT = {
 					has_country_flag = AFG_spiznar_nationalized
 				}
+				has_completed_focus = AFG_bolster_the_textile_industry
 			}
 
 			modifier = {
 				production_speed_buildings_factor = 0.05
-				production_factory_efficiency_gain_factor = 0.05
+				industrial_capacity_factory = 0.05
 			}
 			
 			ai_will_do = {
-				factor = 1
+				factor = 100
+				modifier = {
+					date < 1940.1.1
+					factor = 0
+				}
+			}
+		}
+		AFG_bank_millie_afghan = {
+			
+			picture = AFG_bank_millie
+			
+			allowed = {
+				original_tag = AFG
+			}
+			
+			research_bonus = {
+				industry = 0.05
+			}			
+
+			traits = { financial_conern }
+
+			allowed_to_remove = {
+				has_completed_focus = AFG_afghanistan_bank
+			}
+
+			modifier = {
+				trade_laws_cost_factor = -0.15
+				trade_opinion_factor = 0.1
+				consumer_goods_factor = 0.25
+				production_factory_efficiency_gain_factor = -0.1
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_infrastructure_factor = 0.1
+			}
+			
+			ai_will_do = {
+				factor = 100
+				modifier = {
+					date > 1940.1.1
+					factor = 0
+				}
 			}
 		}
 	}
@@ -2652,7 +2713,7 @@ ideas = {
 			}
 			
 			available = {
-				has_completed_focus = AFG_invite_foreign_companies
+				has_completed_focus = AFG_tank_purchase
 				ITA = {
 					has_opinion = {
 						target = ROOT

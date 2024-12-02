@@ -2,7 +2,7 @@
 state={
 	id=563
 	name="STATE_563" # Chita
-	manpower = 1044310
+	manpower = 856573
 	state_category = rural
 	resources={
 		steel=9 # was: 12
@@ -23,7 +23,7 @@ state={
 		}
 		add_core_of = SOV
 		add_core_of = FER
-		add_core_of = BYA
+		add_claim_by = BYA #not worth a core
 	}
 
 	provinces={

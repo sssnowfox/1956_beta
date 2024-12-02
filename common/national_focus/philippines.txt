@@ -2419,7 +2419,7 @@ focus_tree = {
 				SPA = {
 					add_equipment_to_stockpile = {
 						type = infantry_equipment
-						amount = 2000
+						amount = 1000
 						producer = PHI
 					}
 				}
@@ -2432,7 +2432,7 @@ focus_tree = {
 				SPD = {
 					add_equipment_to_stockpile = {
 						type = infantry_equipment
-						amount = 2000
+						amount = 1000
 						producer = PHI
 					}
 				}
