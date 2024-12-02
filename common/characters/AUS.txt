@@ -3117,7 +3117,7 @@ characters = {
 		name = AUS_gunther_adolf_burstyn
 		portraits = {
 			army = {
-				large = "gfx/leaders/aus/r56_portrait_AUS_Gunther_Adolf_Burstyn.dds"
+				large = "gfx/leaders/AUS/r56_portrait_AUS_Gunther_Adolf_Burstyn.dds"
 			}
 		}
 
