@@ -1544,6 +1544,9 @@ ideas = {
 					original_tag = BEL
 					original_tag = WLL
 				}
+				NOT = {
+					has_dlc = "Gotterdammerung"
+				}
 			}
 			
 			research_bonus = {
