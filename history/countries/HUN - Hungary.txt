@@ -396,7 +396,6 @@ recruit_character = HUN_gyorgy_jendrassik
 recruit_character = HUN_andras_littay
 recruit_character = HUN_dezso_winkler
 recruit_character = HUN_odon_trunkwalter
-recruit_character = HUN_kalman_hardy
 
 recruit_character = HUN_paul_erdos
 
@@ -456,6 +455,7 @@ if = {
 	recruit_character = HUN_jusztinian_seredi
 	recruit_character = HUN_lennart_bernadotte
 	recruit_character = HUN_hermann_goring
+	recruit_character = HUN_kalman_hardy
 }
 
 #Scientists always recruited

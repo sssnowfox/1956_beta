@@ -14,6 +14,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/afg/advisors/r56_idea_AFG_advisor_daoud_khan.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_AFG_daoud_khan_political"
+		texturefile = "gfx/interface/ideas/afg/advisors/r56_idea_AFG_advisor_daoud_khan_political.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_AFG_shah_mahmud_khan"
 		texturefile = "gfx/interface/ideas/afg/advisors/r56_idea_AFG_advisor_sardar_shah_mahmud_khan.dds"
 	}
@@ -32,10 +36,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_AFG_turabaz_khan"
 		texturefile = "gfx/interface/ideas/afg/advisors/r56_idea_AFG_advisor_turabaz_khan.dds"
-	}
-	spriteType = {
-		name = "GFX_r56_idea_AFG_advisor_humaira_begum"
-		texturefile = "gfx/interface/ideas/afg/advisors/r56_idea_AFG_advisor_humaira_begum.dds"
 	}
 	spriteType = {
 		name = "GFX_rt56_idea_AFG_advisor_homeira_seljuqi"
@@ -66,6 +66,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/afg/advisors/r56_idea_AFG_advisor_muhammad_ghulam_ghobar.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_AFG_advisor_muhammad_ghulam_ghobar_prison"
+		texturefile = "gfx/interface/ideas/afg/advisors/r56_idea_AFG_advisor_muhammad_ghulam_ghobar_prison.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_AFG_mohammed_hashim_khan"
 		texturefile = "gfx/interface/ideas/afg/advisors/r56_idea_AFG_mohammed_hashim_khan.dds"
 	}
@@ -88,6 +92,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_AFG_advisor_abdul_hadi_dawi"
 	   	texturefile = "gfx/interface/ideas/afg/advisors/r56_idea_AFG_advisor_abdul_hadi_dawi.dds"
+   	}
+	spriteType = {
+		name = "GFX_idea_AFG_advisor_abdul_hadi_dawi_prison"
+	   	texturefile = "gfx/interface/ideas/afg/advisors/r56_idea_AFG_advisor_abdul_hadi_dawi_prison.dds"
    	}
 	spriteType = {
 		name = "GFX_idea_AFG_advisor_mubashir_al_tarazi"
@@ -140,6 +148,26 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_AFG_advisor_werner_otto_von_hentig"
 	   	texturefile = "gfx/interface/ideas/afg/advisors/r56_idea_AFG_advisor_werner_otto_von_hentig.dds"
+   	}
+	spriteType = {
+		name = "GFX_idea_AFG_advisor_fazl_omar_mojadidi"
+	   	texturefile = "gfx/interface/ideas/afg/advisors/r56_idea_AFG_advisor_fazl_omar_mojadidi.dds"
+   	}
+	spriteType = {
+		name = "GFX_idea_AFG_advisor_nisar_avalovich"
+	   	texturefile = "gfx/interface/ideas/afg/advisors/r56_idea_AFG_advisor_nisar_avalovich.dds"
+   	}
+	spriteType = {
+		name = "GFX_idea_AFG_advisor_abul_maududi"
+	   	texturefile = "gfx/interface/ideas/afg/advisors/r56_idea_AFG_advisor_abul_maududi.dds"
+   	}
+	spriteType = {
+		name = "GFX_idea_AFG_advisor_zmarak_zadran"
+	   	texturefile = "gfx/interface/ideas/afg/advisors/r56_idea_AFG_advisor_zmarak_zadran.dds"
+   	}
+	spriteType = {
+		name = "GFX_idea_AFG_advisor_bacha_gul"
+	   	texturefile = "gfx/interface/ideas/afg/advisors/r56_idea_AFG_advisor_bacha_gul.dds"
    	}
 
 ###------> ARG <><> <><> <><> <><> <><>
