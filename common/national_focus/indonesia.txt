@@ -1889,6 +1889,18 @@ focus_tree = {
 		prerequisite = { focus = INS_defensive_politics }
 		cost = 8
 
+		available = {
+			has_war = yes
+			OR = {
+				is_subject_of = HOL
+				is_in_faction_with = HOL
+			}
+			HOL = {
+				NOT = { has_government = communism}
+				has_capitulated = yes
+			}
+		}
+
 		completion_reward = {
 			add_stability = 0.05
 			add_popularity = {
