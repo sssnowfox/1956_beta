@@ -1,7 +1,11 @@
 capital = 51
-
+set_research_slots = 4
+set_country_flag = started_out_as_landlocked
 # Starting tech
 set_technology = {
+	# Extended Technologies
+	etax_doctrine = 1
+	camo = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_recon = 1
@@ -157,6 +161,8 @@ set_popularities = {
 }
 
 add_ideas = {
+	general_staff
+	limited_conscription
 }
 
 recruit_character = RHI_josef_friedrich_matthes 

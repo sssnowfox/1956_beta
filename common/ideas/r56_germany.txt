@@ -2002,6 +2002,16 @@ ideas = {
 			allowed_civil_war = {
 				has_government = fascism
 			}
+			on_remove = {
+				if = {
+					limit = {
+						has_dynamic_modifier = {modifier = GER_recovering_economy_modifier }
+				  	} 
+				 	add_to_variable = {
+						GER_industrial_consumer_goods_factor = 0.75
+					}
+				}
+			}
 			removal_cost = -1
 			picture = ger_mefo_bills_payment
 			modifier = {
@@ -2321,6 +2331,28 @@ ideas = {
 				drift_defence_factor = -0.1
 				fascism_drift = 0.05
 				fascism_acceptance = 20
+			}
+		}
+		#Used to try to prevent cancel MEFO jankiness and cheating. Might just be a fruitless prevention method :/
+		r56_GER_economic_uncertainty = {
+			allowed = {
+				always = yes
+			}
+
+			available = {
+				has_war = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = generic_disjointed_gov
+
+			modifier = {
+				industrial_concern_cost_factor = 0.25
+				fuel_gain_factor = -0.25
+				faction_trade_opinion_factor = -0.25
 			}
 		}
 	}

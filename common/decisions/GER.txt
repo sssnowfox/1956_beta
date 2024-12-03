@@ -167,6 +167,9 @@ GER_mefo_bills_category = {
 		}
 
 		available = {
+			NOT = {
+				has_idea = r56_GER_economic_uncertainty
+			}
 		}
 
 		cost = 0
