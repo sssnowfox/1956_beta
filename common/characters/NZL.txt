@@ -1114,7 +1114,7 @@ characters={
 			slot = political_advisor
 			idea_token = NZL_a_e_davy
 			allowed  = {
-				Leslie Robert Cathcart Macfarlane	original_tag  = NZL
+				original_tag  = NZL
 			}
 			traits  = {
 				ideological_crusader 
