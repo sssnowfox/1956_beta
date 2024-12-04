@@ -2421,6 +2421,10 @@ SpriteType = {
 		texturefile = "gfx/interface/ideas/ins/advisors/r56_idea_INS_advisor_kartosuwiryo.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_indonesia_kh_dewantara"
+		texturefile = "gfx/interface/ideas/ins/advisors/r56_idea_INS_advisor_kh_dewantara.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_indonesia_koenraad"
 		texturefile = "gfx/interface/ideas/ins/advisors/r56_idea_INS_advisor_koenraad.dds"
 	}

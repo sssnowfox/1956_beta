@@ -96,6 +96,7 @@ recruit_character = INS_george_hart
 recruit_character = INS_hamengkubuwono_ix
 recruit_character = INS_hubertus_van_mook
 recruit_character = INS_husni_thamrin
+recruit_character = INS_kh_dewantara
 recruit_character = INS_mohammad_hatta
 recruit_character = INS_munawar_musso
 recruit_character = INS_sekarmaji_kartosuwiryo

@@ -1,4 +1,5 @@
 characters = {
+
 	INS_abikusno_cokrosuyoso = {
 		name = INS_abikusno_cokrosuyoso
 		portraits = {
@@ -35,6 +36,7 @@ characters = {
 			}
 		}
 	}
+	
 	INS_amir_syarifuddin_harahap = {
 		name = INS_amir_syarifuddin_harahap
 		portraits = {
@@ -74,6 +76,7 @@ characters = {
 			}
 		}
 	}
+	
 	INS_bonifacious_cornelis_de_jonge = {
 		name = INS_bonifacious_cornelis_de_jonge
 		portraits = {
@@ -91,6 +94,7 @@ characters = {
 			}
 		}
 	}
+	
 	INS_george_hart = {
 		name = INS_george_hart
 		portraits = {
@@ -133,6 +137,7 @@ characters = {
 			cost = 125
 		}
 	}
+	
 	INS_hamengkubuwono_ix = {
 		name = INS_hamengkubuwono_ix
 		portraits = {
@@ -163,6 +168,7 @@ characters = {
 			}
 		}
 	}
+	
 	INS_henri_zentgraaff = {
 		name = INS_henri_zentgraaff
 		portraits = {
@@ -198,6 +204,7 @@ characters = {
 			cost = 150
 		}
 	}
+	
 	INS_hubertus_van_mook = {
 		name = INS_hubertus_van_mook
 		portraits = {
@@ -250,6 +257,7 @@ characters = {
 			id = -1
 		}
 	}
+	
 	INS_husni_thamrin = {
 		name = INS_husni_thamrin
 		portraits = {
@@ -278,6 +286,42 @@ characters = {
 			}
 		}
 	}
+
+	INS_kh_dewantara = {
+		name = INS_kh_dewantara
+		portraits = {
+			army = {
+				small = GFX_idea_indonesia_kh_dewantara
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = INS_kh_dewantara
+			allowed = {
+				original_tag = INS
+			}
+			available = {
+				NOT = {
+					has_government = fascism
+				}
+				OR = {
+					has_completed_focus = INS_placate_nationalists
+					has_completed_focus = INS_indies_nation
+				}
+				compare_autonomy_state > autonomy_puppet
+				NOT = {
+					has_idea = INS_group_indische_partij
+				}
+			}
+			visible = {
+				has_completed_focus = INS_challenge_dutch_elitism
+			}
+			traits = {
+				tamansiswa_educationer
+			}
+		}
+	}
+	
 	INS_mohammad_hatta = {
 		name = INS_mohammad_hatta
 		portraits = {
@@ -310,6 +354,7 @@ characters = {
 			}
 		}
 	}
+	
 	INS_munawar_musso = {
 		name = INS_munawar_musso
 		portraits = {
@@ -355,6 +400,7 @@ characters = {
 			}
 		}
 	}
+	
 	INS_sekarmaji_kartosuwiryo= {
 		name = INS_sekarmaji_kartosuwiryo
 		portraits = {
@@ -399,6 +445,7 @@ characters = {
 			}
 		}
 	}
+	
 	INS_semaun = {
 		name = INS_semaun
 		portraits = {
@@ -452,6 +499,7 @@ characters = {
 			}
 		}
 	}
+	
 	INS_sukarno= {
 		name = INS_sukarno
 		portraits = {
@@ -469,6 +517,7 @@ characters = {
 			}
 		}
 	}
+	
 	INS_sukiman = {
 		name = INS_sukiman
 		portraits = {
@@ -514,6 +563,7 @@ characters = {
 			}
 		}
 	}
+	
 	INS_sutan_syahrir = {
 		name = INS_sutan_syahrir
 		portraits = {
@@ -541,6 +591,7 @@ characters = {
 			}
 		}
 	}
+	
 	INS_sutomo = {
 		name = INS_sutomo
 		portraits = {
@@ -577,6 +628,7 @@ characters = {
 			}
 		}
 	}
+	
 	INS_tjarda_van_starkenborgh_stachouwer = {			#becomes leader through event later
 		name = INS_tjarda_van_starkenborgh_stachouwer
 		portraits = {
