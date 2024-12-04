@@ -10939,12 +10939,12 @@ on_actions = {
 							AND = {
 								is_historical_focus_on = no
 								has_game_rule = {
-									rule = AUS_ai_behavior
+									rule = AUS_ai_behavior_r56
 									option = DEFAULT
 								}
 							}
 							has_game_rule = {
-								rule = AUS_ai_behavior
+								rule = AUS_ai_behavior_r56
 								option = RANDOM
 							}
 						}
@@ -10988,13 +10988,13 @@ on_actions = {
 							AND = {
 								is_historical_focus_on = yes
 								has_game_rule = {
-									rule = AUS_ai_behavior
+									rule = AUS_ai_behavior_r56
 									option = DEFAULT
 								}
 							}
 							has_country_flag = AUS_AI_RANDOM_AUSTROFASCIST
 							has_game_rule = {
-								rule = AUS_ai_behavior
+								rule = AUS_ai_behavior_r56
 								option = AUS_AUSTROFASCIST
 							}
 						}
@@ -11006,17 +11006,17 @@ on_actions = {
 						OR = {
 							has_country_flag = AUS_AI_RANDOM_HEIMWEHR
 							has_game_rule = {
-								rule = AUS_ai_behavior
+								rule = AUS_ai_behavior_r56
 								option = AUS_HEIMWEHR
 							}
 							has_country_flag = AUS_AI_RANDOM_EMPIRE
 							has_game_rule = {
-								rule = AUS_ai_behavior
+								rule = AUS_ai_behavior_r56
 								option = AUS_DESTROY_COMPROMISE
 							}
 							has_country_flag = AUS_AI_RANDOM_AUSHUN
 							has_game_rule = {
-								rule = AUS_ai_behavior
+								rule = AUS_ai_behavior_r56
 								option = AUS_AUSTRIA_HUNGARY
 							}
 						}
@@ -11028,12 +11028,12 @@ on_actions = {
 						OR = {
 							has_country_flag = AUS_AI_RANDOM_INQUART
 							has_game_rule = {
-								rule = AUS_ai_behavior
+								rule = AUS_ai_behavior_r56
 								option = AUS_INQUART_NAZI
 							}
 							has_country_flag = AUS_AI_RANDOM_LEOPOLD
 							has_game_rule = {
-								rule = AUS_ai_behavior
+								rule = AUS_ai_behavior_r56
 								option = AUS_LEOPOLD_NAZI
 							}
 						}
@@ -11045,27 +11045,27 @@ on_actions = {
 						OR = {
 							has_country_flag = AUS_AI_RANDOM_MODERATE_RESTORATION
 							has_game_rule = {
-								rule = AUS_ai_behavior
+								rule = AUS_ai_behavior_r56
 								option = AUS_MODERATE_HABSBURG
 							}
 							has_country_flag = AUS_AI_RANDOM_SCHUSCHNIGG_REFORM
 							has_game_rule = {
-								rule = AUS_ai_behavior
+								rule = AUS_ai_behavior_r56
 								option = AUS_SCHUSCHNIGG_REFORM
 							}
 							has_country_flag = AUS_AI_RANDOM_FIGL
 							has_game_rule = {
-								rule = AUS_ai_behavior
+								rule = AUS_ai_behavior_r56
 								option = AUS_FIGL
 							}
 							has_country_flag = AUS_AI_RANDOM_RENNER
 							has_game_rule = {
-								rule = AUS_ai_behavior
+								rule = AUS_ai_behavior_r56
 								option = AUS_RENNER
 							}
 							has_country_flag = AUS_AI_RANDOM_BAUER
 							has_game_rule = {
-								rule = AUS_ai_behavior
+								rule = AUS_ai_behavior_r56
 								option = AUS_BAUER
 							}
 						}
