@@ -29,6 +29,12 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/afg/companies/r56_idea_AFG_spinzar_cotton.dds"
 	}
 
+###------> PAK <><> <><> <><> <><> <><>
+	spriteType = {
+		name = "GFX_idea_PAK_karachi_shipyard"
+		texturefile = "gfx/interface/ideas/pak/companies/r56_idea_PAK_karachi_shipyard.dds"
+	}
+
 ###------> ARG <><> <><> <><> <><> <><>
 	spriteType = {
 		name = "GFX_idea_ARG_AFNE"

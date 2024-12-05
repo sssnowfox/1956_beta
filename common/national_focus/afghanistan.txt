@@ -1332,6 +1332,9 @@ focus_tree = {
 			army_experience = 15
 			custom_effect_tooltip = AFG_afghan_army_modernization_tt
 			add_to_variable = {
+				AFG_army_consumer_goods = 0.05
+			}
+			add_to_variable = {
 				AFG_army_organization = 0.05
 			}
 			add_to_variable = {
@@ -2378,12 +2381,6 @@ focus_tree = {
 
         completion_reward = {
 			navy_experience = 15
-			add_doctrine_cost_reduction = {
-                name = AFG_first_afghani_navy_research
-                uses = 1
-                cost_reduction = 0.75
-                category = naval_doctrine
-            }
 			random_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -2400,6 +2397,20 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			add_doctrine_cost_reduction = {
+                name = AFG_first_afghani_navy_research
+                uses = 1
+                cost_reduction = 0.75
+                category = naval_doctrine
+            }
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = PAK_karachi_shipyard_engineering_works
+			}
+			custom_effect_tooltip = r56_newline
 			add_naval_commander_role = {
 				Character = AFG_mohammad_siddiq_choudri
 				skill = 2
@@ -2703,7 +2714,7 @@ focus_tree = {
     }
 	focus = {
         id = AFG_cruisers
-        icon = GFX_goal_generic_cruiser
+        icon = GFX_focus_generic_cruiser2
         x = 3
         y = 1
         cost = 8
@@ -5077,12 +5088,15 @@ focus_tree = {
 		x = 3
 		y = 1
 
-		cost = 8
+		cost = 5
 
 		available = {
 			OR = {
 				has_government = neutrality
 				has_government = fascism
+			}
+			NOT = {
+				has_war_with = GER
 			}
 		}
 
@@ -5097,14 +5111,21 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.05
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 50
+				producer = GER
 			}
-			set_rule = {
-				can_send_volunteers = yes
-		    }
-			add_ideas = AFG_leopard_corps
+			add_tech_bonus = {
+				name = AUS_radio_improvements
+				bonus = 0.5
+				uses = 1
+				ahead_reduction = 0.5
+				category = radar_tech
+				technology = radio
+				technology = improved_radio
+				technology = advanced_radio
+			}
 		}
 		search_filters = { FOCUS_FILTER_MILITARY_IMPROVEMENT FOCUS_FILTER_HISTORICAL }
 	}
@@ -6562,13 +6583,13 @@ focus_tree = {
 			promote_character = AFG_amanullah_khan
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = AFG_abdul_hadi_dawai
-			
+			custom_effect_tooltip = r56_newline
+			set_cosmetic_tag = AFG_AMA
 			hidden_effect = {
 				set_portraits = {
 					character = AFG_abdul_hadi_dawai
 					civilian = { small = "GFX_idea_AFG_advisor_abdul_hadi_dawi" }
 				}
-				set_cosmetic_tag = AFG_AMA
 				every_character = {
 					limit = {
 						OR = {
@@ -6968,7 +6989,7 @@ focus_tree = {
 		x = 1
 		y = 1
 
-		cost = 5
+		cost = 8
 
 		available = {
 			has_government = neutrality
@@ -6988,6 +7009,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_political_power = 35
 			add_ideas = AFG_disbanded_the_jirga
 			if = {
 				limit = {
@@ -7332,7 +7354,23 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 267 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 			add_political_power = 50
+			custom_effect_tooltip = r56_newline
 			if = {
 				limit = {
 					NOT = {
@@ -7384,8 +7422,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 150
 			add_stability = 0.05
+			add_political_power = 150
+			add_popularity = {
+				ideology = communism
+				popularity = -0.05
+			}
 			add_ideas = AFG_subvert_soviet_influence
 		}
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
@@ -10136,6 +10178,31 @@ focus_tree = {
 			SOV = {
 				country_event = { id = afghanistan.5 hours = 12 random_hours = 12 }
 			}
+			custom_effect_tooltip = if_they_accept_newline_tt
+			effect_tooltip = {
+				add_timed_idea = {
+					idea = AFG_operation_countenance
+					days = 180
+				}
+				SOV = {
+					create_wargoal = {
+						type = puppet_wargoal_focus
+						target = PER
+						expire = 0
+					}
+					add_timed_idea = {
+						idea = AFG_operation_countenance
+						days = 180
+					}
+				}
+			}
+			custom_effect_tooltip = if_they_refuse_tt
+			effect_tooltip = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = medium_decrease
+				}
+			}
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
@@ -10662,11 +10729,24 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 75
-			AFG = {
-				country_event = {
-					id = afghanistan.30
-					days = 1
+			country_event = {
+				id = afghanistan.30
+				hours = 12
+			}
+			custom_effect_tooltip = r56_possible_event_effects
+			effect_tooltip = {
+				add_war_support = 0.05
+				add_stability = -0.05
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.05
 				}
+				custom_effect_tooltip = AFG_jamaat_islami_strong_tt
+			}
+			custom_effect_tooltip = r56_alternative_event_effects
+			effect_tooltip = {
+				add_political_power = 35
+				custom_effect_tooltip = AFG_jamaat_islami_weak_tt
 			}
 			if = {
 				limit = {
@@ -10713,7 +10793,13 @@ focus_tree = {
 			add_war_support = 0.1
 			country_event = {
 				id = afghanistan.31
-				days = 1
+				hours = 12
+			}
+			custom_effect_tooltip = r56_newline
+			effect_tooltip = {
+				add_war_support = 0.05
+				custom_effect_tooltip = AFG_tribes_contacted_tt
+				custom_effect_tooltip = AFG_tribal_divs_tt
 			}
 			if = {
 				limit = {
@@ -10740,6 +10826,7 @@ focus_tree = {
 		cost = 8
 
 		available = {
+			is_subject = no
 			fascism > 0.35
 		}
 
@@ -10885,7 +10972,7 @@ focus_tree = {
 							prioritize_location = 12831
 						}
 						create_unit = {
-							division = "name = \"Da Afghanistan Shahi Koranay Sángh\" division_template = \"Da Koranay Sángh\" start_experience_factor = 0.25 start_equipment_factor = 0.75 start_manpower_factor = 1"
+							division = "name = \"Da Afghanistan Shahi Koranay Sángh\" division_template = \"Da Koranay Sángh\" start_experience_factor = 0.25 start_equipment_factor = 0.65 start_manpower_factor = 1"
 							owner = PREV
 							count = 1
 							allow_spawning_on_enemy_provs = yes
@@ -10895,14 +10982,14 @@ focus_tree = {
 				}
 				1010 = { ### AFGHANISTAN
 					create_unit = {
-						division = "name = \"Mujahideen-e Islami\" division_template = \"Qawmi Maleshe\" start_experience_factor = 0.05 start_equipment_factor = 1 start_manpower_factor = 1"
+						division = "name = \"1ma Mujahideen-e Islami\" division_template = \"Qawmi Maleshe\" start_experience_factor = 0.05 start_equipment_factor = 0.65 start_manpower_factor = 0.75"
 						owner = ROOT
 						count = 1
 						allow_spawning_on_enemy_provs = yes
 						prioritize_location = 5082
 					}
 					create_unit = {
-						division = "name = \"Mujahideen-e Islami\" division_template = \"Qawmi Maleshe\" start_experience_factor = 0.05 start_equipment_factor = 1 start_manpower_factor = 1"
+						division = "name = \"2ma Mujahideen-e Islami\" division_template = \"Qawmi Maleshe\" start_experience_factor = 0.05 start_equipment_factor = 0.65 start_manpower_factor = 0.75"
 						owner = ROOT
 						count = 1
 						allow_spawning_on_enemy_provs = yes
@@ -10911,7 +10998,7 @@ focus_tree = {
 				}
 				1009 = { ### AFGHANISTAN
 					create_unit = {
-						division = "name = \"Mujahideen-e Islami\" division_template = \"Qawmi Maleshe\" start_experience_factor = 0.05 start_equipment_factor = 1 start_manpower_factor = 1"
+						division = "name = \"3ma Mujahideen-e Islami\" division_template = \"Qawmi Maleshe\" start_experience_factor = 0.05 start_equipment_factor = 0.65 start_manpower_factor = 0.75"
 						owner = ROOT
 						count = 1
 						allow_spawning_on_enemy_provs = yes
@@ -10920,7 +11007,7 @@ focus_tree = {
 				}
 				415 = { ### AFGHANISTAN
 					create_unit = {
-						division = "name = \"Mujahideen-e Islami\" division_template = \"Qawmi Maleshe\" start_experience_factor = 0.05 start_equipment_factor = 1 start_manpower_factor = 1"
+						division = "name = \"4ma Mujahideen-e Islami\" division_template = \"Qawmi Maleshe\" start_experience_factor = 0.05 start_equipment_factor = 0.65 start_manpower_factor = 0.75"
 						owner = ROOT
 						count = 1
 						allow_spawning_on_enemy_provs = yes
@@ -10929,14 +11016,14 @@ focus_tree = {
 				}
 				1008 = { ### AFGHANISTAN
 					create_unit = {
-						division = "name = \"Mujahideen-e Islami\" division_template = \"Qawmi Maleshe\" start_experience_factor = 0.05 start_equipment_factor = 1 start_manpower_factor = 1"
+						division = "name = \"5ma Mujahideen-e Islami\" division_template = \"Qawmi Maleshe\" start_experience_factor = 0.05 start_equipment_factor = 0.65 start_manpower_factor = 0.75"
 						owner = ROOT
 						count = 1
 						allow_spawning_on_enemy_provs = yes
 						prioritize_location = 12877
 					}	
 					create_unit = {
-						division = "name = \"Mujahideen-e Islami\" division_template = \"Qawmi Maleshe\" start_experience_factor = 0.05 start_equipment_factor = 1 start_manpower_factor = 1"
+						division = "name = \"6ma Mujahideen-e Islami\" division_template = \"Qawmi Maleshe\" start_experience_factor = 0.05 start_equipment_factor = 0.65 start_manpower_factor = 0.75"
 						owner = ROOT
 						count = 1
 						allow_spawning_on_enemy_provs = yes
@@ -10971,28 +11058,32 @@ focus_tree = {
 							days = 3 random_days = 6
 						}
 					}
-					if = {
-						limit = {
-							has_country_flag = AFG_tribal_divs_1
-						}
-						country_event = {
-							id = afghanistan.34
-						    days = 12 random_days = 6
-						}
-					}
+					# if = {
+					# 	limit = {
+					# 		has_country_flag = AFG_tribal_divs_1
+					# 	}
+					# 	country_event = {
+					# 		id = afghanistan.34
+					# 	    days = 12 random_days = 6
+					# 	}
+					# }
 					add_offsite_building = { type = arms_factory level = 1 } #so they can live a little	
 				}
 				news_event = { id = afghanistan.53 hours = 18 }
 			}
 			custom_effect_tooltip = r56_newline
 			add_ideas = AFG_lawless_emirate
+			custom_effect_tooltip = r56_newline
+			promote_character = {
+				character = AFG_provisional_government
+				ideology = islamism
+			}
 			if = {
 				limit = {
 					has_power_balance = {
 						id = AFG_power_balance
 					}
 				}
-				custom_effect_tooltip = r56_newline
 				add_power_balance_value = {
 					id = AFG_power_balance
 					value = 0.25
@@ -11032,14 +11123,17 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_war_support = 0.05
+			add_stability = 0.05
 			set_politics = {
 				ruling_party = fascism
 				elections_allowed = no
 				long_name = "Jamiat-e Islami"
 				name = "Jamiat-e Islami"
 			}
-			promote_character = AFG_abul_ala_maududi
+			promote_character = {
+				character = AFG_abul_ala_maududi
+				ideology = islamism
+			}
 			set_cosmetic_tag = AFG_JAM
 			if = {
 				limit = {
@@ -11067,7 +11161,7 @@ focus_tree = {
 			factor = 1
 		}
 
-		cost = 8
+		cost = 5
 
 		available = {
 			has_government = fascism
@@ -11195,7 +11289,7 @@ focus_tree = {
 			factor = 1
 		}
 
-		cost = 8
+		cost = 10
 
 		prerequisite = {
 			focus = AFG_approach_mubashir focus = AFG_support_the_palestinians
@@ -11283,7 +11377,7 @@ focus_tree = {
 			factor = 1
 		}
 
-		cost = 8
+		cost = 10
 
 		prerequisite = {
 			focus = AFG_maududi_as_sheikhulislam
@@ -11372,12 +11466,31 @@ focus_tree = {
 
 		completion_reward = {
 			add_war_support = 0.05
-			add_trait = {
-				character = AFG_haji_mirzali_khan
-				ideology = islamism
-				trait = AFG_golden_emir
-		    }
-			custom_effect_tooltip = r56_newline
+			effect_tooltip = {
+				AFG_haji_mirzali_khan = {
+					add_country_leader_role = {
+						country_leader = {
+							expire = "1965.1.1"
+							ideology = islamism
+							traits = {
+								AFG_golden_emir AFG_pashtun_nationalist r56_trait_opposed_to_democracy
+							}
+						}
+						promote_leader = yes
+					}
+				}
+			}
+			hidden_effect = {
+				promote_character = {
+					character = AFG_haji_mirzali_khan
+					ideology = islamism
+				}
+				add_trait = {
+					character = AFG_haji_mirzali_khan
+					ideology = islamism
+					trait = AFG_golden_emir
+				}
+			}
 			custom_effect_tooltip = AFG_emirate_tt
 			if = {
 				limit = {
@@ -11408,7 +11521,7 @@ focus_tree = {
 			factor = 1
 		}
 
-		cost = 8
+		cost = 10
 
 		available = {
 			has_government = fascism
@@ -11472,7 +11585,7 @@ focus_tree = {
 			factor = 1
 		}
 
-		cost = 8
+		cost = 10
 
 		available = {
 			has_government = fascism
@@ -11485,16 +11598,62 @@ focus_tree = {
 		relative_position_id = AFG_seize_royal_assets
 
 		completion_reward = {
-			country_event = { id = afghanistan.52 hours = 3 }
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = AFG_amanullah_khan
-			custom_effect_tooltip = r56_newline
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = AFG_abdul_hadi_dawai
 			hidden_effect = {
 				set_portraits = {
 					character = AFG_abdul_hadi_dawai
 					civilian = { small = "GFX_idea_AFG_advisor_abdul_hadi_dawi" }
+				}
+			}
+			country_event = { id = afghanistan.52 hours = 12 }
+			custom_effect_tooltip = r56_possible_event_effects
+			effect_tooltip = {
+				add_stability = 0.05
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.05
+				}
+				custom_effect_tooltip = available_political_advisor
+				show_ideas_tooltip = AFG_amanullah_khan
+				set_country_flag = AFG_amanullah_has_returned
+				if = {
+					limit = {
+						has_power_balance = {
+							id = AFG_power_balance
+						}
+					}
+					custom_effect_tooltip = r56_newline
+					add_power_balance_value = {
+						id = AFG_power_balance
+						value = 0.05
+						tooltip_side = AFG_tribal_side
+					}
+				}
+			}
+			custom_effect_tooltip = r56_alternative_event_effects
+			effect_tooltip = {
+				add_war_support = 0.05
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.10
+				}
+				custom_effect_tooltip = r56_newline
+				add_ideas = AFG_amanullah_khan_idea
+				custom_effect_tooltip = r56_newline
+				set_cosmetic_tag = AFG_AMA
+				if = {
+					limit = {
+						has_power_balance = {
+							id = AFG_power_balance
+						}
+					}
+					custom_effect_tooltip = r56_newline
+					add_power_balance_value = {
+						id = AFG_power_balance
+						value = -0.05
+						tooltip_side = AFG_government_side
+					}
 				}
 			}
 		}
@@ -11579,6 +11738,7 @@ focus_tree = {
 		relative_position_id = AFG_request_german_reinforcements
 
 		completion_reward = {
+			army_experience = 15
 			add_ideas = AFG_kabul_military_college_idea
 		}
 		search_filters = { FOCUS_FILTER_MILITARY_IMPROVEMENT }
@@ -11810,6 +11970,7 @@ focus_tree = {
 		relative_position_id = AFG_mirzali_as_emir
 
 		completion_reward = {
+			add_political_power = 35
 			add_ideas = AFG_ministry_of_virtue
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -12164,7 +12325,7 @@ focus_tree = {
 			factor = 1
 		}
 
-		cost = 5
+		cost = 8
 
 		prerequisite = {
 			focus = AFG_the_constitution_question
@@ -12176,9 +12337,12 @@ focus_tree = {
 		}
 
 		relative_position_id = AFG_the_constitution_question
-		
 
 		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
 			division_template = {
 				name = "Sivarah Mujahideen"
 				regiments = {
@@ -12201,7 +12365,7 @@ focus_tree = {
 				custom_effect_tooltip = AFG_create_3_sivrah_unit
 				hidden_effect = {
 					create_unit = {
-						division = "name = \"Sivarah Mujahideen\" division_template = \"Sivarah Mujahideen\" start_experience_factor = 0.05 start_equipment_factor = 1 start_manpower_factor = 1"
+						division = "name = \"Sivarah Mujahideen\" division_template = \"Sivarah Mujahideen\" start_experience_factor = 0.05 start_equipment_factor = 0.85 start_manpower_factor = 1"
 						owner = ROOT
 						count = 3
 					}
@@ -13101,10 +13265,7 @@ focus_tree = {
 		}
 
 		prerequisite = {
-			focus = AFG_approach_pakistani_resistance
-		}
-		prerequisite = {
-			focus = AFG_revive_the_basmachi_movement
+			focus = AFG_peace_through_islam
 		}
 
 		relative_position_id = AFG_approach_pakistani_resistance
@@ -13376,7 +13537,10 @@ focus_tree = {
 		}
 
 		allow_branch = {
-			has_country_flag = AFG_durand_crisis
+			OR = {
+				# is_debug = yes
+				has_country_flag = AFG_durand_crisis
+			}
 		}
 
 		available = {
