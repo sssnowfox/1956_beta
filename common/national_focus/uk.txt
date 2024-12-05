@@ -885,7 +885,22 @@ focus_tree = {
 		}	
 		completion_reward = {
 			custom_effect_tooltip = shadow_scheme_focus_tt
-			add_ideas = wartime_industry_focus	
+			IF = {
+				limit = {
+					NOT = {
+						has_idea = ENG_prepare_for_the_inevitable_idea
+					}
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				add_ideas = wartime_industry_focus
+			}
+			ELSE = {
+				custom_effect_tooltip = generic_skip_one_line_tt
+				swap_ideas = {
+					remove_idea = ENG_prepare_for_the_inevitable_idea
+					add_idea = ENG_prepare_for_the_inevitable_and_wartime_industry_idea
+				}	
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
@@ -8827,7 +8842,20 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			add_ideas = ENG_prepare_for_the_inevitable_idea
+			IF = {
+				limit = {
+					NOT = {
+						has_idea = wartime_industry_focus
+					}
+				}
+				add_ideas = ENG_prepare_for_the_inevitable_idea
+			}
+			ELSE = {
+				swap_ideas = {
+					remove_idea = wartime_industry_focus
+					add_idea = ENG_prepare_for_the_inevitable_and_wartime_industry_idea
+				}	
+			}
 			random_owned_controlled_state = { #Stanlow refinery underground storage silo
 				prioritize = { 132 }
 				add_extra_state_shared_building_slots = 1
@@ -8836,7 +8864,7 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
-			}			
+			}	
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
