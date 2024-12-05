@@ -4182,20 +4182,28 @@ SpriteType = {
 		texturefile = "gfx/interface/ideas/sia/advisors/r56_idea_SIA_advisor_Aduldej_Charat.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_minister_siam_Pao_Pienlert_Boripanyutakit"
-		texturefile = "gfx/interface/ideas/sia/advisors/r56_idea_SIA_advisor_Pao_Pienlert_Boripanyutakit.dds"
+		name = "GFX_idea_minister_siam_Khuang_Aphaiwong"
+		texturefile = "gfx/interface/ideas/sia/advisors/r56_idea_SIA_advisor_Khuang_Aphaiwong.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_minister_siam_Luang_Chuangsakram"
 		texturefile = "gfx/interface/ideas/sia/advisors/r56_idea_SIA_advisor_Luang_Chuangsakram.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_minister_siam_Mangkorn_Phromyothi"
+		texturefile = "gfx/interface/ideas/sia/advisors/r56_idea_SIA_advisor_Mangkorn_Phromyothi.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_minister_siam_Pao_Pienlert_Boripanyutakit"
+		texturefile = "gfx/interface/ideas/sia/advisors/r56_idea_SIA_advisor_Pao_Pienlert_Boripanyutakit.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_minister_siam_phraya_manopakorn_nititada"
 		texturefile = "gfx/interface/ideas/sia/advisors/r56_idea_SIA_advisor_phraya_manopakorn_nititada.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_minister_siam_Khuang_Aphaiwong"
-		texturefile = "gfx/interface/ideas/sia/advisors/r56_idea_SIA_advisor_Khuang_Aphaiwong.dds"
+		name = "GFX_idea_minister_siam_phayom_chulanont"
+		texturefile = "gfx/interface/ideas/sia/advisors/r56_idea_SIA_advisor_Phayom_Chulanont.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_minister_siam_phibun_minister"
@@ -4206,8 +4214,20 @@ SpriteType = {
 		texturefile = "gfx/interface/ideas/sia/advisors/r56_idea_SIA_advisor_seni_pramoj.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_minister_siam_phayom_chulanont"
-		texturefile = "gfx/interface/ideas/sia/advisors/r56_idea_SIA_advisor_Phayom_Chulanont.dds"
+		name = "GFX_idea_minister_siam_Sindhu_Kamalanavin"
+		texturefile = "gfx/interface/ideas/sia/advisors/r56_idea_SIA_advisor_Sindhu_Kamalanavin.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_minister_siam_Thamrong_Nawasawat_Naval"
+		texturefile = "gfx/interface/ideas/sia/advisors/r56_idea_SIA_advisor_Thamrong_Nawasawat_Naval.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_minister_siam_Thewarit_Panluek"
+		texturefile = "gfx/interface/ideas/sia/advisors/r56_idea_SIA_advisor_Thewarit_Panluek.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_minister_siam_Yuthasastrkosol_naval"
+		texturefile = "gfx/interface/ideas/sia/advisors/r56_idea_SIA_advisor_Yuthasastrkosol_naval.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_charun_rattanakun_seriroengrit"

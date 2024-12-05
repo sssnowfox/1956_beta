@@ -1644,6 +1644,8 @@ form_nation_mod_category = {
 				tag = DAH
 				tag = NGR
 				tag = NGA
+				tag = BIA
+				tag = SOK # ideally should be able to make a caliphate and core islamic africa
 			}
         }
 
