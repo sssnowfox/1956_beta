@@ -1466,23 +1466,30 @@ focus_tree = {
 	focus = {
 		id = INS_economic_independence
 		icon = GFX_focus_mex_privatisation
+
 		ai_will_do = {
 			factor = 20
 		}
+
 		x = 1
 		y = 1
 		relative_position_id = INS_phillips_radio
 		prerequisite = { focus = INS_phillips_radio }
 		prerequisite = { focus = INS_the_royal_batavian_society }
+
 		cost = 10 
+
+		search_filters = { FOCUS_FILTER_TFV_AUTONOMY }
 
 		completion_reward = {
 			add_autonomy_score = {
 				value = 250
 			}
 			remove_ideas = INS_economy_idea_three
+			custom_effect_tooltip = r56_newline
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = INS_buttingha_wichers
 		}
-		search_filters = { FOCUS_FILTER_TFV_AUTONOMY }
 	}
 
 	focus = {
@@ -1713,7 +1720,9 @@ focus_tree = {
 			}
 			add_stability = 0.05
 			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = INS_hubertus_van_mook
+			show_ideas_tooltip = INS_kh_dewantara
+			show_ideas_tooltip = INS_cipto_mangunkusumo
+			show_ideas_tooltip = INS_ernest_douwes_dekker
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -1910,6 +1919,14 @@ focus_tree = {
 			add_timed_idea = {
 				idea = INS_emergency_powers
 				days = 730
+			}
+			custom_effect_tooltip = r56_newline
+			if = {
+				NOT = {
+					has_completed_focus = INS_gather_the_opposition
+				}
+				custom_effect_tooltip = available_political_advisor
+				show_ideas_tooltip = INS_hubertus_van_mook
 			}
 			INS_hubertus_van_mook = {
 				effect_tooltip = {
@@ -2933,6 +2950,7 @@ focus_tree = {
 				name = "House of Mataram"
 			}
 			set_cosmetic_tag = INS_monarchy
+			custom_effect_tooltip = r56_newline
 			promote_character = INS_hamengkubuwono_ix
 			add_field_marshal_role = {
 				character = INS_hamengkubuwono_ix
@@ -2943,20 +2961,28 @@ focus_tree = {
 				planning_skill = 2
 				logistics_skill = 1
 			}
+			custom_effect_tooltip = r56_newline
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = INS_wuryaningrat
 		}
 	}
 
 	focus = {
 		id = INS_consolidate_the_right
 		icon = GFX_focus_ITA_generic_fascist_workers
+
 		ai_will_do = {
 			factor = 1
 		}
+
 		relative_position_id = INS_favour_the_radicals
 		x = 1
 		y = 1
 		prerequisite = { focus = INS_favour_the_radicals }
+		
 		cost = 8
+
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_TFV_AUTONOMY FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 
 		completion_reward = {
 			add_political_power = 50
@@ -2965,8 +2991,12 @@ focus_tree = {
 				popularity = 0.1
 			}
 			add_ideas = INS_unified_right
+
+			custom_effect_tooltip = remove_political_advisor
+			show_ideas_tooltip = INS_kh_dewantara
+			show_ideas_tooltip = INS_cipto_mangunkusumo
+			show_ideas_tooltip = INS_ernest_douwes_dekker
 		}
-		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_TFV_AUTONOMY FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 	}
 
 	focus = {
@@ -3061,6 +3091,10 @@ focus_tree = {
 				popularity = -0.05
 			}
 			add_ideas = INS_if_i_were_a_dutchman_idea
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = INS_kh_dewantara
+			show_ideas_tooltip = INS_cipto_mangunkusumo
+			show_ideas_tooltip = INS_ernest_douwes_dekker
 		}
 	}
 
@@ -3203,6 +3237,10 @@ focus_tree = {
 				}
 				set_cosmetic_tag = INS_monarchy
 			}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = INS_kh_dewantara
+			show_ideas_tooltip = INS_cipto_mangunkusumo
+			show_ideas_tooltip = INS_ernest_douwes_dekker
 		}
 	}
 

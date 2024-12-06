@@ -94,6 +94,120 @@ characters = {
 			}
 		}
 	}
+
+	INS_buttingha_wichers = {
+		name = INS_buttingha_wichers
+		portraits = {
+			army = {
+				small = GFX_idea_indonesia_buttingha_wichers
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = INS_buttingha_wichers
+			allowed = {
+				original_tag = INS
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+				has_completed_focus = INS_economic_independence
+			}
+			traits = {
+				MPL_experienced_banker
+			}
+			ai_will_do = {
+				base = 20
+				modifier = {
+					factor = 10
+					has_completed_focus = INS_economic_independence
+				}
+			}
+		}
+	}
+
+	INS_cipto_mangunkusumo = {
+		name = INS_cipto_mangunkusumo
+		portraits = {
+			army = {
+				small = GFX_idea_indonesia_cipto_mangunkusumo
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = INS_cipto_mangunkusumo
+			allowed = {
+				original_tag = INS
+			}
+			available = {
+				OR = {
+					has_completed_focus = INS_soeara_rakyat
+					AND = {
+						has_completed_focus = INS_promote_national_independence
+						compare_autonomy_state > autonomy_puppet
+					}
+					AND = {
+						has_completed_focus = INS_the_coup
+						NOT = {
+							has_completed_focus = INS_consolidate_the_right
+						}
+					}
+				}
+			}
+			visible = {
+				NOT = {
+					has_completed_focus = INS_consolidate_the_right
+				}
+			}
+			traits = {
+				progressive_doctor_INS
+			}
+		}
+	}
+
+	INS_ernest_douwes_dekker = {
+		name = INS_ernest_douwes_dekker
+		portraits = {
+			civilian = {
+				large = GFX_portrait_indonesia_douwes_dekker
+			}
+			army = {
+				small = GFX_idea_indonesia_ernest_douwes_dekker
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = INS_ernest_douwes_dekker
+			allowed = {
+				original_tag = INS
+			}
+			available = {
+				OR = {
+					has_completed_focus = INS_soeara_rakyat
+					AND = {
+						has_completed_focus = INS_promote_national_independence
+						compare_autonomy_state > autonomy_puppet
+					}
+					AND = {
+						has_completed_focus = INS_the_coup
+						NOT = {
+							has_completed_focus = INS_consolidate_the_right
+						}
+					}
+				}
+			}
+			visible = {
+				NOT = {
+					has_completed_focus = INS_consolidate_the_right
+				}
+			}
+			traits = {
+				indies_nationalist
+			}
+		}
+	}
 	
 	INS_george_hart = {
 		name = INS_george_hart
@@ -201,7 +315,6 @@ characters = {
 			traits = {
 				java_bode_editor
 			}
-			cost = 150
 		}
 	}
 	
@@ -301,21 +414,24 @@ characters = {
 				original_tag = INS
 			}
 			available = {
-				NOT = {
-					has_government = fascism
-				}
 				OR = {
-					has_completed_focus = INS_placate_nationalists
-					has_completed_focus = INS_indies_nation
-				}
-				compare_autonomy_state > autonomy_puppet
-				NOT = {
-					has_idea = INS_group_indische_partij
+					has_completed_focus = INS_soeara_rakyat
+					AND = {
+						has_completed_focus = INS_promote_national_independence
+						compare_autonomy_state > autonomy_puppet
+					}
+					AND = {
+						has_completed_focus = INS_the_coup
+						NOT = {
+							has_completed_focus = INS_consolidate_the_right
+						}
+					}
 				}
 			}
 			visible = {
-				has_completed_focus = INS_challenge_dutch_elitism
-			}
+				NOT = {
+					has_completed_focus = INS_consolidate_the_right
+				}
 			traits = {
 				tamansiswa_educationer
 			}
@@ -648,6 +764,46 @@ characters = {
 		}
 	}
 
+	INS_wuryaningrat = {
+		name = INS_wuryaningrat
+		portraits = {
+			army = {
+				small = GFX_idea_indonesia_wuryaningrat
+			}
+			civilian = {
+				large = GFX_portrait_indonesia_wuryaningrat
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = INS_wuryaningrat
+			allowed = {
+				original_tag = INS
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+				has_completed_focus = INS_the_coup
+				is_subject = no
+			}
+			visible = {
+				has_completed_focus = INS_reinvigorate_the_pfi
+			}
+			traits = {
+				nationalist_intellectual
+			}
+			ai_will_do = {
+				base = 20
+				modifier = {
+					factor = 10
+					has_completed_focus = INS_the_coup
+				}
+			}
+		}
+	}
+
 	#MILITARY LEADERS
 
 	INS_murk_boerstra = {
@@ -928,7 +1084,6 @@ characters = {
 			traits = {
 				navy_chief_maneuver_2
 			}
-			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}

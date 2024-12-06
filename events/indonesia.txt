@@ -1050,7 +1050,7 @@ country_event = { #Van Dulm Retiring
 
 	option = { #War or not, if he's 60, he's retired. But he can be also retired early
 		name = indonesia.47.b
-		retire_character = INS_van_dulm
+		retire_character = INS_maarten_van_dulm
 		if = {
 			limit = {
 				NOT = {
