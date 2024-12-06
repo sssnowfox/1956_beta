@@ -2758,7 +2758,6 @@ focus_tree = {
 				}
 				create_intelligence_agency = {
 					name = "Minister of Security"
-					icon = GFX_intelligence_agency_logo_usa_fbi
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
