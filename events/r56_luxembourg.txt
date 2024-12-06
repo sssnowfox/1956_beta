@@ -435,7 +435,7 @@ country_event = {		# 1937 elections; monarchist & fascist
 		if = {
 			limit = { is_ai = yes }
 			random_list = {
-				50 = { complete_national_focus = LUX_invalidate_election }
+				#50 = { complete_national_focus = LUX_invalidate_election }
 				50 = { complete_national_focus = LUX_contest_election_results }
 			}
 		}
@@ -556,8 +556,6 @@ country_event = {	# reaffirm treaty of london
 				OR = {
 					original_tag = FRA
 					original_tag = HOL
-					original_tag = GER
-					original_tag = ITA
 				}
 				is_historical_focus_on = yes
 			}
@@ -614,18 +612,15 @@ country_event = {	# Talks successful
 	desc = luxembourg.223.d
 
 	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
 	fire_only_once = yes
-	trigger = {
-		NOT = { any_country = { has_country_flag = LUX_declined_reaffirmation_treaty_of_london } }
-		has_completed_focus = LUX_reaffirm_treaty_of_london
-	}
-	mean_time_to_happen = { days = 1 }
+	trigger = { NOT = { any_country = { has_country_flag = LUX_declined_reaffirmation_treaty_of_london } } }
 
 	option = {
 		name = luxembourg.223.a
 
 		add_stability = 0.05
-		add_political_power = 10
+		add_political_power = 20
 
 		every_country = {
 			limit = {
@@ -655,7 +650,7 @@ country_event = {	# Talks unsuccessful
 	option = {
 		name = luxembourg.224.a
 
-		add_stability = -0.01
+		add_stability = -0.05
 
 		hidden_effect = {
 			country_event = {
@@ -663,6 +658,11 @@ country_event = {	# Talks unsuccessful
 				days = 7
 			}
 			news_event = luxembourg.226
+			country_event = {
+				id = luxembourg.270
+				days = 14
+				random_days = 7
+			}
 		}
 	}
 }
@@ -769,6 +769,402 @@ country_event = {	# clear the country flags
 			limit = { has_country_flag = LUX_declined_reaffirmation_treaty_of_london }
 			clr_country_flag = LUX_declined_reaffirmation_treaty_of_london
 		}
+	}
+}
+
+country_event = {		# getting garuantees from FRA & GER
+	id = luxembourg.270
+	title = luxembourg.270.t
+	desc = luxembourg.270.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+	trigger = {
+		FRA = { exists = yes }
+		GER = { exists = yes }
+	}
+
+	option = {			# pursue garuantees
+		name = luxembourg.270.a
+		FRA = {
+			country_event = {
+				id = luxembourg.271
+				hours = 4
+				random_hours = 2
+			}
+		}
+		GER = {
+			country_event = {
+				id = luxembourg.272
+				hours = 4
+				random_hours = 2
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = luxembourg.279
+				hours = 14
+			}
+			country_event = {
+				id = luxembourg.280
+				hours = 14
+			}
+		}
+	}
+	option = {			# give up :(
+		name = luxembourg.270.b
+		add_stability = -0.01
+	}
+}
+country_event = {		# FRA; asking for garuantee
+	id = luxembourg.271
+	title = luxembourg.271.t
+	desc = luxembourg.271.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {			# yes
+		name = luxembourg.271.a
+
+		effect_tooltip = {
+			give_guarantee = LUX
+		}
+		hidden_effect = {
+			FROM = {
+				country_event = {
+					id = luxembourg.273
+					hours = 4
+					random_hours = 2
+				}
+			}
+		}
+
+		ai_chance = {
+			base = 5
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	option = {			# yes, but give mil access
+		name = luxembourg.271.b
+
+		effect_tooltip = {
+			give_guarantee = FROM
+			FROM = { give_military_access = ROOT }
+		}
+		set_country_flag = LUX_wants_mil_access
+
+		hidden_effect = {
+			FROM = {
+				country_event = {
+					id = luxembourg.274
+					hours = 4
+					random_hours = 2
+				}
+			}
+		}
+
+		ai_chance = {
+			base = 5
+		}
+	}
+	option = {			# no
+		name = luxembourg.271.c
+
+		effect_tooltip = {
+			reverse_add_opinion_modifier = {
+				target = FROM
+				modifier = medium_decrease
+			}
+		}
+		set_country_flag = LUX_refused_garuantee
+
+		hidden_effect = {
+			FROM = {
+				country_event = {
+					id = luxembourg.275
+					hours = 4
+					random_hours = 2
+				}
+			}
+		}
+
+		ai_chance = {
+			base = 5
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+country_event = {		# GER, asking for garuantee
+	id = luxembourg.272
+	title = luxembourg.272.t
+	desc = luxembourg.272.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {			# yes
+		name = luxembourg.272.a
+
+		effect_tooltip = {
+			give_guarantee = LUX
+		}
+
+		hidden_effect = {
+			FROM = {
+				country_event = {
+					id = luxembourg.276
+					hours = 4
+					random_hours = 2
+				}
+			}
+		}
+
+		ai_chance = {
+			base = 5
+		}
+	}
+	option = {			# yes, but give soldiers
+		name = luxembourg.272.b
+
+		effect_tooltip = {
+			add_manpower = 2000
+			give_guarantee = LUX
+			FROM = { add_manpower = -2000 }
+		}
+		set_country_flag = LUX_wants_soldiers
+
+		hidden_effect = {
+			FROM = {
+				country_event = {
+					id = luxembourg.277
+					hours = 4
+					random_hours = 2
+				}
+			}
+		}
+
+		ai_chance = {
+			base = 5
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	option = {			# no
+		name = luxembourg.272.c
+
+		effect_tooltip = {
+			reverse_add_opinion_modifier = {
+				target = FROM
+				modifier = medium_decrease
+			}
+		}
+		set_country_flag = LUX_refused_garuantee
+
+		hidden_effect = {
+			FROM = {
+				country_event = {
+					id = luxembourg.278
+					hours = 4
+					random_hours = 2
+				}
+			}
+		}
+
+		ai_chance = {
+			base = 5
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+country_event = {		# FRA accepts unconditionally
+	id = luxembourg.273
+	title = luxembourg.273.t
+	desc = luxembourg.273.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = luxembourg.273.a
+
+	}
+}
+country_event = {		# FRA accepts conditionally
+	id = luxembourg.274
+	title = luxembourg.274.t
+	desc = luxembourg.274.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {			# accept
+		name = luxembourg.274.a
+
+	}
+	option = {			# refuse
+		name = luxembourg.274.b
+	}
+}
+country_event = {		# FRA refuses
+	id = luxembourg.275
+	title = luxembourg.275.t
+	desc = luxembourg.275.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = luxembourg.275.a
+
+	}
+}
+country_event = {		# GER accepts unconditionally
+	id = luxembourg.276
+	title = luxembourg.276.t
+	desc = luxembourg.276.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = luxembourg.276.a
+
+	}
+}
+country_event = {		# GER accepts conditionally
+	id = luxembourg.277
+	title = luxembourg.277.t
+	desc = luxembourg.277.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {			# accept
+		name = luxembourg.277.a
+		trigger = { has_manpower > 1999 }
+	}
+	option = {			# refuse
+		name = luxembourg.277.b
+		trigger = { has_manpower > 1999 }
+	}
+	option = {			# not enough men
+		name = luxembourg.277.c
+		trigger = { has_manpower < 2000 }
+	}
+}
+country_event = {		# GER refuses
+	id = luxembourg.278
+	title = luxembourg.278.t
+	desc = luxembourg.278.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = luxembourg.278.a
+
+	}
+}
+country_event = {		# bilateral talks successful
+	id = luxembourg.279
+	title = luxembourg.279.t
+	desc = luxembourg.279.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			any_other_country = { has_country_flag = LUX_refused_garuantee }
+		}
+	}
+
+	option = {
+		name = luxembourg.279.a
+		GER = {
+			give_guarantee = ROOT
+			if = {
+				limit = { has_country_flag = LUX_wants_soldiers }
+				add_manpower = 2000
+			}
+			hidden_effect = { news_event = luxembourg.281 }
+		}
+		FRA = {
+			give_guarantee = ROOT
+			hidden_effect = { news_event = luxembourg.281 }
+		}
+		if = {
+			limit = { GER = { has_country_flag = LUX_wants_soldiers } }
+			add_manpower = -2000
+			GER = { clr_country_flag = LUX_wants_soldiers }
+		}
+		if = {
+			limit = { FRA = { has_country_flag = LUX_wants_mil_access } }
+			give_military_access = FRA
+			FRA = { clr_country_flag = LUX_wants_mil_access }
+		}
+	}
+}
+country_event = {		# bilateral talks unsuccessful
+	id = luxembourg.280
+	title = luxembourg.280.t
+	desc = luxembourg.280.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+	trigger = {
+		any_other_country = {
+			has_country_flag = LUX_refused_garuantee
+		}
+	}
+
+	option = {
+		name = luxembourg.280.a
+		every_country = {
+			limit = { has_country_flag = LUX_refused_garuantee }
+			ROOT = {
+				add_opinion_modifier = {
+					target = PREV
+					modifier = medium_decrease
+				}
+			}
+			clr_country_flag = LUX_refused_garuantee
+		}
+	}
+}
+news_event = {		# FRA & GER news event if successful
+	id = luxembourg.281
+	title = luxembourg.281.t
+	desc = luxembourg.281.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	option = {
+		name = luxembourg.281.a
+	}
+}
+news_event = {		# FRA & GER news event if unsuccessful
+	id = luxembourg.282
+	title = luxembourg.282.t
+	desc = luxembourg.282.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	option = {
+		name = luxembourg.282.a
 	}
 }
 

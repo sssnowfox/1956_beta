@@ -61,7 +61,7 @@ guiTypes = {
 			}
 			scale = 0.5
 			pdx_tooltip = LUX_chamberofdeputies_PD_info_portrait_bech_tt
-			pdx_tooltip_delayed = LUX_chamberofdeputies_PD_info_portrait_bech_delayed_tt
+			#pdx_tooltip_delayed = LUX_chamberofdeputies_PD_info_portrait_bech_delayed_tt
 		}
 		iconType = {
 			name = LUX_minister_prime_PD_icon_dupong
