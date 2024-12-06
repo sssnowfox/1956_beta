@@ -178,6 +178,10 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_goal_generic_spreading_the_revolution"
 		texturefile = "gfx/interface/goals/generic/r56_goal_generic_spreading_the_revolution.dds"
+	}
+    SpriteType = {
+		name = "GFX_goal_generic_anarcho_capitalism"
+		texturefile = "gfx/interface/goals/generic/r56_goal_generic_anarcho_capitalism.dds"
 	}	
 
 ###------> Unique generics <><> <><> <><> <><> <><>
