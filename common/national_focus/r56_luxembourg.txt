@@ -4769,13 +4769,13 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = LUX_placeholder
-		icon = GFX_obsolete_template_overlay
-		cost = 0
-		x = 200
-		y = 0
-		available = { hidden_trigger = { always = no } }
-		completion_reward = { }
-	}
+	#focus = {
+	#	id = LUX_placeholder
+	#	icon = GFX_obsolete_template_overlay
+	#	cost = 0
+	#	x = 200
+	#	y = 0
+	#	available = { hidden_trigger = { always = no } }
+	#	completion_reward = { }
+	#}
 }

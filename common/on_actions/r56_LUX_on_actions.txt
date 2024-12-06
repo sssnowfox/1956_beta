@@ -1,4 +1,18 @@
 on_actions = {
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { tag = LUX }
+					any_country = { has_idea = r56_LUX_treaty_of_london_signatory }
+				}
+				every_country = {
+					limit = { has_idea = r56_LUX_treaty_of_london_signatory }
+					country_event = luxembourg.228
+				}
+			}
+		}
+	}
 	on_weekly_LUX = {
 		effect = {
 			if = {

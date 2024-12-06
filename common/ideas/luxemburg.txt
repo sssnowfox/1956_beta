@@ -1275,6 +1275,35 @@ ideas = {
 				weekly_manpower = 150
 			}
 		}
+
+		r56_LUX_treaty_of_london_signatory = {
+			picture = received_attache				# request new gfx
+
+			cancel = {
+				LUX = {
+					OR = {
+						exists = no
+						is_puppet = yes
+					}
+				}
+			}
+
+			modifier = {
+				guarantee_cost = -0.05
+				defensive_war_stability_factor = 0.10
+				custom_modifier_tooltip = r56_LUX_treaty_of_london_signatory_tt
+			}
+		}
+		r56_LUX_untrustworthy_ally = {
+			picture = generic_deal_with_the_devil
+
+			modifier = {
+				political_power_factor = -0.10
+				stability_factor = -0.05
+				improve_relations_maintain_cost_factor = 0.25
+				guarantee_cost = 0.25
+			}
+		}
 	}
 
 	industrial_concern = {

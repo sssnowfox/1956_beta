@@ -632,7 +632,7 @@ country_event = {	# Talks successful
 					original_tag = ITA
 				}
 			}
-			give_guarantee = LUX
+			add_ideas = r56_LUX_treaty_of_london_signatory
 		}
 
 		hidden_effect = { news_event = luxembourg.225 }
@@ -758,7 +758,7 @@ news_event = {		# Treaty not reaffirmed, news event
 		}
 	}
 }
-country_event = {	# clear the country flags
+country_event = {		# clear the country flags
 	id = luxembourg.227
 
 	hidden = yes
@@ -771,8 +771,44 @@ country_event = {	# clear the country flags
 		}
 	}
 }
+country_event = {		# LUX got attacked, please help
+	id = luxembourg.228
+	title = luxembourg.228.t
+	desc = luxembourg.228.d
+	picture = GFX_report_event_soldiers_marching
 
-country_event = {		# getting garuantees from FRA & GER
+	is_triggered_only = yes
+
+	option = {			# help
+		name = luxembourg.228.a
+		LUX = {
+			random_enemy_country = {
+				ROOT = {
+					add_to_war = {
+						targeted_alliance = LUX
+						enemy = PREV
+						hostility_reason = "Treaty of London"
+					}
+				}
+			}
+		}
+	}
+	option = {			# dont help
+		name = luxembourg.228.b
+		add_timed_idea = {
+			idea = r56_LUX_untrustworthy_ally
+			days = 180
+		}
+		LUX = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = large_decrease
+			}
+		}
+	}
+}
+
+country_event = {		# getting guarantees from FRA & GER
 	id = luxembourg.270
 	title = luxembourg.270.t
 	desc = luxembourg.270.d
@@ -784,7 +820,7 @@ country_event = {		# getting garuantees from FRA & GER
 		GER = { exists = yes }
 	}
 
-	option = {			# pursue garuantees
+	option = {			# pursue guarantees
 		name = luxembourg.270.a
 		FRA = {
 			country_event = {
@@ -816,7 +852,7 @@ country_event = {		# getting garuantees from FRA & GER
 		add_stability = -0.01
 	}
 }
-country_event = {		# FRA; asking for garuantee
+country_event = {		# FRA; asking for guarantee
 	id = luxembourg.271
 	title = luxembourg.271.t
 	desc = luxembourg.271.d
@@ -880,7 +916,7 @@ country_event = {		# FRA; asking for garuantee
 				modifier = medium_decrease
 			}
 		}
-		set_country_flag = LUX_refused_garuantee
+		set_country_flag = LUX_refused_guarantee
 
 		hidden_effect = {
 			FROM = {
@@ -901,7 +937,7 @@ country_event = {		# FRA; asking for garuantee
 		}
 	}
 }
-country_event = {		# GER, asking for garuantee
+country_event = {		# GER, asking for guarantee
 	id = luxembourg.272
 	title = luxembourg.272.t
 	desc = luxembourg.272.d
@@ -967,7 +1003,7 @@ country_event = {		# GER, asking for garuantee
 				modifier = medium_decrease
 			}
 		}
-		set_country_flag = LUX_refused_garuantee
+		set_country_flag = LUX_refused_guarantee
 
 		hidden_effect = {
 			FROM = {
@@ -1086,7 +1122,7 @@ country_event = {		# bilateral talks successful
 	is_triggered_only = yes
 	trigger = {
 		NOT = {
-			any_other_country = { has_country_flag = LUX_refused_garuantee }
+			any_other_country = { has_country_flag = LUX_refused_guarantee }
 		}
 	}
 
@@ -1125,21 +1161,21 @@ country_event = {		# bilateral talks unsuccessful
 	is_triggered_only = yes
 	trigger = {
 		any_other_country = {
-			has_country_flag = LUX_refused_garuantee
+			has_country_flag = LUX_refused_guarantee
 		}
 	}
 
 	option = {
 		name = luxembourg.280.a
 		every_country = {
-			limit = { has_country_flag = LUX_refused_garuantee }
+			limit = { has_country_flag = LUX_refused_guarantee }
 			ROOT = {
 				add_opinion_modifier = {
 					target = PREV
 					modifier = medium_decrease
 				}
 			}
-			clr_country_flag = LUX_refused_garuantee
+			clr_country_flag = LUX_refused_guarantee
 		}
 	}
 }
