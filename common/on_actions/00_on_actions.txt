@@ -2384,12 +2384,12 @@ on_actions = {
 												}
 												has_game_rule = {
 													rule = GER_ai_behavior
-													option = FASCIST_PASSIVE
+													option = GER_ALT_FASCIST
 												}
 												has_country_flag = GER_AI_RANDOM_FASCIST_PASSIVE
 												has_game_rule = {
 													rule = GER_ai_behavior
-													option = FASCIST_AGGRESSIVE
+													option = FASCIST
 												}
 												has_country_flag = GER_AI_RANDOM_FASCIST_AGGRESSIVE
 											}
@@ -2417,12 +2417,12 @@ on_actions = {
 												}
 												has_game_rule = {
 													rule = GER_ai_behavior
-													option = FASCIST_PASSIVE
+													option = GER_ALT_FASCIST
 												}
 												has_country_flag = GER_AI_RANDOM_FASCIST_PASSIVE
 												has_game_rule = {
 													rule = GER_ai_behavior
-													option = FASCIST_AGGRESSIVE
+													option = FASCIST
 												}
 												has_country_flag = GER_AI_RANDOM_FASCIST_AGGRESSIVE
 											}
