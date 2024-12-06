@@ -8,7 +8,7 @@ state={
 	state_category = town
 	
 	resources={
-		steel=62 # was: 136 -> is 70 before dam changed to 62
+		steel=63 # was: 136 -> is 70 before dam changed to 63
 		aluminium=45 # was: 96 -> is 50 before dam changed to 45
 	}
 
