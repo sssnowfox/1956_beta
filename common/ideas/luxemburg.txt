@@ -1290,7 +1290,7 @@ ideas = {
 
 			modifier = {
 				guarantee_cost = -0.05
-				defensive_war_stability_factor = 0.10
+				defensive_war_stability_factor = 0.05
 				custom_modifier_tooltip = r56_LUX_treaty_of_london_signatory_tt
 			}
 		}

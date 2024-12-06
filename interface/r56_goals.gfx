@@ -6323,6 +6323,10 @@ spriteTypes = {
 		name = "GFX_goal_LUX_commemorate_independence"
 		textureFile = "gfx/interface/goals/LUX/r56_goal_LUX_commemorate_independence.dds"
 	}
+	spriteType = {
+		name = "GFX_goal_LUX_join_allies"
+		textureFile = "gfx/interface/goals/LUX/r56_goal_LUX_join_allies.dds"
+	}
 
 ###------> MAN <><> <><> <><> <><> <><>
 	SpriteType = {

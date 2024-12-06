@@ -1078,7 +1078,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUX_join_allies
-		icon = GFX_goal_generic_join_allies
+		icon = GFX_goal_LUX_join_allies
 		cost = 10
 		x = -2
 		y = 2
