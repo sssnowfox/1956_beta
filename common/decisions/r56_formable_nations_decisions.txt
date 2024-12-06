@@ -540,6 +540,9 @@ recreate_belgium_category = {
             is_subject = no
             6 = { is_controlled_by = ROOT }
             34 = { is_controlled_by = ROOT }
+			1094 = { is_controlled_by = ROOT }
+            1095  = { is_controlled_by = ROOT }
+			965 = { is_controlled_by = ROOT }
         }
         icon = generic_form_nation
         complete_effect = {
@@ -718,8 +721,14 @@ form_united_netherlands_category2 = {
                     tooltip = form_eu_belgium_required_states_tt
                     controls_state = 6
                     controls_state = 34
+					controls_state = 1094
+                    controls_state = 1095
+					controls_state = 965
                     owns_state = 6
                     owns_state = 34
+					owns_state = 1094
+                    owns_state = 1095
+					owns_state = 965
                 }
             }
 
@@ -781,8 +790,14 @@ form_united_netherlands_category2 = {
                     tooltip = form_eu_belgium_required_states_tt
                     controls_state = 6
                     controls_state = 34
+					controls_state = 1094
+                    controls_state = 1095
+					controls_state = 965
                     owns_state = 6
                     owns_state = 34
+					owns_state = 1094
+                    owns_state = 1095
+					owns_state = 965
                 }
             }
 

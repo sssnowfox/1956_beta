@@ -1856,28 +1856,28 @@ focus_tree = {
 				BEL = {
 					exists = yes
 					owns_state = 34
+					owns_state = 1095
 				}
 				WLL = {
 					exists = yes
 					owns_state = 34
+					owns_state = 1095
 				}
 			}
-		}
-
-
-		
-		
-		
-
+		}	
 
 		completion_reward = {
 			34 = {
+				add_claim_by = LUX
+			}
+			1095 = {
 				add_claim_by = LUX
 			}
 			if = {
 				limit = {
 					BEL = {
 						owns_state = 34
+						owns_state = 1095
 					}
 				}
 				create_wargoal = {
@@ -1885,7 +1885,7 @@ focus_tree = {
 					target = BEL
 					expire = 0
 					generator = {
-						34
+						34 1095
 					}
 				}
 	
@@ -1898,6 +1898,7 @@ focus_tree = {
 				limit = {
 					WLL = {
 						owns_state = 34
+						owns_state = 1095
 					}
 				}
 				create_wargoal = {
@@ -1905,7 +1906,7 @@ focus_tree = {
 					target = WLL
 					expire = 0
 					generator = {
-						34
+						34 1095
 					}
 				}
 			}
