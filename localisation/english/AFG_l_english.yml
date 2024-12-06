@@ -102,7 +102,7 @@
  ######## MILITARY IDEAS ########
 
  AFG_afghan_army:0 "[GetAfghanArmyFocusName]"
- AFG_afghan_army_desc:0 "The [GetAfghanArmyFocusName] is primarily made up of untrained tribal fighters, poorly equipped with outdated weapons from the previous century. Our military relies heavily on foreign influence, with nations like [ENG.GetNameDef] and [SOV.GetNameDef] serving as vital sources for modern equipment and military technology."
+ AFG_afghan_army_desc:0 "The glorious [GetAfghanArmyFocusName] can proud itself in the fact that it has managed to achieve a level of profound renown all across the world, for being particulary hard to beat, and one, if not, the most dangerous enemy one could face on the battlefield, let alone fighting the [AFG.GetAdjective]s on their home turf. During peacetime, the [GetAfghanArmyFocusName] is maintains around 70 to 80 thousand troops available at all times and fully prepared for war. However, our military heavily relies on foreign equipment, with nations like [ENG.GetNonIdeologyName], [SOV.GetNonIdeologyName] and [GER.GetNonIdeologyName] serving as vital sources of modern equipment and military technology.\n\n'In [AFG.GetNonIdeologyName], the days are long, the mountains are high, and the battles are hard.'"
 
  AFG_afghan_army_intro:0 "Modify §Y[GetAfghanArmyFocusName]§! by:"
  AFG_afghan_army_modernization_tt:0 "$AFG_afghan_army_intro$ \nConsumer Goods Factories factor: §Y+5.0%§!\n$MODIFIER_ARMY_ORG$: §G+5.0%§!\n$MODIFIER_PLANNING_SPEED$: §G+10.0%§!"

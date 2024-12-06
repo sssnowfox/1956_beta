@@ -4508,7 +4508,7 @@ focus_tree = {
 				}
 			}
 		}
-		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_HISTORICAL }
 	}
 	focus = {
 		id = AFG_german_investments_program
@@ -4828,7 +4828,7 @@ focus_tree = {
 				days = 365
 			}
 		}
-		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 	}
 	focus = {
 		id = AFG_invite_abwehr_agents
@@ -8284,7 +8284,7 @@ focus_tree = {
 				set_country_flag = AFG_prevented_nisar_death
 			}
 		}
-		search_filters = { FOCUS_FILTER_MANPOWER }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = AFG_form_worker_communes
@@ -9184,7 +9184,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AFG_socialist_constitution
-		icon = GFX_generic_goal_communist_reforms
+		icon = GFX_goal_ISR_rome_and_jerusalem
 		x = 1
 		y = 1
 
@@ -13347,7 +13347,11 @@ focus_tree = {
 		}
 
 		prerequisite = {
-			focus = AFG_peace_through_islam
+			focus = AFG_approach_pakistani_resistance
+		}
+
+		prerequisite = {
+			focus = AFG_revive_the_basmachi_movement
 		}
 
 		relative_position_id = AFG_approach_pakistani_resistance

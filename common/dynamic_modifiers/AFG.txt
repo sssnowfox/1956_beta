@@ -142,7 +142,7 @@ AFG_afghan_army = {
 		always = yes
 	}
 
-	icon = GFX_idea_tur_disorganised_armed_forces
+	icon = GFX_idea_AFG_army_idea
 
 	army_defence_against_major_factor = AFG_army_major_defence
 	planning_speed = AFG_army_planning_speed

@@ -1450,15 +1450,15 @@ GER_ai_behavior = {
 		#allow_achievements = yes
 	}
 	option = {
-		name = FASCIST_AGGRESSIVE 
+		name = FASCIST 
 		text = "RULE_OPTION_FASCIST_AGGRESSIVE_GER"
 		desc = "RULE_OPTION_FASCIST_AGGRESSIVE_GER_AI_DESC"
 		allow_achievements = yes
 	}
 	option = {
-		name = FASCIST_PASSIVE
-		text = "RULE_OPTION_FASCIST_PASSIVE_GER"
-		desc = "RULE_OPTION_FASCIST_PASSIVE_GER_AI_DESC"
+		name = GER_ALT_FASCIST	#previously there was a passive option here instead of fascist hitler overthrow, that passive option could be restored later
+		text = "RULE_OPTION_GER_ALT_FASCIST"
+		desc = "RULE_OPTION_GER_ALT_FASCIST_AI_DESC"
 		#allow_achievements = yes
 	}
 	option = {
