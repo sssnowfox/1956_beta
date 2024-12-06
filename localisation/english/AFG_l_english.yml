@@ -632,7 +632,7 @@
  afghanistan.52.a:0 "Offer him an important adminstrative position..."
  afghanistan.52.b:0 "The King has finally returned, and so shall the Kingdom!"
 
- afghanistan.53.t:0 "The Second [AFG.GetAdjective] Civil War!"
+ afghanistan.53.t:0 "The Second [AFG.GetAdjective] Civil War"
  afghanistan.53.d:0 "During the past week, many tribal leaders in [AFG.GetNonIdeologyName] have spoken out against the King and the Regency consisting mainly of his two uncles, Muhammad Hashim Khan and Shah Mahmud Khan. In their eyes, the government of [AFG.GetNonIdeologyName] has become too modern and has strayed too far away from the traditionalist values and customs of the Afghan people. With this in mind, they have decided to launch a full-scale rebellion to topple the regime. Many speculate that the leader of the Jamiat-e Islami, Abul A'la al-Maududi is also involved in the conflict, however, no evidence to confirm this suspicion has been found."
  afghanistan.53.a:0 "It's always the [AFG.GetAdjective]s, isn't it?"
  afghanistan.53.b:0 "Death to the tyrants! Death to the King!"
@@ -862,7 +862,7 @@
  afghanistan.104.d:0 "After our demands for a complete ceasefire and slow transition into a state of peace between [FROM.GetNameDefCap] and [ROOT.GetNameDefCap] reached the [FROM.GetAdjective] government, the [FROM.GetAdjective] government subsequently decided to reject our demands possibly due their belief that they possess a superior military comapred to ours, they saw no reason to make peace."
  afghanistan.104.a:0 "Wise or not, their choice has been made."
 
- afghanistan.105.t:0 "The Second [AFG.GetAdjective] Civil War!"
+ afghanistan.105.t:0 "The Second [AFG.GetAdjective] Civil War"
  afghanistan.105.a:0 "It's always the [AFG.GetAdjective]s, isn't it?"
  afghanistan.105.b:0 "Down with the King! Up with the Proletariat!"
  afghanistan.105.d:0 "During the past week, military leaders within [AFG.GetNonIdeologyName] have spoken out against the King and the Regency consisting mainly of his two uncles, Muhammad Hashim Khan and Shah Mahmud Khan. In their eyes, the government of [AFG.GetNonIdeologyName] has become too backwards, both politically and economically, without any modernization planned for the future. With this in mind, they have decided to launch a full-scale revolution to topple the regime, and establish a socialist republic. Many speculate that the [SOV.GetAdjective] forces have been involved in instigating the conflict, however, no evidence to confirm this suspicion has been found."
