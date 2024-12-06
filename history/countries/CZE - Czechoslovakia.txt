@@ -163,6 +163,11 @@ recruit_character = CZE_zdenko_radslav_kinsky
 recruit_character = CZE_eduard_outrata
 recruit_character = CZE_josef_kalfus
 
+recruit_character = CZE_vojtyech_luzha
+recruit_character = CZE_josef_shnejdarek
+recruit_character = CZE_richard_tesarzhik
+recruit_character = CZE_sergej_vojcechovsky
+
 ### SCIENTISTS ###
 recruit_character = CZE_alexej_michaljovic_surin
 recruit_character = CZE_josef_zubaty

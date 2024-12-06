@@ -1980,7 +1980,7 @@ characters = {
 				small="GFX_idea_goering"
 			}
 			civilian = {
-				large="gfx/leaders/GER/Portrait_Germany_Hermann_Goring.dds"
+				large = GFX_portrait_GER_hermann_goring
 			}
 		}
 		advisor = {
@@ -2042,9 +2042,15 @@ characters = {
 							option = COMMUNIST_WORLD_REVOLUTION
 						}
 						has_country_flag = GER_AI_RANDOM_KAISER
-						has_game_rule = {
-							rule = GER_ai_behavior
-							option = KAISER
+						OR = {
+							has_game_rule = {
+								rule = GER_ai_behavior
+								option = MONARCHIST_ALLIES
+							}
+							has_game_rule = {
+								rule = GER_ai_behavior
+								option = MONARCHIST_CENTRAL_POWERS
+							}
 						}
 						has_country_flag = GER_AI_RANDOM_DEMOCRATIC
 						has_game_rule = {

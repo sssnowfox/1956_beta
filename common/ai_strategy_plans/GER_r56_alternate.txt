@@ -28,17 +28,11 @@ GER_democratic_r56 = {
 		}
 	}
 
-	ai_national_focuses = {
-		GER_begin_depression_recovery
-		GER_appoint_economic_positions
-		GER_volksgemeinschaft
-		GER_deutsche_arbeitsfront
-		GER_autobahn
+	ai_national_focuses = {	#now set to rush civil war to prevent issues
 		GER_kill_hitler
 		GER_political_turmoil
 		GER_restore_weimar
 		GER_establish_bundesrepublik
-		GER_support_technocrats_I
 	}
 
 	research = {
@@ -95,23 +89,11 @@ GER_communist_comintern_r56 = {
 		}
 	}
 
-	ai_national_focuses = {
-		GER_begin_depression_recovery
-		GER_appoint_economic_positions
-		GER_volksgemeinschaft
-		GER_deutsche_arbeitsfront
-		GER_autobahn
-		#below unnecessarily delay the civil war (and might issues when done by several Germany's)
-		#GER_support_autarks_I
-		#GER_steelworks_issues
-		#GER_support_autarks_II
-		#GER_privatize_reichsbahn
-		#GER_finish_reinhardt
+	ai_national_focuses = { #now set to rush civil war to prevent issues
 		GER_kill_hitler
 		GER_political_turmoil
 		GER_repeal_reichstag_fire_decree
 		GER_alliance_with_soviets
-		GER_support_autarks_I
 	}
 
 	research = {
@@ -152,23 +134,11 @@ GER_communist_world_revolution_r56 = {
 		}
 	}
 
-	ai_national_focuses = {
-		GER_begin_depression_recovery
-		GER_appoint_economic_positions
-		GER_volksgemeinschaft
-		GER_deutsche_arbeitsfront
-		GER_autobahn
-		#below unnecessarily delay the civil war (and might issues when done by several Germany's)
-		#GER_support_autarks_I
-		#GER_steelworks_issues
-		#GER_support_autarks_II
-		#GER_privatize_reichsbahn
-		#GER_finish_reinhardt
+	ai_national_focuses = { #now set to rush civil war to prevent issues
 		GER_kill_hitler
 		GER_political_turmoil
 		GER_repeal_reichstag_fire_decree
 		GER_world_revolution
-		GER_support_autarks_I
 	}
 
 	research = {
@@ -212,8 +182,7 @@ GER_monarchist_allies_r56 = {
 		has_global_flag = ger_vanilla_focus_tree
 	}
 
-	ai_national_focuses = {
-		GER_begin_depression_recovery
+	ai_national_focuses = { #now set to rush civil war to prevent issues
 		#GER_rhineland
 		GER_rally_the_monarchists
 		GER_support_freikorps
@@ -288,8 +257,7 @@ GER_monarchist_central_powers_r56 = {
 		has_global_flag = ger_vanilla_focus_tree
 	}
 
-	ai_national_focuses = {
-		GER_begin_depression_recovery
+	ai_national_focuses = { #now set to rush civil war to prevent issues
 		#GER_rhineland
 		GER_rally_the_monarchists
 		GER_support_freikorps

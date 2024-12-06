@@ -120,7 +120,7 @@ characters={
 			}
 		}
 	}
-	RAJ_v._d._savarkar={
+	RAJ_v_d_savarkar={
 		name="V. D. Savarkar"
 		portraits={
 			civilian={
@@ -1389,7 +1389,6 @@ characters={
 		}
 	}
 
-	#BBA characters
 	RAJ_orde_wingate = {
 		name=RAJ_orde_wingate
 		portraits={
@@ -1448,7 +1447,9 @@ characters={
 				specialization_land = 2
 			}
 			visible = {
-				is_subject_of = ENG
+				owner = {
+					is_subject_of = ENG
+				}
 			}
 		}
 	}

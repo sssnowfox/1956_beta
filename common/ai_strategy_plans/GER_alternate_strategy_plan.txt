@@ -304,7 +304,7 @@ German_alternate_stalinist = {
 			has_country_flag = GER_AI_RANDOM_COMMUNIST_STALINIST
 			has_game_rule = {
 				rule = GER_ai_behavior
-				option = GER_COMMUNIST_STALINIST
+				option = COMMUNIST_COMINTERN
 			}
 		}
 	}
@@ -459,7 +459,7 @@ German_alternate_spartacist = {
 			has_country_flag = GER_AI_RANDOM_COMMUNIST_SPARTACUS
 			has_game_rule = {
 				rule = GER_ai_behavior
-				option = GER_COMMUNIST_SPARTACUS
+				option = COMMUNIST_WORLD_REVOLUTION
 			}
 		}
 	}
