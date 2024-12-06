@@ -9184,7 +9184,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AFG_socialist_constitution
-		icon = GFX_generic_goal_communist_reforms
+		icon = GFX_goal_ISR_rome_and_jerusalem
 		x = 1
 		y = 1
 
