@@ -238,6 +238,7 @@
  LUX_raid_french_stores_desc:0 "This country is run by aristocrats that are supported by [FRA.GetNameDef]. If we destroy their base of power, the [FRA.GetAdjectiveCap] stores and businesses, we can also expect to undermine the power of the weak government."
  LUX_rejuvenate_the_luxembourgish_identity:0 "Revive the National Identity"
  LUX_rejuvenate_the_luxembourgish_identity_desc:0 "If the [LUX.GetNameDef] is to be preserved and live on, we must revive the [LUX.GetAdjective] national identity, as without a clear [LUX.GetAdjective] national identity, there would be no [LUX.GetNonIdeologyName] either!"
+ LUX_rejuvenate_the_luxembourgish_identity_tt:0 "Modify either §HAnti-French Sentiments§! or §HAll-Luxembourgish Societies§! by\nStability: §G+5.00%§!\nDaily Democracy Support: §R-0.02§!\n\n"
  LUX_fully_counter_french_influence:0 "Fully Counter [FRA.GetAdjectiveCap] Influence"
  LUX_fully_counter_french_influence_desc:0 "To preserve our nation, [FRA.GetAdjectiveCap] influences are not welcome since they undermine our nation's identity as a whole. [LUX.GetNonIdeologyName] is [GER.GetAdjectiveCap]!"
  LUX_integrate_french_organisations:0 "Integrate [FRA.GetAdjectiveCap] Organisations"
@@ -502,6 +503,7 @@
  luxembourg.282.t:0 "Failed Talks with [FROM.GetNonIdeologyName]"
  luxembourg.282.d:0 "The talks are done but nothing has been signed, [FROM.GetNameDef] will remain unprotected for a while longer. With already failed negotiations around the Treaty of London, this will be another setback for [FROM.GetNameDef].\n\nIt remains to be seen how this will affect the future of the continent, if at all."
  luxembourg.282.a:0 "Nothing is lost, nothing is gained."
+ LUX_will_fail_negotiations_tt:0 "§RThis will result in the failure of the negotiations.§!"
 
  luxembourg.230.t:0 "[FROM.GetNameDefCap] requests guarantees"
  luxembourg.230.d:0 "[FROM.GetNameDefCap] recently abandoned their neutrality as a new government was able to win the election. They obviously cannot defend themself on their own, meaning they would seek protection sooner or later.\n\nThis day seem to have come, as a [FROM.GetAdjectiveCap] diplomat as requested [ROOT.GetAdjectiveCap] protection against threats to their independence and sovereignty."

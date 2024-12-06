@@ -1066,12 +1066,6 @@ ideas = {
 
 			modifier = {
 				democratic_drift = -0.05
-				stability_factor = -0.05
-				war_support_factor = 0.10
-			}
-			targeted_modifier = {
-				tag = FRA
-				defense_bonus_against = 0.05
 			}
 		}
 
@@ -1081,12 +1075,26 @@ ideas = {
 
 			modifier = {
 				democratic_drift = -0.10
-				stability_factor = -0.10
-				war_support_factor = 0.20
+				war_support_factor = 0.10
 			}
 			targeted_modifier = {
 				tag = FRA
-				defense_bonus_against = 0.15
+				defense_bonus_against = 0.04
+			}
+		}
+
+		r56_LUX_anti_french_sentiments4 = {
+			picture = soviet_german_friendship		# request new gfx
+			name = r56_LUX_anti_french_sentiments
+
+			modifier = {
+				democratic_drift = -0.08
+				stability_factor = -0.05
+				war_support_factor = 0.10
+			}
+			targeted_modifier = {
+				tag = FRA
+				defense_bonus_against = 0.04
 			}
 		}
 
@@ -1104,9 +1112,19 @@ ideas = {
 			picture = LUX_flag_in_frame
 
 			modifier = {
-				democratic_drift = -0.10
-				war_support_factor = 0.10
+				war_support_factor = 0.05
 				army_core_defence_factor = 0.08
+			}
+		}
+		r56_LUX_all_luxembourgish_societies2 = {
+			picture = LUX_flag_in_frame
+			name = r56_LUX_all_luxembourgish_societies
+
+			modifier = {
+				war_support_factor = 0.05
+				army_core_defence_factor = 0.08
+				stability_factor = 0.05
+				democratic_drift = -0.02
 			}
 		}
 

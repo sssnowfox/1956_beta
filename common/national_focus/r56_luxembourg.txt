@@ -4098,10 +4098,7 @@ focus_tree = {
 		prerequisite = { focus = LUX_contest_election_results }
 		mutually_exclusive = { focus = LUX_attack_alliance_francaise }
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = r56_LUX_anti_french_sentiments2
-				add_idea = r56_LUX_all_luxembourgish_societies
-			}
+			add_ideas = r56_LUX_all_luxembourgish_societies
 			unlock_decision_tooltip = LUX_fascist_balance_show_national_unity
 
 			custom_effect_tooltip = r56_newline
@@ -4145,14 +4142,27 @@ focus_tree = {
 		relative_position_id = LUX_attack_alliance_francaise
 		prerequisite = { focus = LUX_attack_alliance_francaise focus = LUX_integrate_french_organisations }
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = r56_LUX_anti_french_sentiments2
-				add_idea = r56_LUX_anti_french_sentiments3
+			if = {
+				limit = { has_idea = r56_LUX_anti_french_sentiments }
+				swap_ideas = {
+					remove_idea = r56_LUX_anti_french_sentiments
+					add_idea = r56_LUX_anti_french_sentiments2
+				}
+			}
+			else_if = {
+				limit = { has_idea = r56_LUX_all_luxembourgish_societies }
+				swap_ideas = {
+					remove_idea = r56_LUX_all_luxembourgish_societies
+					add_idea = r56_LUX_all_luxembourgish_societies2
+				}
+			}
+			else = {
+				custom_effect_tooltip = LUX_rejuvenate_the_luxembourgish_identity_tt
 			}
 
 			add_power_balance_value = {
 				id = LUX_fascist_balance
-				value = 0.05
+				value = -0.05
 			}
 		}
 	}
@@ -4166,9 +4176,27 @@ focus_tree = {
 		prerequisite = { focus = LUX_attack_alliance_francaise }
 		prerequisite = { focus = LUX_request_german_funding }
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = r56_LUX_anti_french_sentiments2
-				add_idea = r56_LUX_anti_french_sentiments3
+			if = {
+				limit = { has_idea = r56_LUX_anti_french_sentiments }
+				swap_ideas = {
+					remove_idea = r56_LUX_anti_french_sentiments
+					add_idea = r56_LUX_anti_french_sentiments4
+				}
+			}
+			else_if = {
+				limit = { has_idea = r56_LUX_anti_french_sentiments2 }
+				swap_ideas = {
+					remove_idea = r56_LUX_anti_french_sentiments2
+					add_idea = r56_LUX_anti_french_sentiments3
+				}
+			}
+			else = {
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = r56_LUX_anti_french_sentiments2
+						add_idea = r56_LUX_anti_french_sentiments3
+					}
+				}
 			}
 
 			add_power_balance_value = {
