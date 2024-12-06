@@ -188,11 +188,13 @@ debug_decisions = {
 			NOT = {
 				AND = {
 					controls_state = 965
-					#controls_state = x		# belgian luxembourg
+					controls_state = 1095
 					controls_state = 34
 					controls_state = 6
 				}
 			}
+			is_debug = yes
+			original_tag = LUX
 		}
 		complete_effect = {
 			every_other_country = {
@@ -200,7 +202,7 @@ debug_decisions = {
 					is_in_faction_with = ROOT
 					OR = {
 						controls_state = 965
-						#controls_state = x		# belgian luxembourg
+						controls_state = 1095
 						controls_state = 34
 						controls_state = 6
 					}
@@ -268,33 +270,6 @@ political_actions = {
 		}
 		remove_effect = {
 			add_state_core = FROM
-		}
-	}
-	LUX_move_capital_dijon = {
-		icon = GFX_decision_SOV_place_hq
-
-		visible = {
-			original_tag = LUX
-			has_completed_focus = LUX_raise_cross_burgundy
-			27 = { is_capital = no }
-		}
-
-		available = {
-			27 = {
-				is_core_of = ROOT
-				is_fully_controlled_by = ROOT
-			}
-		}
-
-		priority = 10
-		cost = 20
-
-		complete_effect = {
-			set_capital = {
-				state = 27
-				remember_old_capital = yes
-			}
-			add_stability = 0.05
 		}
 	}
 }

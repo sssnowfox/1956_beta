@@ -476,7 +476,7 @@ characters = {
 		name = LUX_camille_dennemeyer
 		portraits = {
 			army = {
-				small = "GFX_idea_generic_political_advisor_europe_3"
+				small = "GFX_idea_generic_political_advisor_europe_4"
 			}
 		}
 		advisor = {
@@ -495,7 +495,6 @@ characters = {
 					}
 				}
 				has_completed_focus = LUX_utilise_dennemeyer
-				is_country_leader = no
 			}
 			visible = {
 				NOT = {
@@ -523,7 +522,7 @@ characters = {
 		name = LUX_albert_ludwig_kreins
 		portraits = {
 			army = {
-				small = "GFX_idea_generic_political_advisor_europe_3"
+				small = "GFX_idea_generic_political_advisor_europe_2"
 			}
 		}
 		advisor = {

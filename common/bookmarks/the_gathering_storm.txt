@@ -312,21 +312,21 @@ bookmarks = {
 		# 	}
 		# }
 
-		"PRU" = {
-            minor = yes
-            history = "PRU_GATHERING_STORM_DESC"
-            ideology = neutrality
-            ideas = {
-                PRU_apra_revolution
-                PRU_defeated_navy
-                PRU_stagnant_economy
-            }
-            focuses = {
-                PRU_remember_the_Trujillo_revolution
-                PRU_legacy_of_sachez_cerro
-                PRU_viva_el_rey
-            }
-        }
+		#"PRU" = {
+        #   minor = yes
+        #   history = "PRU_GATHERING_STORM_DESC"
+        #   ideology = neutrality
+        #   ideas = {
+        #       PRU_apra_revolution
+        #       PRU_defeated_navy
+        #       PRU_stagnant_economy
+        #   }
+        #   focuses = {
+        #       PRU_remember_the_Trujillo_revolution
+        #       PRU_legacy_of_sachez_cerro
+        #       PRU_viva_el_rey
+        #   }
+        #}
 
 		"EGY" = {
 			minor = yes
@@ -391,6 +391,22 @@ bookmarks = {
 			}
 		}
 
+		"LUX" = {
+			minor = yes
+			history = "LUX_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				r56_legacy_of_luxembourg_crisis_1
+				r56_LUX_economic_dependence_1
+				LUX_charlotte
+			}
+			focuses = {
+				LUX_another_declaration_of_neutrality
+				LUX_commemorate_independence
+				LUX_european_revolution
+			}
+		}
+
 		"AUS" = {
             minor = yes
             history = "AUS_GATHERING_STORM_DESC"
@@ -435,21 +451,6 @@ bookmarks = {
 				MPL_arab_revolt
 				MPL_a_forgone_conclusion
 				MPL_british_occupation
-			}
-		}
-
-		"EGY" = {
-			minor = yes
-			history = "EGY_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				EGY_egyptian_non_alligment
-				EGY_the_egyptian_army_idea
-			}
-			focuses = {
-				EGY_found_the_new_kingdom
-				EGY_defender_of_the_arab_world_focus
-				EGY_revolt_against_the_opressors
 			}
 		}
 
