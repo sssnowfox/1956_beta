@@ -1,5 +1,5 @@
 ####-----> Germany: Alternate Strategy Plans (Road to 56) <><> <><> <><> <><> <><>
-These are the non-historical AI paths for Germany with the 'Road to 56 Focus Tree' selected.
+#These are the non-historical AI paths for Germany with the 'Road to 56 Focus Tree' selected.
 
 GER_democratic_r56 = {
 	name = "GER Democratic (Road to 56)"
