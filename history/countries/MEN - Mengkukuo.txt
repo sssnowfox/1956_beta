@@ -126,3 +126,19 @@ set_popularities = {
 	democratic = 12
 	communism = 4
 }
+
+#More likely then not to be working both sides and an agent of Inner Mongolia intersts no matter who was in charge. Had Commie contacts but also worked for Mengjiang. 
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_operative_leader = {
+		name = "Songjin Wangchuck"
+		GFX = GFX_portrait_asia_generic_operative_f_1
+		traits = { operative_double_agent operative_well_groomed}
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { MEN MON SHX CHI PRC }
+	}
+}
