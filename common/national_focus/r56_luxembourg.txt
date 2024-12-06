@@ -2525,7 +2525,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUX_privatisation_drive
-		icon = GFX_focus_mex_privatisation
+		icon = GFX_goal_generic_privatization
 		cost = 10
 		x = 0
 		y = 1
@@ -2556,7 +2556,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUX_expand_social_net
-		icon = GFX_focus_ICE_embrace_the_workers_revolution
+		icon = GFX_focus_FIN_socialist_welfare
 		cost = 5
 		x = 0
 		y = 1
@@ -2573,7 +2573,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUX_open_border_agreements
-		icon = GFX_goal_generic_positive_trade_relations
+		icon = GFX_focus_GER_customs_union
 		cost = 5
 		x = -2
 		y = 1
@@ -2591,7 +2591,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUX_lower_taxes
-		icon = GFX_focus_usa_reestablish_the_gold_standard
+		icon = GFX_goal_generic_deals
 		cost = 5
 		x = 0
 		y = 1
@@ -2603,7 +2603,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUX_promote_small_businesses
-		icon = GFX_focus_generic_industry_2
+		icon = GFX_goal_industrial_investment
 		cost = 8
 		x = 2
 		y = 1
@@ -2624,7 +2624,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUX_ensure_minimum_wage
-		icon = GFX_focus_generic_workers_and_farmers_rise
+		icon = GFX_focus_generic_welfare
 		cost = 5
 		x = 0
 		y = 1
@@ -2639,7 +2639,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUX_academy_of_science
-		icon = GFX_focus_ARG_universidad_de_buenos_aires		# request new gfx
+		icon = GFX_focus_research		# request new gfx
 		cost = 8
 		x = -1
 		y = 1
@@ -2652,7 +2652,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUX_fair_economy
-		icon = GFX_goal_generic_soviet_construction
+		icon = GFX_focus_ITA_devaluate_the_lire
 		cost = 10
 		x = 0
 		y = 1
@@ -2711,62 +2711,95 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = LUX_socialist_volunteers
-		icon = GFX_focus_ger_great_red_menace
-		cost = 5
-		x = 8
-		y = 1
-		offset = {
-			trigger = {
-				OR = {
-					has_country_flag = LUX_maulkuerfgesetz_passed
-					has_completed_focus = LUX_first_social_democratic_government
-					has_completed_focus = LUX_liberal_victory
-					has_completed_focus = LUX_the_dupong_ministry
-				}
-			}
-			x = -3
-		}
-		relative_position_id = LUX_begin_workers_revolution
-		prerequisite = {
-			focus = LUX_first_social_democratic_government
-			focus = LUX_begin_workers_revolution
-		}
-		available = {
-			OR = {
-				has_idea = LUX_minister_foreign_LSAP
-				has_idea = LUX_minister_foreign_KPL
-			}
-		}
-		completion_reward = {
-			add_ideas = r56_LUX_volunteers
-		}
-	}
-	focus = {
 		id = LUX_lessons_from_spain
-		icon = GFX_focus_spr_no_pasaran
-		cost = 5
-		x = 0
+		icon = GFX_goal_generic_spanish_civil_war_soldier
+		relative_position_id = LUX_first_social_democratic_government
+		prerequisite = { focus = LUX_begin_workers_revolution focus = LUX_first_social_democratic_government }
+		x = -5
 		y = 1
-		relative_position_id = LUX_socialist_volunteers
-		prerequisite = { focus = LUX_socialist_volunteers }
+		cost = 5
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				is_historical_focus_on = no
+				has_global_flag = scw_is_ai_driven
+				ROOT = {
+					has_war = no
+					OR = {
+						has_government = fascism
+						has_government = communism
+					}
+				}
+				add = 8
+			}
+		}
+
 		available = {
-			has_global_flag = spanish_civil_war
-			any_country = {
-				original_tag = SPR
-				has_volunteers_amount_from = {
-					tag = ROOT
-					count > 0
+			SPR_scw_in_progress = yes
+			OR = {
+				AND = {
+					has_completed_focus = COL_collectivist_ethos
+					country_exists = SPA
+					NOT = { has_war_with = SPA }
+				}
+				AND = {
+					has_completed_focus = COL_liberty_ethos
+					country_exists = SPD
+					NOT = { has_war_with = SPD }
 				}
 			}
 		}
 		completion_reward = {
-			army_experience = 35
-			add_doctrine_cost_reduction = {
-				category = land_doctrine
-				cost_reduction = 0.50
-				uses = 2
-				name = LUX_lessons_from_spain
+			if = {
+				limit = {
+					has_completed_focus = COL_collectivist_ethos
+				}
+				add_ideas = PHI_volunteers_in_the_war_nationalist
+				SPA = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = large_increase
+					}
+				}
+			}
+			else = {
+				add_ideas = PHI_volunteers_in_the_war_republican
+				SPD = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = large_increase
+					}
+				}
+			}
+			add_manpower = -5000
+			if = {
+				limit = {
+					has_completed_focus = COL_collectivist_ethos
+				}
+				add_relation_rule_override = {
+					target = SPA
+					can_send_volunteers = yes 
+				}
+				SPA = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 1000
+						producer = ROOT
+					}
+				}
+			}
+			else = {
+				add_relation_rule_override = {
+					target = SPD
+					can_send_volunteers = yes 
+				}
+				SPD = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 1000
+						producer = ROOT
+					}
+				}
 			}
 		}
 	}
@@ -2918,9 +2951,9 @@ focus_tree = {
 	# communist
 	focus = {
 		id = LUX_begin_workers_revolution
-		icon = GFX_focus_GER_liberate_exploited_colonial_workers
+		icon = GFX_goal_communist_revolt
 		cost = 0
-		x = -14
+		x = -15
 		y = 1
 		offset = {
 			x = 14
@@ -3032,7 +3065,7 @@ focus_tree = {
 		id = LUX_elevate_trade_unions
 		icon = GFX_focus_YUG_pan_slavic_congress
 		cost = 5
-		x = 1
+		x = -1
 		y = 1
 		relative_position_id = LUX_begin_workers_revolution
 		prerequisite = { focus = LUX_begin_workers_revolution }
@@ -3045,7 +3078,7 @@ focus_tree = {
 		id = LUX_oust_capitalists
 		icon = GFX_goal_generic_ban_aristocrats
 		cost = 8
-		x = -1
+		x = 1
 		y = 1
 		relative_position_id = LUX_begin_workers_revolution
 		prerequisite = { focus = LUX_begin_workers_revolution }
@@ -3106,10 +3139,10 @@ focus_tree = {
 		id = LUX_struggle_for_equality
 		icon = GFX_focus_ICE_embrace_the_workers_revolution
 		cost = 5
-		x = 2
-		y = 1
-		relative_position_id = LUX_begin_collective_ownership_campaign
-		prerequisite = { focus = LUX_begin_collective_ownership_campaign }
+		x = 0
+		y = 2
+		relative_position_id = LUX_elevate_trade_unions
+		prerequisite = { focus = LUX_elevate_trade_unions }
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = r56_LUX_polarized_society
@@ -3121,10 +3154,10 @@ focus_tree = {
 		id = LUX_find_new_trade_partners
 		icon = GFX_goal_generic_positive_trade_relations
 		cost = 5
-		x = -2
-		y = 1
-		relative_position_id = LUX_begin_collective_ownership_campaign
-		prerequisite = { focus = LUX_begin_collective_ownership_campaign }
+		x = 0
+		y = 2
+		relative_position_id = LUX_oust_capitalists
+		prerequisite = { focus = LUX_oust_capitalists }
 		completion_reward = {
 			if = {
 				limit = {
@@ -3163,17 +3196,17 @@ focus_tree = {
 		id = LUX_peoples_university
 		icon = GFX_goal_communist_brain
 		cost = 8
-		x = 0
+		x = 1
 		y = 1
-		relative_position_id = LUX_begin_collective_ownership_campaign
-		prerequisite = { focus = LUX_begin_collective_ownership_campaign }
+		relative_position_id = LUX_oust_capitalists
+		prerequisite = { focus = LUX_oust_capitalists }
 		completion_reward = {
 			add_research_slot = 1
 		}
 	}
 	focus = {
 		id = LUX_unite_the_country
-		icon = GFX_focus_prc_agrarian_socialism
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
 		cost = 8
 		x = 0
 		y = 2
@@ -3213,7 +3246,7 @@ focus_tree = {
 		id = LUX_european_revolution
 		icon = GFX_focus_usa_focus_on_europe
 		cost = 8
-		x = 3
+		x = 4
 		y = 1
 		relative_position_id = LUX_abandon_the_foolish_policy
 		prerequisite = { focus = LUX_abandon_the_foolish_policy }
@@ -3411,7 +3444,7 @@ focus_tree = {
 		id = LUX_follow_moscow_line
 		icon = GFX_focus_SOV_stalins_cult_of_personality
 		cost = 8
-		x = -3
+		x = -4
 		y = 1
 		relative_position_id = LUX_abandon_the_foolish_policy
 		prerequisite = { focus = LUX_abandon_the_foolish_policy }
@@ -3844,7 +3877,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUX_expand_benelux
-		icon = GFX_goal_generic_occupy_states_ongoing_war
+		icon = GFX_goal_generic_spreading_the_revolution
 		cost = 10
 		x = 0
 		y = 2
@@ -3886,7 +3919,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUX_socialist_science
-		icon = GFX_socialist_science
+		icon = GFX_goal_SOV_education_initiative
 		cost = 8
 		x = 0
 		y = 1
@@ -3944,7 +3977,7 @@ focus_tree = {
 	#fascist
 	focus = {
 		id = LUX_contest_election_results
-		icon = GFX_goal_support_fascism
+		icon = GFX_focus_usa_voter_registration_act
 		cost = 5
 		#x = 14
 		x = 8
@@ -3996,13 +4029,174 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = LUX_utilise_lvj
-		icon = GFX_focus_ITA_generic_fascist_workers
+		id = LUX_attack_alliance_francaise
+		icon = GFX_focus_attack_france 
 		cost = 5
-		x = -3
+		x = 2
 		y = 1
 		relative_position_id = LUX_contest_election_results
 		prerequisite = { focus = LUX_contest_election_results }
+		mutually_exclusive = { focus = LUX_integrate_french_organisations }
+		completion_reward = {
+			add_ideas = r56_LUX_anti_french_sentiments
+			reverse_add_opinion_modifier = {
+				target = FRA
+				modifier = small_decrease
+			}
+
+			custom_effect_tooltip = r56_newline
+			add_power_balance_value = {
+				id = LUX_fascist_balance
+				value = 0.05
+			}
+		}
+	}
+	focus = {
+		id = LUX_integrate_french_organisations
+		icon = GFX_goal_generic_aristocratic_cooperation
+		cost = 5
+		x = 4
+		y = 1
+		relative_position_id = LUX_contest_election_results
+		prerequisite = { focus = LUX_contest_election_results }
+		mutually_exclusive = { focus = LUX_attack_alliance_francaise }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = r56_LUX_anti_french_sentiments2
+				add_idea = r56_LUX_all_luxembourgish_societies
+			}
+			unlock_decision_tooltip = LUX_fascist_balance_show_national_unity
+
+			custom_effect_tooltip = r56_newline
+			add_power_balance_value = {
+				id = LUX_fascist_balance
+				value = -0.10
+			}
+		}
+	}
+	# focus = {
+	# 	id = LUX_raid_french_stores
+	# 	icon = GFX_focus_attack_france
+	# 	cost = 5
+	# 	x = 0
+	# 	y = 1
+	# 	relative_position_id = LUX_attack_alliance_francaise
+	# 	prerequisite = { focus = LUX_attack_alliance_francaise }
+	# 	completion_reward = {
+	# 		swap_ideas = {
+	# 			remove_idea = r56_LUX_anti_french_sentiments
+	# 			add_idea = r56_LUX_anti_french_sentiments2
+	# 		}
+	# 		reverse_add_opinion_modifier = {
+	# 			target = FRA
+	# 			modifier = small_decrease
+	# 		}
+
+	# 		custom_effect_tooltip = r56_newline
+	# 		add_power_balance_value = {
+	# 			id = LUX_fascist_balance
+	# 			value = 0.05
+	# 		}
+	# 	}
+	# }
+	focus = {
+		id = LUX_rejuvenate_the_luxembourgish_identity
+		icon = GFX_goal_LUX_demonstrate_our_will
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = LUX_attack_alliance_francaise
+		prerequisite = { focus = LUX_attack_alliance_francaise focus = LUX_integrate_french_organisations }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = r56_LUX_anti_french_sentiments2
+				add_idea = r56_LUX_anti_french_sentiments3
+			}
+
+			add_power_balance_value = {
+				id = LUX_fascist_balance
+				value = 0.05
+			}
+		}
+	}
+	focus = {
+		id = LUX_fully_counter_french_influence
+		icon = GFX_focus_SWI_fortify_border_with_france
+		cost = 5
+		x = 0
+		y = 2
+		relative_position_id = LUX_attack_alliance_francaise
+		prerequisite = { focus = LUX_attack_alliance_francaise }
+		prerequisite = { focus = LUX_request_german_funding }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = r56_LUX_anti_french_sentiments2
+				add_idea = r56_LUX_anti_french_sentiments3
+			}
+
+			add_power_balance_value = {
+				id = LUX_fascist_balance
+				value = 0.05
+			}
+		}
+	}
+	focus = {
+		id = LUX_found_lnp
+		icon = GFX_focus_generic_fascist_propaganda
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = LUX_contest_election_results
+		prerequisite = { focus = LUX_contest_election_results }
+		completion_reward = {
+			set_party_name = {
+				ideology = fascism
+				long_name = LUX_lnp_party_long
+				name = LUX_lnp_party
+			}
+			add_timed_idea = {
+				idea = r56_LUX_political_support
+				days = 365
+			}
+			unlock_decision_tooltip = LUX_fascist_balance_lobby_for_political_support
+
+			custom_effect_tooltip = r56_newline
+			add_power_balance_value = {
+				id = LUX_fascist_balance
+				value = -0.05
+			}
+		}
+	}
+	focus = {
+		id = LUX_request_german_funding
+		icon = GFX_focus_chi_mission_to_germany
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = LUX_found_lnp
+		prerequisite = { focus = LUX_found_lnp }
+		completion_reward = {
+			add_timed_idea = {
+				idea = r56_LUX_german_funding
+				days = 365
+			}
+			unlock_decision_tooltip = LUX_fascist_balance_additional_funding
+
+			custom_effect_tooltip = r56_newline
+			add_power_balance_value = {
+				id = LUX_fascist_balance
+				value = 0.10
+			}
+		}
+	}
+	focus = {
+		id = LUX_utilise_lvj
+		icon = GFX_focus_ITA_generic_fascist_workers
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = LUX_found_lnp
+		prerequisite = { focus = LUX_found_lnp }
 		completion_reward = {
 			add_timed_idea = {
 				idea = r56_LUX_agitated_youth
@@ -4020,7 +4214,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUX_subvert_armed_forces
-		icon = GFX_goal_extensive_conscription_fascism
+		icon = GFX_focus_SWE_revoke_militia_law
 		cost = 5
 		x = -1
 		y = 1
@@ -4043,7 +4237,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUX_utilise_dennemeyer
-		icon = GFX_goal_generic_propaganda	# request new gfx
+		icon = GFX_goal_FRA_la_cagoule_coup	# request new gfx
 		cost = 5
 		x = 1
 		y = 1
@@ -4068,7 +4262,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUX_organise_street_rallies
-		icon = GFX_focus_generic_fascist_troops
+		icon = GFX_focus_generic_workers
 		cost = 5
 		x = 0
 		y = 2
@@ -4097,157 +4291,15 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = LUX_attack_alliance_francaise
-		icon = GFX_goal_spr_stab_the_french_in_the_back
-		cost = 5
-		x = 3
-		y = 1
-		relative_position_id = LUX_contest_election_results
-		prerequisite = { focus = LUX_contest_election_results }
-		completion_reward = {
-			add_ideas = r56_LUX_anti_french_sentiments
-			reverse_add_opinion_modifier = {
-				target = FRA
-				modifier = small_decrease
-			}
-
-			custom_effect_tooltip = r56_newline
-			add_power_balance_value = {
-				id = LUX_fascist_balance
-				value = 0.05
-			}
-		}
-	}
-	focus = {
-		id = LUX_raid_french_stores
-		icon = GFX_focus_attack_france
-		cost = 5
-		x = 0
-		y = 1
-		relative_position_id = LUX_attack_alliance_francaise
-		prerequisite = { focus = LUX_attack_alliance_francaise }
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = r56_LUX_anti_french_sentiments
-				add_idea = r56_LUX_anti_french_sentiments2
-			}
-			reverse_add_opinion_modifier = {
-				target = FRA
-				modifier = small_decrease
-			}
-
-			custom_effect_tooltip = r56_newline
-			add_power_balance_value = {
-				id = LUX_fascist_balance
-				value = 0.05
-			}
-		}
-	}
-	focus = {
-		id = LUX_fully_counter_french_influence
-		icon = GFX_goal_FRA_defence_destruction
-		cost = 5
-		x = -1
-		y = 1
-		relative_position_id = LUX_raid_french_stores
-		prerequisite = { focus = LUX_raid_french_stores }
-		mutually_exclusive = { focus = LUX_integrate_french_organisations }
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = r56_LUX_anti_french_sentiments2
-				add_idea = r56_LUX_anti_french_sentiments3
-			}
-
-			add_power_balance_value = {
-				id = LUX_fascist_balance
-				value = 0.05
-			}
-		}
-	}
-	focus = {
-		id = LUX_integrate_french_organisations
-		icon = GFX_focus_generic_vichy_france_triumphant_focus
-		cost = 5
-		x = 1
-		y = 1
-		relative_position_id = LUX_raid_french_stores
-		prerequisite = { focus = LUX_raid_french_stores }
-		mutually_exclusive = { focus = LUX_fully_counter_french_influence }
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = r56_LUX_anti_french_sentiments2
-				add_idea = r56_LUX_all_luxembourgish_societies
-			}
-			unlock_decision_tooltip = LUX_fascist_balance_show_national_unity
-
-			custom_effect_tooltip = r56_newline
-			add_power_balance_value = {
-				id = LUX_fascist_balance
-				value = -0.10
-			}
-		}
-	}
-	focus = {
-		id = LUX_found_lnp
-		icon = GFX_focus_generic_fascist_propaganda
-		cost = 5
-		x = 0
-		y = 1
-		relative_position_id = LUX_contest_election_results
-		prerequisite = { focus = LUX_contest_election_results }
-		completion_reward = {
-			set_party_name = {
-				ideology = fascism
-				long_name = LUX_lnp_party_long
-				name = LUX_lnp_party
-			}
-			add_timed_idea = {
-				idea = r56_LUX_political_support
-				days = 365
-			}
-			unlock_decision_tooltip = LUX_fascist_balance_lobby_for_political_support
-
-			custom_effect_tooltip = r56_newline
-			add_power_balance_value = {
-				id = LUX_fascist_balance
-				value = -0.05
-			}
-		}
-	}
-	focus = {
-		id = LUX_request_german_funding
-		icon = GFX_focus_chi_mission_to_germany
-		cost = 5
-		x = 0
-		y = 1
-		relative_position_id = LUX_found_lnp
-		prerequisite = { focus = LUX_found_lnp }
-		completion_reward = {
-			add_timed_idea = {
-				idea = r56_LUX_german_funding
-				days = 365
-			}
-			unlock_decision_tooltip = LUX_fascist_balance_additional_funding
-
-			custom_effect_tooltip = r56_newline
-			add_power_balance_value = {
-				id = LUX_fascist_balance
-				value = 0.10
-			}
-		}
-	}
-	focus = {
 		id = LUX_replace_the_government
 		icon = GFX_focus_ger_reichskommisariats
 		cost = 10
 		x = 0
-		y = 4
+		y = 5
 		relative_position_id = LUX_contest_election_results
 		prerequisite = {
 			focus = LUX_organise_street_rallies
 			focus = LUX_request_german_funding
-			focus = LUX_fully_counter_french_influence
-			focus = LUX_integrate_french_organisations
 		}
 		available = {
 			fascism > 0.40
@@ -4317,10 +4369,11 @@ focus_tree = {
 		id = LUX_expand_the_gau
 		icon = GFX_goal_LUX_expand_the_gau		# request new gfx
 		cost = 10
-		x = 2
+		x = 3
 		y = 1
 		relative_position_id = LUX_replace_the_government
 		prerequisite = { focus = LUX_replace_the_government }
+		mutually_exclusive = { focus = LUX_complete_integration	}
 		available = {
 			is_subject_of = GER
 			all_state = {
@@ -4368,7 +4421,7 @@ focus_tree = {
 		id = LUX_request_further_expansion
 		icon = GFX_focus_generic_spread_fascism		# request new gfx
 		cost = 10
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = LUX_expand_the_gau
 		prerequisite = { focus = LUX_expand_the_gau }
@@ -4537,9 +4590,9 @@ focus_tree = {
 	}
 	focus = {
 		id = LUX_aid_the_warmachine
-		icon = GFX_goal_generic_military_factories
+		icon = GFX_focus_generic_german_trade
 		cost = 10
-		x = -2
+		x = 1
 		y = 1
 		relative_position_id = LUX_expand_the_gau
 		prerequisite = { focus = LUX_expand_the_gau }
@@ -4565,13 +4618,31 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = LUX_arrest_dennemeyer
-		icon = GFX_goal_arrests
+		id = LUX_establish_ss
+		icon = GFX_focus_GER_expand_ss_security_duties
 		cost = 5
-		x = 0
+		x = -2
 		y = 1
 		relative_position_id = LUX_replace_the_government
 		prerequisite = { focus = LUX_replace_the_government }
+		completion_reward = {
+			add_ideas = r56i_laws_security_order
+			add_ideas = r56_LUX_german_manpower
+			add_tech_bonus = {
+				name = LUX_establish_ss
+				technology = tech_military_police
+				bonus = 0.50
+			}
+		}
+	}
+	focus = {
+		id = LUX_arrest_dennemeyer
+		icon = GFX_goal_generic_secret_police_2
+		cost = 5
+		x = -2
+		y = 2
+		relative_position_id = LUX_establish_ss
+		prerequisite = { focus = LUX_establish_ss }
 		available = { has_completed_focus = LUX_utilise_dennemeyer }
 		completion_reward = {
 			add_stability = 0.05
@@ -4587,26 +4658,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = LUX_establish_ss
-		icon = GFX_goal_generic_secret_police_2
-		cost = 5
-		x = -3
-		y = 1
-		relative_position_id = LUX_replace_the_government
-		prerequisite = { focus = LUX_replace_the_government }
-		completion_reward = {
-			add_ideas = r56i_laws_security_order
-			add_ideas = r56_LUX_german_manpower
-			add_tech_bonus = {
-				name = LUX_establish_ss
-				technology = tech_military_police
-				bonus = 0.50
-			}
-		}
-	}
-	focus = {
 		id = LUX_politicise_army
-		icon = GFX_goal_control_army
+		icon = GFX_focus_generic_fascist_troops
 		cost = 8
 		x = 1
 		y = 1
@@ -4655,7 +4708,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUX_professionalise_army
-		icon = GFX_goal_generic_army_professionalism
+		icon = GFX_goal_MON_separate_army_and_politics
 		cost = 8
 		x = -1
 		y = 1
@@ -4686,12 +4739,11 @@ focus_tree = {
 		id = LUX_complete_integration
 		icon = GFX_focus_CZE_german_puppet
 		cost = 10
-		x = 4
+		x = 1
 		y = 1
 		relative_position_id = LUX_replace_the_government
-		prerequisite = {
-			focus = LUX_replace_the_government
-		}
+		prerequisite = { focus = LUX_replace_the_government }
+		mutually_exclusive = { focus = LUX_expand_the_gau }
 		available = { is_subject_of = GER }
 		completion_reward = {
 			custom_effect_tooltip = GAME_OVER_TT
