@@ -12078,6 +12078,8 @@ form_siberia_category = {
 				original_tag = YAM # Yamalia
 				original_tag = OVO # Ostyak-Vogulia
 				original_tag = TAN # Tannu Tuva
+				original_tag = KHA # Khakassia
+				original_tag = EVE # Evenkia
 			}
 		}
 
