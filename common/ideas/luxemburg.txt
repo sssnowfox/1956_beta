@@ -29,8 +29,8 @@ ideas = {
 				trade_opinion_factor = 0.50
 				ai_get_ally_desire_factor = -50
 				production_speed_arms_factory_factor = -0.80
-				mobilization_laws_cost_factor = 0.67
-				economy_cost_factor = 0.67
+				mobilization_laws_cost_factor = 0.667
+				economy_cost_factor = 0.667
 			}
 		}
 
@@ -288,7 +288,7 @@ ideas = {
 
 			modifier = {
 				defence = 0.10
-				max_dig_in = 0.05
+				max_dig_in = 5.0
 				max_planning_factor = 0.20
 			}
 		}

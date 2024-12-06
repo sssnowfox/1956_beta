@@ -56,7 +56,7 @@ characters = {
 			visible = {
 				NOT = {
 					has_completed_focus = LUX_contest_election_results
-					has_completed_focus = LUX_invalidate_election
+					#has_completed_focus = LUX_invalidate_election
 				}
 			}
 		}
@@ -98,7 +98,7 @@ characters = {
 			visible = {
 				NOT = {
 					has_completed_focus = LUX_contest_election_results
-					has_completed_focus = LUX_invalidate_election
+					#has_completed_focus = LUX_invalidate_election
 				}
 			}
 		}
@@ -112,7 +112,7 @@ characters = {
 		name = LUX_emile_reuter
 		portraits = {
 			civilian = {
-				small = "GFX_idea_generic_political_advisor_europe_1"	# request new gfx
+				small = GFX_idea_LUX_emile_reuter
 			}
 		}
 		advisor = {
@@ -133,7 +133,7 @@ characters = {
 			visible = {
 				NOT = {
 					has_completed_focus = LUX_contest_election_results
-					has_completed_focus = LUX_invalidate_election
+					#has_completed_focus = LUX_invalidate_election
 				}
 			}
 		}
@@ -175,7 +175,7 @@ characters = {
 			visible = {
 				NOT = {
 					has_completed_focus = LUX_contest_election_results
-					has_completed_focus = LUX_invalidate_election
+					#has_completed_focus = LUX_invalidate_election
 				}
 			}
 		}
@@ -184,7 +184,7 @@ characters = {
 		name = LUX_eugene_schaus
 		portraits = {
 			civilian = {
-				small = GFX_idea_LUX_eugene_schaus	# request new gfx
+				small = GFX_idea_LUX_eugene_schaus
 			}
 		}
 		advisor = {
@@ -205,7 +205,7 @@ characters = {
 			visible = {
 				NOT = {
 					has_completed_focus = LUX_contest_election_results
-					has_completed_focus = LUX_invalidate_election
+					#has_completed_focus = LUX_invalidate_election
 				}
 			}
 		}
@@ -214,7 +214,7 @@ characters = {
 		name = LUX_nicolas_braunshausen
 		portraits = {
 			civilian = {
-				small = GFX_idea_generic_political_advisor_europe_3	# request new gfx
+				small = GFX_idea_generic_political_advisor_europe_3
 			}
 		}
 		advisor = {
@@ -235,7 +235,7 @@ characters = {
 			visible = {
 				NOT = {
 					has_completed_focus = LUX_contest_election_results
-					has_completed_focus = LUX_invalidate_election
+					#has_completed_focus = LUX_invalidate_election
 				}
 			}
 		}
@@ -274,7 +274,7 @@ characters = {
 			visible = {
 				NOT = {
 					has_completed_focus = LUX_contest_election_results
-					has_completed_focus = LUX_invalidate_election
+					#has_completed_focus = LUX_invalidate_election
 				}
 			}
 			traits = {
@@ -289,7 +289,7 @@ characters = {
 		name = LUX_rene_blum
 		portraits = {
 			civilian = {
-				small = "GFX_idea_generic_political_advisor_europe_3"
+				small = GFX_idea_LUX_rene_blum
 			}
 		}
 		advisor = {
@@ -305,12 +305,17 @@ characters = {
 			visible = {
 				NOT = {
 					has_completed_focus = LUX_contest_election_results
-					has_completed_focus = LUX_invalidate_election
+					#has_completed_focus = LUX_invalidate_election
 				}
 			}
 		}
 	}
 	LUX_victor_bodson = {
+		portraits = {
+			civilian = {
+				small = GFX_idea_LUX_victor_bodson
+			}
+		}
 		advisor = {
 			slot = political_advisor
 			idea_token = LUX_victor_bodson
@@ -324,19 +329,20 @@ characters = {
 			visible = {
 				NOT = {
 					has_completed_focus = LUX_contest_election_results
-					has_completed_focus = LUX_invalidate_election
+					#has_completed_focus = LUX_invalidate_election
 				}
 			}
 		}
 		name = LUX_victor_bodson
-		portraits = {
-			civilian = {
-				small="GFX_idea_generic_political_advisor_europe_2"
-			}
-		}
 	}
 	# KPL
 	LUX_dominique_urbany = {
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_LUX_dominique_urbany"
+				small = "GFX_idea_LUX_dominique_urbany"
+			}
+		}
 		name = LUX_dominique_urbany
 		advisor = {
 			slot = political_advisor
@@ -358,14 +364,8 @@ characters = {
 			visible = {
 				NOT = {
 					has_completed_focus = LUX_contest_election_results
-					has_completed_focus = LUX_invalidate_election
+					#has_completed_focus = LUX_invalidate_election
 				}
-			}
-		}
-		portraits = {
-			civilian = {
-				large = "GFX_portrait_LUX_dominique_urbany"	# request new gfx
-				small = "GFX_idea_LUX_dominique_urbany"
 			}
 		}
 		country_leader = {		# soviet path
@@ -376,6 +376,12 @@ characters = {
 		}
 	}
 	LUX_charles_marx = {
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_LUX_charles_marx"
+				small = "GFX_idea_LUX_Charles_Marx"
+			}
+		}
 		name = LUX_charles_marx
 		advisor = {
 			slot = political_advisor
@@ -396,16 +402,10 @@ characters = {
 			visible = {
 				NOT = {
 					has_completed_focus = LUX_contest_election_results
-					has_completed_focus = LUX_invalidate_election
+					#has_completed_focus = LUX_invalidate_election
 				}
 			}
 			traits = { socialist_healthcare_expert }
-		}	
-		portraits = {
-			civilian = {
-				large = "GFX_portrait_LUX_charles_marx"
-				small = "GFX_idea_LUX_Charles_Marx"
-			}
 		}
 		country_leader = {
 			ideology = marxism
@@ -418,7 +418,7 @@ characters = {
 		name = LUX_zenon_bernard
 		portraits = {
 			army = {
-				small = "GFX_idea_generic_political_advisor_europe_4"
+				small = GFX_idea_LUX_zenon_bernard
 			}
 		}
 		advisor = {
@@ -435,57 +435,13 @@ characters = {
 			visible = {
 				NOT = {
 					has_completed_focus = LUX_contest_election_results
-					has_completed_focus = LUX_invalidate_election
+					#has_completed_focus = LUX_invalidate_election
 				}
 			}
 		}
 	}
 	# monarchist
-	LUX_prince_jean = {
-		name = LUX_prince_jean
-		portraits = {
-			army = {
-				small = "GFX_idea_generic_political_advisor_europe_6"	# request new gfx
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = LUX_prince_jean
-			allowed = {
-				original_tag = LUX
-			}
-			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					not = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
-				has_completed_focus = LUX_invalidate_election
-			}
-			visible = {
-				NOT = {
-					has_completed_focus = LUX_appoint_new_prime_minister
-					has_completed_focus = LUX_contest_election_results
-				}
-			}
-			traits = { staunch_monarchist }
-			do_effect = {
-				not = {
-					has_government = neutrality 
-				}
-			}
-			ai_will_do = {
-				factor = 10
-				modifier = {
-					factor = 100
-					is_historical_focus_on = no
-				}
-			}
-		}
-	}
+
 	# fascist
 	LUX_damian_kratzenberg = {
 		name = LUX_damian_kratzenberg
@@ -504,7 +460,7 @@ characters = {
 			visible = {
 				NOT = {
 					has_completed_focus = LUX_appoint_new_prime_minister
-					has_completed_focus = LUX_invalidate_election
+					#has_completed_focus = LUX_invalidate_election
 				}
 			}
 			traits = { fascist_demagogue }
@@ -545,7 +501,7 @@ characters = {
 				NOT = {
 					has_completed_focus = LUX_arrest_dennemeyer
 					has_completed_focus = LUX_appoint_new_prime_minister
-					has_completed_focus = LUX_invalidate_election
+					#has_completed_focus = LUX_invalidate_election
 				}
 			}
 			traits = { fascist_demagogue editor }
@@ -936,31 +892,6 @@ characters = {
 		}
 	}
 	#LUX_aloyse_glodt actually just a firefighter
-	#Guillaume Konsbruck better pick as he was actually a major, aide de camp of the grand duchess,studied cavalry in St Cyr
-	LUX_guillaume_konsbruck = {
-		name = LUX_guillaume_konsbruck
-		advisor = {
-			slot = high_command
-			idea_token = LUX_guillaume_konsbruck
-			ledger = army
-				allowed = {
-					original_tag = LUX
-				}
-				traits = {
-					army_armored_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits = {
-			army = {
-				small = "GFX_idea_generic_army_europe_3"
-			}
-		}
-	}
 	LUX_navy_chief = { #there might be a commander of the fluvial police to find, good luck finding his name though.
 		name = LUX_navy_chief
 			portraits = {

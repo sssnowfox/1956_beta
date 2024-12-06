@@ -47,7 +47,6 @@ recruit_character = LUX_rene_blum
 recruit_character = LUX_victor_bodson
 # monarchist
 recruit_character = LUX_duchess_charlotte
-recruit_character = LUX_prince_jean
 # fascist
 recruit_character = LUX_damian_kratzenberg
 recruit_character = LUX_camille_dennemeyer

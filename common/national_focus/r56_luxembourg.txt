@@ -619,7 +619,8 @@ focus_tree = {
 		dynamic = yes
 		icon = GFX_goal_generic_forceful_treaty
 		cost = 6
-		x = 45
+		#x = 45
+		x = 38
 		y = 0
 		offset = {
 			x = -15
@@ -802,7 +803,8 @@ focus_tree = {
 		id = LUX_appoint_new_prime_minister
 		icon = GFX_goal_generic_election
 		cost = 5
-		x = -14
+		#x = -14
+		x = -8
 		y = 1
 		relative_position_id = LUX_begin_election_preparations
 		prerequisite = { focus = LUX_begin_election_preparations }
@@ -993,7 +995,7 @@ focus_tree = {
 		mutually_exclusive = { focus = LUX_another_declaration_of_neutrality }
 		available = {
 			OR = {
-				GER = { has_completed_focus = GER_rhineland }
+				GER = { has_completed_focus = GER_remilitarize_the_rhineland }
 				threat > 0.20
 			}
 		}
@@ -2028,7 +2030,7 @@ focus_tree = {
 		mutually_exclusive = { focus = LUX_abandon_neutrality }
 		available = {
 			OR = {
-				GER = { has_completed_focus = GER_rhineland }
+				GER = { has_completed_focus = GER_remilitarize_the_rhineland }
 				threat > 0.10
 			}
 		}
@@ -3178,7 +3180,7 @@ focus_tree = {
 		relative_position_id = LUX_begin_collective_ownership_campaign
 		prerequisite = { focus = LUX_struggle_for_equality }
 		prerequisite = { focus = LUX_find_new_trade_partners }
-		prerequisite = { focus = LUX_peoples_university }
+		#prerequisite = { focus = LUX_peoples_university }
 		available = {
 			has_completed_focus = LUX_abolish_monarchy
 		}
@@ -3898,57 +3900,54 @@ focus_tree = {
 		}
 	}
 
-	# monarchist
-	focus = {
-		id = LUX_invalidate_election
-		icon = GFX_focus_generic_monarchy_1
-		cost = 5
-		x = 1
-		y = 1
-		relative_position_id = LUX_begin_election_preparations
-		prerequisite = { focus = LUX_the_maulkuerfgesetz }
-		prerequisite = { focus = LUX_begin_election_preparations }
-		mutually_exclusive = {
-			focus = LUX_contest_election_results
-			focus = LUX_appoint_new_prime_minister
-		}
-		available = {
-			has_country_flag = LUX_elections_over
-			custom_trigger_tooltip = {
-				tooltip = LUX_invalidate_election_trigger_tt
-				check_variable = { LUX.turnout < 20 }
-			}
-			has_country_flag = LUX_maulkuerfgesetz_passed
-			hidden_trigger = {
-				always = no
-			}
-		}
-		allow_branch = {
-			NOT = {
-				has_completed_focus = LUX_appoint_new_prime_minister
-				has_completed_focus = LUX_contest_election_results
-			}
-		}
-		completion_reward = {
-			custom_effect_tooltip = LUX_invalidate_election_unfinished_tt
-			add_popularity = {
-				ideology = democratic
-				popularity = -0.15
-			}
-			add_stability = -0.05
-
-			custom_effect_tooltip = r56_newline
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = LUX_prince_jean
-		}
-	}
+	# monarchist		currently disabled until i have some more free time and can finish it
+	#focus = {
+	#	id = LUX_invalidate_election
+	#	icon = GFX_focus_generic_monarchy_1
+	#	cost = 5
+	#	x = 1
+	#	y = 1
+	#	relative_position_id = LUX_begin_election_preparations
+	#	prerequisite = { focus = LUX_the_maulkuerfgesetz }
+	#	prerequisite = { focus = LUX_begin_election_preparations }
+	#	mutually_exclusive = {
+	#		focus = LUX_contest_election_results
+	#		focus = LUX_appoint_new_prime_minister
+	#	}
+	#	available = {
+	#		has_country_flag = LUX_elections_over
+	#		custom_trigger_tooltip = {
+	#			tooltip = LUX_invalidate_election_trigger_tt
+	#			check_variable = { LUX.turnout < 20 }
+	#		}
+	#		has_country_flag = LUX_maulkuerfgesetz_passed
+	#		hidden_trigger = {
+	#			always = no
+	#		}
+	#	}
+	#	allow_branch = {
+	#		NOT = {
+	#			has_completed_focus = LUX_appoint_new_prime_minister
+	#			has_completed_focus = LUX_contest_election_results
+	#		}
+	#	}
+	#	completion_reward = {
+	#		custom_effect_tooltip = LUX_invalidate_election_unfinished_tt
+	#		add_popularity = {
+	#			ideology = democratic
+	#			popularity = -0.15
+	#		}
+	#		add_stability = -0.05
+	#	}
+	#}
 
 	#fascist
 	focus = {
 		id = LUX_contest_election_results
 		icon = GFX_goal_support_fascism
 		cost = 5
-		x = 14
+		#x = 14
+		x = 8
 		y = 1
 		offset = {
 			x = -15
@@ -3968,7 +3967,7 @@ focus_tree = {
 				check_variable = { LUX.confidence < 10 }
 			}
 			GER = {
-				has_completed_focus = GER_denounce_versailles
+				has_completed_focus = GER_remilitarize_the_rhineland
 			}
 			has_country_flag = LUX_maulkuerfgesetz_passed
 		}
@@ -4485,12 +4484,12 @@ focus_tree = {
 					is_controlled_by = ROOT
 				}
 			}
-			#belgian luxembourg = {
-			#	OR = {
-			#		is_controlled_by = GER
-			#		is_controlled_by = ROOT
-			#	}
-			#}
+			1095 = {
+				OR = {
+					is_controlled_by = GER
+					is_controlled_by = ROOT
+				}
+			}
 			has_war_together_with = GER
 			any_war_score > 9.99
 			has_army_manpower = { size > 20000 }
@@ -4502,11 +4501,11 @@ focus_tree = {
 				add_state_claim = 965
 				add_autonomy_score = { value = -100 }
 			}
-			#if = {
-			#	limit = { controls_state = belgian luxembourg }
-			#	add_state_core = belgian luxembourg
-			#	transfer_state = belgian luxembourg
-			#}
+			if = {
+				limit = { controls_state = 1095 }
+				add_state_core = 1095
+				transfer_state = 1095
+			}
 			else = {
 				GER = {
 					country_event = {

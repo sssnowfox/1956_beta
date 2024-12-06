@@ -2876,6 +2876,23 @@ SpriteType = {
 		name = "GFX_idea_LUX_advisor_joseph_bech"
 		textureFile = "gfx/interface/ideas/lux/advisors/r56_idea_LUX_advisor_joseph_bech.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_LUX_rene_blum"
+		textureFile = "gfx/interface/ideas/lux/advisors/r56_idea_LUX_rene_blum.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LUX_victor_bodson"
+		textureFile = "gfx/interface/ideas/lux/advisors/r56_idea_LUX_victor_bodson.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LUX_emile_reuter"
+		textureFile = "gfx/interface/ideas/lux/advisors/r56_idea_LUX_emile_reuter.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LUX_zenon_bernard"
+		textureFile = "gfx/interface/ideas/lux/advisors/r56_idea_LUX_zenon_bernard.dds"
+	}
+	
 
 ###------> MAL <><> <><> <><> <><> <><>
 	spriteType = {
