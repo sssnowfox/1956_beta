@@ -391,7 +391,7 @@ ideas = {
 			picture = MEN_kwantungs_invisible_hand
 			
 			modifier = {
-				autonomy_gain = -0.5
+				autonomy_gain_global_factor = -0.50
 				offensive_war_stability_factor = 0.15
 				conscription_factor = 0.05
 				conscription = 0.02
@@ -1897,6 +1897,40 @@ ideas = {
 				local_resources_factor = 0.05
 			}
 		}
+
+		MEN_operation_chahar = { #on action flavor, replace with better flavor content in future? 
+
+			picture = generic_acquire_tanks
+			
+            allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			cancel = {
+				ROOT = {
+					NOT = {
+						has_war_with = SHX
+					}
+				}
+			}
+			
+			removal_cost = -1
+
+			picture = MEN_kwantungs_invisible_hand
+			
+			modifier = {
+				out_of_supply_factor = -0.05
+			}
+
+			targeted_modifier = {
+				tag = SHX
+				attack_bonus_against = 0.05
+			}
+        }
 	}
 
 	industrial_concern = {

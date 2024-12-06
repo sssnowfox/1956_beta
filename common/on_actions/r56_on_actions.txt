@@ -3156,6 +3156,39 @@ on_actions = {
 					}
 				}
 			}
+			#Operation Chahar
+			if = {
+				limit = {
+					#is_historical_focus_on = yes
+					OR = {
+						AND = { tag = MEN FROM = { tag = SHX } }
+						AND = { tag = SHX FROM = { tag = MEN } }
+					}
+					MEN = {
+						is_neighbor_of = SHX
+						is_subject_of = JAP
+					}
+					SHX = {
+						exists = yes
+					}
+					MEN = {
+						has_completed_focus = MEN_prepare_the_western_front
+					}
+				}
+				hidden_effect = {
+					MEN = { add_timed_idea = { idea = MEN_operation_chahar days = 70 } }
+					if = {
+						limit = {
+							MAN = {
+								is_ally_with = MEN
+								is_neighbor_of = MEN
+								is_subject_of = JAP
+							}
+						}
+						MAN = { add_timed_idea = { idea = MEN_operation_chahar days = 70 } }
+					}
+				}
+			}
 			#Timed ww2 ideas used on AI vs AI wars to try to keep Historical AI moving along
 			if = {
 				limit = {

@@ -353,7 +353,7 @@
  ################### INDUSTRY ###################
 
  MEN_establish_the_bank_of_mengjiang:0 "Integrate the South Chahar Bank"
- MEN_establish_the_bank_of_mengjiang_desc:0 ""
+ MEN_establish_the_bank_of_mengjiang_desc:0 "Getting the banks within our borders under our control will grant us far greater financial freedom."
 
  MEN_fuel_for_the_war_machine:0 "Fuel for the War Machine"
  MEN_fuel_for_the_war_machine_desc:0 ""
@@ -538,7 +538,7 @@
 
  MEN_the_bank_of_mengjiang:0 "Bank of Chahar"
 
- MEN_the_joint_committee:0 "[ROOT.GetAdjective] Committee on Industry"
+ MEN_the_joint_committee:0 "Joint [ROOT.GetAdjective] Committee on Industry"
  MEN_the_joint_committee_desc:0 "An extension of the [ROOT.GETNAME] Government that directs policy on the industry within the Country. The policy is to appeases the [JAP.GETNAME]'s Military and it's Companies that operate within our borders."
 
  MEN_an_independent_army:0 "The Inner Mongolian Army"
@@ -590,6 +590,13 @@
  MEN_assist_in_the_great_patriotic_war:0 "Assist in the Great Patriotic War"
 
  MEN_anti_chinese_propaganda:0 "Anti-Chinese Propaganda"
+
+ MEN_operation_chahar:0 "Operation Chahar"
+
+ #generic renames - makes it looks like we put in effort lol. Replace with better names if you find any.
+ MEN_generic_industrial_concern:0 "Committee on Heavy Industry"
+ MEN_generic_electronics_concern:0 "Committee on Electrification"
+ MEN_generic_tank_organization:0 "Kälgän Heavy Machine Equipment" #[ROOT.capital.GetName] local in a MIO context will cause a CTD. Don't change to that as the 'better' way. Also fake name. 
 
  ################### Dynamic Modifiers ###################
 
@@ -643,6 +650,6 @@
  MEN_upon_civil_war_start:0 "\nUpon §YCivil War§! Start:"
  MEN_shared_struggle:0 "Shared Struggle"
  MEN_cannot_call_to_war:0 "§RCannot join wars of [MEN.GetNonIdeologyName] due to them having a civil war§!"
- r56_MEN_prioritize_industrialization_event_tt:0 "§YCompleting§! Industrial §YNational Focuses§! while we have the §Y$MEN_rapid_industrialization$ National Spirit§! will grant additional §YEffects.§!"
- MEN_rapid_industrialization_refresh_190_days_tt:0 "§Y$MEN_rapid_industrialization$§! will be §GRenewed§! for another §Y190§! Day(s)"
+ r56_MEN_prioritize_industrialization_event_tt:0 "§YCompleting§! Industrial §YNational Focuses§! while we have the '§Y$MEN_rapid_industrialization$§!§W'§! §YNational Spirit§! will grant additional §YEffects.§!"
+ MEN_rapid_industrialization_refresh_190_days_tt:0 "'§Y$MEN_rapid_industrialization$§!§W'§! will be §YRenewed§! for another §Y190§! Day(s)"
  MEN_prioritize_industrialization_bonus_effect_tt:0 "§YAdditional '$MEN_rapid_industrialization$' Effect:§!"

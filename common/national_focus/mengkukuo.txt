@@ -3397,11 +3397,39 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = -50
+			if = {
+				limit = {
+					is_subject = no
+				}
+				add_political_power = -50
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			if = {
+				limit = {
+					is_subject_of = JAP
+				}
+				add_autonomy_score = {
+					value = -250
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
 			swap_ideas = {
 				remove_idea = MEN_kwantungs_invisible_hand_servants
 				add_idea = MEN_kwantungs_invisible_hand_servants_2
 			}
+			if = {
+				limit = {
+					OR = {
+						is_subject_of = JAP
+						is_ally_with = JAP
+					}
+				}
+				show_unit_leaders_tooltip = MEN_shigeyasu_suzuki 
+				custom_effect_tooltip = available_military_high_command
+				show_ideas_tooltip = MEN_shigeyasu_suzuki
+				custom_effect_tooltip = available_chief_of_army
+				show_ideas_tooltip = MEN_shigeyasu_suzuki
+			}	
 		}
 	}
 

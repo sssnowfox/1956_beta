@@ -8261,6 +8261,13 @@ generic_train_organization_r56_NSB = {
 	}
 
 
+	available = {
+		owner = { #It's only logical
+			has_tech = basic_train
+		}
+	}
+
+
 	equipment_type = { 
 		train_equipment 
 		railway_gun_equipment
