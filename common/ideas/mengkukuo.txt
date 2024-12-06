@@ -1909,14 +1909,6 @@ ideas = {
 			allowed_civil_war = {
 				always = no
 			}
-
-			cancel = {
-				ROOT = {
-					NOT = {
-						has_war_with = SHX
-					}
-				}
-			}
 			
 			removal_cost = -1
 

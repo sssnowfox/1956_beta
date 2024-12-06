@@ -3167,12 +3167,10 @@ on_actions = {
 					MEN = {
 						is_neighbor_of = SHX
 						is_subject_of = JAP
+						has_completed_focus = MEN_prepare_the_western_front
 					}
 					SHX = {
 						exists = yes
-					}
-					MEN = {
-						has_completed_focus = MEN_prepare_the_western_front
 					}
 				}
 				hidden_effect = {
