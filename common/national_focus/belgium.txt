@@ -6583,7 +6583,7 @@ focus = {
 
 			show_unit_leaders_tooltip = BEL_jean_baptise_piron
 			
-			BEL_victor_van_strydonck_de_burkel = {
+			BEL_victor_strydonck_burkel = {
 				promote_leader = yes 
 			}
 
