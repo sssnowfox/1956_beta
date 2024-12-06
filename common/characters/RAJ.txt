@@ -797,25 +797,13 @@ characters={
 				large = GFX_portrait_generic_arabia_male_04
 			}
 		}
-		#advisor={
-		#	slot = theorist
-		#	idea_token = RAJ_homi_j_bhabha
-		#	ledger = army
-		#	allowed = {
-		#		original_tag = RAJ
-		#	}
-		#	research_bonus = {
-		#		nuclear = 0.070
-		#	}
-		#	traits = {
-		#		nuclear_scientist
-		#	}
-		#}
+
 		scientist = {
 			traits = { scientist_trait_nuclear_specialist }
 			skills = {
 				specialization_nuclear = 1
-			}	
+			}
+		}		
 	}
 	RAJ_anyang_bhula={
 		advisor={
@@ -1447,7 +1435,9 @@ characters={
 				specialization_land = 2
 			}
 			visible = {
-				is_subject_of = ENG
+				owner = { 
+					is_subject_of = ENG
+				}
 			}
 		}
 	}
