@@ -2094,8 +2094,6 @@ focus_tree = {
 						original_tag = BEL
 						original_tag = ENG
 						original_tag = HOL
-						original_tag = ITA
-						original_tag = GER
 					}
 				}
 				country_event = {
