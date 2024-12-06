@@ -104,6 +104,7 @@ recruit_character = INS_kh_dewantara
 recruit_character = INS_mohammad_hatta
 recruit_character = INS_munawar_musso
 recruit_character = INS_sekarmaji_kartosuwiryo
+recruit_character = INS_semaun
 recruit_character = INS_sukiman
 recruit_character = INS_sukarno
 recruit_character = INS_sutan_syahrir

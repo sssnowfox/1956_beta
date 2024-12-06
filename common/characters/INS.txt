@@ -589,6 +589,9 @@ characters = {
 				}						
 			}
 			traits = { communist_revolutionary }
+			visible = {
+				has_completed_focus = INS_reorganize_the_underground
+			}
 			do_effect = {
 				NOT = {
 					has_government = communism
