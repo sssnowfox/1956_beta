@@ -134,7 +134,7 @@ if = {
 	}
 	create_operative_leader = {
 		name = "Songjin Wangchuck"
-		GFX = GFX_portrait_asia_generic_operative_f_1
+		GFX = GFX_portrait_asia_generic_operative_m_1
 		traits = { operative_double_agent operative_well_groomed}
 		bypass_recruitment = no
 		available_to_spy_master = yes
