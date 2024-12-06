@@ -925,8 +925,8 @@
  #SWI
  SWI_democratic_party:0 "Bundesrat"
  SWI_democratic_party_long:0 "Bundesrat"
- SWI_neutrality_party:0 "Bundesrat"
- SWI_neutrality_party_long:0 "Bundesrat"
+ SWI_neutrality_party:0 "Adel"
+ SWI_neutrality_party_long:0 "Schweizer Adel"
  SWI_fascism_party:0 "NSDAP/AO"
  SWI_fascism_party_long:0 "Schweizer Landesgruppe der NSDAP/AO"
  SWI_communism_party:0 "KPS"
