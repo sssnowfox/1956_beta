@@ -8812,12 +8812,12 @@ focus_tree = {
 			154 = {
 				is_core_of = ROOT
 			}
-			973 = {
+			913 = {
 				is_core_of = ROOT
 			}
-			974 = {
-				is_core_of = ROOT
-			}
+			# 974 = {
+			# 	is_core_of = ROOT
+			# }
 		}
 
 		available_if_capitulated = no
@@ -9058,8 +9058,8 @@ focus_tree = {
 			controls_state = 155 #Transdanubia
 			controls_state = 154 #Alföld
 			controls_state = 43 #Northern Hungary
-			controls_state = 973 #Bacs-Bodrog
-			controls_state = 974 #South Transdanubia
+			controls_state = 913 #Bacs-Bodrog
+			#controls_state = 974 #South Transdanubia	#doesnt exist in Rt56
 
 			controls_state = 69 #Sudetenland
 			controls_state = 1078 #south Sudetenland
