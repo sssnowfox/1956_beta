@@ -330,6 +330,10 @@ spriteTypes = {
 		name = "GFX_idea_AFG_amanullah_khan_idea"
 		texturefile = "gfx/interface/ideas/afg/r56_idea_AFG_amanullah_khan.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_AFG_army_idea"
+		texturefile = "gfx/interface/ideas/afg/r56_idea_AFG_army_idea.dds"
+	}
 
 ###------> AUS <><> <><> <><> <><> <><>
 	spriteType = {
