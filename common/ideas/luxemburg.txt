@@ -61,8 +61,8 @@ ideas = {
 				trade_opinion_factor = 0.50
 				ai_get_ally_desire_factor = -50
 				production_speed_arms_factory_factor = -0.80
-				mobilization_laws_cost_factor = 0.67
-				economy_cost_factor = 0.67
+				mobilization_laws_cost_factor = 1.00
+				economy_cost_factor = 1.00
 			}
 		}
 

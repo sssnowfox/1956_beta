@@ -87,7 +87,7 @@ guiTypes = {
 		}
 		iconType = {
 			name = LUX_minister_prime_LSAP_icon_krier
-			spriteType = GFX_Portrait_Europe_Generic_1
+			spriteType = GFX_portrait_LUX_pierre_krier
 			position = {
 				x = 197
 				y = -10
@@ -97,15 +97,26 @@ guiTypes = {
 			#pdx_tooltip_delayed = 
 		}
 		iconType = {
-			name = LUX_minister_prime_LSAP_icon_marx
+			name = LUX_minister_prime_KPL_icon_marx
 			spriteType = GFX_portrait_LUX_charles_marx
 			position = {
 				x = 197
 				y = -10
 			}
 			scale = 0.5
-			pdx_tooltip = LUX_chamberofdeputies_KPL_info_portrait_tt
-			pdx_tooltip_delayed = LUX_chamberofdeputies_KPL_info_portrait_delayed_tt
+			pdx_tooltip = LUX_chamberofdeputies_KPL_info_portrait_marx_tt
+			#pdx_tooltip_delayed = LUX_chamberofdeputies_KPL_info_portrait_delayed_tt
+		}
+		iconType = {
+			name = LUX_minister_prime_KPL_icon_urbany
+			spriteType = GFX_portrait_LUX_dominique_urbany
+			position = {
+				x = 197
+				y = -10
+			}
+			scale = 0.5
+			pdx_tooltip = LUX_chamberofdeputies_KPL_info_portrait_urbany_tt
+			#pdx_tooltip_delayed = LUX_chamberofdeputies_KPL_info_portrait_delayed_tt
 		}
 		iconType = {
 			name = LUX_minister_prime_frame
@@ -207,11 +218,51 @@ guiTypes = {
 			}
 			alwaystransparent = yes
 		}
+		iconType = {
+			name = LUX_minister_economics_button_PD_selected
+			spriteType = GFX_LUX_minister_economics_pd
+			position = {
+				x = 57
+				y = 160
+			}
+			pdx_tooltip = LUX_minister_economics_button_PD_tt
+			pdx_tooltip_delayed = LUX_minister_economics_replace_tt
+		}
+		iconType = {
+			name = LUX_minister_economics_button_PRL_selected
+			spriteType = GFX_LUX_minister_economics_prl
+			position = {
+				x = 57
+				y = 160
+			}
+			pdx_tooltip = LUX_minister_economics_button_PRL_tt
+			pdx_tooltip_delayed = LUX_minister_economics_replace_tt
+		}
+		iconType = {
+			name = LUX_minister_economics_button_LSAP_selected
+			spriteType = GFX_LUX_minister_economics_lsap
+			position = {
+				x = 57
+				y = 160
+			}
+			pdx_tooltip = LUX_minister_economics_button_LSAP_tt
+			pdx_tooltip_delayed = LUX_minister_economics_replace_tt
+		}
+		iconType = {
+			name = LUX_minister_economics_button_KPL_selected
+			spriteType = GFX_LUX_minister_economics_kpl
+			position = {
+				x = 57
+				y = 160
+			}
+			pdx_tooltip = LUX_minister_economics_button_KPL_tt
+			pdx_tooltip_delayed = LUX_minister_economics_replace_tt
+		}
 		buttonType = {
 			name = LUX_minister_economics_button_PD
 			spriteType = GFX_LUX_minister_economics_pd
 			position = {
-				x = 55
+				x = 57
 				y = 225
 			}
 			pdx_tooltip = LUX_minister_economics_button_PD_tt
@@ -221,7 +272,7 @@ guiTypes = {
 			name = LUX_minister_economics_button_PRL
 			spriteType = GFX_LUX_minister_economics_prl
 			position = {
-				x = 55
+				x = 57
 				y = 285
 			}
 			pdx_tooltip = LUX_minister_economics_button_PRL_tt
@@ -231,7 +282,7 @@ guiTypes = {
 			name = LUX_minister_economics_button_LSAP
 			spriteType = GFX_LUX_minister_economics_lsap
 			position = {
-				x = 55
+				x = 57
 				y = 345
 			}
 			pdx_tooltip = LUX_minister_economics_button_LSAP_tt
@@ -241,7 +292,7 @@ guiTypes = {
 			name = LUX_minister_economics_button_KPL
 			spriteType = GFX_LUX_minister_economics_kpl
 			position = {
-				x = 55
+				x = 57
 				y = 405
 			}
 			pdx_tooltip = LUX_minister_economics_button_KPL_tt
@@ -277,11 +328,51 @@ guiTypes = {
 			}
 			alwaystransparent = yes
 		}
+		iconType = {
+			name = LUX_minister_interior_button_PD_selected
+			spriteType = GFX_LUX_minister_interior_pd
+			position = {
+				x = 207
+				y = 160
+			}
+			pdx_tooltip = LUX_minister_interior_button_PD_tt
+			pdx_tooltip_delayed = LUX_minister_interior_replace_tt
+		}
+		iconType = {
+			name = LUX_minister_interior_button_PRL_selected
+			spriteType = GFX_LUX_minister_interior_prl
+			position = {
+				x = 207
+				y = 160
+			}
+			pdx_tooltip = LUX_minister_interior_button_PRL_tt
+			pdx_tooltip_delayed = LUX_minister_interior_replace_tt
+		}
+		iconType = {
+			name = LUX_minister_interior_button_LSAP_selected
+			spriteType = GFX_LUX_minister_interior_lsap
+			position = {
+				x = 207
+				y = 160
+			}
+			pdx_tooltip = LUX_minister_interior_button_LSAP_tt
+			pdx_tooltip_delayed = LUX_minister_interior_replace_tt
+		}
+		iconType = {
+			name = LUX_minister_interior_button_KPL_selected
+			spriteType = GFX_LUX_minister_interior_kpl
+			position = {
+				x = 207
+				y = 160
+			}
+			pdx_tooltip = LUX_minister_interior_button_KPL_tt
+			pdx_tooltip_delayed = LUX_minister_interior_replace_tt
+		}
 		buttonType = {
 			name = LUX_minister_interior_button_PD
 			spriteType = GFX_LUX_minister_interior_pd
 			position = {
-				x = 205
+				x = 207
 				y = 225
 			}
 			pdx_tooltip = LUX_minister_interior_button_PD_tt
@@ -291,7 +382,7 @@ guiTypes = {
 			name = LUX_minister_interior_button_PRL
 			spriteType = GFX_LUX_minister_interior_prl
 			position = {
-				x = 205
+				x = 207
 				y = 285
 			}
 			pdx_tooltip = LUX_minister_interior_button_PRL_tt
@@ -301,7 +392,7 @@ guiTypes = {
 			name = LUX_minister_interior_button_LSAP
 			spriteType = GFX_LUX_minister_interior_lsap
 			position = {
-				x = 205
+				x = 207
 				y = 345
 			}
 			pdx_tooltip = LUX_minister_interior_button_LSAP_tt
@@ -311,7 +402,7 @@ guiTypes = {
 			name = LUX_minister_interior_button_KPL
 			spriteType = GFX_LUX_minister_interior_kpl
 			position = {
-				x = 205
+				x = 207
 				y = 405
 			}
 			pdx_tooltip = LUX_minister_interior_button_KPL_tt
@@ -347,11 +438,51 @@ guiTypes = {
 			}
 			alwaystransparent = yes
 		}
+		iconType = {
+			name = LUX_minister_foreign_button_PD_selected
+			spriteType = GFX_LUX_minister_foreign_pd
+			position = {
+				x = 357
+				y = 160
+			}
+			pdx_tooltip = LUX_minister_foreign_button_PD_tt
+			pdx_tooltip_delayed = LUX_minister_foreign_replace_tt
+		}
+		iconType = {
+			name = LUX_minister_foreign_button_PRL_selected
+			spriteType = GFX_LUX_minister_foreign_prl
+			position = {
+				x = 357
+				y = 160
+			}
+			pdx_tooltip = LUX_minister_foreign_button_PRL_tt
+			pdx_tooltip_delayed = LUX_minister_foreign_replace_tt
+		}
+		iconType = {
+			name = LUX_minister_foreign_button_LSAP_selected
+			spriteType = GFX_LUX_minister_foreign_lsap
+			position = {
+				x = 357
+				y = 160
+			}
+			pdx_tooltip = LUX_minister_foreign_button_LSAP_tt
+			pdx_tooltip_delayed = LUX_minister_foreign_replace_tt
+		}
+		iconType = {
+			name = LUX_minister_foreign_button_KPL_selected
+			spriteType = GFX_LUX_minister_foreign_kpl
+			position = {
+				x = 357
+				y = 160
+			}
+			pdx_tooltip = LUX_minister_foreign_button_KPL_tt
+			pdx_tooltip_delayed = LUX_minister_foreign_replace_tt
+		}
 		buttonType = {
 			name = LUX_minister_foreign_button_PD
 			spriteType = GFX_LUX_minister_foreign_pd
 			position = {
-				x = 355
+				x = 357
 				y = 225
 			}
 			pdx_tooltip = LUX_minister_foreign_button_PD_tt
@@ -361,7 +492,7 @@ guiTypes = {
 			name = LUX_minister_foreign_button_PRL
 			spriteType = GFX_LUX_minister_foreign_prl
 			position = {
-				x = 355
+				x = 357
 				y = 285
 			}
 			pdx_tooltip = LUX_minister_foreign_button_PRL_tt
@@ -371,7 +502,7 @@ guiTypes = {
 			name = LUX_minister_foreign_button_LSAP
 			spriteType = GFX_LUX_minister_foreign_lsap
 			position = {
-				x = 355
+				x = 357
 				y = 345
 			}
 			pdx_tooltip = LUX_minister_foreign_button_LSAP_tt
@@ -381,7 +512,7 @@ guiTypes = {
 			name = LUX_minister_foreign_button_KPL
 			spriteType = GFX_LUX_minister_foreign_kpl
 			position = {
-				x = 355
+				x = 357
 				y = 405
 			}
 			pdx_tooltip = LUX_minister_foreign_button_KPL_tt
@@ -417,11 +548,51 @@ guiTypes = {
 			}
 			alwaystransparent = yes
 		}
+		iconType = {
+			name = LUX_minister_labour_button_PD_selected
+			spriteType = GFX_LUX_minister_labour_pd
+			position = {
+				x = 132
+				y = 270
+			}
+			pdx_tooltip = LUX_minister_labour_button_PD_tt
+			pdx_tooltip_delayed = LUX_minister_labour_replace_tt
+		}
+		iconType = {
+			name = LUX_minister_labour_button_PRL_selected
+			spriteType = GFX_LUX_minister_labour_prl
+			position = {
+				x = 132
+				y = 270
+			}
+			pdx_tooltip = LUX_minister_labour_button_PRL_tt
+			pdx_tooltip_delayed = LUX_minister_labour_replace_tt
+		}
+		iconType = {
+			name = LUX_minister_labour_button_LSAP_selected
+			spriteType = GFX_LUX_minister_labour_lsap
+			position = {
+				x = 132
+				y = 270
+			}
+			pdx_tooltip = LUX_minister_labour_button_LSAP_tt
+			pdx_tooltip_delayed = LUX_minister_labour_replace_tt
+		}
+		iconType = {
+			name = LUX_minister_labour_button_KPL_selected
+			spriteType = GFX_LUX_minister_labour_kpl
+			position = {
+				x = 132
+				y = 270
+			}
+			pdx_tooltip = LUX_minister_labour_button_KPL_tt
+			pdx_tooltip_delayed = LUX_minister_labour_replace_tt
+		}
 		buttonType = {
 			name = LUX_minister_labour_button_PD
 			spriteType = GFX_LUX_minister_labour_pd
 			position = {
-				x = 130
+				x = 132
 				y = 335
 			}
 			pdx_tooltip = LUX_minister_labour_button_PD_tt
@@ -431,7 +602,7 @@ guiTypes = {
 			name = LUX_minister_labour_button_PRL
 			spriteType = GFX_LUX_minister_labour_prl
 			position = {
-				x = 130
+				x = 132
 				y = 395
 			}
 			pdx_tooltip = LUX_minister_labour_button_PRL_tt
@@ -441,7 +612,7 @@ guiTypes = {
 			name = LUX_minister_labour_button_LSAP
 			spriteType = GFX_LUX_minister_labour_lsap
 			position = {
-				x = 130
+				x = 132
 				y = 455
 			}
 			pdx_tooltip = LUX_minister_labour_button_LSAP_tt
@@ -451,7 +622,7 @@ guiTypes = {
 			name = LUX_minister_labour_button_KPL
 			spriteType = GFX_LUX_minister_labour_kpl
 			position = {
-				x = 130
+				x = 132
 				y = 515
 			}
 			pdx_tooltip = LUX_minister_labour_button_KPL_tt
@@ -487,11 +658,52 @@ guiTypes = {
 			}
 			alwaystransparent = yes
 		}
+		
+		iconType = {
+			name = LUX_minister_army_button_PD_selected
+			spriteType = GFX_LUX_minister_army_pd
+			position = {
+				x = 282
+				y = 270
+			}
+			pdx_tooltip = LUX_minister_army_button_PD_tt
+			pdx_tooltip_delayed = LUX_minister_army_replace_tt
+		}
+		iconType = {
+			name = LUX_minister_army_button_PRL_selected
+			spriteType = GFX_LUX_minister_army_prl
+			position = {
+				x = 282
+				y = 270
+			}
+			pdx_tooltip = LUX_minister_army_button_PRL_tt
+			pdx_tooltip_delayed = LUX_minister_army_replace_tt
+		}
+		iconType = {
+			name = LUX_minister_army_button_LSAP_selected
+			spriteType = GFX_LUX_minister_army_lsap
+			position = {
+				x = 282
+				y = 270
+			}
+			pdx_tooltip = LUX_minister_army_button_LSAP_tt
+			pdx_tooltip_delayed = LUX_minister_army_replace_tt
+		}
+		iconType = {
+			name = LUX_minister_army_button_KPL_selected
+			spriteType = GFX_LUX_minister_army_kpl
+			position = {
+				x = 282
+				y = 270
+			}
+			pdx_tooltip = LUX_minister_army_button_KPL_tt
+			pdx_tooltip_delayed = LUX_minister_army_replace_tt
+		}
 		buttonType = {
 			name = LUX_minister_army_button_PD
 			spriteType = GFX_LUX_minister_army_pd
 			position = {
-				x = 280
+				x = 282
 				y = 335
 			}
 			pdx_tooltip = LUX_minister_army_button_PD_tt
@@ -501,7 +713,7 @@ guiTypes = {
 			name = LUX_minister_army_button_PRL
 			spriteType = GFX_LUX_minister_army_prl
 			position = {
-				x = 280
+				x = 282
 				y = 395
 			}
 			pdx_tooltip = LUX_minister_army_button_PRL_tt
@@ -511,7 +723,7 @@ guiTypes = {
 			name = LUX_minister_army_button_LSAP
 			spriteType = GFX_LUX_minister_army_lsap
 			position = {
-				x = 280
+				x = 282
 				y = 455
 			}
 			pdx_tooltip = LUX_minister_army_button_LSAP_tt
@@ -521,7 +733,7 @@ guiTypes = {
 			name = LUX_minister_army_button_KPL
 			spriteType = GFX_LUX_minister_army_kpl
 			position = {
-				x = 280
+				x = 282
 				y = 515
 			}
 			pdx_tooltip = LUX_minister_army_button_KPL_tt

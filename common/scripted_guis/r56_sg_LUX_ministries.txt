@@ -17,6 +17,58 @@ scripted_gui = {
 					clr_country_flag = LUX_minister_army_button_empty_clicked
 				}
 			}
+			LUX_minister_economics_button_PD_selected_click = {
+				if = {
+					limit = { has_country_flag = LUX_minister_economics_button_empty_clicked }
+					clr_country_flag = LUX_minister_economics_button_empty_clicked
+				}
+				else = {
+					set_country_flag = LUX_minister_economics_button_empty_clicked
+					clr_country_flag = LUX_minister_interior_button_empty_clicked
+					clr_country_flag = LUX_minister_foreign_button_empty_clicked
+					clr_country_flag = LUX_minister_labour_button_empty_clicked
+					clr_country_flag = LUX_minister_army_button_empty_clicked
+				}
+			}
+			LUX_minister_economics_button_PRL_selected_click = {
+				if = {
+					limit = { has_country_flag = LUX_minister_economics_button_empty_clicked }
+					clr_country_flag = LUX_minister_economics_button_empty_clicked
+				}
+				else = {
+					set_country_flag = LUX_minister_economics_button_empty_clicked
+					clr_country_flag = LUX_minister_interior_button_empty_clicked
+					clr_country_flag = LUX_minister_foreign_button_empty_clicked
+					clr_country_flag = LUX_minister_labour_button_empty_clicked
+					clr_country_flag = LUX_minister_army_button_empty_clicked
+				}
+			}
+			LUX_minister_economics_button_LSAP_selected_click = {
+				if = {
+					limit = { has_country_flag = LUX_minister_economics_button_empty_clicked }
+					clr_country_flag = LUX_minister_economics_button_empty_clicked
+				}
+				else = {
+					set_country_flag = LUX_minister_economics_button_empty_clicked
+					clr_country_flag = LUX_minister_interior_button_empty_clicked
+					clr_country_flag = LUX_minister_foreign_button_empty_clicked
+					clr_country_flag = LUX_minister_labour_button_empty_clicked
+					clr_country_flag = LUX_minister_army_button_empty_clicked
+				}
+			}
+			LUX_minister_economics_button_KPL_selected_click = {
+				if = {
+					limit = { has_country_flag = LUX_minister_economics_button_empty_clicked }
+					clr_country_flag = LUX_minister_economics_button_empty_clicked
+				}
+				else = {
+					set_country_flag = LUX_minister_economics_button_empty_clicked
+					clr_country_flag = LUX_minister_interior_button_empty_clicked
+					clr_country_flag = LUX_minister_foreign_button_empty_clicked
+					clr_country_flag = LUX_minister_labour_button_empty_clicked
+					clr_country_flag = LUX_minister_army_button_empty_clicked
+				}
+			}
 			LUX_minister_economics_button_PD_click = {
 				if = {
 					limit = { has_country_flag = LUX_minister_economics_PD_hired }
@@ -85,8 +137,59 @@ scripted_gui = {
 					add_ideas = LUX_minister_economics_KPL
 				}
 			}
-
 			LUX_minister_interior_button_empty_click = {
+				if = {
+					limit = { has_country_flag = LUX_minister_interior_button_empty_clicked }
+					clr_country_flag = LUX_minister_interior_button_empty_clicked
+				}
+				else = {
+					set_country_flag = LUX_minister_interior_button_empty_clicked
+					clr_country_flag = LUX_minister_economics_button_empty_clicked
+					clr_country_flag = LUX_minister_foreign_button_empty_clicked
+					clr_country_flag = LUX_minister_labour_button_empty_clicked
+					clr_country_flag = LUX_minister_army_button_empty_clicked
+				}
+			}
+			LUX_minister_interior_button_PD_selected_click = {
+				if = {
+					limit = { has_country_flag = LUX_minister_interior_button_empty_clicked }
+					clr_country_flag = LUX_minister_interior_button_empty_clicked
+				}
+				else = {
+					set_country_flag = LUX_minister_interior_button_empty_clicked
+					clr_country_flag = LUX_minister_economics_button_empty_clicked
+					clr_country_flag = LUX_minister_foreign_button_empty_clicked
+					clr_country_flag = LUX_minister_labour_button_empty_clicked
+					clr_country_flag = LUX_minister_army_button_empty_clicked
+				}
+			}
+			LUX_minister_interior_button_PRL_selected_click = {
+				if = {
+					limit = { has_country_flag = LUX_minister_interior_button_empty_clicked }
+					clr_country_flag = LUX_minister_interior_button_empty_clicked
+				}
+				else = {
+					set_country_flag = LUX_minister_interior_button_empty_clicked
+					clr_country_flag = LUX_minister_economics_button_empty_clicked
+					clr_country_flag = LUX_minister_foreign_button_empty_clicked
+					clr_country_flag = LUX_minister_labour_button_empty_clicked
+					clr_country_flag = LUX_minister_army_button_empty_clicked
+				}
+			}
+			LUX_minister_interior_button_LSAP_selected_click = {
+				if = {
+					limit = { has_country_flag = LUX_minister_interior_button_empty_clicked }
+					clr_country_flag = LUX_minister_interior_button_empty_clicked
+				}
+				else = {
+					set_country_flag = LUX_minister_interior_button_empty_clicked
+					clr_country_flag = LUX_minister_economics_button_empty_clicked
+					clr_country_flag = LUX_minister_foreign_button_empty_clicked
+					clr_country_flag = LUX_minister_labour_button_empty_clicked
+					clr_country_flag = LUX_minister_army_button_empty_clicked
+				}
+			}
+			LUX_minister_interior_button_KPL_selected_click = {
 				if = {
 					limit = { has_country_flag = LUX_minister_interior_button_empty_clicked }
 					clr_country_flag = LUX_minister_interior_button_empty_clicked
@@ -181,6 +284,58 @@ scripted_gui = {
 					clr_country_flag = LUX_minister_army_button_empty_clicked
 				}
 			}
+			LUX_minister_foreign_button_PD_selected_click = {
+				if = {
+					limit = { has_country_flag = LUX_minister_foreign_button_empty_clicked }
+					clr_country_flag = LUX_minister_foreign_button_empty_clicked
+				}
+				else = {
+					set_country_flag = LUX_minister_foreign_button_empty_clicked
+					clr_country_flag = LUX_minister_economics_button_empty_clicked
+					clr_country_flag = LUX_minister_interior_button_empty_clicked
+					clr_country_flag = LUX_minister_labour_button_empty_clicked
+					clr_country_flag = LUX_minister_army_button_empty_clicked
+				}
+			}
+			LUX_minister_foreign_button_PRL_selected_click = {
+				if = {
+					limit = { has_country_flag = LUX_minister_foreign_button_empty_clicked }
+					clr_country_flag = LUX_minister_foreign_button_empty_clicked
+				}
+				else = {
+					set_country_flag = LUX_minister_foreign_button_empty_clicked
+					clr_country_flag = LUX_minister_economics_button_empty_clicked
+					clr_country_flag = LUX_minister_interior_button_empty_clicked
+					clr_country_flag = LUX_minister_labour_button_empty_clicked
+					clr_country_flag = LUX_minister_army_button_empty_clicked
+				}
+			}
+			LUX_minister_foreign_button_LSAP_selected_click = {
+				if = {
+					limit = { has_country_flag = LUX_minister_foreign_button_empty_clicked }
+					clr_country_flag = LUX_minister_foreign_button_empty_clicked
+				}
+				else = {
+					set_country_flag = LUX_minister_foreign_button_empty_clicked
+					clr_country_flag = LUX_minister_economics_button_empty_clicked
+					clr_country_flag = LUX_minister_interior_button_empty_clicked
+					clr_country_flag = LUX_minister_labour_button_empty_clicked
+					clr_country_flag = LUX_minister_army_button_empty_clicked
+				}
+			}
+			LUX_minister_foreign_button_KPL_selected_click = {
+				if = {
+					limit = { has_country_flag = LUX_minister_foreign_button_empty_clicked }
+					clr_country_flag = LUX_minister_foreign_button_empty_clicked
+				}
+				else = {
+					set_country_flag = LUX_minister_foreign_button_empty_clicked
+					clr_country_flag = LUX_minister_economics_button_empty_clicked
+					clr_country_flag = LUX_minister_interior_button_empty_clicked
+					clr_country_flag = LUX_minister_labour_button_empty_clicked
+					clr_country_flag = LUX_minister_army_button_empty_clicked
+				}
+			}
 			LUX_minister_foreign_button_PD_click = {
 				if = {
 					limit = { has_country_flag = LUX_minister_foreign_PD_hired }
@@ -251,6 +406,58 @@ scripted_gui = {
 			}
 
 			LUX_minister_labour_button_empty_click = {
+				if = {
+					limit = { has_country_flag = LUX_minister_labour_button_empty_clicked }
+					clr_country_flag = LUX_minister_labour_button_empty_clicked
+				}
+				else = {
+					set_country_flag = LUX_minister_labour_button_empty_clicked
+					clr_country_flag = LUX_minister_economics_button_empty_clicked
+					clr_country_flag = LUX_minister_interior_button_empty_clicked
+					clr_country_flag = LUX_minister_foreign_button_empty_clicked
+					clr_country_flag = LUX_minister_army_button_empty_clicked
+				}
+			}
+			LUX_minister_labour_button_PD_selected_click = {
+				if = {
+					limit = { has_country_flag = LUX_minister_labour_button_empty_clicked }
+					clr_country_flag = LUX_minister_labour_button_empty_clicked
+				}
+				else = {
+					set_country_flag = LUX_minister_labour_button_empty_clicked
+					clr_country_flag = LUX_minister_economics_button_empty_clicked
+					clr_country_flag = LUX_minister_interior_button_empty_clicked
+					clr_country_flag = LUX_minister_foreign_button_empty_clicked
+					clr_country_flag = LUX_minister_army_button_empty_clicked
+				}
+			}
+			LUX_minister_labour_button_PRL_selected_click = {
+				if = {
+					limit = { has_country_flag = LUX_minister_labour_button_empty_clicked }
+					clr_country_flag = LUX_minister_labour_button_empty_clicked
+				}
+				else = {
+					set_country_flag = LUX_minister_labour_button_empty_clicked
+					clr_country_flag = LUX_minister_economics_button_empty_clicked
+					clr_country_flag = LUX_minister_interior_button_empty_clicked
+					clr_country_flag = LUX_minister_foreign_button_empty_clicked
+					clr_country_flag = LUX_minister_army_button_empty_clicked
+				}
+			}
+			LUX_minister_labour_button_LSAP_selected_click = {
+				if = {
+					limit = { has_country_flag = LUX_minister_labour_button_empty_clicked }
+					clr_country_flag = LUX_minister_labour_button_empty_clicked
+				}
+				else = {
+					set_country_flag = LUX_minister_labour_button_empty_clicked
+					clr_country_flag = LUX_minister_economics_button_empty_clicked
+					clr_country_flag = LUX_minister_interior_button_empty_clicked
+					clr_country_flag = LUX_minister_foreign_button_empty_clicked
+					clr_country_flag = LUX_minister_army_button_empty_clicked
+				}
+			}
+			LUX_minister_labour_button_KPL_selected_click = {
 				if = {
 					limit = { has_country_flag = LUX_minister_labour_button_empty_clicked }
 					clr_country_flag = LUX_minister_labour_button_empty_clicked
@@ -341,6 +548,58 @@ scripted_gui = {
 			}
 
 			LUX_minister_army_button_empty_click = {
+				if = {
+					limit = { has_country_flag = LUX_minister_army_button_empty_clicked }
+					clr_country_flag = LUX_minister_army_button_empty_clicked
+				}
+				else = {
+					set_country_flag = LUX_minister_army_button_empty_clicked
+					clr_country_flag = LUX_minister_economics_button_empty_clicked
+					clr_country_flag = LUX_minister_interior_button_empty_clicked
+					clr_country_flag = LUX_minister_foreign_button_empty_clicked
+					clr_country_flag = LUX_minister_labour_button_empty_clicked
+				}
+			}
+			LUX_minister_army_button_PD_selected_click = {
+				if = {
+					limit = { has_country_flag = LUX_minister_army_button_empty_clicked }
+					clr_country_flag = LUX_minister_army_button_empty_clicked
+				}
+				else = {
+					set_country_flag = LUX_minister_army_button_empty_clicked
+					clr_country_flag = LUX_minister_economics_button_empty_clicked
+					clr_country_flag = LUX_minister_interior_button_empty_clicked
+					clr_country_flag = LUX_minister_foreign_button_empty_clicked
+					clr_country_flag = LUX_minister_labour_button_empty_clicked
+				}
+			}
+			LUX_minister_army_button_PRL_selected_click = {
+				if = {
+					limit = { has_country_flag = LUX_minister_army_button_empty_clicked }
+					clr_country_flag = LUX_minister_army_button_empty_clicked
+				}
+				else = {
+					set_country_flag = LUX_minister_army_button_empty_clicked
+					clr_country_flag = LUX_minister_economics_button_empty_clicked
+					clr_country_flag = LUX_minister_interior_button_empty_clicked
+					clr_country_flag = LUX_minister_foreign_button_empty_clicked
+					clr_country_flag = LUX_minister_labour_button_empty_clicked
+				}
+			}
+			LUX_minister_army_button_LSAP_selected_click = {
+				if = {
+					limit = { has_country_flag = LUX_minister_army_button_empty_clicked }
+					clr_country_flag = LUX_minister_army_button_empty_clicked
+				}
+				else = {
+					set_country_flag = LUX_minister_army_button_empty_clicked
+					clr_country_flag = LUX_minister_economics_button_empty_clicked
+					clr_country_flag = LUX_minister_interior_button_empty_clicked
+					clr_country_flag = LUX_minister_foreign_button_empty_clicked
+					clr_country_flag = LUX_minister_labour_button_empty_clicked
+				}
+			}
+			LUX_minister_army_button_KPL_selected_click = {
 				if = {
 					limit = { has_country_flag = LUX_minister_army_button_empty_clicked }
 					clr_country_flag = LUX_minister_army_button_empty_clicked
@@ -448,13 +707,39 @@ scripted_gui = {
 					ruling_only = yes
 				}
 			}
-			LUX_minister_prime_LSAP_icon_marx_visible = {
+			LUX_minister_prime_KPL_icon_marx_visible = {
 				has_country_leader = {
 					character = LUX_charles_marx
 					ruling_only = yes
 				}
 			}
+			LUX_minister_prime_KPL_icon_urbany_visible = {
+				has_country_leader = {
+					character = LUX_dominique_urbany
+					ruling_only = yes
+				}
+			}
 
+			LUX_minister_economics_button_empty_visible = {
+				NOT = {
+					has_country_flag = LUX_minister_economics_PD_hired
+					has_country_flag = LUX_minister_economics_PRL_hired
+					has_country_flag = LUX_minister_economics_LSAP_hired
+					has_country_flag = LUX_minister_economics_KPL_hired
+				}
+			}
+			LUX_minister_economics_button_PD_selected_visible = {
+				has_country_flag = LUX_minister_economics_PD_hired
+			}
+			LUX_minister_economics_button_PRL_selected_visible = {
+				has_country_flag = LUX_minister_economics_PRL_hired
+			}
+			LUX_minister_economics_button_LSAP_selected_visible = {
+				has_country_flag = LUX_minister_economics_LSAP_hired
+			}
+			LUX_minister_economics_button_KPL_selected_visible = {
+				has_country_flag = LUX_minister_economics_KPL_hired
+			}
 			LUX_minister_economics_button_PD_visible = {
 				has_country_flag = LUX_minister_economics_button_empty_clicked
 			}
@@ -511,6 +796,29 @@ scripted_gui = {
 				has_country_flag = LUX_minister_economics_button_empty_clicked
 			}
 
+			LUX_minister_interior_button_empty_visible = {
+				NOT = {
+					has_country_flag = LUX_minister_interior_PD_hired
+					has_country_flag = LUX_minister_interior_PRL_hired
+					has_country_flag = LUX_minister_interior_LSAP_hired
+					has_country_flag = LUX_minister_interior_KPL_hired
+				}
+			}
+			LUX_minister_interior_button_PD_selected_visible = {
+				has_country_flag = LUX_minister_interior_PD_hired
+			}
+			LUX_minister_interior_button_PRL_selected_visible = {
+				has_country_flag = LUX_minister_interior_PRL_hired
+			}
+			LUX_minister_interior_button_LSAP_selected_visible = {
+				has_country_flag = LUX_minister_interior_LSAP_hired
+			}
+			LUX_minister_interior_button_KPL_selected_visible = {
+				has_country_flag = LUX_minister_interior_KPL_hired
+			}
+			LUX_minister_interior_button_PD_visible = {
+				has_country_flag = LUX_minister_interior_button_empty_clicked
+			}
 			LUX_minister_interior_button_PD_visible = {
 				has_country_flag = LUX_minister_interior_button_empty_clicked
 			}
@@ -567,6 +875,29 @@ scripted_gui = {
 				has_country_flag = LUX_minister_interior_button_empty_clicked
 			}
 
+			LUX_minister_foreign_button_empty_visible = {
+				NOT = {
+					has_country_flag = LUX_minister_foreign_PD_hired
+					has_country_flag = LUX_minister_foreign_PRL_hired
+					has_country_flag = LUX_minister_foreign_LSAP_hired
+					has_country_flag = LUX_minister_foreign_KPL_hired
+				}
+			}
+			LUX_minister_foreign_button_PD_selected_visible = {
+				has_country_flag = LUX_minister_foreign_PD_hired
+			}
+			LUX_minister_foreign_button_PRL_selected_visible = {
+				has_country_flag = LUX_minister_foreign_PRL_hired
+			}
+			LUX_minister_foreign_button_LSAP_selected_visible = {
+				has_country_flag = LUX_minister_foreign_LSAP_hired
+			}
+			LUX_minister_foreign_button_KPL_selected_visible = {
+				has_country_flag = LUX_minister_foreign_KPL_hired
+			}
+			LUX_minister_foreign_button_PD_visible = {
+				has_country_flag = LUX_minister_foreign_button_empty_clicked
+			}
 			LUX_minister_foreign_button_PD_visible = {
 				has_country_flag = LUX_minister_foreign_button_empty_clicked
 			}
@@ -623,6 +954,29 @@ scripted_gui = {
 				has_country_flag = LUX_minister_foreign_button_empty_clicked
 			}
 
+			LUX_minister_labour_button_empty_visible = {
+				NOT = {
+					has_country_flag = LUX_minister_labour_PD_hired
+					has_country_flag = LUX_minister_labour_PRL_hired
+					has_country_flag = LUX_minister_labour_LSAP_hired
+					has_country_flag = LUX_minister_labour_KPL_hired
+				}
+			}
+			LUX_minister_labour_button_PD_selected_visible = {
+				has_country_flag = LUX_minister_labour_PD_hired
+			}
+			LUX_minister_labour_button_PRL_selected_visible = {
+				has_country_flag = LUX_minister_labour_PRL_hired
+			}
+			LUX_minister_labour_button_LSAP_selected_visible = {
+				has_country_flag = LUX_minister_labour_LSAP_hired
+			}
+			LUX_minister_labour_button_KPL_selected_visible = {
+				has_country_flag = LUX_minister_labour_KPL_hired
+			}
+			LUX_minister_labour_button_PD_visible = {
+				has_country_flag = LUX_minister_labour_button_empty_clicked
+			}
 			LUX_minister_labour_button_PD_visible = {
 				has_country_flag = LUX_minister_labour_button_empty_clicked
 			}
@@ -679,6 +1033,29 @@ scripted_gui = {
 				has_country_flag = LUX_minister_labour_button_empty_clicked
 			}
 
+			LUX_minister_army_button_empty_visible = {
+				NOT = {
+					has_country_flag = LUX_minister_army_PD_hired
+					has_country_flag = LUX_minister_army_PRL_hired
+					has_country_flag = LUX_minister_army_LSAP_hired
+					has_country_flag = LUX_minister_army_KPL_hired
+				}
+			}
+			LUX_minister_army_button_PD_selected_visible = {
+				has_country_flag = LUX_minister_army_PD_hired
+			}
+			LUX_minister_army_button_PRL_selected_visible = {
+				has_country_flag = LUX_minister_army_PRL_hired
+			}
+			LUX_minister_army_button_LSAP_selected_visible = {
+				has_country_flag = LUX_minister_army_LSAP_hired
+			}
+			LUX_minister_army_button_KPL_selected_visible = {
+				has_country_flag = LUX_minister_army_KPL_hired
+			}
+			LUX_minister_army_button_PD_visible = {
+				has_country_flag = LUX_minister_army_button_empty_clicked
+			}
 			LUX_minister_army_button_PD_visible = {
 				has_country_flag = LUX_minister_army_button_empty_clicked
 			}
