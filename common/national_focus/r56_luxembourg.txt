@@ -1,8 +1,6 @@
-#####-----> Rt56 Luxemburg Tree. Made By SpicyAlfredo et al<><> <><> <><>
+#####-----> Rt56 Luxembourg Tree. Made By Flor et al<><> <><> <><>
 
-#Tree is a gaint meme but the old tree was very bad
-#Code isn't air tight and theres indention errors. oh well
-#A bit of laziness that could be imporved upon if revisted - SpicyAlfredo
+#Kept the old eco/army tree because of laziness and time
 
 
 ### search_filters = {FOCUS_FILTER_POLITICAL}
@@ -28,7 +26,7 @@ focus_tree = {
 	initial_show_position = {
 		x = 35
 	}
-	
+
 	continuous_focus_position = { x = 50 y = 1000 }
 
 	#shared_focus = ABC_establish_a_general_staff	
@@ -37,46 +35,7 @@ focus_tree = {
 	#shared_focus = GEN_begin_industrial_buildup
 	shared_focus = GEN_industrial_boom
 
-	
 	default = no
-
-#	focus = {
-#		id = LUX_
-#		icon = GFX_
-#		prerequisite = { focus = }
-#		mutually_exclusive = { focus =  }
-#		x = -3
-#		y = 0
-#		relative_position_id =
-#
-#		cost = 10
-#
-#		ai_will_do = {
-#			factor = 1
-#		}
-#
-#		available = {
-#
-#		}
-#
-#		bypass = {
-#
-#		}
-#
-#		
-#		
-#		
-#
-#		complete_tooltip = {
-#
-#		}
-#
-#		completion_reward = {
-#
-#		}
-#	}
-
-
 
 	focus = {
 		id = LUX_lessons_of_the_great_war
@@ -89,7 +48,7 @@ focus_tree = {
 		available = {
 		}
 
-		search_filters = {FOCUS_FILTER_ARMY_XP FOCUS_FILTER_MILITARY_RESEARCH}
+		search_filters = { FOCUS_FILTER_ARMY_XP }
 
 		completion_reward = {
 			army_experience = 10
@@ -778,7 +737,7 @@ focus_tree = {
 			custom_effect_tooltip = r56_newline
 			custom_effect_tooltip = LUX_unlock_chamberofdeputies_tt
 		}
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = LUX_the_maulkuerfgesetz
@@ -1597,7 +1556,7 @@ focus_tree = {
 				limit = {
 					OR = {
 						state = 29
-						state = 1054
+						state = 1053
 						state = 42
 						state = 51
 						state = 989
@@ -1644,15 +1603,16 @@ focus_tree = {
 						state = 796
 						state = 548
 						state = 904
+						state = 547
+						state = 905
 						state = 456
 						state = 1055
-						state = 547
-						state = 904
 						state = 333
 						state = 916
 						state = 1014
 						state = 721
 						state = 523
+						state = 1096
 						state = 687
 						state = 310
 					}
@@ -1686,7 +1646,7 @@ focus_tree = {
 			OR = {
 				AND = {
 					owns_state = 29
-					owns_state = 1054
+					owns_state = 1053
 					owns_state = 42
 					owns_state = 51
 					owns_state = 989
@@ -1700,15 +1660,16 @@ focus_tree = {
 					owns_state = 796
 					owns_state = 548
 					owns_state = 904
+					owns_state = 547
+					owns_state = 905
 					owns_state = 456
 					owns_state = 1055
-					owns_state = 547
-					owns_state = 904
 					owns_state = 333
 					owns_state = 916
 					owns_state = 1014
 					owns_state = 721
 					owns_state = 523
+					owns_state = 1096
 					owns_state = 687
 					owns_state = 310
 				}
