@@ -33,6 +33,7 @@
 			trigger = {
 				OR = {
 					tag = BRM
+					has_focus_tree = germany_shared_focus
 				}
 			}
 		}
@@ -1670,6 +1671,7 @@
 			trigger = {
 				OR = {
 					tag = BRM
+					has_focus_tree = germany_shared_focus
 				}
 			}
 		}
@@ -1924,7 +1926,10 @@
 			x = -1
 			y = 0
 			trigger = {
-				tag = BRM
+				OR = {
+					tag = BRM
+					has_focus_tree = germany_shared_focus
+				}
 			}
 		}
 		cost = 10
@@ -4345,7 +4350,10 @@
 			x = 1
 			y = 0
 			trigger = {
-				tag = BRM
+				OR = {
+					tag = BRM
+					has_focus_tree = germany_shared_focus
+				}
 			}
 		}
 		ai_will_do = {

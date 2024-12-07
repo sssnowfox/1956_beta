@@ -13039,12 +13039,12 @@ GER_military_buildup = {
 					has_country_flag = GER_AI_RANDOM_COMMUNIST_STALINIST
 					has_game_rule = {
 						rule = GER_ai_behavior
-						option = GER_COMMUNIST_STALINIST
+						option = COMMUNIST_COMINTERN
 					}
 					has_country_flag = GER_AI_RANDOM_COMMUNIST_SPARTACUS
 					has_game_rule = {
 						rule = GER_ai_behavior
-						option = GER_COMMUNIST_SPARTACUS
+						option = COMMUNIST_WORLD_REVOLUTION
 					}
 				}
 			}
