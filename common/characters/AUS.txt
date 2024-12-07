@@ -3021,6 +3021,7 @@ characters = {
 			logistics_skill = 2
 			legacy_id = -1
 			visible = {
+				has_completed_focus = AUS_promote_the_worthy	#r56: condition added since he wasnt a general yet
 				NOT = { original_tag = GER }
 				OR = {
 					AND = {
@@ -3106,7 +3107,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { panzer_leader }
+			traits = { panzer_leader artillerist }
 			skill = 2
 			attack_skill = 2
 			defense_skill = 2
