@@ -27,7 +27,10 @@ characters = {
 			}
 			available = {
 				OR = {
-					has_completed_focus = INS_gapi_focus
+					AND = {
+						has_completed_focus = INS_gapi_focus
+						compare_autonomy_state > autonomy_puppet
+					}
 					has_completed_focus = INS_reunify_pppki
 				}
 			}
@@ -66,7 +69,13 @@ characters = {
 				revolutionary_writer
 			}
 			available = {
-				has_completed_focus = INS_reorganize_the_underground
+				OR = {
+					has_completed_focus = INS_reorganize_the_underground
+					AND = {
+						has_completed_focus = INS_gapi_focus
+						compare_autonomy_state > autonomy_puppet
+					}
+				}
 				NOT = {
 					has_country_leader = {
 						character = INS_amir_syarifuddin_harahap
@@ -432,6 +441,7 @@ characters = {
 				NOT = {
 					has_completed_focus = INS_consolidate_the_right
 				}
+			}
 			traits = {
 				tamansiswa_educationer
 			}
@@ -1186,6 +1196,34 @@ characters = {
 			army = {
 				large = GFX_portrait_indonesia_subroto
 				small = GFX_idea_indonesia_subroto
+			}
+		}
+	}
+
+  #####                                                              
+ #     #   ####   #  ######  #    #  #####  #   ####   #####   ####  
+ #        #    #  #  #       ##   #    #    #  #         #    #      
+  #####   #       #  #####   # #  #    #    #   ####     #     ####  
+       #  #       #  #       #  # #    #    #       #    #         # 
+ #     #  #    #  #  #       #   ##    #    #  #    #    #    #    # 
+  #####    ####   #  ######  #    #    #    #   ####     #     ####  
+
+
+	INS_laurens_walraven = {
+
+		name = INS_laurens_walraven
+		portraits = {
+			army = {
+				large = GFX_portrait_indonesia_laurens_walraven
+			}
+		}
+
+		scientist = {
+
+			traits = { scientist_trait_aircraft_specialist }
+
+			skills = {
+				specialization_air = 1
 			}
 		}
 	}

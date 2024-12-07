@@ -1769,6 +1769,10 @@ focus_tree = {
 		prerequisite = { focus = INS_empower_the_volksraad focus = INS_jewel_of_the_pacific }
 		cost = 8
 
+		available = {
+			compare_autonomy_state > autonomy_integrated_puppet
+		}
+
 		completion_reward = {
 			add_autonomy_score = {
 				value = 250
@@ -1781,6 +1785,7 @@ focus_tree = {
 			add_stability = 0.05
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = INS_abikusno_cokrosuyoso
+			show_ideas_tooltip = INS_amir_syarifuddin_harahap
 		}
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_TFV_AUTONOMY FOCUS_FILTER_POLITICAL }
 	}

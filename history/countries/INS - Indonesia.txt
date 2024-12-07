@@ -125,6 +125,8 @@ recruit_character = INS_jan_hilgers
 recruit_character = INS_urip_sumoharjo
 recruit_character = INS_gatot_subroto
 
+recruit_character = INS_laurens_walraven
+
 set_cosmetic_tag = INS_HOL # Dutch East Indies
 country_event = { id = indonesia.105 days = 259 }
 

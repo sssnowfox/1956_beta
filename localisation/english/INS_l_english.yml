@@ -5,10 +5,10 @@ INS_AI_BEHAVIOR:0 "@INS Indonesia"
 RULE_OPTION_COLONIAL_INS_HISTORICAL:0 "Colonial - Historical"
 RULE_OPTION_COLONIAL_INS_HISTORICAL_DESC:0 "Indonesia will stay with the Dutch and remain a colony."
 RULE_OPTION_COMMUNIST_INS_AI_DESC:0 "The PKI will be reorganized and Manawur Musso will return to lead Indonesia."
-RULE_OPTION_MARHAENIST:0 "Marhaenist - Neutrality"
+RULE_OPTION_MARHAENIST:0 "Marhaenist - Socialism"
 RULE_OPTION_MARHAENIST_INS_AI_DESC:0 "The PNI will be reformed with Sukarno at it's head."
-RULE_OPTION_FASCIST_INS_AI_DESC:0 "The PIR-R will be radicalized and Mohammad Husni Thamrin will coup the government."
-RULE_OPTION_DEMOCRATIC:0 "Democratic"
+RULE_OPTION_FASCIST_INS_AI:0 "Right Nationalism"
+RULE_OPTION_FASCIST_INS_AI_DESC:0 "The Parindra will be radicalized and Dr. Soetomo will coup the government.
 RULE_OPTION_DEMOCRATIC_INS_AI_DESC:0 "The PSII will push for greater autonomy until it achieves just that."
 
 #Characters

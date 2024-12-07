@@ -320,6 +320,10 @@ spriteType = {
 		name = "GFX_portrait_indonesia_wuryaningrat"
 		texturefile = "gfx/leaders/INS/r56_portrait_INS_Wuryaningrat.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_indonesia_laurens_walraven"
+		texturefile = "gfx/leaders/INS/r56_portrait_INS_Laurens_Walraven.dds"
+	}
 
 #->  EIS <><>
 	spriteType = {

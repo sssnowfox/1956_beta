@@ -2394,7 +2394,7 @@ SpriteType = {
 	}
 	spriteType = {
 		name = "GFX_idea_indonesia_ernest_douwes_dekker"
-		texturefile = "gfx/interface/ideas/ins/advisors/r56_idea_INS_advisor_ernest_douwes_dekker.dds"
+		texturefile = "gfx/interface/ideas/ins/advisors/r56_idea_INS_advisor_douwes_dekker.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_indonesia_ferwerda"
