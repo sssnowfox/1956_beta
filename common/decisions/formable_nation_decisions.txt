@@ -3903,52 +3903,70 @@ form_mutapa_category = {
 		allowed = {
 			OR = {
 				original_tag = SAF
+				original_tag = LES
+				original_tag = SWA
+				original_tag = NMB
 				original_tag = BOT
 				original_tag = ZIM
 				original_tag = MZB
-				original_tag = LES
-				original_tag = SWA
+				original_tag = ZAM
+				original_tag = BAR
 			}
 		}
 
 		available = {
 			is_subject = no
-			controls_state = 541
 			controls_state = 681
-			controls_state = 719
+			controls_state = 940
 			controls_state = 275
+			controls_state = 719
+			controls_state = 938
+			controls_state = 939
+			controls_state = 893
+			controls_state = 541
+			controls_state = 894
+			controls_state = 895
 			controls_state = 542
 			controls_state = 545
 			controls_state = 544
-			controls_state = 938
-			controls_state = 939
-			controls_state = 940
+			controls_state = 896
+			controls_state = 771
+			controls_state = 1097
+			
 		}
 
 		visible = {
 			OR = {
 				original_tag = SAF
+				original_tag = LES
+				original_tag = SWA
+				original_tag = NMB
 				original_tag = BOT
 				original_tag = ZIM
 				original_tag = MZB
-				original_tag = LES
-				original_tag = SWA
+				original_tag = ZAM
+				original_tag = BAR
 			}
 			NOT = { has_global_flag = form_mutapa_flag }
 		}
 
 		complete_effect = {
 			set_cosmetic_tag = MUT_UNIFIED
-			541 = { add_core_of = ROOT }
 			681 = { add_core_of = ROOT }
-			719 = { add_core_of = ROOT }
+			940 = { add_core_of = ROOT }
 			275 = { add_core_of = ROOT }
+			938 = { add_core_of = ROOT }
+			939 = { add_core_of = ROOT }
+			893 = { add_core_of = ROOT }
+			541 = { add_core_of = ROOT }
+			894 = { add_core_of = ROOT }
+			895 = { add_core_of = ROOT }
 			542 = { add_core_of = ROOT }
 			545 = { add_core_of = ROOT }
 			544 = { add_core_of = ROOT }
-			938 = { add_core_of = ROOT }
-			939 = { add_core_of = ROOT }
-			940 = { add_core_of = ROOT }
+			896 = { add_core_of = ROOT }
+			771 = { add_core_of = ROOT }
+			1097 = { add_core_of = ROOT }
 			hidden_effect = {
 				news_event = { id = wtt_news.63 hours = 6 }
 				set_global_flag = form_mutapa_flag

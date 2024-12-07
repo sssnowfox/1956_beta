@@ -8082,7 +8082,33 @@ focus_tree = {
 				}
 				
 				NOT = {
+					956 = {
+						NOT = { is_fully_controlled_by = ROOT }
+						OWNER = {
+							has_war_with = ROOT
+							is_in_faction_with = ROOT
+							OVERLORD = {
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				
+				NOT = {
 					109 = {
+						NOT = { is_fully_controlled_by = ROOT }
+						OWNER = {
+							has_war_with = ROOT
+							is_in_faction_with = ROOT
+							OVERLORD = {
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				
+				NOT = {
+					958 = {
 						NOT = { is_fully_controlled_by = ROOT }
 						OWNER = {
 							has_war_with = ROOT
@@ -8123,8 +8149,34 @@ focus_tree = {
 					}
 				}
 			}
+			
+			956 = { #Prekmurje
+				OR = {
+					is_fully_controlled_by = ROOT
+					any_country = {
+						is_in_faction_with = ROOT
+						controls_state = 102
+					}
+					OWNER = {
+						has_war_with = ROOT
+					}
+				}
+			}
 
 			103 = { #Dalmatia
+				OR = {
+					is_fully_controlled_by = ROOT
+					any_country = {
+						is_in_faction_with = ROOT
+						controls_state = 103
+					}
+					OWNER = {
+						has_war_with = ROOT
+					}
+				}
+			}
+			
+			958 = { #Kvarner
 				OR = {
 					is_fully_controlled_by = ROOT
 					any_country = {
@@ -8159,7 +8211,9 @@ focus_tree = {
 				limit = {
 					YUG = {
 						controls_state = 102 #North Slovenia
+						controls_state = 956 #Prekmurje
 						controls_state = 103 #Dalmatia
+						controls_state = 958 #Kvarner
 						controls_state = 853 #Lubljana
 					}
 				}
@@ -8184,6 +8238,65 @@ focus_tree = {
 					}
 
 					853 = {
+						controller = {
+							IF = {
+								limit = {
+									NOT = {
+										is_in_array = {
+											array = AUS.expansion_targets
+											value = THIS
+										}
+									}
+								}
+							}
+							capital_scope = {
+								add_to_array = {
+									array = AUS.expansion_targets
+									value = THIS
+								}
+							}
+						}
+					}
+				}
+				IF = {
+					limit = {
+						956 = { #Prekmurje
+							NOT = {
+								is_fully_controlled_by = ROOT
+							}
+						}
+					}
+
+					956 = {
+						controller = {
+							IF = {
+								limit = {
+									NOT = {
+										is_in_array = {
+											array = AUS.expansion_targets
+											value = THIS
+										}
+									}
+								}
+							}
+							capital_scope = {
+								add_to_array = {
+									array = AUS.expansion_targets
+									value = THIS
+								}
+							}
+						}
+					}
+				}
+				IF = {
+					limit = {
+						958 = { #Kvarner
+							NOT = {
+								is_fully_controlled_by = ROOT
+							}
+						}
+					}
+					958 = { #Kvarner
 						controller = {
 							IF = {
 								limit = {
@@ -9064,6 +9177,8 @@ focus_tree = {
 			controls_state = 72 #Zaolzie
 
 			controls_state = 102 #North Slovenia
+			controls_state = 956 #Prekmurje
+			controls_state = 958 #Kvarner
 			controls_state = 103 #Dalmatia
 			controls_state = 853 #Lubljana 
 
