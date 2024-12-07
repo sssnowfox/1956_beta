@@ -956,6 +956,7 @@ ideas = {
 			modifier = {
 				research_speed_factor = 0.08
 				communism_drift = 0.03
+				special_project_speed_factor = 0.05
 			}
 			research_bonus = {
 				industry = 0.10
@@ -1207,78 +1208,6 @@ ideas = {
 				extra_trade_to_target_factor = 0.25
 				cic_to_target_factor = 0.15
 				mic_to_target_factor = 0.15
-			}
-		}
-
-		r56_LUX_luxemburg_ist_deutsch = {
-			picture = hol_caved_to_the_germans
-
-			modifier = {
-				stability_factor = -0.10
-				war_support_weekly = 0.005
-				consumer_goods_factor = -0.05
-			}
-			targeted_modifier = {
-				tag = GER
-				attack_bonus_against = -0.10
-			}
-		}
-
-		r56_LUX_brutal_political_oppression = {
-			picture = generic_oppression
-
-			modifier = {
-				party_popularity_stability_factor = -0.20
-				stability_factor = 0.25
-				democratic_drift = -0.10
-				communism_drift = -0.10
-				war_support_factor = 0.10
-			}
-		}
-
-		r56_LUX_luxemburg_hj = {
-			picture = generic_fascist_workers
-
-			modifier = {
-				weekly_manpower = 150
-				industrial_capacity_factory = 0.10
-			}
-		}
-
-		r56_LUX_german_party_organisation = {
-			picture = generic_fascism_drift_2
-
-			modifier = {
-				org_loss_at_low_org_factor = -0.15
-				resistance_growth = -0.05
-				production_factory_efficiency_gain_factor = 0.10
-			}
-		}
-
-		r56_LUX_burgundian_heritage = {
-			picture = generic_volunteer_expedition_bonus		# request new gfx
-
-			modifier = {
-				neutrality_drift = 0.05
-				war_stability_factor = 0.15
-				weekly_casualties_war_support = 0.005
-			}
-			targeted_modifier = {
-				tag = GER
-				attack_bonus_against = 0.10
-				defense_bonus_against = 0.10
-			}
-		}
-
-		r56_LUX_our_own_future = {
-			picture = FRA_scw_intervention_republicans_focus^
-
-			cancel = {
-				is_subject = no
-			}
-
-			modifier = {
-				autonomy_gain = 1.0
 			}
 		}
 

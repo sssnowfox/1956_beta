@@ -795,7 +795,7 @@ country_event = {		# LUX got attacked, please help
 			base = 5
 			modifier = {
 				factor = 0
-				has_opinion {
+				has_opinion = {
 					target = LUX
 					value < 0
 				}
@@ -819,7 +819,7 @@ country_event = {		# LUX got attacked, please help
 			base = 5
 			modifier = {
 				factor = 0
-				has_opinion {
+				has_opinion = {
 					target = LUX
 					value > 0
 				}
