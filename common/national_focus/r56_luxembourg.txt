@@ -1152,6 +1152,9 @@ focus_tree = {
 						level < 10
 					}
 				}
+				add_dynamic_modifier = {
+					modifier = FRA_maginot_line_dynamic_modifier
+				}
 			}
 			every_other_country = {
 				limit = {
