@@ -136,6 +136,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL_CHARACTER }
 
 		completion_reward = {
+			add_ideas = civilian_economy
+
+			custom_effect_tooltip = generic_skip_one_line_tt
 
 			add_stability = -0.1
 			if = {
@@ -223,6 +226,11 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.03
 
+			add_popularity = {
+			    ideology = ROOT
+			    popularity = 0.03
+			}
+
 			custom_effect_tooltip = generic_skip_one_line_tt
 			
 			GER_modify_industrial_modifier = yes
@@ -276,7 +284,7 @@ focus_tree = {
 
 			GER_modify_industrial_modifier = yes
 			add_to_variable = { 
-				GER_industrial_consumer_goods_factor = -0.15
+				GER_industrial_consumer_goods_factor = -0.20
 				tooltip = consumer_goods_factor_tt
 			}
 		}
