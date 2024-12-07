@@ -73843,7 +73843,7 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_goal_LUX_reaffirm_treaty_of_london"
+		name = "GFX_goal_LUX_reaffirm_treaty_of_london_shine"
 		textureFile = "gfx/interface/goals/LUX/r56_goal_LUX_reaffirm_treaty_of_london.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -73875,7 +73875,7 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_goal_LUX_demonstrate_our_will"
+		name = "GFX_goal_LUX_demonstrate_our_will_shine"
 		textureFile = "gfx/interface/goals/LUX/r56_goal_LUX_demonstrate_our_will.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -73907,7 +73907,7 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_goal_LUX_expand_the_gau"
+		name = "GFX_goal_LUX_expand_the_gau_shine"
 		textureFile = "gfx/interface/goals/LUX/r56_goal_LUX_expand_the_gau.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -73939,7 +73939,7 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_goal_generic_attack_benelux"
+		name = "GFX_goal_generic_attack_benelux_shine"
 		textureFile = "gfx/interface/goals/generic/r56_goal_generic_attack_benelux.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -73971,7 +73971,7 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_goal_generic_big_german_flag"
+		name = "GFX_goal_generic_big_german_flag_shine"
 		textureFile = "gfx/interface/goals/generic/r56_goal_generic_big_german_flag.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -74003,11 +74003,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_goal_LUX_dreams_of_federation"
+		name = "GFX_goal_LUX_dreams_of_federation_shine"
 		textureFile = "gfx/interface/goals/LUX/r56_goal_LUX_dreams_of_federation.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/LUX/r56_goal_LUX_dreams_of_federation.dds"
+			animationmaskfile = "gfx/interface/goals/LUX/r56_goal_LUX_dreams_of_federation.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -74020,7 +74020,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/LUX/r56_goal_LUX_dreams_of_federation.dds"
+			animationmaskfile = "gfx/interface/goals/LUX/r56_goal_LUX_dreams_of_federation.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -74035,11 +74035,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_goal_LUX_decentralised_alliance"
+		name = "GFX_goal_LUX_decentralised_alliance_shine"
 		textureFile = "gfx/interface/goals/LUX/r56_goal_LUX_decentralised_alliance.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/LUX/r56_goal_LUX_decentralised_alliance.dds"
+			animationmaskfile = "gfx/interface/goals/LUX/r56_goal_LUX_decentralised_alliance.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -74052,7 +74052,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/LUX/r56_goal_LUX_decentralised_alliance.dds"
+			animationmaskfile = "gfx/interface/goals/LUX/r56_goal_LUX_decentralised_alliance.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -74067,11 +74067,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_goal_LUX_conservative_victory"
+		name = "GFX_goal_LUX_conservative_victory_shine"
 		textureFile = "gfx/interface/goals/LUX/r56_goal_LUX_conservative_victory.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/LUX/r56_goal_LUX_conservative_victory.dds"
+			animationmaskfile = "gfx/interface/goals/LUX/r56_goal_LUX_conservative_victory.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -74084,7 +74084,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/LUX/r56_goal_LUX_conservative_victory.dds"
+			animationmaskfile = "gfx/interface/goals/LUX/r56_goal_LUX_conservative_victory.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -74099,11 +74099,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_goal_LUX_liberal_victory"
+		name = "GFX_goal_LUX_liberal_victory_shine"
 		textureFile = "gfx/interface/goals/LUX/r56_goal_LUX_liberal_victory.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/LUX/r56_goal_LUX_liberal_victory.dds"
+			animationmaskfile = "gfx/interface/goals/LUX/r56_goal_LUX_liberal_victory.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -74116,7 +74116,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/LUX/r56_goal_LUX_liberal_victory.dds"
+			animationmaskfile = "gfx/interface/goals/LUX/r56_goal_LUX_liberal_victory.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -74131,11 +74131,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_goal_LUX_socdem_victory"
+		name = "GFX_goal_LUX_socdem_victory_shine"
 		textureFile = "gfx/interface/goals/LUX/r56_goal_LUX_socdem_victory.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/LUX/r56_goal_LUX_socdem_victory.dds"
+			animationmaskfile = "gfx/interface/goals/LUX/r56_goal_LUX_socdem_victory.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -74148,7 +74148,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/LUX/r56_goal_LUX_socdem_victory.dds"
+			animationmaskfile = "gfx/interface/goals/LUX/r56_goal_LUX_socdem_victory.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -74163,11 +74163,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_goal_LUX_communist_victory"
+		name = "GFX_goal_LUX_communist_victory_shine"
 		textureFile = "gfx/interface/goals/LUX/r56_goal_LUX_communist_victory.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/LUX/r56_goal_LUX_communist_victory.dds"
+			animationmaskfile = "gfx/interface/goals/LUX/r56_goal_LUX_communist_victory.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -74180,7 +74180,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/LUX/r56_goal_LUX_communist_victory.dds"
+			animationmaskfile = "gfx/interface/goals/LUX/r56_goal_LUX_communist_victory.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -74195,11 +74195,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_goal_LUX_commemorate_independence"
+		name = "GFX_goal_LUX_commemorate_independence_shine"
 		textureFile = "gfx/interface/goals/LUX/r56_goal_LUX_commemorate_independence.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/LUX/r56_goal_LUX_commemorate_independence.dds"
+			animationmaskfile = "gfx/interface/goals/LUX/r56_goal_LUX_commemorate_independence.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -74212,7 +74212,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/LUX/r56_goal_LUX_commemorate_independence.dds"
+			animationmaskfile = "gfx/interface/goals/LUX/r56_goal_LUX_commemorate_independence.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
