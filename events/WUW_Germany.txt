@@ -11432,7 +11432,7 @@ country_event = {
 				PRU = {
 					set_nationality = {
 					    target_country = RAN
-					    character = PRU_Óscar_benavides
+					    character = PRU_oscar_benavides
 					}
 				}
 			}
@@ -11440,7 +11440,7 @@ country_event = {
 				CHL = {
 					set_nationality = {
 					    target_country = RAN
-					    character = CHL_jorge_gonzález_von_marées
+					    character = CHL_jorge_gonzales_von_marees
 					}
 				}
 			}
@@ -11512,7 +11512,7 @@ country_event = {
 				RAN = {
 					set_nationality = {
 					    target_country = PRU
-					    character = PRU_Óscar_benavides
+					    character = PRU_oscar_benavides
 					}
 				}
 			}
@@ -11520,7 +11520,7 @@ country_event = {
 				RAN = {
 					set_nationality = {
 					    target_country = CHL
-					    character = CHL_jorge_gonzález_von_marées
+					    character = CHL_jorge_gonzales_von_marees
 					}
 				}
 			}
@@ -11548,7 +11548,7 @@ country_event = {
 						}
 					}
 				}
-				PRU_Óscar_benavides = {
+				PRU_oscar_benavides = {
 					remove_country_leader_role = {
 						ideology = nazism
 					}	
@@ -11563,7 +11563,7 @@ country_event = {
 				}
 			}
 			ELSE = {
-				CHL_jorge_gonzález_von_marées = {
+				CHL_jorge_gonzales_von_marees = {
 					remove_country_leader_role = {
 						ideology = nazism
 					}	
@@ -12547,7 +12547,7 @@ country_event = {
 		RHD = {
 			RAJ_v_d_savarkar = {
 				remove_country_leader_role = {
-					ideology = nazism
+					ideology = clerical_fascism	#different in r56
 				}	
 				add_country_leader_role = {
 					promote_leader = yes
@@ -12965,7 +12965,11 @@ country_event = {
 					has_country_flag = GER_AI_RANDOM_KAISER
 					has_game_rule = {
 						rule = GER_ai_behavior
-						option = KAISER
+						option = MONARCHIST_ALLIES
+					}
+					has_game_rule = {
+						rule = GER_ai_behavior
+						option = MONARCHIST_CENTRAL_POWERS
 					}
 				}
 			}
@@ -12995,12 +12999,12 @@ country_event = {
 					has_country_flag = GER_AI_RANDOM_COMMUNIST_STALINIST
 					has_game_rule = {
 						rule = GER_ai_behavior
-						option = GER_COMMUNIST_STALINIST
+						option = COMMUNIST_COMINTERN
 					}
 					has_country_flag = GER_AI_RANDOM_COMMUNIST_SPARTACUS
 					has_game_rule = {
 						rule = GER_ai_behavior
-						option = GER_COMMUNIST_SPARTACUS
+						option = COMMUNIST_WORLD_REVOLUTION
 					}
 				}
 			}
@@ -13586,12 +13590,12 @@ country_event = {
 					has_country_flag = GER_AI_RANDOM_COMMUNIST_STALINIST
 					has_game_rule = {
 						rule = GER_ai_behavior
-						option = GER_COMMUNIST_STALINIST
+						option = COMMUNIST_COMINTERN
 					}
 					has_country_flag = GER_AI_RANDOM_COMMUNIST_SPARTACUS
 					has_game_rule = {
 						rule = GER_ai_behavior
-						option = GER_COMMUNIST_SPARTACUS
+						option = COMMUNIST_WORLD_REVOLUTION
 					}
 				}
 			}

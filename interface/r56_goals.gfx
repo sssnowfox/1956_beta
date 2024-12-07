@@ -2942,7 +2942,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_AUS_starhemberg"
-		texturefile = "gfx/interface/goals/aus/r56_goal_AUS_starhemberg.dds"
+		texturefile = "gfx/interface/goals/aus/r56_goal_AUS_Starhemberg.dds"
 	}
 	SpriteType = {
 		name = "GFX_goal_AUS_handle_fey"
