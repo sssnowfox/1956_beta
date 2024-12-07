@@ -1,8 +1,6 @@
-#####-----> Rt56 Luxemburg Tree. Made By SpicyAlfredo et al<><> <><> <><>
+#####-----> Rt56 Luxembourg Tree. Made By Flor et al<><> <><> <><>
 
-#Tree is a gaint meme but the old tree was very bad
-#Code isn't air tight and theres indention errors. oh well
-#A bit of laziness that could be imporved upon if revisted - SpicyAlfredo
+#Kept the old eco/army tree because of laziness and time
 
 
 ### search_filters = {FOCUS_FILTER_POLITICAL}
@@ -28,7 +26,7 @@ focus_tree = {
 	initial_show_position = {
 		x = 35
 	}
-	
+
 	continuous_focus_position = { x = 50 y = 1000 }
 
 	#shared_focus = ABC_establish_a_general_staff	
@@ -37,46 +35,7 @@ focus_tree = {
 	#shared_focus = GEN_begin_industrial_buildup
 	shared_focus = GEN_industrial_boom
 
-	
 	default = no
-
-#	focus = {
-#		id = LUX_
-#		icon = GFX_
-#		prerequisite = { focus = }
-#		mutually_exclusive = { focus =  }
-#		x = -3
-#		y = 0
-#		relative_position_id =
-#
-#		cost = 10
-#
-#		ai_will_do = {
-#			factor = 1
-#		}
-#
-#		available = {
-#
-#		}
-#
-#		bypass = {
-#
-#		}
-#
-#		
-#		
-#		
-#
-#		complete_tooltip = {
-#
-#		}
-#
-#		completion_reward = {
-#
-#		}
-#	}
-
-
 
 	focus = {
 		id = LUX_lessons_of_the_great_war
@@ -89,7 +48,7 @@ focus_tree = {
 		available = {
 		}
 
-		search_filters = {FOCUS_FILTER_ARMY_XP FOCUS_FILTER_MILITARY_RESEARCH}
+		search_filters = { FOCUS_FILTER_ARMY_XP }
 
 		completion_reward = {
 			army_experience = 10
@@ -778,7 +737,7 @@ focus_tree = {
 			custom_effect_tooltip = r56_newline
 			custom_effect_tooltip = LUX_unlock_chamberofdeputies_tt
 		}
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = LUX_the_maulkuerfgesetz
@@ -866,8 +825,8 @@ focus_tree = {
 			if = {
 				limit = { has_country_flag = LUX_elections_KPL_winner }
 				promote_character = {
-					character = LUX_charles_marx
-					ideology = marxism
+					character = LUX_dominique_urbany
+					ideology = stalinism
 				}
 				set_politics = {
 					ruling_party = communism
@@ -879,7 +838,7 @@ focus_tree = {
 				}
 			}
 		}
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL FOCUS_FILTER_STABILITY }
 	}
 	focus = {
 		id = LUX_maintain_status_quo
@@ -1015,6 +974,7 @@ focus_tree = {
 				value = -0.10
 			}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = LUX_begin_rearmament
@@ -1032,6 +992,7 @@ focus_tree = {
 				value = -0.05
 			}
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
 		id = LUX_seek_protection
@@ -1075,10 +1036,11 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_ALLIANCE }
 	}
 	focus = {
 		id = LUX_join_allies
-		icon = GFX_goal_generic_join_allies
+		icon = GFX_goal_LUX_join_allies
 		cost = 10
 		x = -2
 		y = 2
@@ -1126,7 +1088,8 @@ focus_tree = {
 				id = LUX_neutrality_balance
 				value = -0.05
 			}
-		 }
+		}
+		search_filters = { FOCUS_FILTER_ALLIANCE }
 	}
 	focus = {
 		id = LUX_research_cooperation
@@ -1162,6 +1125,7 @@ focus_tree = {
 				value = -0.05
 			}
 		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 	focus = {
 		id = LUX_extend_maginot
@@ -1187,6 +1151,9 @@ focus_tree = {
 						limit_to_border = yes
 						level < 10
 					}
+				}
+				add_dynamic_modifier = {
+					modifier = FRA_maginot_line_dynamic_modifier
 				}
 			}
 			every_other_country = {
@@ -1239,6 +1206,7 @@ focus_tree = {
 				value = -0.05
 			}
 		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 	focus = {
 		id = LUX_arms_purchases
@@ -1306,6 +1274,7 @@ focus_tree = {
 				value = -0.05
 			}
 		}
+		search_filters = { FOCUS_FILTER_MILITARY_EQUIPMENT }
 	}
 	focus = {
 		id = LUX_preventive_intervention
@@ -1344,6 +1313,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
 	focus = {
 		id = LUX_benelux_alliance
@@ -1381,6 +1351,7 @@ focus_tree = {
 				value = -0.05
 			}
 		}
+		search_filters = { FOCUS_FILTER_ALLIANCE }
 	}
 	focus = {
 		id = LUX_dreams_of_federation
@@ -1423,6 +1394,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
 	focus = {
 		id = LUX_merge_industries
@@ -1465,6 +1437,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
 		id = LUX_fortify_border_regions
@@ -1508,6 +1481,7 @@ focus_tree = {
 			unlock_decision_category_tooltip = LUX_regional_development
 			add_political_power = 30
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
 		id = LUX_establish_free_university
@@ -1522,6 +1496,7 @@ focus_tree = {
 			add_research_slot = 1
 			add_ideas = r56_LUX_increased_education_budget
 		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 	focus = {
 		id = LUX_agressive_stance
@@ -1533,16 +1508,25 @@ focus_tree = {
 		prerequisite = { focus = LUX_establish_free_university }
 		mutually_exclusive = { focus = LUX_restore_neutrality }
 		available = {
-			all_state = {
-				OR = {
-					is_core_of = HOL
-					is_core_of = BEL
-					is_core_of = LUX
-					is_core_of = WLL
-					is_core_of = FLA
-				}
-				is_owned_and_controlled_by = ROOT
+			is_subject = no
+			# Netherlands
+			custom_trigger_tooltip = {
+				tooltip = form_eu_netherlands_required_states_tt
+				controls_state = 7
+				controls_state = 35
+				controls_state = 36
 			}
+			# Belgium
+			custom_trigger_tooltip = {
+				tooltip = form_eu_belgium_required_states_tt
+				controls_state = 6
+				controls_state = 34
+				controls_state = 965
+				controls_state = 1094
+				controls_state = 1095
+			}
+			# Luxembourg
+			controls_state = 8
 			has_war_support > 0.80
 		}
 		completion_reward = {
@@ -1560,6 +1544,7 @@ focus_tree = {
 				value = -0.10
 			}
 		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
 	focus = {
 		id = LUX_establish_european_claims
@@ -1574,7 +1559,7 @@ focus_tree = {
 				limit = {
 					OR = {
 						state = 29
-						state = 1054
+						state = 1053
 						state = 42
 						state = 51
 						state = 989
@@ -1594,6 +1579,7 @@ focus_tree = {
 			}
 			add_threat = 3
 		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
 	focus = {
 		id = LUX_announce_colonial_claims
@@ -1620,15 +1606,16 @@ focus_tree = {
 						state = 796
 						state = 548
 						state = 904
+						state = 547
+						state = 905
 						state = 456
 						state = 1055
-						state = 547
-						state = 904
 						state = 333
 						state = 916
 						state = 1014
 						state = 721
 						state = 523
+						state = 1096
 						state = 687
 						state = 310
 					}
@@ -1645,6 +1632,7 @@ focus_tree = {
 			}
 			add_threat = 2
 		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
 	focus = {
 		id = LUX_greater_benelux
@@ -1661,7 +1649,7 @@ focus_tree = {
 			OR = {
 				AND = {
 					owns_state = 29
-					owns_state = 1054
+					owns_state = 1053
 					owns_state = 42
 					owns_state = 51
 					owns_state = 989
@@ -1675,15 +1663,16 @@ focus_tree = {
 					owns_state = 796
 					owns_state = 548
 					owns_state = 904
+					owns_state = 547
+					owns_state = 905
 					owns_state = 456
 					owns_state = 1055
-					owns_state = 547
-					owns_state = 904
 					owns_state = 333
 					owns_state = 916
 					owns_state = 1014
 					owns_state = 721
 					owns_state = 523
+					owns_state = 1096
 					owns_state = 687
 					owns_state = 310
 				}
@@ -1694,6 +1683,7 @@ focus_tree = {
 			add_political_power = 100
 			add_stability = 0.15
 		}
+		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_STABILITY }
 	}
 	focus = {
 		id = LUX_restore_neutrality
@@ -1725,6 +1715,7 @@ focus_tree = {
 				value = 0.15
 			}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = LUX_total_neutrality
@@ -1745,10 +1736,11 @@ focus_tree = {
 				value = 0.10
 			}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = LUX_decentralised_alliance
-		icon = GFX_goal_LUX_decentralised_alliance		# request new gfx
+		icon = GFX_goal_LUX_decentralised_alliance
 		cost = 5
 		x = 2
 		y = 1
@@ -1756,7 +1748,7 @@ focus_tree = {
 		prerequisite = { focus = LUX_benelux_alliance }
 		mutually_exclusive = { focus = LUX_dreams_of_federation }
 		available = {
-			is_in_faction = no
+			is_faction_leader = yes
 			is_subject = no
 			has_government = democratic
 		}
@@ -1771,6 +1763,7 @@ focus_tree = {
 				add_ideas = r56_LUX_benelux_alliance
 			}
 		}
+		search_filters = { FOCUS_FILTER_ALLIANCE FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
 		id = LUX_unified_command
@@ -1803,6 +1796,7 @@ focus_tree = {
 				value = -0.05
 			}
 		}
+		search_filters = { FOCUS_FILTER_ARMY_XP }
 	}
 	focus = {
 		id = LUX_liberate_lowlands
@@ -1856,6 +1850,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
 	focus = {
 		id = LUX_expand_the_customs_union
@@ -1931,6 +1926,7 @@ focus_tree = {
 			}
 			else = { remove_ideas = r56_LUX_economic_dependence_4 }
 		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
 	focus = {
 		id = LUX_joint_economic_development
@@ -1968,6 +1964,7 @@ focus_tree = {
 				value = -0.05
 			}
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
 		id = LUX_united_and_ready
@@ -1998,6 +1995,7 @@ focus_tree = {
 				value = -0.05
 			}
 		}
+		search_filters = { FOCUS_FILTER_ALLIANCE FOCUS_FILTER_STABILITY }
 	}
 	focus = {
 		id = LUX_strike_the_german_threat
@@ -2039,6 +2037,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
 	focus = {
 		id = LUX_another_declaration_of_neutrality
@@ -2094,8 +2093,6 @@ focus_tree = {
 						original_tag = BEL
 						original_tag = ENG
 						original_tag = HOL
-						original_tag = ITA
-						original_tag = GER
 					}
 				}
 				country_event = {
@@ -2556,6 +2553,7 @@ focus_tree = {
 		completion_reward = {
 			mark_focus_tree_layout_dirty = yes
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = LUX_privatisation_drive
@@ -2587,6 +2585,7 @@ focus_tree = {
 				days = 365
 			}
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
 		id = LUX_expand_social_net
@@ -2604,6 +2603,7 @@ focus_tree = {
 				add_idea = r56_LUX_fair_economy_2
 			}
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
 		id = LUX_open_border_agreements
@@ -2622,6 +2622,7 @@ focus_tree = {
 			unlock_decision_tooltip = LUX_open_border_agreement_belgium
 			unlock_decision_tooltip = LUX_open_border_agreement_netherlands
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
 		id = LUX_lower_taxes
@@ -2634,6 +2635,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = r56_LUX_lowered_taxes
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
 	}
 	focus = {
 		id = LUX_promote_small_businesses
@@ -2655,6 +2657,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 			}
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
 		id = LUX_ensure_minimum_wage
@@ -2670,6 +2673,7 @@ focus_tree = {
 				add_idea = r56_LUX_fair_economy_3
 			}
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
 		id = LUX_academy_of_science
@@ -2683,6 +2687,7 @@ focus_tree = {
 			focus = LUX_promote_small_businesses
 		}
 		completion_reward = { add_research_slot = 1 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 	focus = {
 		id = LUX_fair_economy
@@ -2709,6 +2714,7 @@ focus_tree = {
 			add_war_support = -0.05
 			add_ideas = r56_LUX_fair_economy_1
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT }
 	}
 	# social democrats
 	focus = {
@@ -2746,12 +2752,16 @@ focus_tree = {
 		completion_reward = {
 			mark_focus_tree_layout_dirty = yes
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = LUX_lessons_from_spain
 		icon = GFX_goal_generic_spanish_civil_war_soldier
 		relative_position_id = LUX_first_social_democratic_government
-		prerequisite = { focus = LUX_begin_workers_revolution focus = LUX_first_social_democratic_government }
+		prerequisite = {
+			focus = LUX_begin_workers_revolution
+			focus = LUX_first_social_democratic_government
+		}
 		x = -5
 		y = 1
 		cost = 5
@@ -2870,10 +2880,11 @@ focus_tree = {
 			}
 			add_ideas = r56_LUX_socialist_constitution
 		}
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
 		id = LUX_abolish_monarchy
-		icon = GFX_focus_rom_handle_king		# request new gfx
+		icon = GFX_focus_rom_handle_king
 		cost = 10
 		x = 0
 		y = 1
@@ -2932,6 +2943,7 @@ focus_tree = {
 				set_cosmetic_tag = LUX_republican
 			}
 		}
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = LUX_erase_monarchist_legacy
@@ -2963,6 +2975,7 @@ focus_tree = {
 			}
 			add_country_leader_trait = devoted_communist
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
 		id = LUX_grant_citizenship
@@ -2984,6 +2997,7 @@ focus_tree = {
 			custom_effect_tooltip = r56_newline
 			add_country_leader_trait = den_father_of_the_republic
 		}
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 	}
 	# communist
 	focus = {
@@ -3017,6 +3031,7 @@ focus_tree = {
 		completion_reward = {
 			mark_focus_tree_layout_dirty = yes
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = LUX_revolutionise_army
@@ -3030,6 +3045,7 @@ focus_tree = {
 			add_ideas = r56_LUX_revolutionary_army
 			r56_conscription_law_level_up = yes
 		}
+		search_filters = { FOCUS_FILTER_MANPOWER }
 	}
 	focus = {
 		id = LUX_incorporate_political_comissars
@@ -3062,6 +3078,7 @@ focus_tree = {
 				add_idea = r56_LUX_red_army
 			}
 		}
+		search_filters = { FOCUS_FILTER_MANPOWER }
 	}
 	focus = {
 		id = LUX_expand_conscription
@@ -3097,6 +3114,7 @@ focus_tree = {
 				custom_effect_tooltip = LUX_expand_conscription_tt
 			}
 		}
+		search_filters = { FOCUS_FILTER_MANPOWER }
 	}
 	focus = {
 		id = LUX_elevate_trade_unions
@@ -3110,6 +3128,7 @@ focus_tree = {
 			add_political_power = 50
 			add_ideas = r56i_laws_leadership_people
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = LUX_oust_capitalists
@@ -3133,6 +3152,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
 	}
 	focus = {
 		id = LUX_begin_collective_ownership_campaign
@@ -3171,6 +3191,7 @@ focus_tree = {
 			custom_effect_tooltip = LUX_begin_collective_ownership_campaign_tt
 			show_ideas_tooltip = r56_LUX_collectivized_economy_2
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
 		id = LUX_struggle_for_equality
@@ -3186,6 +3207,7 @@ focus_tree = {
 				add_idea = r56_LUX_struggle_for_equality
 			}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 	}
 	focus = {
 		id = LUX_find_new_trade_partners
@@ -3228,6 +3250,7 @@ focus_tree = {
 				show_ideas_tooltip = r56_LUX_autarkic_economy
 			}
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
 		id = LUX_peoples_university
@@ -3240,6 +3263,7 @@ focus_tree = {
 		completion_reward = {
 			add_research_slot = 1
 		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 	focus = {
 		id = LUX_unite_the_country
@@ -3260,6 +3284,7 @@ focus_tree = {
 				add_idea = r56_LUX_socialist_society
 			}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_RESEARCH }
 	}
 	focus = {
 		id = LUX_abandon_the_foolish_policy
@@ -3278,6 +3303,7 @@ focus_tree = {
 			remove_power_balance = { id = LUX_neutrality_balance }
 			remove_ideas = r56_legacy_of_luxembourg_crisis_1
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = LUX_european_revolution
@@ -3359,6 +3385,7 @@ focus_tree = {
 				create_faction = "Alliance of European Socialists"
 			}
 		}
+		search_filters = { FOCUS_FILTER_ALLIANCE FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = LUX_increase_defense_production
@@ -3390,6 +3417,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
 		id = LUX_bastion_of_antifascism
@@ -3407,6 +3435,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = r56_LUX_antifascist_volunteers
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
 	}
 	focus = {
 		id = LUX_lead_the_opposition
@@ -3443,6 +3472,7 @@ focus_tree = {
 			}
 			add_country_leader_trait = successor_of_marx
 		}
+		search_filters = { FOCUS_FILTER_ALLIANCE }
 	}
 	focus = {
 		id = LUX_destroy_stalinism
@@ -3476,6 +3506,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
 	focus = {
 		id = LUX_follow_moscow_line
@@ -3527,6 +3558,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_ALLIANCE }
 	}
 	focus = {
 		id = LUX_comintern_research_exchange
@@ -3550,6 +3582,7 @@ focus_tree = {
 				bonus = 0.50
 			}
 		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 	focus = {
 		id = LUX_adopt_soviet_policies
@@ -3568,6 +3601,7 @@ focus_tree = {
 				add_idea = r56_LUX_patriotic_constitution
 			}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
 		id = LUX_follow_destalinisation
@@ -3591,6 +3625,7 @@ focus_tree = {
 			}
 			set_country_leader_ideology = leninism
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
 		id = LUX_establish_personality_cult
@@ -3611,6 +3646,7 @@ focus_tree = {
 			add_ideas = r56i_laws_leadership_cult
 			add_country_leader_trait = JUNO_cult_of_personality
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
 	}
 	focus = {
 		id = LUX_found_secret_service
@@ -3628,6 +3664,7 @@ focus_tree = {
 			}
 			else = { add_ideas = r56_LUX_via_nolar }
 		}
+		search_filters = { FOCUS_FILTER_ESPIONAGE }
 	}
 	focus = {
 		id = LUX_expand_via_capabilities
@@ -3664,6 +3701,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_ESPIONAGE }
 	}
 	focus = {
 		id = LUX_invade_benelux
@@ -3761,6 +3799,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
 	focus = {
 		id = LUX_bring_revolution_south
@@ -3837,6 +3876,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
 	focus = {
 		id = LUX_head_east
@@ -3913,6 +3953,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
 	focus = {
 		id = LUX_expand_benelux
@@ -3955,6 +3996,7 @@ focus_tree = {
 				add_core_of = ROOT
 			}
 		}
+		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = LUX_socialist_science
@@ -3970,6 +4012,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = r56_LUX_socialist_science
 		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 
 	# monarchist		currently disabled until i have some more free time and can finish it
@@ -4066,6 +4109,7 @@ focus_tree = {
 				set_default = yes
 			}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 	}
 	focus = {
 		id = LUX_attack_alliance_francaise
@@ -4089,6 +4133,7 @@ focus_tree = {
 				value = 0.05
 			}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 	}
 	focus = {
 		id = LUX_integrate_french_organisations
@@ -4100,10 +4145,7 @@ focus_tree = {
 		prerequisite = { focus = LUX_contest_election_results }
 		mutually_exclusive = { focus = LUX_attack_alliance_francaise }
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = r56_LUX_anti_french_sentiments2
-				add_idea = r56_LUX_all_luxembourgish_societies
-			}
+			add_ideas = r56_LUX_all_luxembourgish_societies
 			unlock_decision_tooltip = LUX_fascist_balance_show_national_unity
 
 			custom_effect_tooltip = r56_newline
@@ -4112,6 +4154,7 @@ focus_tree = {
 				value = -0.10
 			}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 	}
 	# focus = {
 	# 	id = LUX_raid_french_stores
@@ -4147,16 +4190,30 @@ focus_tree = {
 		relative_position_id = LUX_attack_alliance_francaise
 		prerequisite = { focus = LUX_attack_alliance_francaise focus = LUX_integrate_french_organisations }
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = r56_LUX_anti_french_sentiments2
-				add_idea = r56_LUX_anti_french_sentiments3
+			if = {
+				limit = { has_idea = r56_LUX_anti_french_sentiments }
+				swap_ideas = {
+					remove_idea = r56_LUX_anti_french_sentiments
+					add_idea = r56_LUX_anti_french_sentiments2
+				}
+			}
+			else_if = {
+				limit = { has_idea = r56_LUX_all_luxembourgish_societies }
+				swap_ideas = {
+					remove_idea = r56_LUX_all_luxembourgish_societies
+					add_idea = r56_LUX_all_luxembourgish_societies2
+				}
+			}
+			else = {
+				custom_effect_tooltip = LUX_rejuvenate_the_luxembourgish_identity_tt
 			}
 
 			add_power_balance_value = {
 				id = LUX_fascist_balance
-				value = 0.05
+				value = -0.05
 			}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 	}
 	focus = {
 		id = LUX_fully_counter_french_influence
@@ -4168,9 +4225,27 @@ focus_tree = {
 		prerequisite = { focus = LUX_attack_alliance_francaise }
 		prerequisite = { focus = LUX_request_german_funding }
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = r56_LUX_anti_french_sentiments2
-				add_idea = r56_LUX_anti_french_sentiments3
+			if = {
+				limit = { has_idea = r56_LUX_anti_french_sentiments }
+				swap_ideas = {
+					remove_idea = r56_LUX_anti_french_sentiments
+					add_idea = r56_LUX_anti_french_sentiments4
+				}
+			}
+			else_if = {
+				limit = { has_idea = r56_LUX_anti_french_sentiments2 }
+				swap_ideas = {
+					remove_idea = r56_LUX_anti_french_sentiments2
+					add_idea = r56_LUX_anti_french_sentiments3
+				}
+			}
+			else = {
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = r56_LUX_anti_french_sentiments2
+						add_idea = r56_LUX_anti_french_sentiments3
+					}
+				}
 			}
 
 			add_power_balance_value = {
@@ -4178,6 +4253,7 @@ focus_tree = {
 				value = 0.05
 			}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 	}
 	focus = {
 		id = LUX_found_lnp
@@ -4205,6 +4281,7 @@ focus_tree = {
 				value = -0.05
 			}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 	}
 	focus = {
 		id = LUX_request_german_funding
@@ -4227,6 +4304,7 @@ focus_tree = {
 				value = 0.10
 			}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
 		id = LUX_utilise_lvj
@@ -4250,6 +4328,7 @@ focus_tree = {
 				value = 0.05
 			}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER }
 	}
 	focus = {
 		id = LUX_subvert_armed_forces
@@ -4273,6 +4352,7 @@ focus_tree = {
 				value = 0.05
 			}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
 	}
 	focus = {
 		id = LUX_utilise_dennemeyer
@@ -4298,6 +4378,7 @@ focus_tree = {
 				value = -0.05
 			}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = LUX_organise_street_rallies
@@ -4328,6 +4409,7 @@ focus_tree = {
 				value = 0.05
 			}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 	}
 	focus = {
 		id = LUX_replace_the_government
@@ -4403,6 +4485,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY FOCUS_FILTER_TFV_AUTONOMY }
 	}
 	focus = {
 		id = LUX_expand_the_gau
@@ -4415,12 +4498,11 @@ focus_tree = {
 		mutually_exclusive = { focus = LUX_complete_integration	}
 		available = {
 			is_subject_of = GER
-			all_state = {
-				OR = {
-					state = 42
-					state = 1053
-				}
-				is_owned_and_controlled_by = GER
+			GER = {
+				controls_state = 42
+				owns_state = 42
+				controls_state = 1053
+				owns_state = 1053
 			}
 			has_war_together_with = GER
 			any_war_score > 4.99
@@ -4455,6 +4537,7 @@ focus_tree = {
 				add_autonomy_score = { value = -200 }
 			}
 		}
+		search_filters = { FOCUS_FILTER_TFV_AUTONOMY FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ANNEXATION }
 	}
 	focus = {
 		id = LUX_request_further_expansion
@@ -4466,23 +4549,16 @@ focus_tree = {
 		prerequisite = { focus = LUX_expand_the_gau }
 		available = {
 			is_subject_of = GER
-			all_state = {
-				OR = {
-					state = 42
-					state = 1053
-				}
-				is_owned_and_controlled_by = ROOT
+			controls_state = 42
+			owns_state = 42
+			controls_state = 1053
+			owns_state = 1053
+			GER = {
+				controls_state = 51
+				owns_state = 51
+				controls_state = 989
+				owns_state = 989
 			}
-			all_state = {
-				OR = {
-					state = 51
-					state = 989
-				}
-				is_owned_and_controlled_by = GER
-			}
-			has_war_together_with = GER
-			any_war_score > 9.99
-			has_army_manpower = { size > 15000 }
 		}
 		completion_reward = {
 			swap_ideas = {
@@ -4513,6 +4589,7 @@ focus_tree = {
 				add_autonomy_score = { value = -200 }
 			}
 		}
+		search_filters = { FOCUS_FILTER_TFV_AUTONOMY FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ANNEXATION }
 	}
 	focus = {
 		id = LUX_industrialise_west_rhine
@@ -4560,6 +4637,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 4
 			}
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
 		id = LUX_annex_conquered_lands
@@ -4630,6 +4708,7 @@ focus_tree = {
 				add_state_claim = 1095
 			}
 		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
 	focus = {
 		id = LUX_german_intellect
@@ -4642,6 +4721,7 @@ focus_tree = {
 		completion_reward = {
 			add_research_slot = 1
 		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 	focus = {
 		id = LUX_aid_the_warmachine
@@ -4671,6 +4751,7 @@ focus_tree = {
 			}
 			add_autonomy_score = { value = -100 }
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_TFV_AUTONOMY }
 	}
 	focus = {
 		id = LUX_establish_ss
@@ -4689,6 +4770,7 @@ focus_tree = {
 				bonus = 0.50
 			}
 		}
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_MANPOWER FOCUS_FILTER_RESEARCH }
 	}
 	focus = {
 		id = LUX_arrest_dennemeyer
@@ -4711,6 +4793,7 @@ focus_tree = {
 				retire_character = LUX_camille_dennemeyer
 			}
 		}
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = LUX_politicise_army
@@ -4736,6 +4819,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = LUX_maneuver_warfare
@@ -4760,6 +4844,7 @@ focus_tree = {
 				cost_reduction = 0.50
 			}
 		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 	focus = {
 		id = LUX_professionalise_army
@@ -4789,6 +4874,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = r56_LUX_unbeaten_in_battle
 		}
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 	}
 	focus = {
 		id = LUX_complete_integration
@@ -4816,6 +4902,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_TFV_AUTONOMY }
 		ai_will_do = {
 			base = 500
 		}
