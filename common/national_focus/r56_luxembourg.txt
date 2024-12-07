@@ -1745,7 +1745,7 @@ focus_tree = {
 		prerequisite = { focus = LUX_benelux_alliance }
 		mutually_exclusive = { focus = LUX_dreams_of_federation }
 		available = {
-			is_in_faction = no
+			is_faction_leader = yes
 			is_subject = no
 			has_government = democratic
 		}
@@ -4497,7 +4497,9 @@ focus_tree = {
 			is_subject_of = GER
 			GER = {
 				controls_state = 42
+				owns_state = 42
 				controls_state = 1053
+				owns_state = 1053
 			}
 			has_war_together_with = GER
 			any_war_score > 4.99
@@ -4545,10 +4547,14 @@ focus_tree = {
 		available = {
 			is_subject_of = GER
 			controls_state = 42
+			owns_state = 42
 			controls_state = 1053
+			owns_state = 1053
 			GER = {
 				controls_state = 51
+				owns_state = 51
 				controls_state = 989
+				owns_state = 989
 			}
 		}
 		completion_reward = {
