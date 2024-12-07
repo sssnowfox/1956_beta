@@ -4495,12 +4495,9 @@ focus_tree = {
 		mutually_exclusive = { focus = LUX_complete_integration	}
 		available = {
 			is_subject_of = GER
-			all_state = {
-				OR = {
-					state = 42
-					state = 1053
-				}
-				is_owned_and_controlled_by = GER
+			GER = {
+				controls_state = 42
+				controls_state = 1053
 			}
 			has_war_together_with = GER
 			any_war_score > 4.99
@@ -4547,23 +4544,12 @@ focus_tree = {
 		prerequisite = { focus = LUX_expand_the_gau }
 		available = {
 			is_subject_of = GER
-			all_state = {
-				OR = {
-					state = 42
-					state = 1053
-				}
-				is_owned_and_controlled_by = ROOT
+			controls_state = 42
+			controls_state = 1053
+			GER = {
+				controls_state = 51
+				controls_state = 989
 			}
-			all_state = {
-				OR = {
-					state = 51
-					state = 989
-				}
-				is_owned_and_controlled_by = GER
-			}
-			has_war_together_with = GER
-			any_war_score > 9.99
-			has_army_manpower = { size > 15000 }
 		}
 		completion_reward = {
 			swap_ideas = {
