@@ -4245,6 +4245,9 @@ form_roman_empire_category = {
  				995 = { add_core_of = ROOT }	#East Suez
 				911 = { add_core_of = ROOT }	#Suez
 				973 = { add_core_of = ROOT }	#Andorra, free core because its encircled by coastal states required
+				
+				1012 = { add_core_of = ROOT }   #Monaco
+				1015 = { add_core_of = ROOT }   #San Marino
  			}
 			
 			
@@ -5587,7 +5590,8 @@ form_roman_empire_category = {
 			controls_state = 34 #Wallonia
 			controls_state = 8 #Luxembourg
 			controls_state = 29 #Nord-Pas-De-Calais
-			
+			controls_state = 977 #Antwerpen
+			controls_state = 980 #Ardennes
 
 		}
 
@@ -5608,6 +5612,12 @@ form_roman_empire_category = {
 
 			# Wallonia
 			34 = { add_core_of = ROOT }
+
+			# Antwerpen
+			977 = { add_core_of = ROOT }
+
+			# Ardennes
+			980 = { add_core_of = ROOT }
 
 			# Luxembourg
 			8 = { add_core_of = ROOT }
