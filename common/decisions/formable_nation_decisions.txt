@@ -5773,6 +5773,7 @@ form_roman_empire_category = {
 			#R56
 			controls_state = 1041 #Cumbria
 			#controls_state = 1042 #Isle of Man - dont require, but do core
+			controls_state = 1076
 
 		}
 
@@ -5823,7 +5824,10 @@ form_roman_empire_category = {
 
 			#Isle of Man
 			1042 = { add_core_of = ROOT }
-			
+
+			#guernsey
+			1076 = { add_core_of = ROOT }
+
 			add_stability = -0.05
 			  
 			hidden_effect = { 
