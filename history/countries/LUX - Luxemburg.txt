@@ -91,7 +91,7 @@ set_popularities = {
 
 country_event = {		# Maulkuerfgesetz failing
 	id = luxembourg.201
-	months = 15
+	months = 16
 	days = 23
 }
 

@@ -582,7 +582,7 @@ focus_tree = {
 		x = 38
 		y = 0
 		offset = {
-			x = -15
+			x = -9
 			trigger = { has_completed_focus = LUX_appoint_new_prime_minister }
 		}
 		offset = {
@@ -782,7 +782,7 @@ focus_tree = {
 			}
 		}
 		offset = {
-			x = 15
+			x = 9
 			trigger = { has_completed_focus = LUX_appoint_new_prime_minister }
 		}
 		completion_reward = {
@@ -894,17 +894,27 @@ focus_tree = {
 		available = { NOT = { has_active_mission = LUX_form_government_mission } }
 		completion_reward = {
 			custom_effect_tooltip = LUX_finalise_government_formation_tt
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.10
-			}
 			add_stability = 0.05
 
 			if = {
 				limit = { NOT = { has_country_flag = LUX_elections_KPL_winner } }
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.10
+				}
 				set_power_balance = {
 					id = LUX_neutrality_balance
 					set_default = yes
+				}
+			}
+			else = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.05
 				}
 			}
 		}
@@ -3688,6 +3698,14 @@ focus_tree = {
 		will_lead_to_war_with = WLL
 		will_lead_to_war_with = FLA
 		completion_reward = {
+			add_state_claim = 1095
+			add_state_claim = 965
+			add_state_claim = 34
+			add_state_claim = 1094
+			add_state_claim = 6
+			add_state_claim = 35
+			add_state_claim = 7
+			add_state_claim = 36
 			if = {
 				limit = {
 					is_in_faction = yes
@@ -3767,7 +3785,7 @@ focus_tree = {
 					AND = {
 						has_government = communism
 						is_in_faction_with = ROOT
-						is_subject_of = ROOT
+						#is_subject_of = ROOT
 					}
 				}
 			}
@@ -3775,6 +3793,7 @@ focus_tree = {
 		}
 		will_lead_to_war_with = FRA
 		completion_reward = {
+			add_state_claim = 29
 			if = {
 				limit = {
 					is_in_faction = yes
@@ -3844,7 +3863,7 @@ focus_tree = {
 					AND = {
 						has_government = communism
 						is_in_faction_with = ROOT
-						is_subject_of = ROOT
+						#is_subject_of = ROOT
 					}
 				}
 			}
@@ -3852,6 +3871,9 @@ focus_tree = {
 		}
 		will_lead_to_war_with = GER
 		completion_reward = {
+			add_state_claim = 1053
+			add_state_claim = 42
+			add_state_claim = 51
 			if = {
 				limit = {
 					is_in_faction = yes

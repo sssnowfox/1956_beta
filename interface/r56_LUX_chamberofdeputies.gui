@@ -1132,7 +1132,7 @@ guiTypes = {
 		}
 		iconType = {
 			name = LUX_chamberofdeputies_PRL_info_results_victory_icon
-			spriteType = GFX_ideology_conservatism
+			spriteType = GFX_ideology_liberalism
 			position = {
 				x = 135
 				y = 160
@@ -1299,7 +1299,7 @@ guiTypes = {
 		}
 		iconType = {
 			name = LUX_chamberofdeputies_PRL_info_portrait
-			spriteType = GFX_Portrait_Europe_Generic_2
+			spriteType = GFX_portrait_LUX_gaston_diderich
 			position = {
 				x = 363
 				y = 171
@@ -1411,7 +1411,7 @@ guiTypes = {
 		}
 		iconType = {
 			name = LUX_chamberofdeputies_LSAP_info_results_victory_icon
-			spriteType = GFX_ideology_conservatism
+			spriteType = GFX_ideology_socialism
 			position = {
 				x = 135
 				y = 160
@@ -1578,7 +1578,7 @@ guiTypes = {
 		}
 		iconType = {
 			name = LUX_chamberofdeputies_LSAP_info_portrait
-			spriteType = GFX_Portrait_Europe_Generic_1
+			spriteType = GFX_portrait_LUX_pierre_krier
 			position = {
 				x = 363
 				y = 171
@@ -1690,7 +1690,7 @@ guiTypes = {
 		}
 		iconType = {
 			name = LUX_chamberofdeputies_KPL_info_results_victory_icon
-			spriteType = GFX_ideology_conservatism
+			spriteType = GFX_ideology_communism_group
 			position = {
 				x = 135
 				y = 160
@@ -1857,7 +1857,7 @@ guiTypes = {
 		}
 		iconType = {
 			name = LUX_chamberofdeputies_KPL_info_portrait
-			spriteType = GFX_portrait_LUX_charles_marx
+			spriteType = GFX_portrait_LUX_dominique_urbany
 			position = {
 				x = 363
 				y = 171
@@ -1881,7 +1881,7 @@ guiTypes = {
 				x = 366
 				y = 316
 			}
-			text = LUX_charles_marx
+			text = LUX_dominique_urbany
 			font = hoi_19
 			format = center
 			maxWidth = 104

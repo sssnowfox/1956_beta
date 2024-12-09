@@ -7,50 +7,6 @@ guiTypes = {
 		origo = center
 		moveable = no
 
-		# Government Stats
-		instantTextBoxType = {
-			name = LUX_ministries_cohesion_title
-			position = {
-				x = 25
-				y = 370
-			}
-			text = LUX_ministries_cohesion_title_text
-			font = hoi_24header
-			format = left
-			maxWidth = 221
-		}
-		instantTextBoxType = {
-			name = LUX_ministries_cohesion_value
-			position = {
-				x = 300
-				y = 370
-			}
-			text = LUX_ministries_cohesion_value_text
-			font = hoi_24header
-			format = left
-		}
-		instantTextBoxType = {
-			name = LUX_ministries_popularity_title
-			position = {
-				x = 25
-				y = 470
-			}
-			text = LUX_ministries_popularity_title_text
-			font = hoi_24header
-			format = left
-			maxWidth = 243
-		}
-		instantTextBoxType = {
-			name = LUX_ministries_popularity_value
-			position = {
-				x = 300
-				y = 470
-			}
-			text = LUX_ministries_popularity_value_text
-			font = hoi_24header
-			format = left
-		}
-
 		# Ministries
 		iconType = {
 			name = LUX_minister_prime_PD_icon_bech
@@ -658,7 +614,6 @@ guiTypes = {
 			}
 			alwaystransparent = yes
 		}
-		
 		iconType = {
 			name = LUX_minister_army_button_PD_selected
 			spriteType = GFX_LUX_minister_army_pd

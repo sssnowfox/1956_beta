@@ -202,7 +202,7 @@ country_event = {		# Maulkuerfgesetz fails; history fired
 	is_triggered_only = yes
 	trigger = { NOT = { has_completed_focus = LUX_the_maulkuerfgesetz } }
 
-	immediate = { unlock_national_focus = LUX_the_maulkuerfgesetz }
+	immediate = { hidden_effect = { unlock_national_focus = LUX_the_maulkuerfgesetz } }
 
 	option = {			# law fails
 		name = luxembourg.201.a
@@ -283,8 +283,8 @@ country_event = {		# 1937 elections over; PD victory
 	trigger = {
 		has_country_flag = LUX_elections_starting
 		check_variable = { LUX.turnout > 20 }
-		check_variable = { LUX.confidence > 10 }
-		check_variable = { LUX.PD_support > LUX.PRL_support }
+		#check_variable = { LUX.confidence > 10 }
+		#check_variable = { LUX.PD_support > LUX.PRL_support }
 		check_variable = { LUX.PD_support > LUX.LSAP_support }
 		check_variable = { LUX.PD_support > LUX.KPL_support }
 	}
@@ -311,8 +311,8 @@ country_event = {		# 1937 elections over; PRL victory
 
 	trigger = {
 		has_country_flag = LUX_elections_starting
-		check_variable = { LUX.turnout > 20 }
-		check_variable = { LUX.confidence > 10 }
+		#check_variable = { LUX.turnout > 20 }
+		#check_variable = { LUX.confidence > 10 }
 		check_variable = { LUX.PRL_support > LUX.PD_support }
 		check_variable = { LUX.PRL_support > LUX.LSAP_support }
 		check_variable = { LUX.PRL_support > LUX.KPL_support }
@@ -340,8 +340,8 @@ country_event = {		# 1937 elections over; LSAP victory
 
 	trigger = {
 		has_country_flag = LUX_elections_starting
-		check_variable = { LUX.turnout > 20 }
-		check_variable = { LUX.confidence > 10 }
+		#check_variable = { LUX.turnout > 20 }
+		#check_variable = { LUX.confidence > 10 }
 		check_variable = { LUX.LSAP_support > LUX.PD_support }
 		check_variable = { LUX.LSAP_support > LUX.PRL_support }
 		check_variable = { LUX.LSAP_support > LUX.KPL_support }
@@ -375,8 +375,8 @@ country_event = {		# 1937 elections over; KPL victory
 
 	trigger = {
 		has_country_flag = LUX_elections_starting
-		check_variable = { LUX.turnout > 20 }
-		check_variable = { LUX.confidence > 10 }
+		#check_variable = { LUX.turnout > 20 }
+		#check_variable = { LUX.confidence > 10 }
 		check_variable = { LUX.KPL_support > LUX.PD_support }
 		check_variable = { LUX.KPL_support > LUX.PRL_support }
 		check_variable = { LUX.KPL_support > LUX.LSAP_support }

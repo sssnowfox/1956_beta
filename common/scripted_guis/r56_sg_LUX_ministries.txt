@@ -19,54 +19,66 @@ scripted_gui = {
 			}
 			LUX_minister_economics_button_PD_selected_click = {
 				if = {
-					limit = { has_country_flag = LUX_minister_economics_button_empty_clicked }
-					clr_country_flag = LUX_minister_economics_button_empty_clicked
-				}
-				else = {
-					set_country_flag = LUX_minister_economics_button_empty_clicked
-					clr_country_flag = LUX_minister_interior_button_empty_clicked
-					clr_country_flag = LUX_minister_foreign_button_empty_clicked
-					clr_country_flag = LUX_minister_labour_button_empty_clicked
-					clr_country_flag = LUX_minister_army_button_empty_clicked
+					limit = { NOT = { has_completed_focus = LUX_finalise_government_formation } }
+					if = {
+						limit = { has_country_flag = LUX_minister_economics_button_empty_clicked }
+						clr_country_flag = LUX_minister_economics_button_empty_clicked
+					}
+					else = {
+						set_country_flag = LUX_minister_economics_button_empty_clicked
+						clr_country_flag = LUX_minister_interior_button_empty_clicked
+						clr_country_flag = LUX_minister_foreign_button_empty_clicked
+						clr_country_flag = LUX_minister_labour_button_empty_clicked
+						clr_country_flag = LUX_minister_army_button_empty_clicked
+					}
 				}
 			}
 			LUX_minister_economics_button_PRL_selected_click = {
 				if = {
-					limit = { has_country_flag = LUX_minister_economics_button_empty_clicked }
-					clr_country_flag = LUX_minister_economics_button_empty_clicked
-				}
-				else = {
-					set_country_flag = LUX_minister_economics_button_empty_clicked
-					clr_country_flag = LUX_minister_interior_button_empty_clicked
-					clr_country_flag = LUX_minister_foreign_button_empty_clicked
-					clr_country_flag = LUX_minister_labour_button_empty_clicked
-					clr_country_flag = LUX_minister_army_button_empty_clicked
+					limit = { NOT = { has_completed_focus = LUX_finalise_government_formation } }
+					if = {
+						limit = { has_country_flag = LUX_minister_economics_button_empty_clicked }
+						clr_country_flag = LUX_minister_economics_button_empty_clicked
+					}
+					else = {
+						set_country_flag = LUX_minister_economics_button_empty_clicked
+						clr_country_flag = LUX_minister_interior_button_empty_clicked
+						clr_country_flag = LUX_minister_foreign_button_empty_clicked
+						clr_country_flag = LUX_minister_labour_button_empty_clicked
+						clr_country_flag = LUX_minister_army_button_empty_clicked
+					}
 				}
 			}
 			LUX_minister_economics_button_LSAP_selected_click = {
 				if = {
-					limit = { has_country_flag = LUX_minister_economics_button_empty_clicked }
-					clr_country_flag = LUX_minister_economics_button_empty_clicked
-				}
-				else = {
-					set_country_flag = LUX_minister_economics_button_empty_clicked
-					clr_country_flag = LUX_minister_interior_button_empty_clicked
-					clr_country_flag = LUX_minister_foreign_button_empty_clicked
-					clr_country_flag = LUX_minister_labour_button_empty_clicked
-					clr_country_flag = LUX_minister_army_button_empty_clicked
+					limit = { NOT = { has_completed_focus = LUX_finalise_government_formation } }
+					if = {
+						limit = { has_country_flag = LUX_minister_economics_button_empty_clicked }
+						clr_country_flag = LUX_minister_economics_button_empty_clicked
+					}
+					else = {
+						set_country_flag = LUX_minister_economics_button_empty_clicked
+						clr_country_flag = LUX_minister_interior_button_empty_clicked
+						clr_country_flag = LUX_minister_foreign_button_empty_clicked
+						clr_country_flag = LUX_minister_labour_button_empty_clicked
+						clr_country_flag = LUX_minister_army_button_empty_clicked
+					}
 				}
 			}
 			LUX_minister_economics_button_KPL_selected_click = {
 				if = {
-					limit = { has_country_flag = LUX_minister_economics_button_empty_clicked }
-					clr_country_flag = LUX_minister_economics_button_empty_clicked
-				}
-				else = {
-					set_country_flag = LUX_minister_economics_button_empty_clicked
-					clr_country_flag = LUX_minister_interior_button_empty_clicked
-					clr_country_flag = LUX_minister_foreign_button_empty_clicked
-					clr_country_flag = LUX_minister_labour_button_empty_clicked
-					clr_country_flag = LUX_minister_army_button_empty_clicked
+					limit = { NOT = { has_completed_focus = LUX_finalise_government_formation } }
+					if = {
+						limit = { has_country_flag = LUX_minister_economics_button_empty_clicked }
+						clr_country_flag = LUX_minister_economics_button_empty_clicked
+					}
+					else = {
+						set_country_flag = LUX_minister_economics_button_empty_clicked
+						clr_country_flag = LUX_minister_interior_button_empty_clicked
+						clr_country_flag = LUX_minister_foreign_button_empty_clicked
+						clr_country_flag = LUX_minister_labour_button_empty_clicked
+						clr_country_flag = LUX_minister_army_button_empty_clicked
+					}
 				}
 			}
 			LUX_minister_economics_button_PD_click = {
@@ -80,7 +92,6 @@ scripted_gui = {
 				else = {
 					set_country_flag = LUX_minister_economics_PD_hired
 					add_to_variable = { LUX.num_of_PD_ministers = 1 }
-					LUX_ministries_PD_check = yes
 					add_political_power = -50
 					add_to_variable = { LUX.num_of_ministers = 1 }
 					add_ideas = LUX_minister_economics_PD
@@ -97,7 +108,6 @@ scripted_gui = {
 				else = {
 					set_country_flag = LUX_minister_economics_PRL_hired
 					add_to_variable = { LUX.num_of_PRL_ministers = 1 }
-					LUX_ministries_PRL_check = yes
 					add_political_power = -50
 					add_to_variable = { LUX.num_of_ministers = 1 }
 					add_ideas = LUX_minister_economics_PRL
@@ -114,7 +124,6 @@ scripted_gui = {
 				else = {
 					set_country_flag = LUX_minister_economics_LSAP_hired
 					add_to_variable = { LUX.num_of_LSAP_ministers = 1 }
-					LUX_ministries_LSAP_check = yes
 					add_political_power = -50
 					add_to_variable = { LUX.num_of_ministers = 1 }
 					add_ideas = LUX_minister_economics_LSAP
@@ -131,7 +140,6 @@ scripted_gui = {
 				else = {
 					set_country_flag = LUX_minister_economics_KPL_hired
 					add_to_variable = { LUX.num_of_KPL_ministers = 1 }
-					LUX_ministries_KPL_check = yes
 					add_political_power = -50
 					add_to_variable = { LUX.num_of_ministers = 1 }
 					add_ideas = LUX_minister_economics_KPL
@@ -152,54 +160,66 @@ scripted_gui = {
 			}
 			LUX_minister_interior_button_PD_selected_click = {
 				if = {
-					limit = { has_country_flag = LUX_minister_interior_button_empty_clicked }
-					clr_country_flag = LUX_minister_interior_button_empty_clicked
-				}
-				else = {
-					set_country_flag = LUX_minister_interior_button_empty_clicked
-					clr_country_flag = LUX_minister_economics_button_empty_clicked
-					clr_country_flag = LUX_minister_foreign_button_empty_clicked
-					clr_country_flag = LUX_minister_labour_button_empty_clicked
-					clr_country_flag = LUX_minister_army_button_empty_clicked
+					limit = { NOT = { has_completed_focus = LUX_finalise_government_formation } }
+					if = {
+						limit = { has_country_flag = LUX_minister_interior_button_empty_clicked }
+						clr_country_flag = LUX_minister_interior_button_empty_clicked
+					}
+					else = {
+						set_country_flag = LUX_minister_interior_button_empty_clicked
+						clr_country_flag = LUX_minister_economics_button_empty_clicked
+						clr_country_flag = LUX_minister_foreign_button_empty_clicked
+						clr_country_flag = LUX_minister_labour_button_empty_clicked
+						clr_country_flag = LUX_minister_army_button_empty_clicked
+					}
 				}
 			}
 			LUX_minister_interior_button_PRL_selected_click = {
 				if = {
-					limit = { has_country_flag = LUX_minister_interior_button_empty_clicked }
-					clr_country_flag = LUX_minister_interior_button_empty_clicked
-				}
-				else = {
-					set_country_flag = LUX_minister_interior_button_empty_clicked
-					clr_country_flag = LUX_minister_economics_button_empty_clicked
-					clr_country_flag = LUX_minister_foreign_button_empty_clicked
-					clr_country_flag = LUX_minister_labour_button_empty_clicked
-					clr_country_flag = LUX_minister_army_button_empty_clicked
+					limit = { NOT = { has_completed_focus = LUX_finalise_government_formation } }
+					if = {
+						limit = { has_country_flag = LUX_minister_interior_button_empty_clicked }
+						clr_country_flag = LUX_minister_interior_button_empty_clicked
+					}
+					else = {
+						set_country_flag = LUX_minister_interior_button_empty_clicked
+						clr_country_flag = LUX_minister_economics_button_empty_clicked
+						clr_country_flag = LUX_minister_foreign_button_empty_clicked
+						clr_country_flag = LUX_minister_labour_button_empty_clicked
+						clr_country_flag = LUX_minister_army_button_empty_clicked
+					}
 				}
 			}
 			LUX_minister_interior_button_LSAP_selected_click = {
 				if = {
-					limit = { has_country_flag = LUX_minister_interior_button_empty_clicked }
-					clr_country_flag = LUX_minister_interior_button_empty_clicked
-				}
-				else = {
-					set_country_flag = LUX_minister_interior_button_empty_clicked
-					clr_country_flag = LUX_minister_economics_button_empty_clicked
-					clr_country_flag = LUX_minister_foreign_button_empty_clicked
-					clr_country_flag = LUX_minister_labour_button_empty_clicked
-					clr_country_flag = LUX_minister_army_button_empty_clicked
+					limit = { NOT = { has_completed_focus = LUX_finalise_government_formation } }
+					if = {
+						limit = { has_country_flag = LUX_minister_interior_button_empty_clicked }
+						clr_country_flag = LUX_minister_interior_button_empty_clicked
+					}
+					else = {
+						set_country_flag = LUX_minister_interior_button_empty_clicked
+						clr_country_flag = LUX_minister_economics_button_empty_clicked
+						clr_country_flag = LUX_minister_foreign_button_empty_clicked
+						clr_country_flag = LUX_minister_labour_button_empty_clicked
+						clr_country_flag = LUX_minister_army_button_empty_clicked
+					}
 				}
 			}
 			LUX_minister_interior_button_KPL_selected_click = {
 				if = {
-					limit = { has_country_flag = LUX_minister_interior_button_empty_clicked }
-					clr_country_flag = LUX_minister_interior_button_empty_clicked
-				}
-				else = {
-					set_country_flag = LUX_minister_interior_button_empty_clicked
-					clr_country_flag = LUX_minister_economics_button_empty_clicked
-					clr_country_flag = LUX_minister_foreign_button_empty_clicked
-					clr_country_flag = LUX_minister_labour_button_empty_clicked
-					clr_country_flag = LUX_minister_army_button_empty_clicked
+					limit = { NOT = { has_completed_focus = LUX_finalise_government_formation } }
+					if = {
+						limit = { has_country_flag = LUX_minister_interior_button_empty_clicked }
+						clr_country_flag = LUX_minister_interior_button_empty_clicked
+					}
+					else = {
+						set_country_flag = LUX_minister_interior_button_empty_clicked
+						clr_country_flag = LUX_minister_economics_button_empty_clicked
+						clr_country_flag = LUX_minister_foreign_button_empty_clicked
+						clr_country_flag = LUX_minister_labour_button_empty_clicked
+						clr_country_flag = LUX_minister_army_button_empty_clicked
+					}
 				}
 			}
 			LUX_minister_interior_button_PD_click = {
@@ -212,8 +232,7 @@ scripted_gui = {
 				}
 				else = {
 					set_country_flag = LUX_minister_interior_PD_hired
-					add_to_variable = { LUX.num_of_PD_ministers = 1 }
-					LUX_ministries_PD_check = yes
+					add_to_variable = { LUX.num_of_PD_ministers = 1 } 
 					add_political_power = -50
 					add_to_variable = { LUX.num_of_ministers = 1 }
 					add_ideas = LUX_minister_interior_PD
@@ -229,8 +248,7 @@ scripted_gui = {
 				}
 				else = {
 					set_country_flag = LUX_minister_interior_PRL_hired
-					add_to_variable = { LUX.num_of_PRL_ministers = 1 }
-					LUX_ministries_PRL_check = yes
+					add_to_variable = { LUX.num_of_PRL_ministers = 1 } 
 					add_political_power = -50
 					add_to_variable = { LUX.num_of_ministers = 1 }
 					add_ideas = LUX_minister_interior_PRL
@@ -246,8 +264,7 @@ scripted_gui = {
 				}
 				else = { 
 					set_country_flag = LUX_minister_interior_LSAP_hired
-					add_to_variable = { LUX.num_of_LSAP_ministers = 1 }
-					LUX_ministries_LSAP_check = yes
+					add_to_variable = { LUX.num_of_LSAP_ministers = 1 } 
 					add_political_power = -50
 					add_to_variable = { LUX.num_of_ministers = 1 }
 					add_ideas = LUX_minister_interior_LSAP
@@ -263,8 +280,7 @@ scripted_gui = {
 				}
 				else = { 
 					set_country_flag = LUX_minister_interior_KPL_hired
-					add_to_variable = { LUX.num_of_KPL_ministers = 1 }
-					LUX_ministries_KPL_check = yes
+					add_to_variable = { LUX.num_of_KPL_ministers = 1 } 
 					add_political_power = -50
 					add_to_variable = { LUX.num_of_ministers = 1 }
 					add_ideas = LUX_minister_interior_KPL
@@ -273,67 +289,82 @@ scripted_gui = {
 
 			LUX_minister_foreign_button_empty_click = {
 				if = {
-					limit = { has_country_flag = LUX_minister_foreign_button_empty_clicked }
-					clr_country_flag = LUX_minister_foreign_button_empty_clicked
-				}
-				else = {
-					set_country_flag = LUX_minister_foreign_button_empty_clicked
-					clr_country_flag = LUX_minister_economics_button_empty_clicked
-					clr_country_flag = LUX_minister_interior_button_empty_clicked
-					clr_country_flag = LUX_minister_labour_button_empty_clicked
-					clr_country_flag = LUX_minister_army_button_empty_clicked
+					limit = { NOT = { has_completed_focus = LUX_finalise_government_formation } }
+					if = {
+						limit = { has_country_flag = LUX_minister_foreign_button_empty_clicked }
+						clr_country_flag = LUX_minister_foreign_button_empty_clicked
+					}
+					else = {
+						set_country_flag = LUX_minister_foreign_button_empty_clicked
+						clr_country_flag = LUX_minister_economics_button_empty_clicked
+						clr_country_flag = LUX_minister_interior_button_empty_clicked
+						clr_country_flag = LUX_minister_labour_button_empty_clicked
+						clr_country_flag = LUX_minister_army_button_empty_clicked
+					}
 				}
 			}
 			LUX_minister_foreign_button_PD_selected_click = {
 				if = {
-					limit = { has_country_flag = LUX_minister_foreign_button_empty_clicked }
-					clr_country_flag = LUX_minister_foreign_button_empty_clicked
-				}
-				else = {
-					set_country_flag = LUX_minister_foreign_button_empty_clicked
-					clr_country_flag = LUX_minister_economics_button_empty_clicked
-					clr_country_flag = LUX_minister_interior_button_empty_clicked
-					clr_country_flag = LUX_minister_labour_button_empty_clicked
-					clr_country_flag = LUX_minister_army_button_empty_clicked
+					limit = { NOT = { has_completed_focus = LUX_finalise_government_formation } }
+					if = {
+						limit = { has_country_flag = LUX_minister_foreign_button_empty_clicked }
+						clr_country_flag = LUX_minister_foreign_button_empty_clicked
+					}
+					else = {
+						set_country_flag = LUX_minister_foreign_button_empty_clicked
+						clr_country_flag = LUX_minister_economics_button_empty_clicked
+						clr_country_flag = LUX_minister_interior_button_empty_clicked
+						clr_country_flag = LUX_minister_labour_button_empty_clicked
+						clr_country_flag = LUX_minister_army_button_empty_clicked
+					}
 				}
 			}
 			LUX_minister_foreign_button_PRL_selected_click = {
 				if = {
-					limit = { has_country_flag = LUX_minister_foreign_button_empty_clicked }
-					clr_country_flag = LUX_minister_foreign_button_empty_clicked
-				}
-				else = {
-					set_country_flag = LUX_minister_foreign_button_empty_clicked
-					clr_country_flag = LUX_minister_economics_button_empty_clicked
-					clr_country_flag = LUX_minister_interior_button_empty_clicked
-					clr_country_flag = LUX_minister_labour_button_empty_clicked
-					clr_country_flag = LUX_minister_army_button_empty_clicked
+					limit = { NOT = { has_completed_focus = LUX_finalise_government_formation } }
+					if = {
+						limit = { has_country_flag = LUX_minister_foreign_button_empty_clicked }
+						clr_country_flag = LUX_minister_foreign_button_empty_clicked
+					}
+					else = {
+						set_country_flag = LUX_minister_foreign_button_empty_clicked
+						clr_country_flag = LUX_minister_economics_button_empty_clicked
+						clr_country_flag = LUX_minister_interior_button_empty_clicked
+						clr_country_flag = LUX_minister_labour_button_empty_clicked
+						clr_country_flag = LUX_minister_army_button_empty_clicked
+					}
 				}
 			}
 			LUX_minister_foreign_button_LSAP_selected_click = {
 				if = {
-					limit = { has_country_flag = LUX_minister_foreign_button_empty_clicked }
-					clr_country_flag = LUX_minister_foreign_button_empty_clicked
-				}
-				else = {
-					set_country_flag = LUX_minister_foreign_button_empty_clicked
-					clr_country_flag = LUX_minister_economics_button_empty_clicked
-					clr_country_flag = LUX_minister_interior_button_empty_clicked
-					clr_country_flag = LUX_minister_labour_button_empty_clicked
-					clr_country_flag = LUX_minister_army_button_empty_clicked
+					limit = { NOT = { has_completed_focus = LUX_finalise_government_formation } }
+					if = {
+						limit = { has_country_flag = LUX_minister_foreign_button_empty_clicked }
+						clr_country_flag = LUX_minister_foreign_button_empty_clicked
+					}
+					else = {
+						set_country_flag = LUX_minister_foreign_button_empty_clicked
+						clr_country_flag = LUX_minister_economics_button_empty_clicked
+						clr_country_flag = LUX_minister_interior_button_empty_clicked
+						clr_country_flag = LUX_minister_labour_button_empty_clicked
+						clr_country_flag = LUX_minister_army_button_empty_clicked
+					}
 				}
 			}
 			LUX_minister_foreign_button_KPL_selected_click = {
 				if = {
-					limit = { has_country_flag = LUX_minister_foreign_button_empty_clicked }
-					clr_country_flag = LUX_minister_foreign_button_empty_clicked
-				}
-				else = {
-					set_country_flag = LUX_minister_foreign_button_empty_clicked
-					clr_country_flag = LUX_minister_economics_button_empty_clicked
-					clr_country_flag = LUX_minister_interior_button_empty_clicked
-					clr_country_flag = LUX_minister_labour_button_empty_clicked
-					clr_country_flag = LUX_minister_army_button_empty_clicked
+					limit = { NOT = { has_completed_focus = LUX_finalise_government_formation } }
+					if = {
+						limit = { has_country_flag = LUX_minister_foreign_button_empty_clicked }
+						clr_country_flag = LUX_minister_foreign_button_empty_clicked
+					}
+					else = {
+						set_country_flag = LUX_minister_foreign_button_empty_clicked
+						clr_country_flag = LUX_minister_economics_button_empty_clicked
+						clr_country_flag = LUX_minister_interior_button_empty_clicked
+						clr_country_flag = LUX_minister_labour_button_empty_clicked
+						clr_country_flag = LUX_minister_army_button_empty_clicked
+					}
 				}
 			}
 			LUX_minister_foreign_button_PD_click = {
@@ -346,8 +377,7 @@ scripted_gui = {
 				}
 				else = {
 					set_country_flag = LUX_minister_foreign_PD_hired
-					add_to_variable = { LUX.num_of_PD_ministers = 1 }
-					LUX_ministries_PD_check = yes
+					add_to_variable = { LUX.num_of_PD_ministers = 1 } 
 					add_political_power = -50
 					add_to_variable = { LUX.num_of_ministers = 1 }
 					add_ideas = LUX_minister_foreign_PD
@@ -363,8 +393,7 @@ scripted_gui = {
 				}
 				else = {
 					set_country_flag = LUX_minister_foreign_PRL_hired
-					add_to_variable = { LUX.num_of_PRL_ministers = 1 }
-					LUX_ministries_PRL_check = yes
+					add_to_variable = { LUX.num_of_PRL_ministers = 1 } 
 					add_political_power = -50
 					add_to_variable = { LUX.num_of_ministers = 1 }
 					add_ideas = LUX_minister_foreign_PRL
@@ -380,8 +409,7 @@ scripted_gui = {
 				}
 				else = {
 					set_country_flag = LUX_minister_foreign_LSAP_hired
-					add_to_variable = { LUX.num_of_LSAP_ministers = 1 }
-					LUX_ministries_LSAP_check = yes
+					add_to_variable = { LUX.num_of_LSAP_ministers = 1 } 
 					add_political_power = -50
 					add_to_variable = { LUX.num_of_ministers = 1 }
 					add_ideas = LUX_minister_foreign_LSAP
@@ -397,8 +425,7 @@ scripted_gui = {
 				}
 				else = {
 					set_country_flag = LUX_minister_foreign_KPL_hired
-					add_to_variable = { LUX.num_of_KPL_ministers = 1 }
-					LUX_ministries_KPL_check = yes
+					add_to_variable = { LUX.num_of_KPL_ministers = 1 } 
 					add_political_power = -50
 					add_to_variable = { LUX.num_of_ministers = 1 }
 					add_ideas = LUX_minister_foreign_KPL
@@ -407,67 +434,82 @@ scripted_gui = {
 
 			LUX_minister_labour_button_empty_click = {
 				if = {
-					limit = { has_country_flag = LUX_minister_labour_button_empty_clicked }
-					clr_country_flag = LUX_minister_labour_button_empty_clicked
-				}
-				else = {
-					set_country_flag = LUX_minister_labour_button_empty_clicked
-					clr_country_flag = LUX_minister_economics_button_empty_clicked
-					clr_country_flag = LUX_minister_interior_button_empty_clicked
-					clr_country_flag = LUX_minister_foreign_button_empty_clicked
-					clr_country_flag = LUX_minister_army_button_empty_clicked
+					limit = { NOT = { has_completed_focus = LUX_finalise_government_formation } }
+					if = {
+						limit = { has_country_flag = LUX_minister_labour_button_empty_clicked }
+						clr_country_flag = LUX_minister_labour_button_empty_clicked
+					}
+					else = {
+						set_country_flag = LUX_minister_labour_button_empty_clicked
+						clr_country_flag = LUX_minister_economics_button_empty_clicked
+						clr_country_flag = LUX_minister_interior_button_empty_clicked
+						clr_country_flag = LUX_minister_foreign_button_empty_clicked
+						clr_country_flag = LUX_minister_army_button_empty_clicked
+					}
 				}
 			}
 			LUX_minister_labour_button_PD_selected_click = {
 				if = {
-					limit = { has_country_flag = LUX_minister_labour_button_empty_clicked }
-					clr_country_flag = LUX_minister_labour_button_empty_clicked
-				}
-				else = {
-					set_country_flag = LUX_minister_labour_button_empty_clicked
-					clr_country_flag = LUX_minister_economics_button_empty_clicked
-					clr_country_flag = LUX_minister_interior_button_empty_clicked
-					clr_country_flag = LUX_minister_foreign_button_empty_clicked
-					clr_country_flag = LUX_minister_army_button_empty_clicked
+					limit = { NOT = { has_completed_focus = LUX_finalise_government_formation } }
+					if = {
+						limit = { has_country_flag = LUX_minister_labour_button_empty_clicked }
+						clr_country_flag = LUX_minister_labour_button_empty_clicked
+					}
+					else = {
+						set_country_flag = LUX_minister_labour_button_empty_clicked
+						clr_country_flag = LUX_minister_economics_button_empty_clicked
+						clr_country_flag = LUX_minister_interior_button_empty_clicked
+						clr_country_flag = LUX_minister_foreign_button_empty_clicked
+						clr_country_flag = LUX_minister_army_button_empty_clicked
+					}
 				}
 			}
 			LUX_minister_labour_button_PRL_selected_click = {
 				if = {
-					limit = { has_country_flag = LUX_minister_labour_button_empty_clicked }
-					clr_country_flag = LUX_minister_labour_button_empty_clicked
-				}
-				else = {
-					set_country_flag = LUX_minister_labour_button_empty_clicked
-					clr_country_flag = LUX_minister_economics_button_empty_clicked
-					clr_country_flag = LUX_minister_interior_button_empty_clicked
-					clr_country_flag = LUX_minister_foreign_button_empty_clicked
-					clr_country_flag = LUX_minister_army_button_empty_clicked
+					limit = { NOT = { has_completed_focus = LUX_finalise_government_formation } }
+					if = {
+						limit = { has_country_flag = LUX_minister_labour_button_empty_clicked }
+						clr_country_flag = LUX_minister_labour_button_empty_clicked
+					}
+					else = {
+						set_country_flag = LUX_minister_labour_button_empty_clicked
+						clr_country_flag = LUX_minister_economics_button_empty_clicked
+						clr_country_flag = LUX_minister_interior_button_empty_clicked
+						clr_country_flag = LUX_minister_foreign_button_empty_clicked
+						clr_country_flag = LUX_minister_army_button_empty_clicked
+					}
 				}
 			}
 			LUX_minister_labour_button_LSAP_selected_click = {
 				if = {
-					limit = { has_country_flag = LUX_minister_labour_button_empty_clicked }
-					clr_country_flag = LUX_minister_labour_button_empty_clicked
-				}
-				else = {
-					set_country_flag = LUX_minister_labour_button_empty_clicked
-					clr_country_flag = LUX_minister_economics_button_empty_clicked
-					clr_country_flag = LUX_minister_interior_button_empty_clicked
-					clr_country_flag = LUX_minister_foreign_button_empty_clicked
-					clr_country_flag = LUX_minister_army_button_empty_clicked
+					limit = { NOT = { has_completed_focus = LUX_finalise_government_formation } }
+					if = {
+						limit = { has_country_flag = LUX_minister_labour_button_empty_clicked }
+						clr_country_flag = LUX_minister_labour_button_empty_clicked
+					}
+					else = {
+						set_country_flag = LUX_minister_labour_button_empty_clicked
+						clr_country_flag = LUX_minister_economics_button_empty_clicked
+						clr_country_flag = LUX_minister_interior_button_empty_clicked
+						clr_country_flag = LUX_minister_foreign_button_empty_clicked
+						clr_country_flag = LUX_minister_army_button_empty_clicked
+					}
 				}
 			}
 			LUX_minister_labour_button_KPL_selected_click = {
 				if = {
-					limit = { has_country_flag = LUX_minister_labour_button_empty_clicked }
-					clr_country_flag = LUX_minister_labour_button_empty_clicked
-				}
-				else = {
-					set_country_flag = LUX_minister_labour_button_empty_clicked
-					clr_country_flag = LUX_minister_economics_button_empty_clicked
-					clr_country_flag = LUX_minister_interior_button_empty_clicked
-					clr_country_flag = LUX_minister_foreign_button_empty_clicked
-					clr_country_flag = LUX_minister_army_button_empty_clicked
+					limit = { NOT = { has_completed_focus = LUX_finalise_government_formation } }
+					if = {
+						limit = { has_country_flag = LUX_minister_labour_button_empty_clicked }
+						clr_country_flag = LUX_minister_labour_button_empty_clicked
+					}
+					else = {
+						set_country_flag = LUX_minister_labour_button_empty_clicked
+						clr_country_flag = LUX_minister_economics_button_empty_clicked
+						clr_country_flag = LUX_minister_interior_button_empty_clicked
+						clr_country_flag = LUX_minister_foreign_button_empty_clicked
+						clr_country_flag = LUX_minister_army_button_empty_clicked
+					}
 				}
 			}
 			LUX_minister_labour_button_PD_click = {
@@ -480,8 +522,7 @@ scripted_gui = {
 				}
 				else = {
 					set_country_flag = LUX_minister_labour_PD_hired
-					add_to_variable = { LUX.num_of_PD_ministers = 1 }
-					LUX_ministries_PD_check = yes
+					add_to_variable = { LUX.num_of_PD_ministers = 1 } 
 					add_political_power = -50
 					add_to_variable = { LUX.num_of_ministers = 1 }
 					add_ideas = LUX_minister_labour_PD
@@ -501,8 +542,7 @@ scripted_gui = {
 				}
 				else = {
 					set_country_flag = LUX_minister_labour_PRL_hired
-					add_to_variable = { LUX.num_of_PRL_ministers = 1 }
-					LUX_ministries_PRL_check = yes
+					add_to_variable = { LUX.num_of_PRL_ministers = 1 } 
 					add_political_power = -50
 					add_to_variable = { LUX.num_of_ministers = 1 }
 					if = {
@@ -522,8 +562,7 @@ scripted_gui = {
 				}
 				else = { 
 					set_country_flag = LUX_minister_labour_LSAP_hired
-					add_to_variable = { LUX.num_of_LSAP_ministers = 1 }
-					LUX_ministries_LSAP_check = yes
+					add_to_variable = { LUX.num_of_LSAP_ministers = 1 } 
 					add_political_power = -50
 					add_to_variable = { LUX.num_of_ministers = 1 }
 					add_ideas = LUX_minister_labour_LSAP
@@ -539,8 +578,7 @@ scripted_gui = {
 				}
 				else = { 
 					set_country_flag = LUX_minister_labour_KPL_hired
-					add_to_variable = { LUX.num_of_KPL_ministers = 1 }
-					LUX_ministries_KPL_check = yes
+					add_to_variable = { LUX.num_of_KPL_ministers = 1 } 
 					add_political_power = -50
 					add_to_variable = { LUX.num_of_ministers = 1 }
 					add_ideas = LUX_minister_labour_KPL
@@ -549,67 +587,82 @@ scripted_gui = {
 
 			LUX_minister_army_button_empty_click = {
 				if = {
-					limit = { has_country_flag = LUX_minister_army_button_empty_clicked }
-					clr_country_flag = LUX_minister_army_button_empty_clicked
-				}
-				else = {
-					set_country_flag = LUX_minister_army_button_empty_clicked
-					clr_country_flag = LUX_minister_economics_button_empty_clicked
-					clr_country_flag = LUX_minister_interior_button_empty_clicked
-					clr_country_flag = LUX_minister_foreign_button_empty_clicked
-					clr_country_flag = LUX_minister_labour_button_empty_clicked
+					limit = { NOT = { has_completed_focus = LUX_finalise_government_formation } }
+					if = {
+						limit = { has_country_flag = LUX_minister_army_button_empty_clicked }
+						clr_country_flag = LUX_minister_army_button_empty_clicked
+					}
+					else = {
+						set_country_flag = LUX_minister_army_button_empty_clicked
+						clr_country_flag = LUX_minister_economics_button_empty_clicked
+						clr_country_flag = LUX_minister_interior_button_empty_clicked
+						clr_country_flag = LUX_minister_foreign_button_empty_clicked
+						clr_country_flag = LUX_minister_labour_button_empty_clicked
+					}
 				}
 			}
 			LUX_minister_army_button_PD_selected_click = {
 				if = {
-					limit = { has_country_flag = LUX_minister_army_button_empty_clicked }
-					clr_country_flag = LUX_minister_army_button_empty_clicked
-				}
-				else = {
-					set_country_flag = LUX_minister_army_button_empty_clicked
-					clr_country_flag = LUX_minister_economics_button_empty_clicked
-					clr_country_flag = LUX_minister_interior_button_empty_clicked
-					clr_country_flag = LUX_minister_foreign_button_empty_clicked
-					clr_country_flag = LUX_minister_labour_button_empty_clicked
+					limit = { NOT = { has_completed_focus = LUX_finalise_government_formation } }
+					if = {
+						limit = { has_country_flag = LUX_minister_army_button_empty_clicked }
+						clr_country_flag = LUX_minister_army_button_empty_clicked
+					}
+					else = {
+						set_country_flag = LUX_minister_army_button_empty_clicked
+						clr_country_flag = LUX_minister_economics_button_empty_clicked
+						clr_country_flag = LUX_minister_interior_button_empty_clicked
+						clr_country_flag = LUX_minister_foreign_button_empty_clicked
+						clr_country_flag = LUX_minister_labour_button_empty_clicked
+					}
 				}
 			}
 			LUX_minister_army_button_PRL_selected_click = {
 				if = {
-					limit = { has_country_flag = LUX_minister_army_button_empty_clicked }
-					clr_country_flag = LUX_minister_army_button_empty_clicked
-				}
-				else = {
-					set_country_flag = LUX_minister_army_button_empty_clicked
-					clr_country_flag = LUX_minister_economics_button_empty_clicked
-					clr_country_flag = LUX_minister_interior_button_empty_clicked
-					clr_country_flag = LUX_minister_foreign_button_empty_clicked
-					clr_country_flag = LUX_minister_labour_button_empty_clicked
+					limit = { NOT = { has_completed_focus = LUX_finalise_government_formation } }
+					if = {
+						limit = { has_country_flag = LUX_minister_army_button_empty_clicked }
+						clr_country_flag = LUX_minister_army_button_empty_clicked
+					}
+					else = {
+						set_country_flag = LUX_minister_army_button_empty_clicked
+						clr_country_flag = LUX_minister_economics_button_empty_clicked
+						clr_country_flag = LUX_minister_interior_button_empty_clicked
+						clr_country_flag = LUX_minister_foreign_button_empty_clicked
+						clr_country_flag = LUX_minister_labour_button_empty_clicked
+					}
 				}
 			}
 			LUX_minister_army_button_LSAP_selected_click = {
 				if = {
-					limit = { has_country_flag = LUX_minister_army_button_empty_clicked }
-					clr_country_flag = LUX_minister_army_button_empty_clicked
-				}
-				else = {
-					set_country_flag = LUX_minister_army_button_empty_clicked
-					clr_country_flag = LUX_minister_economics_button_empty_clicked
-					clr_country_flag = LUX_minister_interior_button_empty_clicked
-					clr_country_flag = LUX_minister_foreign_button_empty_clicked
-					clr_country_flag = LUX_minister_labour_button_empty_clicked
+					limit = { NOT = { has_completed_focus = LUX_finalise_government_formation } }
+					if = {
+						limit = { has_country_flag = LUX_minister_army_button_empty_clicked }
+						clr_country_flag = LUX_minister_army_button_empty_clicked
+					}
+					else = {
+						set_country_flag = LUX_minister_army_button_empty_clicked
+						clr_country_flag = LUX_minister_economics_button_empty_clicked
+						clr_country_flag = LUX_minister_interior_button_empty_clicked
+						clr_country_flag = LUX_minister_foreign_button_empty_clicked
+						clr_country_flag = LUX_minister_labour_button_empty_clicked
+					}
 				}
 			}
 			LUX_minister_army_button_KPL_selected_click = {
 				if = {
-					limit = { has_country_flag = LUX_minister_army_button_empty_clicked }
-					clr_country_flag = LUX_minister_army_button_empty_clicked
-				}
-				else = {
-					set_country_flag = LUX_minister_army_button_empty_clicked
-					clr_country_flag = LUX_minister_economics_button_empty_clicked
-					clr_country_flag = LUX_minister_interior_button_empty_clicked
-					clr_country_flag = LUX_minister_foreign_button_empty_clicked
-					clr_country_flag = LUX_minister_labour_button_empty_clicked
+					limit = { NOT = { has_completed_focus = LUX_finalise_government_formation } }
+					if = {
+						limit = { has_country_flag = LUX_minister_army_button_empty_clicked }
+						clr_country_flag = LUX_minister_army_button_empty_clicked
+					}
+					else = {
+						set_country_flag = LUX_minister_army_button_empty_clicked
+						clr_country_flag = LUX_minister_economics_button_empty_clicked
+						clr_country_flag = LUX_minister_interior_button_empty_clicked
+						clr_country_flag = LUX_minister_foreign_button_empty_clicked
+						clr_country_flag = LUX_minister_labour_button_empty_clicked
+					}
 				}
 			}
 			LUX_minister_army_button_PD_click = {
@@ -622,8 +675,7 @@ scripted_gui = {
 				}
 				else = {
 					set_country_flag = LUX_minister_army_PD_hired
-					add_to_variable = { LUX.num_of_PD_ministers = 1 }
-					LUX_ministries_PD_check = yes
+					add_to_variable = { LUX.num_of_PD_ministers = 1 } 
 					add_political_power = -50
 					add_to_variable = { LUX.num_of_ministers = 1 }
 					add_ideas = LUX_minister_army_PD
@@ -639,8 +691,7 @@ scripted_gui = {
 				}
 				else = {
 					set_country_flag = LUX_minister_army_PRL_hired
-					add_to_variable = { LUX.num_of_PRL_ministers = 1 }
-					LUX_ministries_PRL_check = yes
+					add_to_variable = { LUX.num_of_PRL_ministers = 1 } 
 					add_political_power = -50
 					add_to_variable = { LUX.num_of_ministers = 1 }
 					add_ideas = LUX_minister_army_PRL
@@ -656,8 +707,7 @@ scripted_gui = {
 				}
 				else = {
 					set_country_flag = LUX_minister_army_LSAP_hired
-					add_to_variable = { LUX.num_of_LSAP_ministers = 1 }
-					LUX_ministries_LSAP_check = yes
+					add_to_variable = { LUX.num_of_LSAP_ministers = 1 } 
 					add_political_power = -50
 					add_to_variable = { LUX.num_of_ministers = 1 }
 					add_ideas = LUX_minister_army_LSAP
@@ -673,8 +723,7 @@ scripted_gui = {
 				}
 				else = {
 					set_country_flag = LUX_minister_army_KPL_hired
-					add_to_variable = { LUX.num_of_KPL_ministers = 1 }
-					LUX_ministries_KPL_check = yes
+					add_to_variable = { LUX.num_of_KPL_ministers = 1 } 
 					add_political_power = -50
 					add_to_variable = { LUX.num_of_ministers = 1 }
 					add_ideas = LUX_minister_army_KPL

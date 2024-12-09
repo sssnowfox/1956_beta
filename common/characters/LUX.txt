@@ -528,6 +528,13 @@ characters = {
 				has_completed_focus = LUX_utilise_lvj
 			}
 			traits = { lvj_leader }
+			visible = {
+				NOT = {
+					has_completed_focus = LUX_arrest_dennemeyer
+					has_completed_focus = LUX_appoint_new_prime_minister
+					#has_completed_focus = LUX_invalidate_election
+				}
+			}
 		}
 	}
 
