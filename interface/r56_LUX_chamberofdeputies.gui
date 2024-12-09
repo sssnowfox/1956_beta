@@ -1863,8 +1863,7 @@ guiTypes = {
 				y = 171
 			}
 			scale = 0.7
-			pdx_tooltip = LUX_chamberofdeputies_KPL_info_portrait_tt
-			pdx_tooltip_delayed = LUX_chamberofdeputies_KPL_info_portrait_delayed_tt
+			pdx_tooltip = LUX_chamberofdeputies_KPL_info_portrait_urbany_tt
 		}
 		iconType = {
 			name = LUX_chamberofdeputies_KPL_info_portrait_frame

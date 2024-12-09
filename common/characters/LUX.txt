@@ -11,7 +11,6 @@ characters = {
 		}
 		country_leader = {
 			ideology = constitutional_monarchy
-			desc = LUX_duchess_charlotte_desc
 			traits = { charismatic_monarch grand_duchess_of_luxembourg }
 			expire = "1965.1.1"
 			id = -1
@@ -28,7 +27,6 @@ characters = {
 		}
 		country_leader = {
 			ideology = conservatism
-			desc = LUX_joseph_bech_desc
 			traits = { lawyer }
 			expire = "1965.1.1"
 		}
@@ -409,7 +407,6 @@ characters = {
 		}
 		country_leader = {
 			ideology = marxism
-			desc = LUX_charles_marx_desc
 			expire = "1965.1.1"
 			traits = { socialist_healthcare_expert }
 		}
@@ -466,7 +463,6 @@ characters = {
 			traits = { fascist_demagogue }
 		}
 		country_leader = {
-			desc = LUX_damian_kratzenberg_desc
 			expire = "1965.1.1"
 			ideology = nazism
 			traits = { gauleiter fascism_follower }

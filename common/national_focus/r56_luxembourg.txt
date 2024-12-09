@@ -952,8 +952,8 @@ focus_tree = {
 		id = LUX_abandon_neutrality
 		icon = GFX_focus_generic_support_the_left_right
 		cost = 10
-		x = 2
-		y = 2
+		x = 1
+		y = 3
 		relative_position_id = LUX_liberal_victory
 		prerequisite = {
 			focus = LUX_liberal_victory
@@ -1042,7 +1042,7 @@ focus_tree = {
 		id = LUX_join_allies
 		icon = GFX_goal_LUX_join_allies
 		cost = 10
-		x = -2
+		x = -1
 		y = 2
 		relative_position_id = LUX_abandon_neutrality
 		prerequisite = {
@@ -1095,7 +1095,7 @@ focus_tree = {
 		id = LUX_research_cooperation
 		icon = GFX_focus_NORDIC_com_research
 		cost = 5
-		x = 4
+		x = 5
 		y = 1
 		relative_position_id = LUX_benelux_alliance
 		prerequisite = {
@@ -1319,7 +1319,7 @@ focus_tree = {
 		id = LUX_benelux_alliance
 		icon = GFX_goal_benelux
 		cost = 10
-		x = -7
+		x = -8
 		y = 0
 		relative_position_id = LUX_join_allies
 		prerequisite = {
@@ -1400,7 +1400,7 @@ focus_tree = {
 		id = LUX_merge_industries
 		icon = GFX_focus_generic_the_giant_wakes
 		cost = 10
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = LUX_dreams_of_federation
 		prerequisite = { focus = LUX_dreams_of_federation }
@@ -1443,7 +1443,7 @@ focus_tree = {
 		id = LUX_fortify_border_regions
 		icon = GFX_goal_generic_fortify_city
 		cost = 10
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = LUX_dreams_of_federation
 		prerequisite = { focus = LUX_dreams_of_federation }
@@ -1487,7 +1487,7 @@ focus_tree = {
 		id = LUX_establish_free_university
 		icon = GFX_goal_generic_scientific_exchange
 		cost = 8
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = LUX_regional_development
 		prerequisite = { focus = LUX_regional_development }
@@ -1742,7 +1742,7 @@ focus_tree = {
 		id = LUX_decentralised_alliance
 		icon = GFX_goal_LUX_decentralised_alliance
 		cost = 5
-		x = 2
+		x = 3
 		y = 1
 		relative_position_id = LUX_benelux_alliance
 		prerequisite = { focus = LUX_benelux_alliance }
@@ -1769,7 +1769,7 @@ focus_tree = {
 		id = LUX_unified_command
 		icon = GFX_focus_generic_military_mission
 		cost = 5
-		x = 2
+		x = 3
 		y = 1
 		relative_position_id = LUX_dreams_of_federation
 		prerequisite = {
@@ -1926,7 +1926,7 @@ focus_tree = {
 			}
 			else = { remove_ideas = r56_LUX_economic_dependence_4 }
 		}
-		search_filters = { FOCUS_FILTER_ANNEXATION }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = LUX_joint_economic_development
@@ -2044,7 +2044,7 @@ focus_tree = {
 		icon = GFX_goal_generic_neutrality_focus
 		cost = 10
 		x = -1
-		y = 2
+		y = 3
 		relative_position_id = LUX_the_dupong_ministry
 		prerequisite = {
 			focus = LUX_the_dupong_ministry
@@ -2782,71 +2782,17 @@ focus_tree = {
 		}
 
 		available = {
-			SPR_scw_in_progress = yes
-			OR = {
-				AND = {
-					has_completed_focus = COL_collectivist_ethos
-					country_exists = SPA
-					NOT = { has_war_with = SPA }
-				}
-				AND = {
-					has_completed_focus = COL_liberty_ethos
-					country_exists = SPD
-					NOT = { has_war_with = SPD }
-				}
+			has_global_flag = spanish_civil_war
+			has_war = no
+			NOT = {
+				has_global_flag = r56_scw_our_own_ending_check 
 			}
 		}
 		completion_reward = {
-			if = {
-				limit = {
-					has_completed_focus = COL_collectivist_ethos
-				}
-				add_ideas = PHI_volunteers_in_the_war_nationalist
-				SPA = {
-					add_opinion_modifier = {
-						target = ROOT
-						modifier = large_increase
-					}
-				}
-			}
-			else = {
-				add_ideas = PHI_volunteers_in_the_war_republican
-				SPD = {
-					add_opinion_modifier = {
-						target = ROOT
-						modifier = large_increase
-					}
-				}
-			}
-			add_manpower = -5000
-			if = {
-				limit = {
-					has_completed_focus = COL_collectivist_ethos
-				}
-				add_relation_rule_override = {
-					target = SPA
-					can_send_volunteers = yes 
-				}
-				SPA = {
-					add_equipment_to_stockpile = {
-						type = infantry_equipment
-						amount = 1000
-						producer = ROOT
-					}
-				}
-			}
-			else = {
-				add_relation_rule_override = {
-					target = SPD
-					can_send_volunteers = yes 
-				}
-				SPD = {
-					add_equipment_to_stockpile = {
-						type = infantry_equipment
-						amount = 1000
-						producer = ROOT
-					}
-				}
+			set_rule = { can_send_volunteers = yes }
+			add_timed_idea = {
+				idea = r56_CHL_spanish_civil_war_involvement
+				days = 1095
 			}
 		}
 	}
@@ -2979,7 +2925,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUX_grant_citizenship
-		icon = GFX_goal_ISR_rome_and_jerusalem
+		icon = GFX_goal_generic_monarchy_cooperation
 		cost = 5
 		x = 1
 		y = 1
@@ -3383,6 +3329,10 @@ focus_tree = {
 					can_create_factions = yes
 				}
 				create_faction = "Alliance of European Socialists"
+			}
+			if = {
+				limit = { has_idea = LUX_charles_marx }
+				remove_ideas = LUX_charles_marx
 			}
 		}
 		search_filters = { FOCUS_FILTER_ALLIANCE FOCUS_FILTER_POLITICAL }

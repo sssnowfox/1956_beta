@@ -2247,6 +2247,11 @@ spriteTypes = {
 		name = "GFX_goal_generic_cruisers"
 		texturefile = "gfx/interface/goals/generic/r56_goal_generic_cruisers.dds"
 	}
+	spriteType = {
+		name = "GFX_goal_generic_monarchy_cooperation"
+		textureFile = "gfx/interface/goals/generic/r56_goal_generic_monarchy_cooperation.dds"
+	}
+
 ###------> AFG <><> <><> <><> <><> <><>
 	SpriteType = {
 		name = "GFX_goal_AFG_army"
