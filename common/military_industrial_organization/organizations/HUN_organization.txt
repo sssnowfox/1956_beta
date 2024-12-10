@@ -114,20 +114,6 @@ HUN_ganz_danubius_organization = { #TODO_Manu: Could do with an extra trait ## R
 			}
 			owner = { has_completed_focus = AH_increase_naval_production }
 		}
-		IF = {
-			limit = { 
-				owner = {
-					original_tag = HUN
-				}
-			}
-			owner = { 
-				OR = {
-					has_completed_focus = HUN_naval_warfare
-					has_completed_focus = GEN_Naval_Effort
-				}
-				 
-			}
-		}	
 		if = {
 			limit = {
 				owner = {
@@ -138,6 +124,31 @@ HUN_ganz_danubius_organization = { #TODO_Manu: Could do with an extra trait ## R
 				controls_state = 43
 			}
 		}	
+		IF = {
+			limit = { 
+				owner = {
+					original_tag = HUN
+					has_dlc = "Gotterdammerung"
+				}
+			}
+			owner = { 
+				has_completed_focus = wuw_HUN_enlarge_the_ganz_danubius_division 
+			}
+		}	
+		else_if = {
+			limit = { 
+				owner = {
+					original_tag = HUN
+					NOT = {
+						has_dlc = "Gotterdammerung"
+					}
+				}
+			}
+			owner = { 
+				has_completed_focus = HUN_naval_warfare 
+			}
+		}	
+
 	}
 	initial_trait = {
 		name = generic_mio_initial_trait_escort_fleet
