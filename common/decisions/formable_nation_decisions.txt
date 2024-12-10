@@ -1089,7 +1089,7 @@ form_united_netherlands_category = {
 				original_tag = BEL
 				original_tag = LUX
 				original_tag = WLL
-				original_tag = FLA				
+				original_tag = FLA
 			}
 			NOT = { has_global_flag = form_united_netherlands_flag }
 			NOT = { has_global_flag = HOL_benelux_formed }
@@ -1144,7 +1144,7 @@ form_united_netherlands_category = {
 			}
 			add_ideas = generic_recent_political_unification
 			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification				
+			add_ideas = generic_recent_economic_unification
 		}
 
 		ai_will_do = {
@@ -3903,52 +3903,70 @@ form_mutapa_category = {
 		allowed = {
 			OR = {
 				original_tag = SAF
+				original_tag = LES
+				original_tag = SWA
+				original_tag = NMB
 				original_tag = BOT
 				original_tag = ZIM
 				original_tag = MZB
-				original_tag = LES
-				original_tag = SWA
+				original_tag = ZAM
+				original_tag = BAR
 			}
 		}
 
 		available = {
 			is_subject = no
-			controls_state = 541
 			controls_state = 681
-			controls_state = 719
+			controls_state = 940
 			controls_state = 275
+			controls_state = 719
+			controls_state = 938
+			controls_state = 939
+			controls_state = 893
+			controls_state = 541
+			controls_state = 894
+			controls_state = 895
 			controls_state = 542
 			controls_state = 545
 			controls_state = 544
-			controls_state = 938
-			controls_state = 939
-			controls_state = 940
+			controls_state = 896
+			controls_state = 771
+			controls_state = 1097
+			
 		}
 
 		visible = {
 			OR = {
 				original_tag = SAF
+				original_tag = LES
+				original_tag = SWA
+				original_tag = NMB
 				original_tag = BOT
 				original_tag = ZIM
 				original_tag = MZB
-				original_tag = LES
-				original_tag = SWA
+				original_tag = ZAM
+				original_tag = BAR
 			}
 			NOT = { has_global_flag = form_mutapa_flag }
 		}
 
 		complete_effect = {
 			set_cosmetic_tag = MUT_UNIFIED
-			541 = { add_core_of = ROOT }
 			681 = { add_core_of = ROOT }
-			719 = { add_core_of = ROOT }
+			940 = { add_core_of = ROOT }
 			275 = { add_core_of = ROOT }
+			938 = { add_core_of = ROOT }
+			939 = { add_core_of = ROOT }
+			893 = { add_core_of = ROOT }
+			541 = { add_core_of = ROOT }
+			894 = { add_core_of = ROOT }
+			895 = { add_core_of = ROOT }
 			542 = { add_core_of = ROOT }
 			545 = { add_core_of = ROOT }
 			544 = { add_core_of = ROOT }
-			938 = { add_core_of = ROOT }
-			939 = { add_core_of = ROOT }
-			940 = { add_core_of = ROOT }
+			896 = { add_core_of = ROOT }
+			771 = { add_core_of = ROOT }
+			1097 = { add_core_of = ROOT }
 			hidden_effect = {
 				news_event = { id = wtt_news.63 hours = 6 }
 				set_global_flag = form_mutapa_flag
@@ -11106,6 +11124,7 @@ form_turkestan_category = {
 		allowed = {
 			OR = {
 				original_tag = TAN # Tannu Tuva
+				original_tag = ALT # Altai
 				original_tag = KAZ # Kazakhstan
 				original_tag = UZB # Uzbekistan
 				original_tag = KYR # Kyrgyzstan
@@ -11147,12 +11166,14 @@ form_turkestan_category = {
 			controls_state = 732 # Kyrgyzstan
 			controls_state = 742 # Tajikistan
 			controls_state = 584 # Turkmenistan
+			controls_state = 985 # Asgabat
 			controls_state = 832 # Tashauz
 		}
 
 		visible = {
 			OR = {
 				original_tag = TAN # Tannu Tuva
+				original_tag = ALT # Altai
 				original_tag = KAZ # Kazakhstan
 				original_tag = UZB # Uzbekistan
 				original_tag = KYR # Kyrgyzstan
@@ -11180,6 +11201,7 @@ form_turkestan_category = {
                                 OR = {
 
 									has_nationality = TAN # Tannu Tuva
+									has_nationality = ALT # Altai
 									has_nationality = KAZ # Kazakhstan
 									has_nationality = UZB # Uzbekistan
 									has_nationality = KYR # Kyrgyzstan
@@ -11225,6 +11247,9 @@ form_turkestan_category = {
 			
 			# Tashauz
 			832 = { add_core_of = ROOT }
+			
+			# Asgabat
+			985 = { add_core_of = ROOT }
 			
 			# Uzbekistan
 			custom_effect_tooltip = form_country_uzbekistan_coring_states_tt
@@ -12070,6 +12095,7 @@ form_siberia_category = {
 			OR = {
 				original_tag = YAK # Yakutia
 				original_tag = FER # Far Eastern Republic
+				original_tag = GUK # Green Ukraine
 				original_tag = CKK # Chukotka
 				original_tag = VLA # Vladivostok
 				original_tag = BYA # Buryatia
@@ -12078,6 +12104,8 @@ form_siberia_category = {
 				original_tag = YAM # Yamalia
 				original_tag = OVO # Ostyak-Vogulia
 				original_tag = TAN # Tannu Tuva
+				original_tag = KHA # Khakassia
+				original_tag = EVE # Evenkia
 			}
 		}
 
@@ -12094,6 +12122,7 @@ form_siberia_category = {
 			OR = {
 				original_tag = YAK # Yakutia
 				original_tag = FER # Far Eastern Republic
+				original_tag = GUK # Green Ukraine
 				original_tag = CKK # Chukotka
 				original_tag = VLA # Vladivostok
 				original_tag = BYA # Buryatia
@@ -12122,6 +12151,7 @@ form_siberia_category = {
 
 									has_nationality = YAK
 									has_nationality = FER
+									has_nationality = GUK
 									has_nationality = CKK
 									has_nationality = VLA
 									has_nationality = BYA
@@ -12255,6 +12285,7 @@ form_siberia_category = {
 			OR = {
 				original_tag = YAK # Yakutia
 				original_tag = FER # Far Eastern Republic
+				original_tag = GUK # Green Ukraine
 				original_tag = CKK # Chukotka
 				original_tag = VLA # Vladivostok
 				original_tag = BYA # Buryatia
@@ -12283,6 +12314,7 @@ form_siberia_category = {
 			OR = {
 				original_tag = YAK # Yakutia
 				original_tag = FER # Far Eastern Republic
+				original_tag = GUK # Green Ukraine
 				original_tag = CKK # Chukotka
 				original_tag = VLA # Vladivostok
 				original_tag = BYA # Buryatia
@@ -12355,6 +12387,7 @@ form_siberia_category = {
 			OR = {
 				original_tag = YAK # Yakutia
 				original_tag = FER # Far Eastern Republic
+				original_tag = GUK # Green Ukraine
 				original_tag = CKK # Chukotka
 				original_tag = VLA # Vladivostok
 				original_tag = BYA # Buryatia
@@ -12380,6 +12413,7 @@ form_siberia_category = {
 			OR = {
 				original_tag = YAK # Yakutia
 				original_tag = FER # Far Eastern Republic
+				original_tag = GUK # Green Ukraine
 				original_tag = CKK # Chukotka
 				original_tag = VLA # Vladivostok
 				original_tag = BYA # Buryatia
@@ -12441,6 +12475,7 @@ form_siberia_category = {
 			OR = {
 				original_tag = YAK # Yakutia
 				original_tag = FER # Far Eastern Republic
+				original_tag = GUK # Green Ukraine
 				original_tag = CKK # Chukotka
 				original_tag = VLA # Vladivostok
 				original_tag = BYA # Buryatia
@@ -12463,6 +12498,7 @@ form_siberia_category = {
 			OR = {
 				original_tag = YAK # Yakutia
 				original_tag = FER # Far Eastern Republic
+				original_tag = GUK # Green Ukraine
 				original_tag = CKK # Chukotka
 				original_tag = VLA # Vladivostok
 				original_tag = BYA # Buryatia

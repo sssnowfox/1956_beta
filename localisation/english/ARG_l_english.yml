@@ -411,6 +411,7 @@
  ARG_FMA_P:0 "FMA I.Ae. R. Pesados"
  ARG_FMA_N:0 "FMA I.Ae. C. Navales"
  ARG_Astarsa:0 "Astilleros Argentinos Río de La Plata S.A. (ASTARSA)"
+ ARG_Astarsa_organization:0 "Astilleros Argentinos Río de La Plata S.A. (ASTARSA)"
  ARG_HAFDASA:0 "Hispano-Argentina (HAFDASA)"
  ARG_Bunge:0 "Bunge y Born"
  ARG_Tandanor:0 "Arsenal Naval Buenos Aires"
@@ -423,6 +424,11 @@
  ARG_ArsenalEDL2:0 "Arsenal Esteban De Luca"
  ARG_Somisa:0 "Sociedad Mixta Siderúrgica (SOMISA)"
  ARG_Somisa2:0 "Sociedad Mixta Siderúrgica (SOMISA)"
+ ARG_AFNE_organization:0 "AFNE"
+ ARG_Tandanor_organization:0 "Tandanor"
+ ARG_CITEFA:0 "Citefa"
+ ARG_Bernardin:0 "Bernardin"
+ 
 
  #####Advisors#####
  ARG_ramon_castillo:0 "Ramón Castillo"
