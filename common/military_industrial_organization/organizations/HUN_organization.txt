@@ -223,14 +223,17 @@ HUN_ikarus_organization = { #Made Buses but Switched to planes in 1942, Uhri Bro
 		}
 	}
 	initial_trait = {
-		name = generic_mio_initial_trait_range_focused_aircraft_designer
+		name = generic_mio_initial_trait_multi_role_aircraft_designer
 
 		limit_to_equipment_type = { mio_cat_eq_all_small_plane mio_cat_eq_all_medium_plane }
 
 		equipment_bonus = {
-			air_range = 0.10
+			air_ground_attack = 0.02
+			naval_strike_attack = 0.02
+			air_attack = 0.02
+			air_defence = 0.02
 		}
-	}		
+	}	
 }
 
 HUN_repulo_muszaki_intezet_organization = {
