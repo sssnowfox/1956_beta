@@ -214,11 +214,25 @@ HUN_ikarus_organization = { #Made Buses but Switched to planes in 1942, Uhri Bro
 	}
 
 	available = {
-		owner = {
-			has_completed_focus = HUN_boost_hungarian_aviation_industry
-			OR = {
-				has_idea = war_economy
-				has_idea = tot_economic_mobilisation
+		if = {
+			limit = {
+				has_dlc = "Gotterdammerung"
+			}
+			owner = {
+				has_completed_focus = wuw_HUN_boost_hungarian_aviation_industry
+				OR = {
+					has_idea = war_economy
+					has_idea = tot_economic_mobilisation
+				}			
+			}
+		}
+		else = {
+			owner = {
+				has_completed_focus = HUN_boost_hungarian_aviation_industry
+				OR = {
+					has_idea = war_economy
+					has_idea = tot_economic_mobilisation
+				}
 			}
 		}
 	}
