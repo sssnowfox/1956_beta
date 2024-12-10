@@ -1927,8 +1927,10 @@ focus_tree = {
 			}
 			custom_effect_tooltip = r56_newline
 			if = {
-				NOT = {
-					has_completed_focus = INS_gather_the_opposition
+				limit = {
+					NOT = {
+						has_completed_focus = INS_gather_the_opposition
+					}
 				}
 				custom_effect_tooltip = available_political_advisor
 				show_ideas_tooltip = INS_hubertus_van_mook
