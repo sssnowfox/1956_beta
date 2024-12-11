@@ -7,6 +7,18 @@ guiTypes = {
 		origo = center
 		moveable = no
 
+		# Explanation
+		instantTextBoxType = {
+			name = LUX_ministries_desc
+			position = {
+				x = 20
+				y = 340
+			}
+			maxWidth = 470
+			font = hoi_18
+			text = LUX_ministries_desc_text
+		}
+
 		# Ministries
 		iconType = {
 			name = LUX_minister_prime_PD_icon_bech
