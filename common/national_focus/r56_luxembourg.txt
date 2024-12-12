@@ -896,6 +896,12 @@ focus_tree = {
 			custom_effect_tooltip = LUX_finalise_government_formation_tt
 			add_stability = 0.05
 
+			clr_country_flag = LUX_minister_economics_button_empty_clicked
+			clr_country_flag = LUX_minister_interior_button_empty_clicked
+			clr_country_flag = LUX_minister_foreign_button_empty_clicked
+			clr_country_flag = LUX_minister_labour_button_empty_clicked
+			clr_country_flag = LUX_minister_army_button_empty_clicked
+
 			if = {
 				limit = { NOT = { has_country_flag = LUX_elections_KPL_winner } }
 				add_popularity = {
