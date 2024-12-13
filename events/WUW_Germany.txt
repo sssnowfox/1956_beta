@@ -18723,6 +18723,7 @@ country_event = {
 							state = 72
 							state = 71
 							state = 73
+							state = 996
 						}
 					}
 					transfer_state_to = HUN
@@ -18742,6 +18743,7 @@ country_event = {
 							state = 72
 							state = 71
 							state = 73
+							state = 996
 						}
 					}
 					transfer_state_to = AUS
@@ -18772,6 +18774,7 @@ country_event = {
 							#state = 72
 							state = 71
 							state = 73
+							state = 996
 						}
 					}
 					transfer_state_to = HUN
@@ -18791,6 +18794,7 @@ country_event = {
 							#state = 72
 							state = 71
 							state = 73
+							state = 996
 						}
 					}
 					transfer_state_to = AUS
