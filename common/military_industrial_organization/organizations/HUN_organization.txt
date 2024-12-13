@@ -70,26 +70,6 @@ HUN_magyar_honvedseg_haditechnikai_intezete_organization = {
  	}
  }
 
-mavag_tank_organization = {
-	name = mavag_tank
-	include = generic_medium_tank_organization
-	icon = GFX_idea_mavag_tank
-	allowed = {
-		original_tag = HUN
-	}
-	initial_trait = {
-		name = generic_mio_initial_trait_medium_tank_designer
-
-		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.05
-		}
-		
-		production_bonus = {
-			production_capacity_factor = 0.05
-		}
-	}	
-}
-
 mw_tank_organization = {
 	name = mw_tank
 	include = generic_infantry_tank_organization
