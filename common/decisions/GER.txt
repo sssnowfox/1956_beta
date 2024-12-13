@@ -20662,6 +20662,28 @@ GER_realpolitik_cat = {
 					add_core_of = SCO
 					transfer_state_to = SCO
 				}
+				if = {
+					limit = {
+						970 = {
+							is_controlled_by_ROOT_or_subject = yes
+						}						
+					}
+					970 = {
+						add_core_of = SCO
+						transfer_state_to = SCO						
+					}
+				}
+				if = {
+					limit = {
+						971 = {
+							is_controlled_by_ROOT_or_subject = yes
+						}						
+					}
+					971 = {
+						add_core_of = SCO
+						transfer_state_to = SCO						
+					}
+				}
 
 				SCO = {
 					add_manpower = 25000
@@ -20677,10 +20699,8 @@ GER_realpolitik_cat = {
 					}	
 				}
 			}
-
 		}
 	}
-
 }
 
 GER_mitteleuropa_economic_integration_cat = {
