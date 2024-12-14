@@ -41,6 +41,9 @@ HUN_magyar_honvedseg_haditechnikai_intezete_organization = {
 	icon = GFX_idea_generic_tank_manufacturer_3
 	allowed = {
 		original_tag = HUN
+		NOT = {
+			has_dlc = "Gotterdammerung" #fiat is also mobile tank, plus that would mean 2 things that are Toldi focused with 2 traits.
+		}
 	}
 }
 
@@ -66,6 +69,39 @@ HUN_magyar_honvedseg_haditechnikai_intezete_organization = {
  			FROM = {
  				has_completed_focus = HUN_assault_gun_focus
  			}
+ 		}
+ 	}
+ }
+
+ HUN_fiat_tankettes_organization = {
+ 	include = generic_mobile_tank_organization
+ 	icon = GFX_idea_fiat
+ 	
+ 	allowed = {	
+ 		original_tag = HUN 
+ 		has_dlc = "Arms Against Tyranny"
+ 	}
+
+ 	visible = {
+ 		IF = {
+ 			limit = {
+ 				FROM = {
+ 					original_tag = HUN
+ 				}
+ 			}
+ 			FROM = {
+ 				has_completed_focus = wuw_HUN_license_fiat_tankettes
+ 			}
+ 		}
+ 	}
+ 	
+ 	available = {
+ 		# When in a Foreign MIO, countries need to be at peace with original country
+ 		IF = {
+ 			limit = {
+ 				FROM = { NOT = { original_tag = ITA } }
+ 			}
+ 			FROM = { NOT = { has_war_with = ITA } }
  		}
  	}
  }
