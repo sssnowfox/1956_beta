@@ -1468,7 +1468,7 @@ GER_price_controls_cat = {
 		}
 	}
 }
-#TODO_rt56 fix the rest of this:
+#TODO_rt56 fix the rest of this: DONE?
 GER_fortify_the_vaterland_cat = {
 	GER_construct_the_westwall = {
 		icon = GFX_decision_generic_fortification
@@ -1518,7 +1518,7 @@ GER_fortify_the_vaterland_cat = {
 				is_fully_controlled_by = ROOT
 				is_demilitarized_zone = no
 			}
-			1053 = { #Sarland
+			1053 = { #Saarland
 				is_fully_controlled_by = ROOT
 				is_demilitarized_zone = no
 			}
@@ -1545,6 +1545,7 @@ GER_fortify_the_vaterland_cat = {
 				has_full_control_of_state = 51 #Rineland
 				has_full_control_of_state = 42 #Moselland
 				has_full_control_of_state = 923 #Baden
+				has_full_control_of_state = 1053 #Saarland
 			}
 		}
 
@@ -1601,8 +1602,8 @@ GER_fortify_the_vaterland_cat = {
 								province = {
 									id = 11470
 									id = 11435
-									id = 9575
-									id = 11531
+									#id = 9575
+									#id = 11531
 									id = 563
 									id = 3558
 								}
@@ -1619,8 +1620,8 @@ GER_fortify_the_vaterland_cat = {
 							province = {
 								id = 11470
 								id = 11435
-								id = 9575
-								id = 11531
+								#id = 9575
+								#id = 11531
 								id = 563
 								id = 3558
 							}
@@ -1628,6 +1629,32 @@ GER_fortify_the_vaterland_cat = {
 						}
 					}
 				}
+				if = {
+					limit = {
+						1053 = { #Moselland
+							any_province_building_level = {
+								province = {
+									id = 9575 #
+									id = 11531 #
+								}
+								building = bunker
+								level < 4 
+							}
+						}
+
+					}
+					1053 = { #Moselland
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = {
+								id = 9575 #
+								id = 11531 #
+							}
+							instant_build = yes
+						}
+					}
+				}				
 				if = {
 					limit = {
 						923 = { #Baden
