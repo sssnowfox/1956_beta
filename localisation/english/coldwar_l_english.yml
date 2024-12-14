@@ -137,3 +137,5 @@
  #flag
  CZE_started_five_year_plan: "Completed §YThe Five Year Plan§!"
  CZE_revolted_against_soviets: "Revolted against [SOV.GetNameDef]"
+ #tooltip
+ CW_czechoslovak_autonomy_postyalta: "Granted [CZE.GetNonIdeologyName] limited autonomy"

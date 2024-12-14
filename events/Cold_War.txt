@@ -729,7 +729,10 @@ country_event = {
         ai_chance = {
             base = 1
         }
-        add_threat = -15
+        add_named_threat = {
+            threat = -15
+            name = CW_czechoslovak_autonomy_postyalta
+        }
         if = {
             limit = {
                 has_dlc = "Man the Guns"
@@ -784,7 +787,6 @@ country_event = {
                 factor = 3
             }
         }
-        add_threat = 5
         puppet = CZE
         CZE = {
             set_popularities = {
