@@ -551,6 +551,42 @@ country_event = {
 			remove_ideas = HOL_weak_government
 		}
 	}
+	option = {
+		name = mtg_netherlands.14.b
+		add_popularity = {
+		    ideology = democratic
+		    popularity = -0.05
+		}
+		retire_country_leader = yes
+		promote_character = {
+			character = HOL_willem_albarda
+			ideology = socialism
+		}
+		if = {
+			limit = {
+				has_idea = HOL_weak_government
+			}
+			remove_ideas = HOL_weak_government
+		}
+	}
+	option = {
+		name = mtg_netherlands.14.c
+		add_popularity = {
+		    ideology = democratic
+		    popularity = -0.05
+		}
+		retire_country_leader = yes
+		promote_character = {
+			character = HOL_pieter_oud
+			ideology = liberalism
+		}
+		if = {
+			limit = {
+				has_idea = HOL_weak_government
+			}
+			remove_ideas = HOL_weak_government
+		}
+	}
 }
 
 # Event for Britain: Revive the Low Countries Buffer Proposal
