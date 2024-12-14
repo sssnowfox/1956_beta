@@ -2996,7 +2996,7 @@ GER_fortify_the_vaterland_cat = {
 					153 = { #Tirol
 						state_is_fully_controlled_by_ROOT_subject_or_faction_member = no
 					}
-					976 = { #Steiremark
+					1054 = { #Steiremark = 1054 and not 976
 						state_is_fully_controlled_by_ROOT_subject_or_faction_member = no
 					}
 				}
@@ -3030,7 +3030,7 @@ GER_fortify_the_vaterland_cat = {
 							state = 847 #Western Swiss Alps
 							state = 151 #Eastern Swiss Alps
 							state = 153 #Tirol
-							state = 976 #Steiremark
+							state = 1054 #Steiremark
 						}
 					}
 					add_building_construction = {
@@ -3153,13 +3153,13 @@ GER_fortify_the_vaterland_cat = {
 			}
 			if = {
 				limit = { 
-					976 = {
+					1054 = {
 						state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
 						bunker < 10
 					}
 				}
 				hidden_effect = {
-					976 = {
+					1054 = {
 						add_building_construction = {
 							type = bunker
 							level = 1
