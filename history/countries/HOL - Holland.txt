@@ -172,6 +172,8 @@ recruit_character = HOL_robert_van_genechten				#fascist propagandist
 #recruit_character = HOL_hendrik_van_adrichem				#navy
 #recruit_character = HOL_johannes_bax						#navy
 #recruit_character = HOL_willem_kruys						#navy
+recruit_character = HOL_willem_albarda						#democratic leader
+recruit_character = HOL_pieter_oud							#democratic leader
 
 
 ### SCIENTISTS ###
