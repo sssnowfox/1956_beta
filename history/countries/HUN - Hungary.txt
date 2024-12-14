@@ -394,7 +394,7 @@ recruit_character = HUN_franz_friedrich
 recruit_character = HUN_istvan_ujszaszy
 recruit_character = HUN_gyorgy_jendrassik
 recruit_character = HUN_andras_littay
-recruit_character = HUN_dezso_winkler
+#recruit_character = HUN_dezso_winkler
 recruit_character = HUN_odon_trunkwalter
 
 recruit_character = HUN_paul_erdos
@@ -434,7 +434,6 @@ if = {
 	recruit_character = HUN_pal_pronay
 	recruit_character = HUN_imre_kemeri_nagy
 	#recruit_character = HUN_francois_deak
-	recruit_character = HUN_reszo_kastner
 	recruit_character = HUN_laszlo_hary
 	recruit_character = HUN_bela_imredy
 	recruit_character = HUN_pal_teleki

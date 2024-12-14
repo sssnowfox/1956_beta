@@ -418,6 +418,11 @@ characters={
 			}
 		}
 		advisor={
+			allowed = {
+				NOT = {
+					has_dlc = "Gotterdammerung"
+				}
+			}
 			slot = high_command
 			idea_token = HUN_andras_littay
 			ledger = army
@@ -1350,13 +1355,13 @@ characters={
 		}
 		
 		# Should be upgraded to field marshal through the focus wuw_HUN_award_military_promotions
-		corps_commander = {
+		field_marshal = {
 			traits = { inflexible_strategist trait_HUN_vitez }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
 			legacy_id = -1
 			#visible = {
 			#}
@@ -2059,10 +2064,10 @@ characters={
 			field_marshal= {
 				traits = { trait_HUN_vitez trait_engineer }
 				skill = 3
-				attack_skill = 3
-				defense_skill = 2
-				planning_skill = 3
-				logistics_skill = 1
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 3
 				legacy_id = -1
 				#visible = {
 				#}
