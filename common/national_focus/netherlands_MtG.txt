@@ -5891,12 +5891,7 @@ focus_tree = {
 				    ideology = democratic
 				    popularity = -0.05
 				}
-				retire_country_leader = yes
-				HOL_pieter_sjoerds_gerbrandy = {
-					promote_character = {
-						ideology = conservatism
-					}
-				}
+
 				if = {
 					limit = {
 						has_idea = HOL_weak_government
