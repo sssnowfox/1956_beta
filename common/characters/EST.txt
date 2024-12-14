@@ -201,13 +201,29 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { career_officer old_guard war_hero }
+			traits = { career_officer old_guard war_hero artillerist }
 			skill=2
 			attack_skill=1
 			defense_skill=3
 			planning_skill=2
 			logistics_skill=1
 			legacy_id=-1
+		}
+		advisor={
+			slot = high_command
+			idea_token = EST_herbert_brede
+			ledger = army
+			allowed = {
+				original_tag = EST
+				#has_dlc = "No Step Back" - we had him too...
+			}
+			traits = {
+				army_artillery_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 
@@ -220,7 +236,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ BALTIC_anti_bolshevik }
+			traits={ BALTIC_anti_bolshevik infantry_officer }
 			skill=2
 			attack_skill=2
 			defense_skill=2
@@ -255,22 +271,6 @@ characters={
 					NOT = {
 						has_government = communism
 					}					
-				}
-			}
-			advisor={
-				slot = high_command
-				idea_token = EST_alexander_jaakson
-				ledger = army
-				allowed = {
-					original_tag = EST
-					#has_dlc = "No Step Back" - we had him too...
-				}
-				traits = {
-					army_artillery_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
 				}
 			}
 		}		
@@ -423,12 +423,23 @@ characters={
 		    defense_skill = 2
 		    planning_skill = 1
 		    logistics_skill = 2
-			visible = { 
-				NOT = {
-					has_government = communism
-				}
 			}			
-		}		
+		}
+		advisor={
+			slot = high_command
+			idea_token = EST_gustav_jonson
+			ledger = army
+			allowed = {
+				original_tag = EST
+			}
+			traits = {
+				army_cavalry_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}	
 	}
 
 	### THEORISTS ###
