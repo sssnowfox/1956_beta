@@ -384,7 +384,7 @@ characters={
 				naval_theorist
 			}
 		}
-	
+	}
 
 	HUN_odon_trunkwalter={
 		name=HUN_odon_trunkwalter
@@ -1274,42 +1274,42 @@ characters={
 		}
 		
 		corps_commander = {
-			traits = { armor_officer cavalry_leader }
-			skill = 2
+			traits = { infantry_leader caring_leader }
+			skill = 3
 			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 1
+			defense_skill = 3
+			planning_skill = 3
 			logistics_skill = 2
 			legacy_id = -1
 			#visible = {
 			#}
 		}
 
-		advisor = {
-
-			slot = high_command
-
-			idea_token = HUN_vilmos_nagy
-
-			allowed = {
-				original_tag = HUN
-			}
-
-			available = {
-				has_completed_focus = wuw_HUN_form_the_gyorshadtest
-			}
-
-			traits = {
-				army_cavalry_2
-			}
-
-			cost = 100
-
-			ai_will_do = {
-				base = 1
-			}
-
-		}
+		#advisor = {
+		#
+		#	slot = high_command
+		#
+		#	idea_token = HUN_vilmos_nagy
+		#
+		#	allowed = {
+		#		original_tag = HUN
+		#	}
+		#
+		#	available = {
+		#		has_completed_focus = wuw_HUN_form_the_gyorshadtest
+		#	}
+		#
+		#	traits = {
+		#		army_cavalry_2
+		#	}
+		#
+		#	cost = 100
+		#
+		#	ai_will_do = {
+		#		base = 1
+		#	}
+		#
+		#}
 		
 	}
 
@@ -1498,16 +1498,21 @@ characters={
 		#	visible = {
 		#	}
 		#}
-		advisor={	
+		advisor={
 			slot = high_command
 			idea_token = HUN_sandor_gyorffy_bengyel
 			ledger = army
 			allowed = {
 				original_tag = HUN
-
-			traits = { army_logistics_2 }
-			
-		}	
+			}
+			traits = {
+				army_logistics_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
 	}
 
 	HUN_zoltan_decleva = {
@@ -2986,15 +2991,15 @@ characters={
 				}
 			}
 
-			corps_commander = {
-				traits = { infantry_officer }
-				skill = 1
-				attack_skill = 1
-				defense_skill = 1
-				planning_skill = 1
-				logistics_skill = 1
-				legacy_id = -1 
-			}
+			#corps_commander = {
+			#	traits = { infantry_officer }
+			#	skill = 1
+			#	attack_skill = 1
+			#	defense_skill = 1
+			#	planning_skill = 1
+			#	logistics_skill = 1
+			#	legacy_id = -1 
+			#}
 
 			advisor = {
 			
@@ -3004,10 +3009,6 @@ characters={
 
 				allowed = {
 					original_tag = HUN
-				}
-
-				available = {
-					has_completed_focus = wuw_HUN_invest_in_ludovica_academy
 				}
 
 				traits = {

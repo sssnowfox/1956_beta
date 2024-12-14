@@ -18370,7 +18370,6 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = available_military_high_command
-			show_ideas_tooltip = HUN_vilmos_nagy
 			show_ideas_tooltip = HUN_gusztav_jany
 		}
 	}
@@ -18539,8 +18538,7 @@ focus_tree = {
 			army_experience = 50
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-			
-			}
+
 			HUN_jozsef_bajnoczy = {
 				add_planning = 1
 				add_logistics = 1
