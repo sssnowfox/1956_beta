@@ -13886,6 +13886,15 @@ focus_tree = {
 		cost = 5
 		available = {
 			is_subject = no
+			if = {
+				limit = {
+					has_country_flag = ITA_yalta_block_monarchy_focuses_until_referendum
+				}
+				custom_trigger_tooltip = {
+					tooltip = ITA_monarchy_path_unlock_by_referendum_tt		
+					always = no
+				}
+			}
 		}
 
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_BALANCE_OF_POWER}
@@ -14162,6 +14171,15 @@ focus_tree = {
 		cost = 5
 		available = {
 			neutrality > 0.5
+			if = {
+				limit = {
+					has_country_flag = ITA_yalta_block_monarchy_focuses_until_referendum
+				}
+				custom_trigger_tooltip = {
+					tooltip = ITA_monarchy_path_unlock_by_referendum_tt		
+					always = no
+				}
+			}
 		}
 
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY FOCUS_FILTER_BALANCE_OF_POWER}

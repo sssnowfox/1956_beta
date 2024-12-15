@@ -112,7 +112,7 @@
  mafia_domination: "Dominant Mafia Presence"
 
  #tooltip
- ITA_monarchy_path_unlock_by_referendum_tt: "§YThis focus may be unlocked based on the outcome of the monarchy referendum, its outcome is based on the popularity of the monarchist party.§!"
+ ITA_monarchy_path_unlock_by_referendum_tt: "§YThis focus may be unlocked based on the outcome of the monarchy referendum.§!"
 
 #USA
 
