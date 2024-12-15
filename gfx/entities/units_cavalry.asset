@@ -4094,11 +4094,11 @@ entity = {
 
 entity = {
 	clone = "SOV_cavalry_entity"
-	name = "UKR_cavalry_entity"
+	name = "UKR_cavalry_alt_0_entity"
 }
 entity = {
 	clone = "SOV_cavalry_2_entity"
-	name = "UKR_cavalry_2_entity"
+	name = "UKR_cavalry_2_alt_0_entity"
 }
 
 ## Kuban and Don Cossacks
