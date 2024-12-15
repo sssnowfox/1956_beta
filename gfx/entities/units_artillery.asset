@@ -1246,7 +1246,7 @@ entity = {
 
 entity = {
 	clone = "SOV_artillery_entity"
-	name = "UKR_artillery_entity"
+	name = "UKR_artillery_alt_0_entity"
 }
 entity = {
 	clone = "SOV_anti_tank_entity"
