@@ -1146,6 +1146,20 @@ country_event = {
 			remove_power_balance = {	#there is no christian democratic side
 				id = ITA_power_balance
 			}
+			hidden_effect = {
+				set_popularities = { #reverses popularity gains in focuses above
+					democratic = 33
+					neutrality = 38
+					fascism = 4
+					communism = 25
+				}
+				ITA_palmiro_togliatti = {
+					add_trait = {
+						slot = political_advisor
+						trait = SWE_minister_of_justice
+				   	}
+				}
+			}
 		}
 		hidden_effect = {
 			if = {

@@ -101,7 +101,6 @@ country_event = {
             }
             add_autonomy_score = {
                 value = 200
-                #localization = EXAMPLE
             }
             add_timed_idea = {
                 idea = USA_marshall_plan_aid_idea
@@ -819,5 +818,139 @@ country_event = {
 
     option = {  #refuse
         name = cold_war.44.b
+    }
+}
+
+country_event = {   #Italy requests Marshall Aid alternative
+    id = cold_war.45
+    title = cold_war.45.t
+	desc = cold_war.45.d
+    picture = GFX_report_event_military_planning
+
+    is_triggered_only = yes
+
+    option = {
+        name = cold_war.45.a
+        ai_chance = {
+            base = 1
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+        }
+        add_timed_idea = {
+            idea = SOV_financing_ITA_support
+            days = 360
+        }
+        FROM = {
+            add_timed_idea = {
+                idea = SOV_marshall_plan_alternative_aid_idea
+                days = 1440
+            }
+        }
+    }
+
+    option = {  #refuse
+        name = cold_war.45.b
+        FROM = {
+            add_popularity = {
+                ideology = communism
+                popularity = -0.05
+            }
+            if = {
+                limit = {
+                    NOT = {
+                        has_war_with = USA
+                    }
+                }
+                add_timed_idea = {
+                    idea = USA_marshall_plan_aid_idea
+                    days = 1440
+                }
+            }
+        }
+    }
+}
+
+country_event = {   #Italy requests permission/support for a civil war
+    id = cold_war.46
+    title = cold_war.46.t
+	desc = cold_war.46.d
+    picture = GFX_report_event_military_planning
+
+    is_triggered_only = yes
+
+    option = {
+        name = cold_war.46.a
+        FROM = {
+            set_country_flag = ITA_civil_war_got_SOV_support
+            hidden_effect = { #event title tooltip doesn't update, refuse is default
+                country_event = cold_war.47
+            }
+        }
+    }
+
+    option = {  #refuse
+        name = cold_war.46.b
+        FROM = {
+            country_event = cold_war.47
+        }
+    }
+}
+
+country_event = {
+    id = cold_war.47
+    title = {
+        trigger = {
+            has_country_flag = ITA_civil_war_got_SOV_support
+        }
+        text = cold_war.47.t1
+    }
+    title = {
+        text = cold_war.47.t2
+    }
+	desc = {
+        trigger = {
+            has_country_flag = ITA_civil_war_got_SOV_support
+        }
+        text = cold_war.47.d1
+    }
+    desc = {
+        text = cold_war.47.d2
+    }
+    picture = GFX_report_event_military_planning
+
+    is_triggered_only = yes
+
+    option = {
+        name = cold_war.47.a
+        if = {
+            limit = {
+                has_country_flag = ITA_civil_war_got_SOV_support
+            }
+            FROM = {
+                add_named_threat = {
+                    threat = 5
+                    name = cold_war.47.t
+                }
+            }
+        }
+        set_temp_variable = { civil_war_strength = 1 }
+        subtract_from_temp_variable = { civil_war_strength = party_popularity@communism }
+        start_civil_war = { #the civil war splits of from the NON-communists
+            ruling_party = communism
+            ideology = ROOT
+            size = civil_war_strength
+            states_filter = {
+                NOT = {
+                    state = 161
+                    state = 162
+                }
+            }
+        }
+    }
+
+    option = {  #refuse
+        name = cold_war.47.b
     }
 }

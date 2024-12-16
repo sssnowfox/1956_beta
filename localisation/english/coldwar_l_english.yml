@@ -102,6 +102,24 @@
  cold_war.44.a: "It is in our interest to strengthen them"
  cold_war.44.b: "If these fall into the wrong hands..."
 
+ cold_war.45.t: "Italy Requests Aid Package"
+ cold_war.45.d: "Officials of the communist party of [ITA.GetNameDef] have come with a unique proposal: in order to improve their popularity and avoid reliance on [USA.GetNameDef], they request that we provide an alternative to the aid they have provided to other European nations."
+ cold_war.45.a: "This could pull them into our sphere"
+ cold_war.45.b: "There is no hope for communism in [ITA.GetNonIdeologyName]"
+
+ cold_war.46.t: "An Italian Civil War?"
+ cold_war.46.d: ""
+ cold_war.46.a: "An incredible opportunity to spread communism"
+ cold_war.46.b: "This would damage our international reputation too much"
+
+ cold_war.47.t1: "[FROM.GetName] Provides Support for Civil War"
+ cold_war.47.t2: "[FROM.GetName] Refuses to Support for Civil War"
+ cold_war.47.d1: "To the surprise of our delegation, [SOV.GetLeader] has spoken out in support of our revolutionary plans, with [SOV.GetNameDef] set to support us materially."
+ cold_war.47.d2: "Our delegation to [SOV.GetNameDef] has returned with news: [SOV.GetLeader] does not wish for an Italian revolution to happen. Whether it is due to a fear of foreign interference, potential defeat, or for fearing escalation on the world stage is unknown, but it is now up to us whether to continue our plans for a revolution."
+ cold_war.47.a: "It is time for revolution"
+ cold_war.47.b: "Let us continue the Italian path to socialism"
+ 
+
 #ITA
  #focus
  ITA_sanction_mafia_killings: "Use the Mafia Against Communists"
@@ -111,13 +129,17 @@
  #modifier
  mafia_domination: "Dominant Mafia Presence"
 
+ #ideas
+ SOV_financing_ITA_support: "Financing Support for [ITA.GetName]"
+ SOV_marshall_plan_alternative_aid_idea: "[SOV.GetAdjective] Economic Support"
+
  #tooltip
  ITA_monarchy_path_unlock_by_referendum_tt: "§YThis focus may be unlocked based on the outcome of the monarchy referendum.§!"
 
 #USA
 
  #ideas
- USA_marshall_plan_aid_idea: "[USA.GetName] Economic Support"
+ USA_marshall_plan_aid_idea: "[USA.GetAdjective] Economic Support"
 
 #CZE
  #focus
