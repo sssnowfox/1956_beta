@@ -296,8 +296,6 @@ news_event = {  #death of Paton
 	title = cold_war.31.t
 	desc = cold_war.31.d
 
-    is_triggered_only = yes
-
     trigger = {
         original_tag = USA
         has_war = no
