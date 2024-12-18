@@ -860,14 +860,18 @@ CW_occupation_negotations = {
 			OR = {
 				AND = {
 					has_subject = AZR
-					any_owned_state = {
-						is_core_of = PER
+					AZR = {
+						any_owned_state = {
+							is_core_of = PER
+						}
 					}
 				}
 				AND = {
 					has_subject = KUR
-					any_owned_state = {
-						is_core_of = PER
+					KUR = {
+						any_owned_state = {
+							is_core_of = PER
+						}
 					}
 				}
 			}
