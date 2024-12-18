@@ -942,6 +942,11 @@ country_event = {   #Italy requests permission/support for a civil war
             hidden_effect = { #event title tooltip doesn't update, refuse is default
                 country_event = cold_war.47
             }
+            effect_tooltip = {
+                add_equipment_to_stockpile = { type = light_tank_chassis_1 amount = 500 producer = SOV variant_name = "T-26TU mod. 1933" }
+                add_equipment_to_stockpile = { type = infantry_equipment amount = 2000 producer = SOV }
+                add_equipment_to_stockpile = { type = artillery_equipment amount = 100 producer = SOV }
+            }
         }
     }
 
@@ -979,17 +984,6 @@ country_event = {
 
     option = {
         name = cold_war.47.a
-        if = {
-            limit = {
-                has_country_flag = ITA_civil_war_got_SOV_support
-            }
-            FROM = {
-                add_named_threat = {
-                    threat = 5
-                    name = cold_war.47.t
-                }
-            }
-        }
         set_temp_variable = { civil_war_strength = 1 }
         subtract_from_temp_variable = { civil_war_strength = party_popularity@communism }
         start_civil_war = { #the civil war splits of from the NON-communists
@@ -1000,6 +994,20 @@ country_event = {
                 NOT = {
                     state = 161
                     state = 162
+                }
+            }
+        }
+        if = {
+            limit = {
+                has_country_flag = ITA_civil_war_got_SOV_support
+            }
+            add_equipment_to_stockpile = { type = light_tank_chassis_1 amount = 500 producer = SOV variant_name = "T-26TU mod. 1933" }
+            add_equipment_to_stockpile = { type = infantry_equipment amount = 2000 producer = SOV }
+            add_equipment_to_stockpile = { type = artillery_equipment amount = 100 producer = SOV }
+            FROM = {
+                add_named_threat = {
+                    threat = 5
+                    name = cold_war.47.t
                 }
             }
         }
@@ -1050,8 +1058,104 @@ country_event = {
                 remove_claim_by = ITA
             }
         }
+        if = {
+            limit = {
+                has_global_flag = r56_YUG_in_yalta
+                date > 1940.1.1 #if Yalta somehow happened extremely early, dont give real-life designs
+            }
+            if = {
+                limit = {
+                    has_dlc = "No Step Back"
+                }
+                hidden_effect = {
+                    GER = {
+                        create_equipment_variant = {
+                            name = "Tiger I Ausf. A"
+                            type = heavy_tank_chassis_2
+                            design_team = mio:GER_porsche_organization #We feed on your tears
+                            modules = {
+                                main_armament_slot = tank_heavy_cannon
+                                turret_type_slot = tank_heavy_three_man_tank_turret
+                                suspension_type_slot = tank_interleaved_suspension
+                                armor_type_slot = tank_welded_armor
+                                engine_type_slot = tank_gasoline_engine
+                                special_type_slot_1 = tank_radio_1
+                                special_type_slot_2 = smoke_launchers
+                                special_type_slot_3 = additional_machine_guns
+                            }
+                            upgrades = {
+                                tank_nsb_engine_upgrade = 8
+                                tank_nsb_armor_upgrade = 6
+                            }
+                            icon = "GFX_GER_advanced_heavy_tank_medium"
+                        }
+                    }
+                    SOV = {
+                        if = {
+                            limit = {
+                                OR = {
+                                    has_tech = artillery3
+                                    has_tech = antitank3
+                                }
+                            }
+                            create_equipment_variant = {
+                                name = "T-34"
+                                type = medium_tank_chassis_2
+                                parent_version = 0
+                                modules = {
+                                    main_armament_slot = tank_medium_cannon_2
+                                    turret_type_slot = tank_medium_two_man_tank_turret
+                                    suspension_type_slot = tank_christie_suspension
+                                    armor_type_slot = tank_welded_armor
+                                    engine_type_slot = tank_diesel_engine
+                                    special_type_slot_1 = sloped_armor
+                                }
+                                upgrades = {
+                                    tank_nsb_engine_upgrade = 10
+                                    tank_nsb_armor_upgrade = 7
+                                }
+                                icon = "GFX_SOV_improved_medium_tank_medium"
+                            }
+                        }
+                        else_if = {
+                            limit = {
+                                OR = {
+                                    has_tech = artillery1
+                                    has_tech = antitank1
+                                }
+                            }
+                            create_equipment_variant = {
+                                name = "T-34"
+                                type = medium_tank_chassis_2
+                                parent_version = 0
+                                modules = {
+                                    main_armament_slot = tank_medium_cannon
+                                    turret_type_slot = tank_medium_two_man_tank_turret
+                                    suspension_type_slot = tank_christie_suspension
+                                    armor_type_slot = tank_welded_armor
+                                    engine_type_slot = tank_diesel_engine
+                                    special_type_slot_1 = sloped_armor
+                                }
+                                upgrades = {
+                                    tank_nsb_engine_upgrade = 10
+                                    tank_nsb_armor_upgrade = 7
+                                }
+                                icon = "GFX_SOV_improved_medium_tank_medium"
+                            }
+                        }
+                    }
+                }
+                add_equipment_to_stockpile = { type = heavy_tank_chassis_2 amount = 40 producer = GER variant_name = "Tiger I Ausf. A" }
+                add_equipment_to_stockpile = { type = medium_tank_chassis_2 amount = 100 producer = SOV variant_name = "T-34" }
+            }
+            else = {
+                add_equipment_to_stockpile = { type = heavy_tank_equipment_2 amount = 40 producer = GER }
+                add_equipment_to_stockpile = { type = medium_tank_chassis_2 amount = 100 producer = SOV }
+            }
+            add_equipment_to_stockpile = { type = infantry_equipment amount = 500 producer = YUG }
+        }
     }
     option = {
-        name = cold_war.48.a
+        name = cold_war.48.b
     }
 }
