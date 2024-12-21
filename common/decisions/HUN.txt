@@ -1526,6 +1526,8 @@ HUN_territorial_revision_category = {
 		highlight_states = {
 			highlight_state_targets = {
 				state = 73
+				state = 996
+				
 			}
 		}
 
@@ -1553,6 +1555,7 @@ HUN_territorial_revision_category = {
 				has_completed_focus = wuw_HUN_reclaim_the_slovak_possessions
 			}
 			controls_state = 73
+			controls_state = 996
 		}
 
 		days_remove = 35 
@@ -1573,8 +1576,14 @@ HUN_territorial_revision_category = {
 					73 = {
 						is_claimed_by = ROOT
 					}
+					996 = {
+						is_claimed_by = ROOT
+						}
 				}
 				73 = {
+					remove_claim_by = ROOT
+				}
+				996 = {
 					remove_claim_by = ROOT
 				}
 			}
@@ -1586,8 +1595,16 @@ HUN_territorial_revision_category = {
 							is_core_of = ROOT
 						}
 					}
+					996 = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
 				}
 				73 = {
+					add_core_of = ROOT
+				}
+				996 = {
 					add_core_of = ROOT
 				}
 			}
@@ -2822,14 +2839,17 @@ HUN_territorial_revision_category = {
 						}
 					}
 				}
+				952 = {
+				add_core_of = ROOT
+				}
 			}
-
+				
 			hidden_effect = {
 				set_country_flag = HUN_reintigrated_srem_flag 
 			}
 		}
 	}
-	
+
 	# Reintegrate Prekmurje
 	HUN_reintigrate_prekmurje = {
 
@@ -2902,8 +2922,11 @@ HUN_territorial_revision_category = {
 						}
 					}
 				}
+				956 = {
+				add_core_of = ROOT
+				}
 			}
-
+				
 			hidden_effect = {
 				set_country_flag = HUN_reintigrated_prekmurje_flag 
 			}
