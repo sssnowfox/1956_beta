@@ -12685,6 +12685,15 @@ form_siberia_category = {
 				# Boyadbo
 				565 = { add_core_of = ROOT }
 				
+				#Khatangsky
+				878 = { add_core_of = ROOT }
+				
+				#Udachny
+				876 = { add_core_of = ROOT }
+				
+				#Verkhoyansk
+				877 = { add_core_of = ROOT }
+				
 				news_event = { id = nsb_news.303 hours = 8 }
 				
 				set_global_flag = form_siberian_republic_flag
@@ -12733,6 +12742,7 @@ form_siberia_category = {
 			controls_state = 657 # Birobidzhan
 			controls_state = 409 # Khabravosk
 			controls_state = 408 # Vladivostok
+			controls_state = 874 # Magadan
 		}
 
 		visible = {
@@ -12788,6 +12798,12 @@ form_siberia_category = {
 				
 				# Vladivostok
 				408 = { add_core_of = ROOT }
+				
+				# Magadan 
+				874 = { add_core_of = ROOT }
+				
+				# Chukchi Peninsula
+				875 = { add_core_of = ROOT }
 				
 				set_global_flag = far_east_integrated_flag
 				
