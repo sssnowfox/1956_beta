@@ -9667,7 +9667,8 @@ focus_tree = {
 			any_other_country = {
 				OR = {
 					owns_state = 109
-					owns_state = 103
+					owns_state = 958
+					owns_state = 959
 				}
 				NOT = {
 					has_war_with = ROOT
@@ -9691,7 +9692,8 @@ focus_tree = {
 				limit = {
 					OR = {
 						state = 109
-						state = 103
+						state = 958
+						state = 959
 					}
 					NOT = {
 						OR = {
@@ -9712,7 +9714,8 @@ focus_tree = {
 					AND = {
 						OR = {
 							controls_state = 109
-							controls_state = 103
+							controls_state = 958
+							controls_state = 959
 						}
 						NOT = {
 							OR = {
