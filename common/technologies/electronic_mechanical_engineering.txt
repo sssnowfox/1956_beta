@@ -193,6 +193,12 @@ technologies = {
 		# units with radios can more efficiently join combats when there is room
 		land_reinforce_rate = 0.01
 		coordination_bonus = 0.02
+
+		path = {
+			leads_to_tech = semi_modern_radio
+			research_cost_coeff = 1
+		}
+		
 		
 		start_year = 1941
 		
@@ -231,6 +237,72 @@ technologies = {
 
 		special_project_specialization = { specialization_land specialization_air }
 	}
+##R56 Radio Techs
+
+semi_modern_radio = {
+
+	# units with radios can more efficiently join combats when there is room
+	land_reinforce_rate = 0.01
+	coordination_bonus = 0.02
+	
+	start_year = 1944
+	
+	research_cost = 2.25
+
+	path = {
+		leads_to_tech = modern_radio
+		research_cost_coeff = 1
+	}
+	
+	folder = {
+		name = electronics_folder
+		position = { x = @radio y = 18 }
+	}
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 5
+			date > "1944.1.1"
+		}
+	}
+	
+	categories = {
+		electronics
+	}
+
+	special_project_specialization = { specialization_land specialization_air }
+}
+
+modern_radio = {
+
+	# units with radios can more efficiently join combats when there is room
+	land_reinforce_rate = 0.01
+	coordination_bonus = 0.02
+	
+	start_year = 1953
+	
+	research_cost = 2.50
+	
+	folder = {
+		name = electronics_folder
+		position = { x = @radio y = 28 }
+	}
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 5
+			date > "1951.1.1"
+		}
+	}
+	
+	categories = {
+		electronics
+	}
+
+	special_project_specialization = { specialization_land specialization_air }
+}
 
 ##R56 RDF Techs
 	rdf0 = {
@@ -243,8 +315,8 @@ technologies = {
 		is_special_project_tech = yes
 
 		convoy_retreat_speed = 0.01
-		air_superiority_detect_factor = 0.01
-		navy_submarine_detection_factor = 0.01
+		air_superiority_detect_factor = 0.05
+		navy_submarine_detection_factor = 0.05
 		
 		#Taking Vanilla's lead and making this a SP only tech and jumping the tree to RDF1
 		#path = {
@@ -283,22 +355,9 @@ technologies = {
 		is_special_project_tech = yes
 
 		convoy_retreat_speed = 0.01
-		navy_submarine_detection_factor = 0.01
-		resistance_damage_to_garrison = -0.01
-		required_garrison_factor = -0.01
-		air_superiority_detect_factor = 0.01
+		navy_submarine_detection_factor = 0.05
+		air_superiority_detect_factor = 0.05
 
-		cavalry = {
-			suppression_factor = 0.01
-		}
-
-		armored_car = {
-			suppression_factor = 0.01
-		}
-
-		military_police = {
-			suppression_factor = 0.01
-		}
 		
 		path = {
 			leads_to_tech = rdf2 
@@ -339,25 +398,11 @@ technologies = {
 			   is_special_project_completed = sp:sp_air_rdf
 		  	}
 	   	}
+
 		convoy_retreat_speed = 0.01
-		navy_submarine_detection_factor = 0.01
-		resistance_damage_to_garrison = -0.01
-		required_garrison_factor = -0.01
-		air_superiority_detect_factor = 0.01
-
-		is_special_project_tech = yes
-
-		cavalry = {
-			suppression_factor = 0.01
-		}
-
-		armored_car = {
-			suppression_factor = 0.01
-		}
-
-		military_police = {
-			suppression_factor = 0.01
-		}
+		navy_submarine_detection_factor = 0.05
+		air_superiority_detect_factor = 0.05
+   
 		
 		path = {
 			leads_to_tech = rdf3 
@@ -391,25 +436,10 @@ technologies = {
 			   is_special_project_completed = sp:sp_air_rdf
 		  	}
 	   	}
+
 		convoy_retreat_speed = 0.01
-		navy_submarine_detection_factor = 0.01
-		resistance_damage_to_garrison = -0.01
-		required_garrison_factor = -0.01
-		air_superiority_detect_factor = 0.01
-
-		is_special_project_tech = yes
-
-		cavalry = {
-			suppression_factor = 0.01
-		}
-
-		armored_car = {
-			suppression_factor = 0.01
-		}
-
-		military_police = {
-			suppression_factor = 0.01
-		}
+		navy_submarine_detection_factor = 0.05
+		air_superiority_detect_factor = 0.05
 		
 		path = {
 			leads_to_tech = rdf4 
@@ -417,11 +447,11 @@ technologies = {
 		}
 		
 		research_cost = 1.25
-		start_year = 1944
+		start_year = 1943
 		
 		folder = {
 			name = electronics_folder
-			position = { x = @rdf y = 18 }
+			position = { x = @rdf y = 16 }
 		}
 		
 		ai_will_do = {
@@ -572,7 +602,7 @@ technologies = {
 	
 		folder = {
 			name = electronics_folder
-			position = { x = @rdf y = 28 }
+			position = { x = @rdf y = 26 }
 		}
 		
 		ai_will_do = {
