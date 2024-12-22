@@ -20,12 +20,6 @@ sp_air_rdf = {
 		specialization_air = 1
 	}
 
-	resource_cost = {
-		resources = {
-			aluminium = 1
-		}
-	}
-
 	project_output = {
 		country_effects = {
 			custom_effect_tooltip = {

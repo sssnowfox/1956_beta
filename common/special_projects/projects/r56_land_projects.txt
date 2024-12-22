@@ -132,7 +132,7 @@ sp_r56_gammon_bomb = {
 
 	available = { 
 		FROM = {
-			has_tech = 	r56_anti_tank_kit
+			has_tech = 	support_weapons2
 		}
 	}
 	

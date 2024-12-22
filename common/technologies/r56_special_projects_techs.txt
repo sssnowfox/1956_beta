@@ -55,7 +55,7 @@ technologies = {
 			infantry_weapons
 		}
 
-		category_special_forces = {
+		category_special_forces_leg_infantry = {
 			hard_attack = 0.10
 		}
 

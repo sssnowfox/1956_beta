@@ -314,7 +314,6 @@ modern_radio = {
 
 		is_special_project_tech = yes
 
-		convoy_retreat_speed = 0.01
 		air_superiority_detect_factor = 0.05
 		navy_submarine_detection_factor = 0.05
 		
@@ -354,7 +353,6 @@ modern_radio = {
 
 		is_special_project_tech = yes
 
-		convoy_retreat_speed = 0.01
 		navy_submarine_detection_factor = 0.05
 		air_superiority_detect_factor = 0.05
 
@@ -399,7 +397,8 @@ modern_radio = {
 		  	}
 	   	}
 
-		convoy_retreat_speed = 0.01
+		is_special_project_tech = yes
+
 		navy_submarine_detection_factor = 0.05
 		air_superiority_detect_factor = 0.05
    
@@ -437,12 +436,18 @@ modern_radio = {
 		  	}
 	   	}
 
-		convoy_retreat_speed = 0.01
+		is_special_project_tech = yes
+
 		navy_submarine_detection_factor = 0.05
 		air_superiority_detect_factor = 0.05
 		
 		path = {
 			leads_to_tech = rdf4 
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = rdf_partisan 
 			research_cost_coeff = 1
 		}
 		
@@ -467,31 +472,58 @@ modern_radio = {
 		special_project_specialization = { specialization_naval specialization_air }
 	}
 
+	rdf_partisan = {
+		allow = {
+			ROOT = {
+			   is_special_project_completed = sp:sp_air_rdf
+		  	}
+	   	}
+
+		is_special_project_tech = yes
+			
+		required_garrison_factor = -0.05
+		resistance_growth = -0.05
+		resistance_garrison_penetration_chance = -0.05
+
+		military_police = {
+			suppression_factor = 0.05
+		}
+
+		cavalry = {
+			suppression_factor = 0.05
+		}
+		
+		research_cost = 2
+		start_year = 1944
+		
+		folder = {
+			name = electronics_folder
+			position = { x = -1 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			r56_rdf
+		}
+
+		special_project_specialization = { specialization_land }
+	}
+
 	rdf4 = {
 		allow = {
 			ROOT = {
 			   is_special_project_completed = sp:sp_air_rdf
 		  	}
 	   	}
-		convoy_retreat_speed = 0.01
-		navy_submarine_detection_factor = 0.01
-		resistance_damage_to_garrison = -0.01
-		required_garrison_factor = -0.01
-		air_superiority_detect_factor = 0.01
 
 		is_special_project_tech = yes
-
-		cavalry = {
-			suppression_factor = 0.01
-		}
-
-		armored_car = {
-			suppression_factor = 0.01
-		}
-
-		military_police = {
-			suppression_factor = 0.01
-		}
+		
+		air_superiority_detect_factor = 0.05
+		navy_submarine_detection_factor = 0.05
 		
 		path = {
 			leads_to_tech = rdf5
@@ -525,25 +557,12 @@ modern_radio = {
 			   is_special_project_completed = sp:sp_air_rdf
 		  	}
 	   	}
-		convoy_retreat_speed = 0.01
-		navy_submarine_detection_factor = 0.01
-		resistance_damage_to_garrison = -0.01
-		required_garrison_factor = -0.01
-		air_superiority_detect_factor = 0.01
 
 		is_special_project_tech = yes
+		
+		air_superiority_detect_factor = 0.05
+		navy_submarine_detection_factor = 0.05
 
-		cavalry = {
-			suppression_factor = 0.01
-		}
-
-		armored_car = {
-			suppression_factor = 0.01
-		}
-
-		military_police = {
-			suppression_factor = 0.01
-		}
 
 		path = {
 			leads_to_tech = rdf6 
@@ -577,11 +596,10 @@ modern_radio = {
 			   is_special_project_completed = sp:sp_air_rdf
 		  	}
 	   	}
-		convoy_retreat_speed = 0.01
-		navy_submarine_detection_factor = 0.01
-		resistance_damage_to_garrison = -0.01
-		required_garrison_factor = -0.01
-		air_superiority_detect_factor = 0.01
+		
+
+		air_superiority_detect_factor = 0.05
+		navy_submarine_detection_factor = 0.05
 
 		is_special_project_tech = yes
 
@@ -598,7 +616,7 @@ modern_radio = {
 		}
 		
      	research_cost = 1.75
-		start_year = 1953
+		start_year = 1951
 	
 		folder = {
 			name = electronics_folder
