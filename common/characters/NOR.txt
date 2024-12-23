@@ -1093,6 +1093,15 @@ characters={
 				}
 			}
 		}
+		navy_leader = {	#r56 12/2024: ported from vanilla since NOR didn't have many admirals, may need to be nerfed
+			traits = { seawolf inshore_fighter }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			maneuvering_skill = 3
+			coordination_skill = 3
+			legacy_id = -1
+		}
 	}
 	
 	NOR_skule_storheill = {
