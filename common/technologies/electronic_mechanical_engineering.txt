@@ -293,7 +293,7 @@ modern_radio = {
 		factor = 1
 		modifier = {
 			factor = 5
-			date > "1951.1.1"
+			date > "1953.1.1"
 		}
 	}
 	

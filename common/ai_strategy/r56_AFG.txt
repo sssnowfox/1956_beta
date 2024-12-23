@@ -356,7 +356,7 @@ AFG_train_and_support_equipment_minimum = {
 
 	ai_strategy = {
 		type = equipment_production_min_factories_archetype
-		id = support_equipment #not a bug, this is working. Even if the debug log hates it.
+		id = support_equipment 
 		value = 1
 	}
 
