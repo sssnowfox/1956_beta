@@ -4810,9 +4810,9 @@ focus_tree = {
 				custom_effect_tooltip = generic_skip_one_line_tt
 
 				custom_effect_tooltip = available_mio_tt
-				show_mio_tooltip = AUS_stabilimento_tecnico_triestino_organization
+				show_mio_tooltip = AUS_triesteshipyards_organization
 
-				mio:AUS_stabilimento_tecnico_triestino_organization = {
+				mio:AUS_triesteshipyards_organization = {
 					add_mio_size = 1
 				}
 				ELSE = {
@@ -19010,14 +19010,14 @@ focus_tree = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
 				}
-				mio:HUN_mwg_raba_organization = {
+				mio:HUN_raba_organization = {
 					add_mio_funds = 1500
 					add_mio_research_bonus = 0.05
 				}
 			}
 			ELSE = {
 				custom_effect_tooltip = available_industrial_concern
-				show_ideas_tooltip = HUN_mwg_raba
+				show_ideas_tooltip = HUN_raba_organization
 			}
 
 		}
