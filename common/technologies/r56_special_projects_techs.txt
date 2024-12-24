@@ -104,6 +104,22 @@ technologies = {
 		air_weather_penalty = -0.05
 	}
 
+	r56_improved_iff_tech = { #Not to be confused with the module 
+		allow = {
+			always = no
+		}
+
+		start_year = 1937
+
+		categories = {
+			air_equipment
+		}
+
+		air_interception_detect_factor = 0.05
+		air_night_penalty = -0.05
+		air_weather_penalty = -0.05
+	}
+
 	#We have helicopter special project at home. Helicopter special project at home:
 	r56_sp_helicopter_tech = {
 		allow = {

@@ -174,6 +174,10 @@ AIR_TITLE_TRANSPORT:0 "Transport"
  future_encryption_3:0 "Mk-3 Encryption"
  future_encryption_3_desc:0 "Our codes are so complicated that not even our guys can use them."
  #-<><><>
+ basic_identification_friend_or_foe:0 "Friend or Foe Identification System"
+ basic_identification_friend_or_foe_desc:0 "Using Direction-finding technology we can make a functional friend-or-foe identification system for our aircraft."
+ ENG_basic_identification_friend_or_foe:0 "Pip-squeak System"
+ #-<><><>
  rdf0:0 "High-frequency Direction Finding"
  rdf0_desc:0 "By developing more advanced high-frequency direction finders. We can intercept transmissions faster. This allows us to find the location of short-burst radio signals."
  ENG_rdf0:0 "Watson-Watt High-frequency Direction Finding"
