@@ -32144,6 +32144,7 @@ focus_tree = {
 				owns_state = 87
 				owns_state = 98
 				owns_state = 97
+				owns_state = 934
 			}
 			NOT = {
 				POL = {
@@ -32171,6 +32172,7 @@ focus_tree = {
 			87 = { add_claim_by = GER } #Lodz
 			98 = { add_claim_by = GER } #Plock
 			97 = { add_claim_by = GER } #Byalistock
+			934 = { add_claim_by = GER } #Suwalki
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -32191,6 +32193,8 @@ focus_tree = {
 				add_state_core = 98
 				transfer_state = 97
 				add_state_core = 97
+				transfer_state = 934
+				add_state_core = 934
 			}
 
 		}
