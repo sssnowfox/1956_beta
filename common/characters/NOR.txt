@@ -1068,8 +1068,9 @@ characters={
 	NOR_edvard_christian_danielsen = {
 		name = NOR_edvard_christian_danielsen
 		portraits = {
-			army = {
-				small="GFX_idea_generic_navy_europe_2"
+			army = {	#these point to generics
+				large = GFX_portrait_NOR_edvard_christian_danielsen
+				small = GFX_portrait_NOR_edvard_christian_danielsen_small
 			}
 		}
 		advisor = {
