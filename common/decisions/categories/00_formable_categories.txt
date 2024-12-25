@@ -1406,6 +1406,7 @@ form_turan_category = {
 						state = 882
 						state = 874
 						state = 822
+						state = 882
 					# Siberia
 						state = 654
 						state = 40

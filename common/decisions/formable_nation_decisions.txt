@@ -11107,6 +11107,7 @@ form_turan_category = {
 				controls_state = 985
 				controls_state = 830
 				controls_state = 881
+				controls_state = 882
 			}
 			# Siberia
 			custom_trigger_tooltip = {
@@ -11248,6 +11249,7 @@ form_turan_category = {
 				830 = { add_core_of = TUR }
 				985 = { add_core_of = TUR }
 				881 = { add_core_of = TUR }
+				882 = { add_core_of = TUR }
 				#SIBERIA
 				654 = { add_core_of = TUR }
 				40 = { add_core_of = TUR }
