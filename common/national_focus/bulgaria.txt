@@ -6655,6 +6655,8 @@ focus_tree = {
 				remove_idea = BUL_second_national_catastrophe
 				add_idea = BUL_bulgarian_irredentism
 			}
+		add_state_claim = 950
+		add_state_claim = 955
 		}
 	}
 
