@@ -19094,7 +19094,7 @@ focus_tree = {
 							armor_type_slot = tank_welded_armor
 							engine_type_slot = tank_gasoline_engine
 							special_type_slot_1 = additional_machine_guns
-							special_type_slot_2 = additional_machine_guns
+							special_type_slot_2 = empty		#r56: removed double machine guns, disallowed, in rt56 at least
 						}
 						upgrades = {
 							tank_nsb_engine_upgrade = 3
@@ -19118,7 +19118,7 @@ focus_tree = {
 								armor_type_slot = tank_welded_armor
 								engine_type_slot = tank_gasoline_engine
 								special_type_slot_1 = additional_machine_guns
-								special_type_slot_2 = additional_machine_guns
+								special_type_slot_2 = empty		#r56: removed double machine guns, disallowed, in rt56 at least
 							}
 							upgrades = {
 								tank_nsb_engine_upgrade = 3
