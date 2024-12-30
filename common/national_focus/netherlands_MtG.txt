@@ -5852,9 +5852,6 @@ focus_tree = {
 	focus = {
 		id = HOL_replace_the_defeatist_government
 		prerequisite = { focus = HOL_oranje_boven focus = HOL_unity_through_democracy }
-		available = {
-			has_war = yes
-		}
 		bypass = {
 			has_government = neutrality
 		}
@@ -5873,12 +5870,7 @@ focus_tree = {
 				    ideology = democratic
 				    popularity = -0.05
 				}
-				retire_country_leader = yes
-				HOL_pieter_sjoerds_gerbrandy = {
-					promote_character = {
-						ideology = conservatism
-					}
-				}
+
 				if = {
 					limit = {
 						has_idea = HOL_weak_government
