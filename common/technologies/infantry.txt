@@ -213,6 +213,7 @@ technologies = {
 
 		categories = {
 			infantry_weapons
+			anti_tank_infantry_weapons
 		}
 
 		#special_project_specialization = { specialization_land }
@@ -447,6 +448,13 @@ technologies = {
 		folder = {
 			name = infantry_folder
 			position = { x = 2 y = @1939 }
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = {
+				localization_key = SP_UNLOCK_PROJECT
+				PROJECT = r56_anti_tank_rifle_grenade_tech 
+			}
 		}
 		
 		categories = {

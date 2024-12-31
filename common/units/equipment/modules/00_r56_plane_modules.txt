@@ -5,7 +5,8 @@ equipment_modules = {
 
 	basic_iff = { #friend or foe
 		abbreviation = "iff"
-		category = plane_special_module_small
+		category =  plane_special_module_air_air_radar
+		gui_category = plane_special_module_electronics
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = { fighter heavy_fighter }
 
@@ -42,7 +43,8 @@ equipment_modules = {
 
 	improved_iff = { #friend or foe
 		abbreviation = "iff2"
-		category = plane_special_module_small
+		category = plane_special_module_air_air_radar
+		gui_category = plane_special_module_electronics
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = { fighter heavy_fighter }
 		parent = basic_iff

@@ -63,6 +63,21 @@ technologies = {
 			ap_attack = 1
 		}
 	}
+	#Anti Tank Rifle Grenade
+	r56_anti_tank_rifle_grenade_tech = {
+		allow = {
+			always = no
+		}
+		start_year = 1939
+
+		categories = {
+			infantry_weapons
+		}
+
+		category_light_infantry = {
+			ap_attack = 1
+		}
+	}
 
 	#Heavy Tank Studies
 	r56_heavy_tank_studies_tech = {

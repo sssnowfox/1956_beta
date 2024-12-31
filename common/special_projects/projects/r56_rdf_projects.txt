@@ -51,10 +51,10 @@ sp_air_rdf = {
 	unique_prototype_rewards = {
 	}
 }
-
+#IFF, Friend or Foe, sp_IFF
 sp_improved_iff = {
 	specialization = specialization_air
-	icon = GFX_sp_air_fido
+	icon = GFX_sp_air_iff
 	project_tags = { 
 		sp_tag_rdf 
 		sp_tag_radar #Overlap in tech, also so the trait helps with this project

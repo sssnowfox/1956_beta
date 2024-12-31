@@ -55,6 +55,11 @@ ENG_sp_r56_gammon_bomb:0 "Gammon bomb"
 USA_sp_r56_gammon_bomb:0 "No. 82 grenade"
 r56_gammon_bomb_tech:0 "Adaptable Grenade"
 r56_gammon_bomb_tech_desc:0 "Easy-to-use grenades that are lightweight and adaptable to many combat situations"
+#Anti Tank Rifle Grenade
+sp_r56_anti_tank_rifle_grenade:0 "Anti-Tank Rifle Grenade"
+sp_r56_anti_tank_rifle_grenade_desc:0 "Developing miniaturized shape charges for existing rifle grenade systems can greatly improve a squad's ability to deal with armored targets."
+r56_anti_tank_rifle_grenade_tech:0 "Anti-Tank Rifle Grenade"
+r56_anti_tank_rifle_grenade_tech_desc:0 "Developing miniaturized shape charges for existing rifle grenade systems can greatly improve a squad's ability to deal with armored targets."
 #Heavy Tank Studies 
 sp_r56_heavy_tank_studies:0 "Heavy Tank Studies"
 GER_sp_r56_heavy_tank_studies:0 "WaA's Durchbruchwagen Request"
