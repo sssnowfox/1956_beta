@@ -2775,10 +2775,10 @@
  #CMR
  CMR_fascism:0 "Bornu Empire"
  CMR_fascism_DEF:0 "the Bornu Empire"
- CMR_democratic:1 "Republic of Cameroon"
- CMR_democratic_DEF:1 "the Republic of Cameroon"
- CMR_neutrality:0 "Republic of Cameroon"
- CMR_neutrality_DEF:0 "the Republic of Cameroon"
+ CMR_democratic:1 "Federal Republic of Cameroon"
+ CMR_democratic_DEF:1 "the Federal Republic of Cameroon"
+ CMR_neutrality:0 "Federal Republic of Cameroon"
+ CMR_neutrality_DEF:0 "the Federal Republic of Cameroon"
  CMR_communism:0 "Union of the Peoples of Cameroon"
  CMR_communism_DEF:0 "the Union of the Peoples of Cameroon"
  CMR_fascism_ADJ:0 "Bornuian"
@@ -3193,19 +3193,19 @@
  #FSM
  FSM_democratic:1 "Federated States of Micronesia"
  FSM_democratic_DEF:1 "the Federated States of Micronesia"
- FSM_communism:0 "Greater Pohnpei Union State"
+ FSM_communism:0 "Federated Communes of Micronesia"
  FSM_communism_DEF:0 "the Greater Pohnpei Union State"
- FSM_neutrality:1 "Federated States of Micronesia"
- FSM_neutrality_DEF:1 "the Federated States of Micronesia"
- FSM_fascism:0 "Saudeleur Empire"
- FSM_fascism_DEF:0 "the Saudeleur Empire"
+ FSM_neutrality:1 "Confederacy of the Caroline Islands"
+ FSM_neutrality_DEF:1 "the Confederacy of the Caroline Islands"
+ FSM_fascism:0 "Unitary State of the Carolines"
+ FSM_fascism_DEF:0 "the Unitary State of the Carolines"
  FSM:0 "Micronesia"
  FSM_DEF:0 "Micronesia"
- FSM_ADJ:0 "Micronesian"
+ FSM_ADJ:0 "Carolinians"
  FSM_democratic_ADJ:0 "Micronesian"
- FSM_neutrality_ADJ:0 "Micronesian"
- FSM_communism_ADJ:0 "Pohnpei"
- FSM_fascism_ADJ:0 "Saudeleur"
+ FSM_neutrality_ADJ:0 "Carolinian"
+ FSM_communism_ADJ:0 "Micronesian"
+ FSM_fascism_ADJ:0 "Carolinians"
 
  #GUM
  GUM_democratic:0 "Commonwealth of the Mariana Islands"
@@ -3873,6 +3873,8 @@
  TAT_SOV_communism_subject_DEF:0 "the Tatar Autonomous Soviet Socialist Republic"
  TAT_SOV_communism_subject_ADJ:0 "Tatar"
 
+ 
+ #CIN
  CIN_fascism:0 "Caucasian Emirate"
  CIN_fascism_DEF:0 "the Caucasian Emirate"
  CIN_democratic:0 "Chechen-Ingush Republic"
@@ -3888,7 +3890,8 @@
  CIN_SOV_communism_subject:0 "Checheno-Ingush Autonomous Soviet Socialist Republic"
  CIN_SOV_communism_subject_DEF:0 "the Checheno-Ingush Autonomous Soviet Socialist Republic"
  CIN_SOV_communism_subject_ADJ:0 "Checheno-Ingush"
-
+ 
+ #DAG
  DAG_fascism:0 "Legionary Dagestani State"
  DAG_fascism_DEF:0 "the Legionary Dagestani State"
  DAG_democratic:0 "Mountainous Republic of Dagestan"
@@ -3905,6 +3908,8 @@
  DAG_SOV_communism_subject_DEF:0 "the Dagestan Autonomous Soviet Socialist Republic"
  DAG_SOV_communism_subject_ADJ:0 "Dagestani"
 
+ 
+ #BYA
  BYA_fascism:0 "Great Buryat-Mongol Yuan Successor State"
  BYA_fascism_DEF:0 "the Great Buryat-Mongol Yuan Successor State"
  BYA_democratic:0 "Republic of Buryatia"
@@ -3927,6 +3932,8 @@
  BYA_JAP_fascism_subject_DEF:0 "the Ulan Ude Autonomous Army"
  BYA_JAP_fascism_subject_ADJ:0 "Ulan Uden"
 
+ 
+ #FER
  FER_fascism:0 "East Siberian Empire"
  FER_fascism_DEF:0 "the East Siberian Empire"
  FER_democratic:0 "Far Eastern Republic"
@@ -3971,6 +3978,9 @@
  CKK_JAP_fascism_subject_DEF:0 "the Bering Strait Autonomous Territory"
  CKK_JAP_fascism_subject_ADJ:0 "Strait-Japanese"
 
+
+ #YAK
+
  YAK_fascism:0 "Greater Siberian State"
  YAK_fascism_DEF:0 "the Greater Siberian State"
  YAK_democratic:0 "Sakha Republic"
@@ -3993,21 +4003,26 @@
  YAK_JAP_fascism_subject_DEF:0 "the Yakut Autonomous Territories"
  YAK_JAP_fascism_subject_ADJ:0 "Nihon-Yakut"
 
- VLA_fascism:0 "Far Eastern Russo-Japanese State"
- VLA_fascism_DEF:0 "the Far Eastern Russo-Japanese State"
- VLA_democratic:0 "Vladivostok Independent Republic"
- VLA_democratic_DEF:0 "the Vladivostok Independent Republic"
- VLA_communism:0 "Vladivostok Syndicalist Collective"
- VLA_communism_DEF:0 "the Vladivostok Syndicalist Collective"
- VLA_neutrality:0 "Vladivostok Interventionalist State"
- VLA_neutrality_DEF:0 "the Vladivostok Interventionalist State"
- VLA_fascism_ADJ:0 "Russo-Japanese"
- VLA_democratic_ADJ:0 "Vladivostokan"
- VLA_communism_ADJ:0 "Vladivostokan"
+
+ #VLA
+ VLA_fascism:0 "Empire of the Far East"
+ VLA_fascism_DEF:0 "the Empire of the Far East"
+ VLA_democratic:0 "Primorye Independent Republic"
+ VLA_democratic_DEF:0 "the Primorye Independent Republic"
+ VLA_communism:0 "Primorsky Soviet Socialist Republic"
+ VLA_communism_DEF:0 "the Primorsky Soviet Socialist Republic"
+ VLA_neutrality:0 "Regional Government of Primorye"
+ VLA_neutrality_DEF:0 "the Regional Government of Primorye"
+ VLA_fascism_ADJ:0 "Far Eastern"
+ VLA_democratic_ADJ:0 "Primoryean"
+ VLA_communism_ADJ:0 "Primoryean"
  VLA_neutrality_ADJ:0 "White Russian"
  VLA_SOV_communism_subject:0 "Primorsky Krai"
  VLA_SOV_communism_subject_DEF:0 "the Primorsky Krai"
  VLA_SOV_communism_subject_ADJ:0 "Primorsky"
+ VLA_JAP_subject:0 "Regional Government of Engashu"
+ VLA_JAP_subject_DEF:0 "the Regional Government of Engashu"
+ VLA_JAP_subject_ADJ:0 "Primoryean-Japanese"
  VLA_JAP_neutrality_subject:0 "Transamur Protectorate"
  VLA_JAP_neutrality_subject_DEF:0 "the Transamur Protectorate"
  VLA_JAP_neutrality_subject_ADJ:0 "Transamurian"
@@ -4222,10 +4237,10 @@
  BUK_SOV_communism_subject_DEF:0 "Bukharan Socialist Soviet Republic"
  BUK_SOV_communism_subject_ADJ:0 "Bukharan"
 
- KHI_fascism:0 "Islamic Khanate of Khiva"
- KHI_fascism_DEF:0 "the Islamic Khanate of Khiva"
- KHI_democratic:0 "Jadidist Republic of Khiva"
- KHI_democratic_DEF:0 "the Jadidist Republic of Khiva"
+ KHI_fascism:0 "Basmachi State of Khiva"
+ KHI_fascism_DEF:0 "the Basmachi State of Khiva"
+ KHI_democratic:0 "Khivan Jadidist Republic"
+ KHI_democratic_DEF:0 "the Khivan Jadidist Republic"
  KHI_communism:0 "Khorezm People's Republic"
  KHI_communism_DEF:0 "the Khorezm People's Republic"
  KHI_neutrality:0 "Khanate of Khiva"
@@ -4285,10 +4300,11 @@
  UDM_SOV_communism_subject:0 "Udmurt Autonomous Soviet Socialist Republic"
  UDM_SOV_communism_subject_DEF:0 "the Udmurt Autonomous Soviet Socialist Republic"
  UDM_SOV_communism_subject_ADJ:0 "Udmurt"
-
+ 
  SIK_SOV_communism_subject:0 "Soviet Socialist Republic of Sinkiang"
  SIK_communism_subject_DEF:0 "the Soviet Socialist Republic of Sinkiang"
  SIK_communism_subject_ADJ:0 "Sinkiang"
+ 
 
  RIF_fascism:0 "Empire of the Rif"
  RIF_fascism_DEF:0 "the Empire of the Rif"
@@ -4603,14 +4619,14 @@
  RAP_fascism: "East-Polynesian Empire"
  RAP_fascism_DEF: "the East-Polynesian Empire"
  RAP_fascism_ADJ: "Polynesian"
- RAP_democratic: "Rapa Nui Republic"
- RAP_democratic_DEF: "the Rapa Nui Republic"
+ RAP_democratic: "Republic of Easter Island"
+ RAP_democratic_DEF: "the Republic of Easter Island"
  RAP_democratic_ADJ: "Rapa Nui"
  RAP_neutrality: "Kingdom of Rapa Nui"
  RAP_neutrality_DEF: "the Kingdom of Rapa Nui"
  RAP_neutrality_ADJ: "Rapa Nui"
- RAP_communism: "Sailor's Commune of Rapa Nui"
- RAP_communism_DEF: "the Sailor's Commune of Rapa Nui"
+ RAP_communism: "Sailor's Commune of Easter Island"
+ RAP_communism_DEF: "the Sailor's Commune of Easter Island"
  RAP_communism_ADJ: "Rapa Nui"
 
  GAR: "Guaraní Nation"
@@ -4757,39 +4773,6 @@
  IAS_communism_DEF: "the Isthmo-Amerindian Soviet Socialist Republic"
  IAS_communism_ADJ: "Isthmo-Amerindian"
 
- YUC_fascism: "Synarchist Republic of Yucatán"
- YUC_fascism_DEF: "the Synarchist Republic of Yucatán"
- YUC_fascism_ADJ: "Yucateco"
- YUC_democratic: "Republic of Yucatán"
- YUC_democratic_DEF: "the Republic of Yucatán"
- YUC_democratic_ADJ: "Yucateco"
- YUC_neutrality: "Maya-Yucatec State"
- YUC_neutrality_DEF: "the Maya-Yucatec State"
- YUC_neutrality_ADJ: "Yucateco"
- YUC_communism: "Zapatista Republic of Yucatán"
- YUC_communism_DEF: "the Zapatista Republic of Yucatán"
- YUC_communism_ADJ: "Yucateco"
- YUC: "Yucatán"
- YUC_DEF: "Yucatán"
- YUC_ADJ: "Yucateco"
-
- RIG_fascism: "Synarchist Republic of the Rio Grande"
- RIG_fascism_DEF: "the Synarchist Republic of the Rio Grande"
- RIG_fascism_ADJ: "Riograndese"
- RIG_democratic: "Republic of the Rio Grande"
- RIG_democratic_DEF: "the Republic of the Rio Grande"
- RIG_democratic_ADJ: "Riograndese"
- RIG_neutrality: "Cristero Republic of the Rio Grande"
- RIG_neutrality_DEF: "the Cristero Republic of the Rio Grande"
- RIG_neutrality_ADJ: "Riograndese"
- RIG_communism: "People's Commonwealth of the Rio Grande"
- RIG_communism_DEF: "the People's Commonwealth of the Rio Grande"
- RIG_communism_ADJ: "Riograndese"
- RIG: "Republic of the Rio Grande"
- RIG_DEF: "the Republic of the Rio Grande"
- RIG_ADJ: "Riograndese"
-
-
  WLA_fascism: "Ymerodraeth Patagonia"
  WLA_fascism_DEF: "Ymerodraeth Patagonia"
  WLA_fascism_ADJ: "Welsh Argentine"
@@ -4857,8 +4840,8 @@
  EVE_fascism: "East-Siberian State"
  EVE_fascism_DEF: "the East-Siberian State"
  EVE_fascism_ADJ: "Evenk"
- EVE_democratic: "Evenkia"
- EVE_democratic_DEF: "Evenkia"
+ EVE_democratic: "Republic of Evenkia"
+ EVE_democratic_DEF: "the Republic of Evenkia"
  EVE_democratic_ADJ: "Evenk"
  EVE_neutrality: "Federal State of Evenkia"
  EVE_neutrality_DEF: "the Federal State of Evenkia"
