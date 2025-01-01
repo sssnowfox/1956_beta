@@ -3353,7 +3353,7 @@ entity = { clone = "ITA_heavy_armor_entity" name = "VNZ_heavy_armor_entity" }
 
 ## Ethiopia
 entity = { clone = "ITA_light_armor_entity" name = "ETH_light_armor_0_entity" } #they had 3 ITA GW tanks + captured stuffs
-entity = { clone = "ITA_medium_armor_entity" name = "ETH_medium_armor_entity" }
+entity = { clone = "ITA_medium_armor_entity" name = "ETH_medium_armor_entity" version = 1 }
 entity = { clone = "ITA_heavy_armor_entity" name = "ETH_heavy_armor_entity" }
 
 ## Lybia
