@@ -1259,7 +1259,7 @@ entity = {
 
 ###Belgian Minors 
 ##Belgium
-entity = { clone = "commonwealth_gfx_light_armor_entity" name = "BEL_light_armor_entity" }
+entity = { clone = "commonwealth_gfx_light_armor_entity" name = "BEL_light_armor_entity" version = 1}
 entity = { clone = "FRA_medium_armor_entity" name = "BEL_medium_armor_entity" }
 entity = { clone = "modern_armor_entity" name = "BEL_modern_armor_entity" version = 1 }
 entity = { clone = "FRA_modern_armor_entity" name = "BEL_modern_armor_entity" version = 2 }
