@@ -315,6 +315,7 @@ entity = {
 	game_data = {
 		texture_anim_speed = 0.5
 	}
+	version = 2
 }
 
 
