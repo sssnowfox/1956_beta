@@ -846,7 +846,10 @@ focus_tree = {
 		}
 		available = {
 			has_country_flag = LUX_elections_over
-			#NOT = { has_country_flag = LUX_maulkuerfgesetz_passed }
+			NOT = {
+				#has_country_flag = LUX_maulkuerfgesetz_passed
+				has_country_flag = LUX_elections_indecisive
+			}
 		}
 		allow_branch = {
 			NOT = {
