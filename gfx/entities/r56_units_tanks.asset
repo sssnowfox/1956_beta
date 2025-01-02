@@ -3794,28 +3794,22 @@ entity = { clone = "CZE_medium_armor_entity" name = "BUL_medium_armor_0_entity" 
 ## Switzerland
 entity = { clone = "medium_armor_entity" name = "SWI_medium_armor_0_entity" version = 1 }
 entity = { clone = "CZE_medium_armor_entity" name = "SWI_medium_armor_0_entity" version = 2 } #Bought pz38(t) for testing
-entity = { clone = "FRA_light_armor_entity" name = "SWI_light_armor_entity" } #Hotchkiss 35 even if it's the modeld of the Renault R35
+entity = { clone = "FRA_light_armor_entity" name = "SWI_light_armor_entity" version = 1 } #Hotchkiss 35 even if it's the modeld of the Renault R35
 
 ##Greece
-
 #Used L3 Italian tankettes
 entity = { clone = "ITA_light_armor_entity" name = "GRE_light_armor_0_entity" }
-
 entity = { clone = "heavy_armor_entity" name = "GRE_heavy_armor_0_entity" version = 2 }
 
 ## Croatia
-
 #Used L3 Italian tankettes
 entity = { clone = "ITA_light_armor_entity" name = "CRO_light_armor_0_entity" }
 
 ## Yugoslavia
-
 # Yugoslavia used Tankettes Polish TKS are the closest thing available
 entity = { clone = "light_armor_entity" name = "YUG_light_armor_0_entity" version = 1 }
-
 entity = { clone = "POL_light_armor_0_entity" name = "YUG_light_armor_0_entity" version = 2 }
 entity = { clone = "light_armor_entity" name = "YUG_light_tank_destroyer_brigade_0_entity" version = 1 }
-
 entity = { clone = "POL_light_armor_0_entity" name = "YUG_light_tank_destroyer_brigade_0_entity" version = 2 }
 
 # Italian heavy tank is the closest thing available.
@@ -3954,7 +3948,7 @@ entity = { clone = "SOV_light_armor_0_entity" name = "BOL_light_armor_0_entity" 
 ## Brazil
 
 #Used Italian tankettes
-entity = { clone = "ITA_light_armor_entity" name = "BRA_light_armor_0_entity" }
+entity = { clone = "ITA_light_armor_entity" name = "BRA_light_armor_0_entity" version = 1 }
 #Used M3 Stuart govered by american
 
 ## Paraguay
