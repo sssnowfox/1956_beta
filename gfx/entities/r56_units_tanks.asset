@@ -1470,9 +1470,10 @@ entity = { clone = "commonwealth_gfx_medium_armor_entity" name = "CAN_medium_arm
 entity = { clone = "commonwealth_gfx_medium_armor_entity" name = "CAN_medium_armor_1_entity" version = 1 }
 entity = { clone = "ENG_medium_armor_1_entity" name = "CAN_medium_armor_1_entity" version = 2 }
 entity = { clone = "CAN_medium_armor_entity" name = "CAN_medium_armor_1_entity" version = 3 }
-entity = { clone = "commonwealth_gfx_medium_armor_entity" name = "CAN_medium_armor_2_entity" version = 1 }
-entity = { clone = "ENG_medium_armor_2_entity" name = "CAN_medium_armor_2_entity" version = 2 }
-entity = { clone = "CAN_medium_armor_2_entity" name = "CAN_medium_armor_2_entity" version = 3 }
+# no longer needed with tfv being integrated
+# entity = { clone = "commonwealth_gfx_medium_armor_entity" name = "CAN_medium_armor_2_entity" version = 1 }
+# entity = { clone = "ENG_medium_armor_2_entity" name = "CAN_medium_armor_2_entity" version = 2 }
+# entity = { clone = "CAN_medium_armor_2_entity" name = "CAN_medium_armor_2_entity" version = 3 }
 entity = { clone = "commonwealth_gfx_heavy_armor_entity" name = "CAN_heavy_armor_0_entity" version = 1 }
 entity = { clone = "ENG_heavy_armor_0_entity" name = "CAN_heavy_armor_0_entity" version = 2 }
 entity = { clone = "commonwealth_gfx_heavy_armor_entity" name = "CAN_heavy_armor_2_entity" version = 1 }
