@@ -1,7 +1,7 @@
 ###################
 ## - AUSTRALIA - ##
 ###################
-# moved to r56_units_tanks.asset
+# moved to r56_units_tanks.asset - a parent must be in the same file as its clones to avoid errors in log
 # entity = {
 # 	name = "AST_medium_armor_entity"
 # 	pdxmesh = "AST_tank_medium_sentinel_mesh"
@@ -43,7 +43,7 @@
 # 		texture_anim_speed = 0.5
 # 	}
 # }
-# moved to r56_units_tanks.asset
+# moved to r56_units_tanks.asset - a parent must be in the same file as its clones to avoid errors in log
 # entity = {
 # 	name = "AST_medium_armor_2_entity"
 # 	pdxmesh = "AST_tank_medium_thunderbolt_mesh"
@@ -86,7 +86,7 @@
 #####################
 ## - New Zealand - ##
 #####################
-# moved to r56_units_tanks.asset
+# moved to r56_units_tanks.asset - a parent must be in the same file as its clones to avoid errors in log
 # entity = {
 # 	name = "NZL_light_armor_entity"
 # 	pdxmesh = "NZL_tank_light_bobsemple_mesh"
@@ -132,7 +132,7 @@
 # 		texture_anim_speed = 0.5
 # 	}
 # }
-# moved to r56_units_tanks.asset
+# moved to r56_units_tanks.asset - a parent must be in the same file as its clones to avoid errors in log
 # entity = {
 # 	name = "NZL_medium_armor_entity"
 # 	pdxmesh = "NZL_tank_medium_schofield_mesh"
@@ -227,7 +227,7 @@ entity = {
 ################
 ## - CANADA - ##
 ################
-# moved to r56_units_tanks.asset
+# moved to r56_units_tanks.asset - a parent must be in the same file as its clones to avoid errors in log
 # entity = {
 # 	name = "CAN_light_armor_entity"
 # 	pdxmesh = "CAN_tank_light_valentine_mesh"
@@ -269,7 +269,7 @@ entity = {
 # 		texture_anim_speed = 0.5
 # 	}
 # }
-# moved to r56_units_tanks.asset
+# moved to r56_units_tanks.asset - a parent must be in the same file as its clones to avoid errors in log
 # entity = {
 # 	name = "CAN_medium_armor_entity"
 # 	pdxmesh = "CAN_tank_medium_ram_mesh"

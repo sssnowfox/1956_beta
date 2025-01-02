@@ -717,7 +717,7 @@ entity = { clone = "asian_gfx_infantry_2_entity" name = "asian_gfx_irregular_inf
 entity = { clone = "asian_gfx_infantry_2_entity" name = "asian_gfx_irregular_infantry_4_entity" }
 entity = { clone = "asian_gfx_infantry_2_entity" name = "asian_gfx_irregular_infantry_5_entity" }
 
-# moved to r56_units_infantry.asset
+# moved to r56_units_infantry.asset - a parent must be in the same file as its clones to avoid errors in log
 # entity = {
 # 	name = "southamerican_gfx_infantry_entity"
 # 	pdxmesh = "SPA_infantry_rifle_mesh"
@@ -762,7 +762,7 @@ entity = { clone = "asian_gfx_infantry_2_entity" name = "asian_gfx_irregular_inf
 # 	scale = 0.8
 # }
 
-# R56 - moved to r56_units_infantry.asset
+# R56 - moved to r56_units_infantry.asset - a parent must be in the same file as its clones to avoid errors in log
 # entity = {
 # 	name = "southamerican_gfx_infantry_2_entity"
 # 	pdxmesh = "SPA_infantry_mg_mesh"
@@ -807,7 +807,7 @@ entity = { clone = "asian_gfx_infantry_2_entity" name = "asian_gfx_irregular_inf
 # 	scale = 0.8
 # }
 
-# R56 - moved to r56_units_infantry.asset
+# R56 - moved to r56_units_infantry.asset - a parent must be in the same file as its clones to avoid errors in log
 # entity = {
 # 	clone = "southamerican_gfx_infantry_2_entity"
 # 	name = "southamerican_gfx_infantry_3_entity"

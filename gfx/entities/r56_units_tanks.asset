@@ -769,7 +769,7 @@ entity = {
 #	}
 #}
 
-# moved from units_tanks.asset
+# moved from units_tanks.asset - a parent must be in the same file as its clones to avoid errors in log
 entity = {
 	name = "heavy_armor_entity"
 	pdxmesh = "generic_tank_heavy_mesh"
@@ -858,7 +858,7 @@ entity = {
 	}
 }
 
-# moved from units_tanks.asset
+# moved from units_tanks.asset - a parent must be in the same file as its clones to avoid errors in log
 entity = {
 	name = "medium_armor_entity"
 	pdxmesh = "generic_tank_medium_mesh"
@@ -945,7 +945,7 @@ entity = {
 entity = { clone = "medium_armor_entity" name = "ROM_medium_tank_destroyer_brigade_2_entity" version = 1 }
 entity = { clone = "ROM_medium_tank_destroyer_brigade_1_entity" name = "ROM_medium_tank_destroyer_brigade_2_entity" version = 2 }
 
-# moved from units_tanks.asset
+# moved from units_tanks.asset - a parent must be in the same file as its clones to avoid errors in log
 entity = {
 	name = "ITA_heavy_armor_entity"
 	pdxmesh = "ITA_tank_heavy_mesh"
@@ -997,7 +997,7 @@ entity = { clone = "ITA_heavy_armor_entity" name = "african_gfx_heavy_armor_1_en
 entity = { clone = "ITA_heavy_armor_entity" name = "middle_eastern_gfx_heavy_armor_1_entity" }
 #entity = { clone = "ITA_heavy_armor_entity" name = "middle_eastern_gfx_heavy_armor_2_entity" }
 
-# moved from units_tanks.asset
+# moved from units_tanks.asset - a parent must be in the same file as its clones to avoid errors in log
 entity = {
 	name = "GER_heavy_armor_entity"
 	pdxmesh = "GER_tank_heavy_mesh"
@@ -1045,7 +1045,7 @@ entity = {
 #repeat use of general heavy tanks for some countries for specific models otherwise they are crushed by more specific reference even if it's for culture group, pretty stupid if you ask me
 entity = { clone = "GER_heavy_armor_entity" name = "GER_heavy_armor_1_entity" }
 
-# moved from units_tanks.asset
+# moved from units_tanks.asset - a parent must be in the same file as its clones to avoid errors in log
 entity = {
 	name = "FRA_light_armor_entity"
 	pdxmesh = "FRA_tank_light_mesh"
@@ -1089,7 +1089,7 @@ entity = {
 		texture_anim_speed = 0.25
 	}
 }
-# moved from units_tanks.asset
+# moved from units_tanks.asset - a parent must be in the same file as its clones to avoid errors in log
 entity = {
 	name = "FRA_medium_armor_entity"
 	pdxmesh = "FRA_tank_medium_mesh"
@@ -1129,7 +1129,7 @@ entity = {
 		texture_anim_speed = 0.5
 	}
 }
-# moved from units_tanks.asset
+# moved from units_tanks.asset - a parent must be in the same file as its clones to avoid errors in log
 entity = {
 	name = "FRA_heavy_armor_entity"
 	pdxmesh = "FRA_tank_heavy_mesh"
@@ -1202,7 +1202,7 @@ entity = { clone = "FRA_super_heavy_armor_entity" name = "LUX_super_heavy_armor_
 entity = { clone = "modern_armor_entity" name = "LUX_modern_armor_entity" version = 1 }
 entity = { clone = "FRA_modern_armor_entity" name = "LUX_modern_armor_entity" version = 2 }
 
-# moved from units_tanks.asset
+# moved from units_tanks.asset - a parent must be in the same file as its clones to avoid errors in log
 entity = {
 	name = "commonwealth_gfx_light_armor_entity"
 	pdxmesh = "ENG_tank_light_mesh"
@@ -1372,7 +1372,7 @@ entity = {
 		texture_anim_speed = 0.5
 	}
 }
-# moved from tfv_units_tanks.asset
+# moved from tfv_units_tanks.asset - a parent must be in the same file as its clones to avoid errors in log
 entity = {
 	name = "CAN_light_armor_entity"
 	pdxmesh = "CAN_tank_light_valentine_mesh"
@@ -1414,7 +1414,7 @@ entity = {
 		texture_anim_speed = 0.5
 	}
 }
-# moved from tfv_units_tanks.asset
+# moved from tfv_units_tanks.asset - a parent must be in the same file as its clones to avoid errors in log
 entity = {
 	name = "CAN_medium_armor_entity"
 	pdxmesh = "CAN_tank_medium_ram_mesh"
@@ -1504,7 +1504,7 @@ entity = { clone = "ENG_super_heavy_armor_entity" name = "QBC_super_heavy_armor_
 entity = { clone = "modern_armor_entity" name = "QBC_modern_armor_entity" version = 1 }
 entity = { clone = "ENG_modern_armor_entity" name = "QBC_modern_armor_entity" version = 2 }
 
-# moved from tfv_units_tanks.asset
+# moved from tfv_units_tanks.asset - a parent must be in the same file as its clones to avoid errors in log
 entity = {
 	name = "AST_medium_armor_entity"
 	pdxmesh = "AST_tank_medium_sentinel_mesh"
@@ -1546,7 +1546,7 @@ entity = {
 		texture_anim_speed = 0.5
 	}
 }
-# moved from tfv_units_tanks.asset
+# moved from tfv_units_tanks.asset - a parent must be in the same file as its clones to avoid errors in log
 entity = {
 	name = "AST_medium_armor_2_entity"
 	pdxmesh = "AST_tank_medium_thunderbolt_mesh"
@@ -1611,7 +1611,7 @@ entity = { clone = "ENG_super_heavy_armor_entity" name = "AST_super_heavy_armor_
 entity = { clone = "modern_armor_entity" name = "AST_modern_armor_entity" version = 1 }
 entity = { clone = "ENG_modern_armor_entity" name = "AST_modern_armor_entity" version = 2 }
 
-# moved from tfv_units_tanks.asset
+# moved from tfv_units_tanks.asset - a parent must be in the same file as its clones to avoid errors in log
 entity = {
 	name = "NZL_light_armor_entity"
 	pdxmesh = "NZL_tank_light_bobsemple_mesh"
@@ -1657,7 +1657,7 @@ entity = {
 		texture_anim_speed = 0.5
 	}
 }
-# moved from tfv_units_tanks.asset
+# moved from tfv_units_tanks.asset - a parent must be in the same file as its clones to avoid errors in log
 entity = {
 	name = "NZL_medium_armor_entity"
 	pdxmesh = "NZL_tank_medium_schofield_mesh"
@@ -1913,7 +1913,7 @@ entity = { clone = "ENG_super_heavy_armor_entity" name = "MAL_super_heavy_armor_
 entity = { clone = "modern_armor_entity" name = "MAL_modern_armor_entity" version = 1 }
 entity = { clone = "ENG_modern_armor_entity" name = "MAL_modern_armor_entity" version = 2 }
 
-# moved from units_tanks.asset
+# moved from units_tanks.asset - a parent must be in the same file as its clones to avoid errors in log
 entity = {
 	name = "light_armor_entity"
 	pdxmesh = "generic_tank_light_mesh"
@@ -1977,7 +1977,7 @@ entity = { clone = "CZE_heavy_armor_entity" name = "RUT_heavy_armor_entity" vers
 entity = { clone = "modern_armor_entity" name = "RUT_modern_armor_entity" version = 1 }
 entity = { clone = "CZE_modern_armor_entity" name = "RUT_modern_armor_entity" version = 2 }
 
-# moved from units_tanks.asset
+# moved from units_tanks.asset - a parent must be in the same file as its clones to avoid errors in log
 entity = {
 	name = "GER_light_armor_entity"
 	pdxmesh = "GER_tank_light_mesh"
@@ -2016,7 +2016,7 @@ entity = {
 	}
 }
 
-# moved from units_tanks.asset
+# moved from units_tanks.asset - a parent must be in the same file as its clones to avoid errors in log
 entity = {
 	name = "SOV_light_armor_entity"
 	pdxmesh = "SOV_tank_light_mesh"
@@ -2059,7 +2059,7 @@ entity = {
 		texture_anim_speed = 0.5
 	}
 }
-# moved from units_tanks.asset
+# moved from units_tanks.asset - a parent must be in the same file as its clones to avoid errors in log
 entity = {
 	name = "SOV_medium_armor_entity"
 	pdxmesh = "SOV_tank_medium_mesh"
@@ -2129,7 +2129,7 @@ entity = { clone = "GER_light_armor_0_entity" name = "WGR_light_armor_0_entity" 
 entity = { clone = "GER_light_armor_entity" name = "WGR_light_armor_2_entity" version = 1 }
 entity = { clone = "GER_light_armor_2_entity" name = "WGR_light_armor_2_entity" version = 2 }
 
-# moved from units_tanks.asset
+# moved from units_tanks.asset - a parent must be in the same file as its clones to avoid errors in log
 entity = {
 	name = "GER_medium_armor_entity"
 	pdxmesh = "GER_tank_medium_mesh"
@@ -2172,7 +2172,7 @@ entity = {
 		texture_anim_speed = 0.5
 	}
 }
-# moved from units_tanks.asset
+# moved from units_tanks.asset - a parent must be in the same file as its clones to avoid errors in log
 entity = {
 	name = "SOV_heavy_armor_entity"
 	pdxmesh = "SOV_tank_heavy_mesh"
@@ -3130,7 +3130,7 @@ entity = { clone = "ENG_super_heavy_armor_entity" name = "EGY_super_heavy_armor_
 entity = { clone = "modern_armor_entity" name = "EGY_modern_armor_entity" version = 1 }
 entity = { clone = "ENG_modern_armor_entity" name = "EGY_modern_armor_entity" version = 2 }
 
-# moved from units_tanks.asset
+# moved from units_tanks.asset - a parent must be in the same file as its clones to avoid errors in log
 entity = {
 	name = "USA_light_armor_entity"
 	pdxmesh = "USA_tank_light_mesh"
@@ -3173,7 +3173,7 @@ entity = {
 		texture_anim_speed = 0.5
 	}
 }
-# moved from units_tanks.asset
+# moved from units_tanks.asset - a parent must be in the same file as its clones to avoid errors in log
 entity = {
 	name = "USA_medium_armor_entity"
 	pdxmesh = "USA_tank_medium_mesh"
@@ -3243,7 +3243,7 @@ entity = { clone = "USA_super_heavy_armor_entity" name = "PHI_super_heavy_armor_
 entity = { clone = "modern_armor_entity" name = "PHI_modern_armor_entity" version = 1 }
 entity = { clone = "USA_modern_armor_entity" name = "PHI_modern_armor_entity" version = 2 }
 
-# moved from units_tanks.asset
+# moved from units_tanks.asset - a parent must be in the same file as its clones to avoid errors in log
 entity = {
 	name = "ITA_light_armor_entity"
 	pdxmesh = "ITA_tank_light_mesh"
@@ -3292,7 +3292,7 @@ entity = {
 		texture_anim_speed = 0.5
 	}
 }
-# moved from units_tanks.asset
+# moved from units_tanks.asset - a parent must be in the same file as its clones to avoid errors in log
 entity = {
 	name = "ITA_medium_armor_entity"
 	pdxmesh = "ITA_tank_medium_mesh"
@@ -3423,7 +3423,7 @@ entity = { clone = "SOV_super_heavy_armor_entity" name = "SIK_super_heavy_armor_
 entity = { clone = "modern_armor_entity" name = "SIK_modern_armor_entity" version = 1 }
 entity = { clone = "SOV_modern_armor_entity" name = "SIK_modern_armor_entity" version = 2 }
 
-# moved from units_tanks.asset
+# moved from units_tanks.asset - a parent must be in the same file as its clones to avoid errors in log
 entity = {
 	name = "JAP_light_armor_entity"
 	pdxmesh = "JAP_tank_light_mesh"
@@ -3460,7 +3460,7 @@ entity = {
 		texture_anim_speed = 0.5
 	}
 }
-# moved from units_tanks.asset
+# moved from units_tanks.asset - a parent must be in the same file as its clones to avoid errors in log
 entity = {
 	name = "JAP_medium_armor_entity"
 	pdxmesh = "JAP_tank_medium_mesh"
@@ -3503,7 +3503,7 @@ entity = {
 		texture_anim_speed = 0.5
 	}
 }
-# moved from units_tanks.asset
+# moved from units_tanks.asset - a parent must be in the same file as its clones to avoid errors in log
 entity = {
 	name = "JAP_heavy_armor_entity"
 	pdxmesh = "JAP_tank_heavy_mesh"
