@@ -2738,25 +2738,25 @@ entity = { clone = "modern_armor_entity" name = "MRT_modern_armor_entity" versio
 entity = { clone = "FRA_modern_armor_entity" name = "MRT_modern_armor_entity" version = 2 }
 
 ## Niger
-entity = { clone = "FRA_light_armor_entity" name = "MGR_light_armor_entity" }
-entity = { clone = "FRA_light_armor_entity" name = "MGR_light_armor_0_entity" version = 1 }
-entity = { clone = "FRA_light_armor_0_entity" name = "MGR_light_armor_0_entity" version = 2 }
-entity = { clone = "FRA_light_armor_entity" name = "MGR_light_armor_2_entity" version = 1 }
-entity = { clone = "FRA_light_armor_2_entity" name = "MGR_light_armor_2_entity" version = 2 }
-entity = { clone = "FRA_medium_armor_entity" name = "MGR_medium_armor_entity" }
-entity = { clone = "FRA_heavy_armor_entity" name = "MGR_heavy_armor_entity" }
-entity = { clone = "FRA_medium_armor_entity" name = "MGR_medium_armor_1_entity" version = 1 }
-entity = { clone = "FRA_medium_armor_1_entity" name = "MGR_medium_armor_1_entity" version = 2 }
-entity = { clone = "FRA_medium_armor_entity" name = "MGR_medium_armor_2_entity" version = 1 }
-entity = { clone = "FRA_medium_armor_2_entity" name = "MGR_medium_armor_2_entity" version = 2 }
-entity = { clone = "FRA_heavy_armor_entity" name = "MGR_heavy_armor_1_entity" version = 1 }
-entity = { clone = "FRA_heavy_armor_1_entity" name = "MGR_heavy_armor_1_entity" version = 2 }
-entity = { clone = "FRA_heavy_armor_entity" name = "MGR_heavy_armor_2_entity" version = 1 }
-entity = { clone = "FRA_heavy_armor_2_entity" name = "MGR_heavy_armor_2_entity" version = 2 }
-entity = { clone = "FRA_heavy_armor_entity" name = "MGR_super_heavy_armor_entity" version = 1 }
-entity = { clone = "FRA_super_heavy_armor_entity" name = "MGR_super_heavy_armor_entity" version = 2 }
-entity = { clone = "modern_armor_entity" name = "MGR_modern_armor_entity" version = 1 }
-entity = { clone = "FRA_modern_armor_entity" name = "MGR_modern_armor_entity" version = 2 }
+entity = { clone = "FRA_light_armor_entity" name = "NGR_light_armor_entity" }
+entity = { clone = "FRA_light_armor_entity" name = "NGR_light_armor_0_entity" version = 1 }
+entity = { clone = "FRA_light_armor_0_entity" name = "NGR_light_armor_0_entity" version = 2 }
+entity = { clone = "FRA_light_armor_entity" name = "NGR_light_armor_2_entity" version = 1 }
+entity = { clone = "FRA_light_armor_2_entity" name = "NGR_light_armor_2_entity" version = 2 }
+entity = { clone = "FRA_medium_armor_entity" name = "NGR_medium_armor_entity" }
+entity = { clone = "FRA_heavy_armor_entity" name = "NGR_heavy_armor_entity" }
+entity = { clone = "FRA_medium_armor_entity" name = "NGR_medium_armor_1_entity" version = 1 }
+entity = { clone = "FRA_medium_armor_1_entity" name = "NGR_medium_armor_1_entity" version = 2 }
+entity = { clone = "FRA_medium_armor_entity" name = "NGR_medium_armor_2_entity" version = 1 }
+entity = { clone = "FRA_medium_armor_2_entity" name = "NGR_medium_armor_2_entity" version = 2 }
+entity = { clone = "FRA_heavy_armor_entity" name = "NGR_heavy_armor_1_entity" version = 1 }
+entity = { clone = "FRA_heavy_armor_1_entity" name = "NGR_heavy_armor_1_entity" version = 2 }
+entity = { clone = "FRA_heavy_armor_entity" name = "NGR_heavy_armor_2_entity" version = 1 }
+entity = { clone = "FRA_heavy_armor_2_entity" name = "NGR_heavy_armor_2_entity" version = 2 }
+entity = { clone = "FRA_heavy_armor_entity" name = "NGR_super_heavy_armor_entity" version = 1 }
+entity = { clone = "FRA_super_heavy_armor_entity" name = "NGR_super_heavy_armor_entity" version = 2 }
+entity = { clone = "modern_armor_entity" name = "NGR_modern_armor_entity" version = 1 }
+entity = { clone = "FRA_modern_armor_entity" name = "NGR_modern_armor_entity" version = 2 }
 
 ## Senegal
 entity = { clone = "FRA_light_armor_entity" name = "SEN_light_armor_entity" }
