@@ -1720,6 +1720,7 @@ entity = { clone = "commonwealth_gfx_heavy_armor_entity" name = "NZL_heavy_armor
 entity = { clone = "ENG_heavy_armor_2_entity" name = "NZL_heavy_armor_2_entity" version = 2 }
 entity = { clone = "ENG_super_heavy_armor_entity" name = "NZL_super_heavy_armor_entity" version = 2 }
 entity = { clone = "commonwealth_gfx_heavy_armor_entity" name = "NZL_super_heavy_armor_entity" version = 1 }
+# moved from tfv_units_tanks.asset - a parent must be in the same file as its clones to avoid errors in log
 entity = {
 	name = "NZL_super_heavy_armor_entity"
 	pdxmesh = "NZL_tank_super_heavy_bigbob_mesh"
