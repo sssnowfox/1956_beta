@@ -3950,7 +3950,7 @@ entity = {
 	scale = 0.8			
 	version = 1 # R56
 }
-entity = { clone = "LAT_infantry_2_entity" name = "LAT_infantry_3_entity" }
+entity = { clone = "LAT_infantry_2_entity" name = "LAT_infantry_3_entity" version = 1 }
 entity = { clone = "LAT_infantry_2_entity" name = "LAT_infantry_4_entity" }
 entity = { clone = "LAT_infantry_2_entity" name = "LAT_infantry_5_entity" }
 entity = { clone = "LAT_infantry_2_entity" name = "LAT_infantry_6_entity" }
