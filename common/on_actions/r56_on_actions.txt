@@ -4133,6 +4133,7 @@ on_actions = {
 					NOT = {
 						original_tag = MPL
 					}
+					any_owned_state = { is_capital = yes } # to prevent the following trigger from throwing an error in cases where the capital doesn't exist yet (anarchists in spanish civil war for example)
 					capital_scope = {
 						is_on_continent = middle_east
 					}
