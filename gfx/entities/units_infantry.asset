@@ -188,6 +188,8 @@ entity = {
 	attach = { 	name = "cigarette_package1"	Right_Hand_node_3 = "cigarette_package_entity" }
 	attach = { 	name = "cigarette_package2"	Left_Hand_node_2 = "cigarette_package_entity" }
 	attach = { 	name = "cigarette2"			Root_node_1 = "cigarette_entity" }	
+
+	version = 1
 }
 # R56
 entity = { 
@@ -205,6 +207,8 @@ entity = {
 	attach = { 	name = "cigarette_package1"	Right_Hand_node_3 = "cigarette_package_entity" }
 	attach = { 	name = "cigarette_package2"	Left_Hand_node_2 = "cigarette_package_entity" }
 	attach = { 	name = "cigarette2"			Root_node_1 = "cigarette_entity" }
+
+	version = 1
 }
 # R56
 entity = { 
@@ -222,6 +226,8 @@ entity = {
 	attach = { 	name = "cigarette_package1"	Right_Hand_node_3 = "cigarette_package_entity" }
 	attach = { 	name = "cigarette_package2"	Left_Hand_node_2 = "cigarette_package_entity" }
 	attach = { 	name = "cigarette2"			Root_node_1 = "cigarette_entity" }
+
+	version = 1
 }
 # R56
 entity = {  clone = "BEL_infantry_3_entity" name = "BEL_infantry_4_entity" }
@@ -3942,6 +3948,7 @@ entity = {
 	attach = { 	name = "cigarette2"			Root_node_1 = "cigarette_entity" }	
 	
 	scale = 0.8			
+	version = 1 # R56
 }
 entity = { clone = "LAT_infantry_2_entity" name = "LAT_infantry_3_entity" }
 entity = { clone = "LAT_infantry_2_entity" name = "LAT_infantry_4_entity" }
@@ -4084,11 +4091,11 @@ entity = { clone = "infantry_2_entity" name = "NZL_infantry_5_entity" version = 
 entity = { clone = "infantry_2_entity" name = "NZL_infantry_6_entity" version = 1 }
 entity = { clone = "infantry_2_entity" name = "RAJ_infantry_4_entity" version = 1 }
 entity = { clone = "infantry_2_entity" name = "RAJ_infantry_4_entity_snow" version = 1 }
-entity = { clone = "infantry_2_entity" name = "RAJ_infantry_5_entity_snow" version = 1 }
 entity = { clone = "infantry_2_entity" name = "RAJ_infantry_5_entity" version = 1 }
-entity = { clone = "infantry_2_entity" name = "RAJ_infantry_6_entity_snow" version = 1 }
+entity = { clone = "infantry_2_entity" name = "RAJ_infantry_5_entity_snow" version = 1 }
 entity = { clone = "infantry_2_entity" name = "RAJ_infantry_6_entity" version = 1 }
-entity = { clone = "infantry_2_entity" name = "YUG_infantry_4_entity" version = 1 }
+entity = { clone = "infantry_2_entity" name = "RAJ_infantry_6_entity_snow" version = 1 }
+entity = { clone = "infantry_2_entity" name = "SAF_infantry_4_entity" version = 1 }
 entity = { clone = "infantry_2_entity" name = "SAF_infantry_5_entity" version = 1 }
 entity = { clone = "infantry_2_entity" name = "SAF_infantry_6_entity" version = 1 }
 #late Mg for DoD infantry
