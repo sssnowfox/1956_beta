@@ -10533,9 +10533,9 @@ entity = {
 	}
 	scale = 0.144
 }
-entity = { clone = "BYZ_UNIFIED_light_plane_entity" name = "BYZ_UNIFIED_democratic_light_plane_entity" }
-entity = { clone = "BYZ_UNIFIED_light_plane_entity" name = "BYZ_UNIFIED_fascism_light_plane_entity" }
-entity = { clone = "BYZ_UNIFIED_light_plane_entity" name = "BYZ_UNIFIED_neutrality_light_plane_entity" }
+entity = { clone = "BYZ_UNIFIED_light_plane_entity" name = "BYZ_UNIFIED_democratic_light_plane_entity" version = 1 }
+entity = { clone = "BYZ_UNIFIED_light_plane_entity" name = "BYZ_UNIFIED_fascism_light_plane_entity" version = 1 }
+entity = { clone = "BYZ_UNIFIED_light_plane_entity" name = "BYZ_UNIFIED_neutrality_light_plane_entity" version = 1 }
 
 entity = { 
 	name = "BYZ_UNIFIED_jet_plane_entity"
