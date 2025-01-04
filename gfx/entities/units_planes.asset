@@ -8316,6 +8316,7 @@ entity = {
 		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
 	}
 	scale = 0.12
+	version = 1
 }
 
 #entity = {
@@ -8401,6 +8402,7 @@ entity = {
 		event = { time = 0 node = "engine2"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
 	}
 	scale = 0.232
+	version = 1
 }
 entity = {
 	name = "SWE_light_plane_entity"
@@ -8440,6 +8442,7 @@ entity = {
 		event = { time = 0 node = "engine4"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
 	}
 	scale = 0.288
+	version = 1
 }
 entity = {
 	name = "NOR_heavy_plane_entity"
@@ -8457,6 +8460,7 @@ entity = {
 		event = { time = 0 node = "engine4"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
 	}
 	scale = 0.288
+	version = 1
 }
 entity = {
 	name = "DEN_heavy_plane_entity"
@@ -8474,6 +8478,7 @@ entity = {
 		event = { time = 0 node = "engine4"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
 	}
 	scale = 0.288
+	version = 1
 }
 entity = { #level 1 otherwise and polish model so not fully historical
 	name = "SCA_UNIFIED_heavy_fighter_equipment_entity"
@@ -9321,6 +9326,7 @@ entity = {
 		event = { time = 0 node = "engine4"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
 	}
 	scale = 0.288
+	version = 1
 }
 entity = {
 	name = "MEX_tac_bomber_equipment_entity" #use andalusia variant because why not?
@@ -10307,6 +10313,7 @@ entity = {
 		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
 	}
 	scale = 0.19
+	version = 1
 }
 entity = { clone = "BRA_jet_plane_entity" name = "BRA_cv_jet_plane_entity" }
 
@@ -10357,6 +10364,7 @@ entity = {
 		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
 	}
 	scale = 0.19
+	version = 1
 }
 entity = { clone = "SWE_jet_plane_entity" name = "SWE_cv_jet_plane_entity" }
 
