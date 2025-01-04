@@ -601,7 +601,7 @@ entity = {
 		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
 	}
 	scale = 0.12
-	version = 2
+	version = 1
 }
 entity = { #FAKE TAG generic French plane for use by other countries
 	name = "generic_morane_saulnier_entity"
