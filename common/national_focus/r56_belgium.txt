@@ -3347,7 +3347,7 @@ focus_tree = {
 					}
 				}
 			}
-			if = { limit = { exists = mio:BEL_fn_herstol_organization }
+			if = { limit = { NOT = { has_dlc = "Gotterdammerung" } }
 				mio:BEL_fn_herstol_organization = {
 					add_mio_funds = 1000
 				}						
