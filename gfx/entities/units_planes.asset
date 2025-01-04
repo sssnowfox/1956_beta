@@ -3436,6 +3436,7 @@ entity = {
 		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
 	}
 	scale = 0.144
+	version = 1
 }
 entity = {
 	name = "CHL_CAS_equipment_entity"
@@ -3478,6 +3479,7 @@ entity = {
 		event = { time = 0 node = "engine2"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
 	}
 	scale = 0.208
+	version = 1
 }
 entity = {
 	name = "CHL_heavy_plane_entity"
@@ -3495,6 +3497,7 @@ entity = {
 		event = { time = 0 node = "engine4"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
 	}
 	scale = 0.288
+	version = 1
 }
 entity = { 
 	name = "CHL_jet_plane_entity"
@@ -3517,6 +3520,7 @@ entity = {
 		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
 	}
 	scale = 0.19
+	version = 1
 }
 entity = { clone = "CHL_jet_plane_entity" name = "CHL_cv_jet_plane_entity" }
 entity = {
@@ -3707,6 +3711,7 @@ entity = {
 		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
 	}
 	scale = 0.144
+	version = 1
 }
 entity = {
 	name = "ETH_medium_plane_entity"
@@ -3959,6 +3964,7 @@ entity = {
 		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
 	}
 	scale = 0.144
+	version = 1
 }
 entity = { clone = "SWE_fighter_equipment_3_entity" name = "SWE_fighter_equipment_2_entity" version = 2 }
 entity = { clone = "SWE_fighter_equipment_2_entity" name = "SWE_fighter_bomber_equipment_2_entity" version = 2 }
@@ -4035,8 +4041,9 @@ entity = {
 		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
 	}
 	scale = 0.144
+	version = 1
 }
-entity = { clone = "NOR_light_plane_entity" name = "NOR_fighter_equipment_1_entity" version = 2 } #hopefully will figure things out with existence of NOR_light_plane_entity both here and in bba
+entity = { clone = "NOR_light_plane_entity" name = "NOR_fighter_equipment_1_entity" version = 2 }
 
 entity = {
 	name = "NOR_medium_plane_entity"
@@ -4739,7 +4746,7 @@ entity = {
 		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
 	}
 	scale = 0.145
-
+	version = 1
 }
 
 ### Austrian Bf109
@@ -4783,6 +4790,7 @@ entity = {
 		event = { time = 0 node = "engine2"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
 	}
 	scale = 0.208
+	version = 1
 }
 
 entity = { #level 1 otherwise and polish model so not fully historical
