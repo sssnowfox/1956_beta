@@ -9225,7 +9225,35 @@ POL = {
 			}
 		}
 	}
+	medium_tank_chassis_0 = {
+		pool = {
+			icons = { 
+				GFX_POL_basic_medium_tank_medium
+			}
+		}
+	}
 
+	medium_tank_chassis_1 = {
+		pool = {
+			icons = { 
+				GFX_POL_basic_medium_tank_medium
+			}
+		}
+	}
+	medium_tank_chassis_2 = {
+		pool = {
+			icons = { 
+				GFX_POL_improved_medium_tank_medium
+			}
+		}
+	}
+	medium_tank_chassis_3 = {
+		pool = {
+			icons = { 
+				GFX_POL_advanced_medium_tank_medium
+			}
+		}
+	}
 	medium_tank_chassis = {
 		pool = {
 			icons = { 
@@ -9233,6 +9261,35 @@ POL = {
 				GFX_POL_improved_medium_tank_medium
 				GFX_POL_advanced_medium_tank_medium
 			 }
+		}
+		pool = {
+			limit = {
+				has_dlc = "Poland: United and Ready"
+			}
+			models = {
+				POL_medium_armor_entity
+			}
+		}
+	}
+	heavy_tank_chassis_1 = {
+		pool = {
+			icons = { 
+				GFX_POL_basic_heavy_tank_medium
+			}
+		}
+	}
+	heavy_tank_chassis_2 = {
+		pool = {
+			icons = { 
+				GFX_POL_improved_heavy_tank_medium
+			}
+		}
+	}
+	heavy_tank_chassis_3 = {
+		pool = {
+			icons = { 
+				GFX_POL_advanced_heavy_tank_medium
+			}
 		}
 	}
 	heavy_tank_chassis = {
