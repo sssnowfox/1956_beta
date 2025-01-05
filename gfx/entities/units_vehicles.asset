@@ -2911,6 +2911,8 @@ entity = {
 
 	attach = { 	name = "vehicle"			vehicle = "generic_motorized_vehicle_entity" }
 	attach = { 	name = "infantry"			infantry = "BEL_vehicle_infantry_rifle_entity" }
+
+	version = 1
 }
 
 # entity = {
@@ -4556,6 +4558,8 @@ entity = {
 	attach = { 	name = "infantry"		infantry = "BEL_bicycle_rider_rifle_entity" }
 	attach = { 	name = "combined"		combined = "BEL_bicycle_rifle_combined_entity" }
 	attach = { 	name = "bicycle"		bike = "bicycle_vehicle_entity" }
+
+	version = 1
 }
 
 entity = {
@@ -4573,6 +4577,7 @@ entity = {
 	attach = { 	name = "rider"	bike_center = "FRA_bicycle_rider_rifle_entity" }
 
 	scale = 0.8
+	version = 1
 }
 
 entity = {
@@ -4600,6 +4605,7 @@ entity = {
 	attach = { 	name = "rifle4"	Root_node_2 = "GER_infantry_weapon_rifle_right_entity" }
 
 	scale = 1
+	version = 1
 }
 
 entity = {
@@ -4629,6 +4635,8 @@ entity = {
 	attach = { 	name = "infantry"		infantry = "BEL_bicycle_rider_mg_entity" }
 	attach = { 	name = "combined"		combined = "BEL_bicycle_mg_combined_entity" }
 	attach = { 	name = "bicycle"		bike = "bicycle_vehicle_entity" }
+
+	version = 1
 }
 
 entity = {
@@ -4646,6 +4654,7 @@ entity = {
 	attach = { 	name = "rider"	bike_center = "FRA_bicycle_rider_mg_entity" }
 
 	scale = 0.8
+	version = 1
 }
 
 entity = {
@@ -4671,6 +4680,7 @@ entity = {
 	attach = { 	name = "rifle2"	Left_Hand_node = "USA_infantry_weapon_mg_left_entity" }
 
 	scale = 1
+	version = 1
 }
 #################################
 
@@ -4690,6 +4700,8 @@ entity = {
 
 	attach = { 	name = "vehicle"			vehicle = "SOV_motorized_vehicle_entity" }
 	attach = { 	name = "infantry"			infantry = "LAT_vehicle_infantry_rifle_entity" }
+
+	version = 1
 }
 
 entity = {
@@ -4708,6 +4720,8 @@ entity = {
 
 	attach = { 	name = "vehicle"			vehicle = "SOV_mechanized_vehicle_entity" }
 	attach = { 	name = "infantry"			infantry = "LAT_vehicle_infantry_rifle_entity" }
+
+	version = 1
 }
 
 entity = {
@@ -4746,6 +4760,7 @@ entity = {
 	attach = { 	name = "cigarette2"			Root_node_1 = "cigarette_entity" }
 
 	scale = 0.8
+	version = 1
 }
 
 entity = {
