@@ -229,6 +229,14 @@ default = {
 	light_tank_artillery_chassis_1 = {
 		pool = {
 			limit = {
+				has_dlc = "Gotterdammerung"
+			}
+			models = {
+				BEL_light_tank_destroyer_brigade_0_entity
+			}
+		}
+		pool = {
+			limit = {
 				has_dlc = "Axis Armor Pack"
 				##has_dlc = "Allied Armor Pack"
 			}
