@@ -39,7 +39,7 @@
 		# GENERIC FOCUS TREES
 		offset = {
 			x = -15
-			y = 0
+			y = 10
 			trigger = {
 				has_focus_tree = austro_hungarian_releasable_focus
 			}
@@ -48,9 +48,9 @@
 		# CZECHOSLOVAKIA
 		offset = {
 			x = -30
-			y = 7
+			y = 10
 			trigger = {
-				has_focus_tree = czech_focus
+				has_focus_tree = czechoslovakian_focus
 			}
 		}
 
