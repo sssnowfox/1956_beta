@@ -5,16 +5,7 @@ default = {
 	light_tank_chassis_0 = {
 		pool = {
 			icons = {
-				GFX_gwtank_medium
-				GFX_CZE_gwtank_medium
-				GFX_HOL_gwtank_medium
-				GFX_HUN_gwtank_medium
-				GFX_POR_gwtank_medium
-				GFX_ROM_gwtank_medium
-				GFX_SPR_gwtank_medium
-				GFX_SWE_gwtank_medium
-				GFX_TUR_gwtank_medium
-				GFX_YUG_gwtank_medium
+
 
 				"gfx/interface/equipmentdesigner/tanks/designer/lamp_ENG/light_0/ENG_cardon_loyd_mk_6b.dds"
 				"gfx/interface/equipmentdesigner/tanks/designer/lamp_ENG/light_0/ENG_cardon_loyd_mk_6_late.dds"
@@ -65,24 +56,25 @@ default = {
 				"gfx/interface/equipmentdesigner/tanks/designer/lamp_USA/light_0/usa_m1917_37mm_m1916_cannon.dds"
 				"gfx/interface/equipmentdesigner/tanks/designer/lamp_USA/light_0/usa_m1917_30_m1919_browning_mg.dds"
 				"gfx/interface/equipmentdesigner/tanks/designer/lamp_USA/light_0/usa_m1917_30_marlin_mg.dds"
-				"gfx/interface/equipmentdesigner/tanks/designer/lamp_USA/light_0/usa_cunningham.dds"				
-			 }
+				"gfx/interface/equipmentdesigner/tanks/designer/lamp_USA/light_0/usa_cunningham.dds"	
+
+				
+				GFX_CZE_gwtank_medium
+				GFX_HOL_gwtank_medium
+				GFX_HUN_gwtank_medium
+				GFX_POR_gwtank_medium
+				GFX_ROM_gwtank_medium
+				GFX_SPR_gwtank_medium
+				GFX_SWE_gwtank_medium
+				GFX_TUR_gwtank_medium
+				GFX_YUG_gwtank_medium
+				GFX_gwtank_medium 
+			}
 		}
 	}
 	light_tank_chassis_1 = {
 		pool = {
 			icons = {
-				GFX_basic_light_tank_medium
-				GFX_CZE_basic_light_tank_medium
-				GFX_HOL_basic_light_tank_medium
-				GFX_HUN_basic_light_tank_medium
-				GFX_POR_basic_light_tank_medium
-				GFX_ROM_basic_light_tank_medium
-				GFX_SPR_basic_light_tank_medium
-				GFX_SWE_basic_light_tank_medium
-				GFX_TUR_basic_light_tank_medium
-				GFX_YUG_basic_light_tank_medium
-				
 #				## = kept by base game, I still think that those are too big for basic light tanks 
 #			##	GFX_generic_light_AAB
 # 			##	GFX_generic_light_AAB_camo
@@ -177,8 +169,19 @@ default = {
 				"gfx/interface/equipmentdesigner/tanks/designer/lamp_USA/light_1/usa_light_m2a1.dds"
 				"gfx/interface/equipmentdesigner/tanks/designer/lamp_USA/light_1/usa_hmc_t3.dds"
 				"gfx/interface/equipmentdesigner/tanks/designer/lamp_USA/light_1/usa_combat_car_m1a1.dds"
-				"gfx/interface/equipmentdesigner/tanks/designer/lamp_USA/light_1/usa_combat_car_m1.dds"				
+				"gfx/interface/equipmentdesigner/tanks/designer/lamp_USA/light_1/usa_combat_car_m1.dds"		
 
+				
+				GFX_CZE_basic_light_tank_medium
+				GFX_HOL_basic_light_tank_medium
+				GFX_HUN_basic_light_tank_medium
+				GFX_POR_basic_light_tank_medium
+				GFX_ROM_basic_light_tank_medium
+				GFX_SPR_basic_light_tank_medium
+				GFX_SWE_basic_light_tank_medium
+				GFX_TUR_basic_light_tank_medium
+				GFX_YUG_basic_light_tank_medium
+				GFX_basic_light_tank_medium
 			}
 		}
 	}
@@ -290,18 +293,7 @@ default = {
 
 	light_tank_chassis_2 = {
 		pool = {
-			icons = { 
-				GFX_improved_light_tank_medium
-				GFX_CZE_improved_light_tank_medium
-				GFX_HOL_improved_light_tank_medium
-				GFX_HUN_improved_light_tank_medium
-				GFX_POR_improved_light_tank_medium
-				GFX_ROM_improved_light_tank_medium
-				GFX_SPR_improved_light_tank_medium
-				GFX_SWE_improved_light_tank_medium
-				GFX_TUR_improved_light_tank_medium
-				GFX_YUG_improved_light_tank_medium			
-			
+			icons = { 			
 #				GFX_generic_light_BAB
 # 				GFX_generic_light_BAB_camo
 #			 	# GFX_generic_light_BAC
@@ -419,8 +411,20 @@ default = {
 				"gfx/interface/equipmentdesigner/tanks/designer/lamp_USA/light_2/usa_light_m3a3.dds"
 				"gfx/interface/equipmentdesigner/tanks/designer/lamp_USA/light_2/usa_light_m3a1.dds"
 				"gfx/interface/equipmentdesigner/tanks/designer/lamp_USA/light_2/usa_light_m3_late.dds"
-				"gfx/interface/equipmentdesigner/tanks/designer/lamp_USA/light_2/usa_light_m3_early.dds"				
-			 }
+				"gfx/interface/equipmentdesigner/tanks/designer/lamp_USA/light_2/usa_light_m3_early.dds"	
+
+
+				GFX_HOL_improved_light_tank_medium
+				GFX_HUN_improved_light_tank_medium
+				GFX_POR_improved_light_tank_medium
+				GFX_ROM_improved_light_tank_medium
+				GFX_SPR_improved_light_tank_medium
+				GFX_SWE_improved_light_tank_medium
+				GFX_TUR_improved_light_tank_medium
+				GFX_YUG_improved_light_tank_medium	
+				GFX_CZE_improved_light_tank_medium
+				GFX_improved_light_tank_medium
+			}
 		}
 	}
 	light_tank_artillery_chassis_2 = {
@@ -525,16 +529,6 @@ default = {
 	light_tank_chassis_3 = {
 		pool = {
 			icons = { 
-				GFX_advanced_light_tank_medium
-				GFX_CZE_advanced_light_tank_medium
-				GFX_HOL_advanced_light_tank_medium
-				GFX_HUN_advanced_light_tank_medium
-				GFX_POR_advanced_light_tank_medium
-				GFX_ROM_advanced_light_tank_medium
-				GFX_SPR_advanced_light_tank_medium
-				GFX_SWE_advanced_light_tank_medium
-				GFX_TUR_advanced_light_tank_medium
-				GFX_YUG_advanced_light_tank_medium
 
 #				GFX_generic_light_BAB
 # 				GFX_generic_light_BAB_camo
@@ -612,6 +606,18 @@ default = {
 				"gfx/interface/equipmentdesigner/tanks/designer/lamp_USA/light_3/usa_chaffee.dds"
 				"gfx/interface/equipmentdesigner/tanks/designer/lamp_USA/light_3/usa_locust.dds"				
 
+				
+
+				GFX_HOL_advanced_light_tank_medium
+				GFX_HUN_advanced_light_tank_medium
+				GFX_POR_advanced_light_tank_medium
+				GFX_ROM_advanced_light_tank_medium
+				GFX_SPR_advanced_light_tank_medium
+				GFX_SWE_advanced_light_tank_medium
+				GFX_TUR_advanced_light_tank_medium
+				GFX_YUG_advanced_light_tank_medium
+				GFX_CZE_advanced_light_tank_medium
+				GFX_advanced_light_tank_medium
 			 }
 		}
 	}
@@ -9174,6 +9180,38 @@ MAL = {
 ### Poland Content
 
 POL = {
+	light_tank_chassis_0 = {
+		pool = {
+			icons = {
+				GFX_gwtank_medium
+				GFX_POL_gwtank_medium
+			}
+		}
+	}
+	light_tank_chassis_1 = {
+		pool = {
+			icons = {
+				GFX_POL_basic_light_art_medium
+				GFX_POL_basic_light_td_medium
+				GFX_POL_basic_light_tank_medium
+			}
+		}
+	}
+	light_tank_chassis_2 = {
+		pool = {
+			icons = {
+				GFX_POL_improved_light_td_medium
+				GFX_POL_improved_light_tank_medium
+			}
+		}
+	}
+	light_tank_chassis_3 = {
+		pool = {
+			icons = {
+				GFX_POL_advanced_light_tank_medium
+			}
+		}
+	}
 	light_tank_chassis = {
 		pool = {
 			icons = { 
