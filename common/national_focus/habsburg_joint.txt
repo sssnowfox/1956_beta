@@ -38,13 +38,45 @@
 		# Austro-Hungarian Releasable Generic+
 		# GENERIC FOCUS TREES
 		offset = {
-			x = -15
+			x = 0
 			y = 10
 			trigger = {
-				has_focus_tree = austro_hungarian_releasable_focus
+				has_focus_tree = generic_focus
+			}
+		}
+		# ALBANIA
+		offset = {
+			x = -30
+			y = 12
+			trigger = {
+				has_focus_tree = albania_focus
+			}
+		}
+		# CROATIA
+		offset = {
+			x = -30
+			y = 12
+			trigger = {
+				has_focus_tree = croatia_focus
 			}
 		}
 
+		# SLOVAKIA
+		offset = {
+			x = -30
+			y = 12
+			trigger = {
+				has_focus_tree = SLO_generic_focus
+			}
+		}
+		# RUTHENIA
+		offset = {
+			x = -30
+			y = 12
+			trigger = {
+				has_focus_tree = ruthenian_focus_tree
+			}
+		}
 		# CZECHOSLOVAKIA
 		offset = {
 			x = -30
