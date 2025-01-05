@@ -208,6 +208,8 @@ HABSBURG_is_a_habsburg_viable_nation = {
 		original_tag = SLV
 		original_tag = HRZ
 		original_tag = ALB
+		original_tag = SZK # Szekely
+		original_tag = RUT # Carpatho-Ukraine both are part of "greater hungary"
 	}
 }
 HABSBURG_joint_trigger = {
