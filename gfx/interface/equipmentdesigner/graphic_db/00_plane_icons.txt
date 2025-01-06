@@ -31760,6 +31760,83 @@ NZL = {
 	}		
 }
 
+PER = {
+	small_plane_airframe_0 = {
+		pool = {
+			icons = {
+				
+			}
+			models = {
+				PER_fighter_equipment_0_entity
+			}
+		}
+	}	
+
+	small_plane_airframe = {
+		pool = {
+			icons = {
+				
+			}
+			models = {
+				PER_light_plane_entity
+			}
+		}
+	}
+	small_plane_cas_airframe = {
+		pool = {
+			icons = {
+				
+			}
+			models = {
+				PER_CAS_equipment_entity
+			}
+		}
+	}	
+
+	
+
+#	small_plane_airframe_4 = {
+#		pool = {
+#			models = {
+#				jet_plane_entity
+#			}		
+#		}	
+#	}		
+	medium_plane_airframe = {
+		pool = {
+			weight = 10
+			icons = {
+				
+			}
+			models = {
+				PER_medium_plane_entity
+			}
+		}
+	}
+	#medium_plane_fighter_airframe = {
+	#	pool = {
+	#		weight = 30
+	#		icons = {
+	#			
+	#		}			
+	#		models = {
+	#			VEN_heavy_fighter_equipment_entity
+	#		}
+	#	}			
+	#}		
+	large_plane_airframe = {
+		pool = {
+			icons = {
+				
+			}
+			models = {
+				PER_heavy_plane_entity
+			}
+		}
+	}
+		
+}
+
 
 PHI = {
 	small_plane_airframe = {
