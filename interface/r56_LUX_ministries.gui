@@ -2,10 +2,22 @@ guiTypes = {
 	containerWindowType = {
 		name = LUX_ministries
 		position = { x = 10 y = 0 }
-		size = { width = 450 height = 600 }
+		size = { width = 450 height = 630 }
 		orientation = center
 		origo = center
 		moveable = no
+
+		# Explanation
+		instantTextBoxType = {
+			name = LUX_ministries_desc
+			position = {
+				x = 13
+				y = 355
+			}
+			maxWidth = 470
+			font = hoi_18
+			text = LUX_ministries_desc_text
+		}
 
 		# Ministries
 		iconType = {
@@ -32,7 +44,7 @@ guiTypes = {
 		}
 		iconType = {
 			name = LUX_minister_prime_PRL_icon_diderich
-			spriteType = GFX_Portrait_Europe_Generic_2
+			spriteType = GFX_portrait_LUX_gaston_diderich
 			position = {
 				x = 197
 				y = -10

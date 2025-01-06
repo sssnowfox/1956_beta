@@ -230,11 +230,20 @@ country_event = {		# Maulkuerfgesetz passes; focus tree fired
 		set_country_flag = LUX_maulkuerfgesetz_passed
 		custom_effect_tooltip = LUX_maulkuerfgesetz_passed_tt
 		activate_decision = ban_communist_party
+		custom_effect_tooltip = r56_newline
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.02
+		}
+		add_stability = -0.03
+		clr_country_flag = LUX_chamberofdeputies_KPL_button_pressed
 	}
 	option = {			# law doesnt pass
 		name = luxembourg.202.b
 		custom_effect_tooltip = LUX_maulkuerfgesetz_didnt_pass_tt
 		add_ideas = r56_LUX_polarized_society
+		custom_effect_tooltip = r56_newline
+		add_stability = 0.02
 	}
 }
 country_event = {		# 1937 elections starting
@@ -251,16 +260,16 @@ country_event = {		# 1937 elections starting
 
 	immediate = {
 		hidden_effect = {
+			if = {
+				limit = { is_ai = no }
+				LUX_chamberofdeputies_setup_elections = yes
+			}
 			unlock_national_focus = LUX_establish_national_labour_council
 			unlock_national_focus = LUX_revert_worker_immigration
 			unlock_national_focus = LUX_strengthen_agricultural_industry
 			unlock_national_focus = LUX_repair_belgian_relations
 			unlock_national_focus = LUX_the_maulkuerfgesetz
 			set_country_flag = LUX_elections_starting
-			if = {
-				limit = { is_ai = no }
-				LUX_chamberofdeputies_setup_elections = yes
-			}
 		}
 	}
 
@@ -270,6 +279,61 @@ country_event = {		# 1937 elections starting
 		hidden_effect = { unlock_national_focus = LUX_begin_election_preparations }
 		custom_effect_tooltip = r56_newline
 		custom_effect_tooltip = LUX_unlock_chamberofdeputies_tt
+	}
+}
+country_event = {		# snap elections
+	id = luxembourg.216
+	title = luxembourg.216.t
+	desc = luxembourg.216.d
+
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = LUX_chamberofdeputies_PD_gov_support
+		has_country_flag = LUX_maulkuerfgesetz_passed
+		check_variable = { LUX.PD_support > LUX.PRL_support }
+		check_variable = { LUX.PD_support > LUX.LSAP_support }
+		check_variable = { LUX.PD_support > LUX.KPL_support }
+	}
+
+	option = {			# call snap election
+		name = luxembourg.216.a
+
+		add_political_power = -80
+		add_stability = -0.10
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.10
+		}
+
+		hidden_effect = {
+			country_event = {
+				id = luxembourg.211
+				days = 7
+				random_hours = 6
+			}
+			country_event = {
+				id = luxembourg.212
+				days = 7
+				random_hours = 6
+			}
+			country_event = {
+				id = luxembourg.213
+				days = 7
+				random_hours = 6
+			}
+			country_event = {
+				id = luxembourg.214
+				days = 7
+				random_hours = 6
+			}
+		}
+	}
+	option = {			# no snap election
+		name = luxembourg.216.b
+
+		add_stability = 0.02
 	}
 }
 country_event = {		# 1937 elections over; PD victory
@@ -282,16 +346,18 @@ country_event = {		# 1937 elections over; PD victory
 
 	trigger = {
 		has_country_flag = LUX_elections_starting
-		check_variable = { LUX.turnout > 20 }
+		#check_variable = { LUX.turnout > 20 }
 		#check_variable = { LUX.confidence > 10 }
-		#check_variable = { LUX.PD_support > LUX.PRL_support }
+		check_variable = { LUX.PD_support > LUX.PRL_support }
 		check_variable = { LUX.PD_support > LUX.LSAP_support }
 		check_variable = { LUX.PD_support > LUX.KPL_support }
 	}
 
 	immediate = {
-		set_country_flag = LUX_elections_over
-		unlock_national_focus = LUX_the_maulkuerfgesetz
+		hidden_effect = {
+			set_country_flag = LUX_elections_over
+			unlock_national_focus = LUX_the_maulkuerfgesetz
+		}
 	}
 
 	option = {
@@ -319,8 +385,10 @@ country_event = {		# 1937 elections over; PRL victory
 	}
 
 	immediate = {
-		set_country_flag = LUX_elections_over
-		unlock_national_focus = LUX_the_maulkuerfgesetz
+		hidden_effect = {
+			set_country_flag = LUX_elections_over
+			unlock_national_focus = LUX_the_maulkuerfgesetz
+		}
 	}
 
 	option = {
@@ -348,8 +416,10 @@ country_event = {		# 1937 elections over; LSAP victory
 	}
 
 	immediate = {
-		set_country_flag = LUX_elections_over
-		unlock_national_focus = LUX_the_maulkuerfgesetz
+		hidden_effect = {
+			set_country_flag = LUX_elections_over
+			unlock_national_focus = LUX_the_maulkuerfgesetz
+		}
 	}
 
 	option = {
@@ -376,15 +446,17 @@ country_event = {		# 1937 elections over; KPL victory
 	trigger = {
 		has_country_flag = LUX_elections_starting
 		#check_variable = { LUX.turnout > 20 }
-		#check_variable = { LUX.confidence > 10 }
+		check_variable = { LUX.confidence > 10 }
 		check_variable = { LUX.KPL_support > LUX.PD_support }
 		check_variable = { LUX.KPL_support > LUX.PRL_support }
 		check_variable = { LUX.KPL_support > LUX.LSAP_support }
 	}
 
 	immediate = {
-		set_country_flag = LUX_elections_over
-		unlock_national_focus = LUX_the_maulkuerfgesetz
+		hidden_effect = {
+			set_country_flag = LUX_elections_over
+			unlock_national_focus = LUX_the_maulkuerfgesetz
+		}
 	}
 
 	option = {
@@ -410,7 +482,7 @@ country_event = {		# 1937 elections; monarchist & fascist
 
 	trigger = {
 		OR = {
-			check_variable = { LUX.turnout < 20 }
+			#check_variable = { LUX.turnout < 20 }
 			check_variable = { LUX.confidence < 10 }
 		}
 		has_country_flag = LUX_maulkuerfgesetz_passed
@@ -418,7 +490,6 @@ country_event = {		# 1937 elections; monarchist & fascist
 
 	immediate = {
 		set_country_flag = LUX_elections_over
-		unlock_national_focus = LUX_the_maulkuerfgesetz
 	}
 
 	option = {
@@ -1765,14 +1836,17 @@ country_event = {		# not forming benelux
 	}
 }
 
-country_event = {
+country_event = {		# collectivised eco becomes good
 	id = luxembourg.250
+	title = luxembourg.250.t
+	desc = luxembourg.250.d
 
-	hidden = yes
+	picture = GFX_report_event_generic_factory
 
 	is_triggered_only = yes
 
-	option = {
+	option = {			# 
+		name = luxembourg.250.a
 		swap_ideas = {
 			remove_idea = r56_LUX_collectivized_economy
 			add_idea = r56_LUX_collectivized_economy_2
@@ -1912,6 +1986,48 @@ country_event = {		# request to invade benelux
 					hours = 4
 					random_hours = 2
 				}
+			}
+		}
+	}
+}
+
+news_event = {			# luxembourg going nazi
+	id = luxembourg.350
+	title = luxembourg.350.t
+	desc = luxembourg.350.d
+
+	picture = GFX_news_event_fascist_gathering
+
+	is_triggered_only = yes
+	fire_for_sender = no
+
+	major = yes
+	show_major = {
+		OR = {
+			is_neighbor_of = LUX
+			original_tag = LUX
+			original_tag = BEL
+			original_tag = GER
+		}
+	}
+
+	option = {			# great
+		name = luxembourg.350.a
+		trigger = {
+			OR = {
+				has_country_leader_ideology = nazism
+				has_country_leader_ideology = gen_nazism
+				is_in_faction_with = GER
+			}
+		}
+	}
+	option = {			# concerning
+		name = luxembourg.350.b
+		trigger = {
+			NOT = {
+				has_country_leader_ideology = nazism
+				has_country_leader_ideology = gen_nazism
+				is_in_faction_with = GER
 			}
 		}
 	}
