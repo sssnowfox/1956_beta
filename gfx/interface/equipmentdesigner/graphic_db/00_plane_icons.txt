@@ -31743,6 +31743,24 @@ PER = {
 		}
 	}	
 
+	small_plane_CAS_airframe = {
+		pool = {
+			icons = {
+				
+			}
+			models = {
+				PER_CAS_equipment_entity
+			}
+		}
+	}
+	cv_small_plane_CAS_airframe = {
+		pool = {
+
+			models = {
+				PER_CAS_equipment_entity
+			}
+		}
+	}	
 	small_plane_airframe = {
 		pool = {
 			icons = {
@@ -31752,19 +31770,7 @@ PER = {
 				PER_light_plane_entity
 			}
 		}
-	}
-	small_plane_cas_airframe = {
-		pool = {
-			icons = {
-				
-			}
-			models = {
-				PER_CAS_equipment_entity
-			}
-		}
 	}	
-
-	
 
 #	small_plane_airframe_4 = {
 #		pool = {
