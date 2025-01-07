@@ -1233,7 +1233,7 @@ characters={
 		}
 	}
 	EGY_sameera_moussa = {
-		name = "Sameera Moussa"
+		name = EGY_sameera_moussa
 		portraits = {
 			army = {
 				large = GFX_portrait_generic_arabia_female_02
@@ -1245,6 +1245,11 @@ characters={
 			traits = { scientist_trait_nuclear_power_expert }
 			skills = {
 				specialization_nuclear = 1
+			}
+		}
+		visible = {
+			owner = {
+				has_completed_focus = EGY_study_nuclear_power
 			}
 		}
 	}
