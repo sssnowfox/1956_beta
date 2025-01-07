@@ -31745,6 +31745,7 @@ PER = {
 
 	small_plane_CAS_airframe = {
 		pool = {
+			weight = 50
 			icons = {
 				
 			}
@@ -31755,7 +31756,7 @@ PER = {
 	}
 	cv_small_plane_CAS_airframe = {
 		pool = {
-
+			weight = 50
 			models = {
 				PER_CAS_equipment_entity
 			}
