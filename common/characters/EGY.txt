@@ -1246,10 +1246,10 @@ characters={
 			skills = {
 				specialization_nuclear = 1
 			}
-		}
-		visible = {
-			owner = {
-				has_completed_focus = EGY_study_nuclear_power
+			visible = {
+				owner = {
+					has_completed_focus = EGY_study_nuclear_power
+				}
 			}
 		}
 	}
