@@ -937,10 +937,6 @@ technologies = {
 		research_cost = 2
 		start_year = 1945
 
-		#dependencies = {
-		#	jet_engines = 1
-		#}
-
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 12 }
@@ -1788,6 +1784,11 @@ technologies = {
 			position = { x = 0 y = 8 }
 		}
 
+		path = {
+			# leads_to_tech = sp_centrifugal_jet_tech
+			research_cost_coeff = 1
+		}
+
 		categories = {
 			air_equipment
 			plane_modules_tech
@@ -1961,54 +1962,54 @@ technologies = {
 
 	##### SPECIAL PROJECTS #####
 
-	sp_centrifugal_jet_tech = {
-		allow_branch = {
-			has_dlc = "Gotterdammerung"
-		}
+	# sp_centrifugal_jet_tech = {
+	# 	allow_branch = {
+	# 		has_dlc = "Gotterdammerung"
+	# 	}
 		
-		allow = {
-			ROOT = {
-				is_special_project_completed = sp:sp_air_jet_engine
-			} 
-		}
+	# 	allow = {
+	# 		ROOT = {
+	# 			is_special_project_completed = sp:sp_air_jet_engine
+	# 		} 
+	# 	}
 
-		is_special_project_tech = yes
+	# 	is_special_project_tech = yes
 
-		research_cost = 2
-		start_year = 1945
+	# 	research_cost = 2
+	# 	start_year = 1945
 		
-		folder = {
-			name = bba_air_techs_folder
-			position = { x = 0 y = 12 }
-		}
+	# 	folder = {
+	# 		name = bba_air_techs_folder
+	# 		position = { x = 0 y = 12 }
+	# 	}
 
-		folder = {
-			name = air_techs_folder
-			position = { x = 4 y = 12 }
-		}
+	# 	folder = {
+	# 		name = air_techs_folder
+	# 		position = { x = 4 y = 12 }
+	# 	}
 		
-		categories = {
-			jet_technology
-			cat_air_engine
-			helicopter_tech
-		}
+	# 	categories = {
+	# 		jet_technology
+	# 		cat_air_engine
+	# 		helicopter_tech
+	# 	}
 
-		category_helicopter_support_companies = {
-			fuel_consumption = -0.05
-			maximum_speed = 0.1
-			defense = 0.05
-			breakthrough = 0.05
-		}
+	# 	category_helicopter_support_companies = {
+	# 		fuel_consumption = -0.05
+	# 		maximum_speed = 0.1
+	# 		defense = 0.05
+	# 		breakthrough = 0.05
+	# 	}
 
-		special_project_specialization = { specialization_air }	
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				is_major = yes
-				factor = 4
-			}
-		}
-	}
+	# 	special_project_specialization = { specialization_air }	
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 		modifier = {
+	# 			is_major = yes
+	# 			factor = 4
+	# 		}
+	# 	}
+	# }
 
 	reinforced_wings_mothership = {
 		allow_branch = {
