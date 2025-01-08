@@ -1613,15 +1613,21 @@ HUN_ai_behavior = {
 		desc = "RULE_OPTION_DEMOCRATIC_HUN_AI_DESC"
 	}
 	option = {
-		name = FASCIST_ALTERNATE
-		text = "RULE_OPTION_FASCIST_ALTERNATE"
-		desc = "RULE_FASCIST_ALTERNATE_HUN_AI_DESC"
-	}
-	option = {
 		name = FASCIST_HISTORICAL
 		text = "RULE_OPTION_FASCIST_HISTORICAL"
 		desc = "RULE_FASCIST_HUN_AI_DESC"
 		allow_achievements = yes
+	}
+	option = {
+		required_dlc = "Gotterdammerung"	#missing in vanilla despite this option not having associated AI for non-DLC
+		name = FASCIST_KING
+		text = "RULE_OPTION_HUN_FASCIST_KING"
+		desc = "RULE_FASCIST_ALTERNATE_KING_HUN_AI_DESC"
+	}
+	option = {
+		name = FASCIST_ALTERNATE
+		text = "RULE_OPTION_HUN_ROME_PROTOCOLS"
+		desc = "RULE_FASCIST_ALTERNATE_HUN_AI_DESC"
 	}
 	option = {
 		required_dlc = "Gotterdammerung"
