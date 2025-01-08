@@ -1624,6 +1624,42 @@ HUN_ai_behavior = {
 		allow_achievements = yes
 	}
 	option = {
+		required_dlc = "Gotterdammerung"
+		name = HABSBURG_HUNGARY
+		text = "RULE_OPTION_HUN_HABSBURG_HUNGARY"
+		desc = "RULE_HABSBURG_HUNGARY_HUN_AI_DESC"
+	}
+	option = {
+		required_dlc = "Gotterdammerung"
+		name = HORTHYIST_KING_HUNGARY
+		text = "RULE_OPTION_HUN_HORTHYIST_KING_HUNGARY"
+		desc = "RULE_HORTHYIST_KING_HUNGARY_HUN_AI_DESC"
+	}
+	option = {
+		required_dlc = "Gotterdammerung"
+		name = REPUBLICAN_DEMOCRACY
+		text = "RULE_OPTION_HUN_REPUBLICAN_DEMOCRACY"
+		desc = "RULE_REPUBLICAN_DEMOCRACY_HUN_AI_DESC"
+	}
+	option = {
+		required_dlc = "Gotterdammerung"
+		name = REPUBLICAN_DEMOCRACY_EXPANSIONIST
+		text = "RULE_OPTION_HUN_REPUBLICAN_DEMOCRACY_EXPANSIONIST"
+		desc = "RULE_REPUBLICAN_DEMOCRACY_EXPANSIONIST_HUN_AI_DESC"
+	}
+	option = {
+		required_dlc = "Gotterdammerung"
+		name = RESTORE_THE_SOCIALIST_REPUBLIC
+		text = "RULE_OPTION_HUN_RESTORE_THE_SOCIALIST_REPUBLIC"
+		desc = "RULE_RESTORE_THE_SOCIALIST_REPUBLIC_HUN_AI_DESC"
+	}
+	option = {
+		required_dlc = "Gotterdammerung"
+		name = ARROW_CROSS_MOVEMENT
+		text = "RULE_OPTION_HUN_ARROW_CROSS_MOVEMENT"
+		desc = "RULE_ARROW_CROSS_MOVEMENT_HUN_AI_DESC"
+	}
+	option = {
 		name = RANDOM
 		text = "RULE_OPTION_RANDOM"
 		desc = "RULE_OPTION_RANDOM_AI_DESC"
