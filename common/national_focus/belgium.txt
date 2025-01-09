@@ -6634,7 +6634,6 @@ focus = {
 					}
 					# to remove 10 errors in log when this fires and template doesn't exist
 					if = { limit = { NOT = { ROOT = { has_template = "Division d'Infanterie" } } }
-						log = "Division d'Infanterie test"
 						ROOT = {
 							division_template = {
 								name = "Division d'Infanterie"
