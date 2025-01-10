@@ -6,7 +6,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_portrait_ger_fritz_kuhn"
-		texturefile = "gfx/leaders/GER/portrait_Germany_Generic_land_4.dds"
+		texturefile = "gfx/leaders/GER/Portrait_Germany_Generic_land_4.dds"
 	}
 	spriteType = {
 		name = "GFX_portrait_ger_fritz_kuhn_small"
@@ -2651,8 +2651,12 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_portrait_ger_hans_von_luck"
+		name = "GFX_portrait_GER_hans_von_luck"
 		texturefile = "gfx/leaders/GER/portrait_ger_hans_von_luck.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_GER_hans_von_luck_small"
+		texturefile = "gfx/interface/ideas/idea_GER_hans_von_luck.dds"
 	}
 
 	spriteType = {
