@@ -2621,12 +2621,64 @@ spriteTypes = {
 		name = "GFX_portrait_SPR_niceto_alcala_zamora"
 		texturefile = "gfx/leaders/SPR/portrait_spr_niceto_alcala_zamora.dds"
 	}
-
 	spriteType = {
 		name = "GFX_portrait_SPR_niceto_alcala_zamora_small"
 		texturefile = "gfx/interface/ideas/idea_SPR_niceto_alcala_zamora.dds"
 	}
 
+	spriteType = {
+		name = "GFX_portrait_SPR_Andres_Saliquet"
+		texturefile = "gfx/leaders/SPR/r56_portrait_SPR_Andres_Saliquet.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SPR_Andres_Saliquet_small"
+		texturefile = "gfx/interface/ideas/spr/r56_portrait_SPR_Andres_Saliquet.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_SPR_Alfredo_Kindelan"
+		texturefile = "gfx/leaders/SPR/r56_portrait_SPR_Alfredo_Kindelan.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SPR_Alfredo_Kindelan_small"
+		texturefile = "gfx/interface/ideas/spr/r56_portrait_SPR_Alfredo_Kindelan.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_SPR_Fernando_Barron"
+		texturefile = "gfx/leaders/SPR/r56_portrait_SPR_Fernando_Barron.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SPR_Fernando_Barron_small"
+		texturefile = "gfx/interface/ideas/spr/r56_portrait_SPR_Fernando_Barron.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_SPR_Jose_Moscardo_Ituarte"
+		texturefile = "gfx/leaders/SPR/r56_portrait_SPR_Jose_Moscardo_Ituarte.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SPR_Jose_Moscardo_Ituarte_small"
+		texturefile = "gfx/interface/ideas/spr/r56_portrait_SPR_Jose_Moscardo_Ituarte.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_SPR_Luis_Orgaz_Yoldi"
+		texturefile = "gfx/leaders/SPR/r56_portrait_SPR_Luis_Orgaz_Yoldi.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SPR_Luis_Orgaz_Yoldi_small"
+		texturefile = "gfx/interface/ideas/spr/r56_portrait_SPR_Luis_Orgaz_Yoldi.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_SPR_Rafael_Estrada"
+		texturefile = "gfx/leaders/SPR/r56_portrait_SPR_Rafael_Estrada.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SPR_Rafael_Estrada_small"
+		texturefile = "gfx/interface/ideas/spr/r56_portrait_SPR_Rafael_Estrada.dds"
+	}
 
 #new for BftB
 
