@@ -584,7 +584,8 @@ characters = {
 		name = BRA_cyro_espirito_santo_cardoso
 		portraits = {
 			army = {
-				large = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
+				large = GFX_Portrait_BRA_cyro_espirito_santo_cardoso
+				small = GFX_Portrait_BRA_cyro_espirito_santo_cardoso_small
 			}
 		}
 		corps_commander = {
