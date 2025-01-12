@@ -3290,10 +3290,18 @@ spriteType = {
 		name = GFX_Portrait_Arabia_Generic_navy_1
 		texturefile = "gfx/leaders/r56_generic/r56_portrait_arabia_generic_navy_1.dds"
 	}
+	spriteType = {
+		name = GFX_Portrait_Arabia_Generic_navy_1_small
+		texturefile = "/gfx/interface/ideas/generic/r56_advisors/r56_advisor_arabia_generic_navy_1.dds"
+	}
 
 	spriteType = {
 		name = GFX_Portrait_Arabia_Generic_navy_2
 		texturefile = "gfx/leaders/r56_generic/r56_portrait_arabia_generic_navy_2.dds"
+	}
+	spriteType = {
+		name = GFX_Portrait_Arabia_Generic_navy_2_small
+		texturefile = "/gfx/interface/ideas/generic/r56_advisors/r56_advisor_arabia_generic_navy_2.dds"
 	}
 
 	# generic_admiral_GRE_1
