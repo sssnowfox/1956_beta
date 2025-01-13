@@ -127,9 +127,14 @@ AUS_triesteshipyards_organization = { #has atlantic_fleet_naval_manufacturer pre
 				}
 				has_completed_focus = AUS_trieste_shipyards
 			}
-			else_if = {
+			else_if = {	#CRO/CZE/non-DLC HUN have a focus in r56 shared branch
 				limit = {
-					has_focus_tree = austro_hungarian_releasable_focus
+					NOT = {
+						AND = {
+							has_dlc = "Gotterdammerung"
+							original_tag = HUN
+						}
+					}
 				}
 				has_completed_focus = AH_rijeka_naval_academy
 			}
@@ -139,19 +144,22 @@ AUS_triesteshipyards_organization = { #has atlantic_fleet_naval_manufacturer pre
 	visible = {
 		IF = {
 			limit = {
-				FROM = { original_tag = HUN } 
+				FROM = {
+					original_tag = HUN
+					has_dlc = "Gotterdammerung"
+				} 
 			}
 			FROM = {
-				OR = {
-					has_completed_focus = wuw_HUN_integrate_bohemian_and_austrian_industries
-					AND = {
-						NOT = {
-							has_dlc = "Gotterdammerung"
-						}
-						has_cosmetic_tag = HUN_EMPIRE
-					}
+				has_completed_focus = wuw_HUN_integrate_bohemian_and_austrian_industries
+			}
+		}
+		else_if = {	#CRO/CZE/non-DLC HUN gets it from formable, AUS always has it visible
+			limit = {
+				NOT = {
+					original_tag = AUS
 				}
 			}
+			has_cosmetic_tag = HUN_EMPIRE
 		}
 	}
 
