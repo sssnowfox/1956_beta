@@ -112,18 +112,23 @@ AUS_triesteshipyards_organization = { #has atlantic_fleet_naval_manufacturer pre
 
 	available = { # add A-H effect? and join Skoda?
 		owner = { 
-			OR = {
-				has_completed_focus = AUS_trieste_shipyards
-				has_completed_focus = AH_rijeka_naval_academy
-				IF = {
-					limit = {
-						FROM = { original_tag = AUS has_focus_tree = austria_focus_tree }
-					}
-					has_completed_focus = AUS_revive_stt
-					else = {
-						always = no
+			IF = {
+				limit = {
+					FROM = { original_tag = AUS has_focus_tree = austria_focus_tree }
+				}
+				has_completed_focus = AUS_revive_stt
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = AUS
+						has_focus_tree = austrian_focus
 					}
 				}
+				has_completed_focus = AUS_trieste_shipyards
+			}
+			else = {
+				has_completed_focus = AH_rijeka_naval_academy
 			}
 		}
 	}
