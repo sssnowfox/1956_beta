@@ -4297,6 +4297,7 @@ on_actions = {
 				limit = {
 					original_tag = ENG
 					has_government = democratic
+					has_capitulated = no
 				}
 				if = {
 					limit = {
