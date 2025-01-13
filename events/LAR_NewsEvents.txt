@@ -172,6 +172,26 @@ news_event = {
 						}
 					}
 				}
+				every_state = {
+					limit = {
+						has_state_flag = SPR_core_of_spain_flag
+						has_state_flag = SPR_sided_with_republicans_flag
+					}
+					add_dynamic_modifier = {
+						modifier = r56_SPR_post_civil_war_resistance
+					}
+				}
+				every_other_country = {
+					limit = {
+						OR = {
+							original_tag = SPR
+							has_focus_tree = spanish_focus
+						}
+					}
+					every_core_state = {
+						remove_core_of = PREV
+					}
+				}
 			}
 		}
 	}
@@ -534,6 +554,26 @@ news_event = {
 						country_event = { id = lar_spain.81 hours = 6 }
 					}
 					country_event = { id = lar_spain.82 hours = 6 }
+				}
+				every_state = {
+					limit = {
+						has_state_flag = SPR_core_of_spain_flag
+						has_state_flag = SPR_sided_with_nationalists_flag
+					}
+					add_dynamic_modifier = {
+						modifier = r56_SPR_post_civil_war_resistance
+					}
+				}
+				every_other_country = {
+					limit = {
+						OR = {
+							original_tag = SPR
+							has_focus_tree = spanish_focus
+						}
+					}
+					every_core_state = {
+						remove_core_of = PREV
+					}
 				}
 			}
 			#If POUM supported by SOV and won and SOV has not won/bypasssed their civil war yet -> POUM will help SOV in their CW
@@ -2362,6 +2402,26 @@ news_event = {
 	immediate = {
 		hidden_effect = {
 			set_global_flag = scw_early_end
+			every_state = {
+				limit = {
+					has_state_flag = SPR_core_of_spain_flag
+					has_state_flag = SPR_sided_with_republicans_flag
+				}
+				add_dynamic_modifier = {
+					modifier = r56_SPR_post_civil_war_resistance
+				}
+			}
+			every_other_country = {
+				limit = {
+					OR = {
+						original_tag = SPR
+						has_focus_tree = spanish_focus
+					}
+				}
+				every_core_state = {
+					remove_core_of = PREV
+				}
+			}
 		}
 	}
 
@@ -2472,6 +2532,26 @@ news_event = {
 	immediate = {
 		hidden_effect = {
 			set_global_flag = scw_early_end
+			every_state = {
+				limit = {
+					has_state_flag = SPR_core_of_spain_flag
+					has_state_flag = SPR_sided_with_nationalists_flag
+				}
+				add_dynamic_modifier = {
+					modifier = r56_SPR_post_civil_war_resistance
+				}
+			}
+			every_other_country = {
+				limit = {
+					OR = {
+						original_tag = SPR
+						has_focus_tree = spanish_focus
+					}
+				}
+				every_core_state = {
+					remove_core_of = PREV
+				}
+			}
 		}
 	}
 
