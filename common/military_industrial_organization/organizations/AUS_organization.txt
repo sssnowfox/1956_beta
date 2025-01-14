@@ -155,11 +155,9 @@ AUS_triesteshipyards_organization = { #has atlantic_fleet_naval_manufacturer pre
 		}
 		else_if = {	#CRO/CZE/non-DLC HUN gets it from formable, AUS always has it visible
 			limit = {
-				NOT = {
-					original_tag = AUS
-				}
+				FROM = { NOT = { original_tag = AUS } }
 			}
-			has_cosmetic_tag = HUN_EMPIRE
+			FROM = { has_cosmetic_tag = HUN_EMPIRE }
 		}
 	}
 
