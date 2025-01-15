@@ -31806,8 +31806,9 @@ NZL = {
 }
 
 PER = {
-	small_plane_airframe_0 = {
+	small_plane_fighter_airframe_0 = {
 		pool = {
+			weight = 50
 			icons = {
 				
 			}
@@ -31837,6 +31838,16 @@ PER = {
 		}
 	}	
 	small_plane_airframe = {
+		pool = {
+			icons = {
+				
+			}
+			models = {
+				PER_light_plane_entity
+			}
+		}
+	}	
+	cv_small_plane_airframe = {
 		pool = {
 			icons = {
 				
