@@ -6692,8 +6692,8 @@
 					
 				}
 				models = {
-					#PHI_light_plane_entity
-					#PHI_fighter_equipment_1_entity
+					GRL_light_plane_entity
+					#GRL_fighter_equipment_1_entity
 				}
 			}
 		}
@@ -6703,8 +6703,8 @@
 					
 				}
 				models = {
-					#PHI_light_plane_entity
-					#PHI_fighter_equipment_1_entity
+					GRL_light_plane_entity
+					#GRL_fighter_equipment_1_entity
 				}
 			}
 		}	
