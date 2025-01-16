@@ -272,7 +272,7 @@ characters={
 			traits = { naval_theorist }
 		}
 		scientist = {
-			traits = { scientist_trait_resourceful }
+			traits = { scientist_trait_resourceful scientist_trait_bright }
 			skills = {
 				specialization_naval = 2
 			}
