@@ -280,6 +280,12 @@ characters={
 			coordination_skill=1
 			legacy_id=-1
 		}
+		scientist = {
+			traits = { scientist_trait_resourceful }
+			skills = {
+				specialization_naval = 2
+			}
+		}
 	}
 	#Political Advisors 
 	PAR_ricardo_odriosola = {
