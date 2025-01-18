@@ -613,7 +613,6 @@ MEX_counter_the_callistas:0 "Counter the Callistas"
 MEX_counter_the_callistas_desc:0 "The Callistas continue to cause the roots of our nation to rot. It is now time we take the effective measures to counter them and stop them from damaging our institutions any longer."
 MEX_formalize_church_land_rights:0 "Formalize Church Land Rights"
 MEX_formalize_church_land_rights_desc:0 "[ROOT.GetLeader], a devout catholic, understands more than most the importance of securing land rights for the church in her country. We shall take steps to formalize their situation, and have its support."
-MEX_counter_the_call
 MEX_papal_blessing_of_the_empress:0 "Papal Blessing"
 MEX_papal_blessing_of_the_empress_desc:0 "A formal blessing by the Pope himself will surely quell any remaining question of the Empress's legitimacy in the eyes of the church."
 MEX_support_the_spanish_carlists:0 "Support the [SPB.GetAdjective] Carlists"
